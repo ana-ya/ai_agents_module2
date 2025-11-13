@@ -471,7 +471,9 @@ class NaiveRAG:
         if not context_chunks:
             return "Не знайдено релевантної інформації."
 
-        contexts = context_chunks["documents"][0] if context_chunks["documents"] else []
+        # ChromaDB returns nested lists: documents[0] is list of documents for first query
+        documents = context_chunks.get("documents", [[]])
+        contexts = documents[0] if documents and documents[0] else []
 
         # Використовуємо LLM для генерації
         answer = generate_answer_with_llm(
@@ -503,13 +505,18 @@ class NaiveRAG:
 
         execution_time = time.time() - start_time
 
+        # ChromaDB returns nested lists: distances[0] is list of distances for first query
+        distances = relevant_chunks.get("distances", [[]])
+        ids = relevant_chunks.get("ids", [[]])
+        documents = relevant_chunks.get("documents", [[]])
+        
         result = {
             "question": question,
             "answer": answer,
-            "relevant_chunks": len(relevant_chunks),
-            "sources": [sources for sources in relevant_chunks['ids']],
-            "scores": [scores for scores in relevant_chunks["distances"]],
-            "contexts": [contexts for contexts in relevant_chunks['documents']],
+            "relevant_chunks": len(distances[0]) if distances and distances[0] else 0,
+            "sources": ids[0] if ids and ids[0] else [],
+            "scores": distances[0] if distances and distances[0] else [],
+            "contexts": documents[0] if documents and documents[0] else [],
             "execution_time": execution_time
         }
 
@@ -587,11 +594,12 @@ def run_naive_rag_demo():
 
             # Виводимо короткий результат
             print(f"  ID {query_data.get('id')}: {question[:70]}...")
-            print(f"  Час: {result['execution_time']:.2f}с | Оцінка: {result['scores'][0]:.3f}")
+            score = result['scores'][0] if result['scores'] else 0.0
+            print(f"  Час: {result['execution_time']:.2f}с | Оцінка: {score:.3f}")
 
     # Розраховуємо підсумкову статистику
     avg_time = np.mean([q["execution_time"] for q in all_results["queries"]])
-    avg_score = np.mean([q["scores"][0] for q in all_results["queries"]])
+    avg_score = np.mean([q["scores"][0] if q["scores"] else 0.0 for q in all_results["queries"]])
 
     all_results["metrics"] = {
         "average_execution_time": avg_time,
@@ -600,7 +608,7 @@ def run_naive_rag_demo():
     }
 
     # Зберігаємо результати
-    save_results(all_results, "results/naive_rag_results.json")
+    save_results(all_results, "results/naive_rag_chroma_db_results.json")
 
     # Виводимо підсумок
     print("\n" + "="*70)
@@ -609,7 +617,7 @@ def run_naive_rag_demo():
     print(f"Всього запитів: {len(all_results['queries'])}")
     print(f"Середній час виконання: {avg_time:.2f}с")
     print(f"Середня оцінка: {avg_score:.3f}")
-    print(f"\nРезультати збережено: results/naive_rag_results.json")
+    print(f"\nРезультати збережено: results/naive_rag_chroma_db_results.json")
 
     print("\n" + "="*70)
     print("Обмеження Naive RAG:")
