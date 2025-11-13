@@ -1,0 +1,22 @@
+{
+  "comparison": [
+    {
+      "approach": "naive",
+      "faithfulness": 0.6041865079365081,
+      "answer_relevancy": 0.7529009650801151,
+      "queries_evaluated": 10,
+      "average_score": 0.6785437365083116
+    }
+  ],
+  "execution_times": {
+    "naive": {
+      "total_time": 71.3032660484314,
+      "avg_time": 7.130326604843139
+    },
+    "corrective": {
+      "total_time": 85.58913111686707,
+      "avg_time": 8.558913111686707
+    }
+  },
+  "testcases_count": 10
+}

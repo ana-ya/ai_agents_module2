@@ -2,22 +2,50 @@
   "ragas_comparison": [
     {
       "approach": "Naive RAG",
-      "faithfulness": 0.9575326872201871,
-      "answer_relevancy": 0.10942964744767414,
-      "queries_evaluated": 50,
-      "average_score": 0.5334811673339306
+      "faithfulness": 0.9688666746359055,
+      "answer_relevancy": 0.09364296692712584,
+      "queries_evaluated": 40,
+      "average_score": 0.5312548207815156
     },
     {
       "approach": "Naive RAG (Chroma DB)",
-      "faithfulness": 0.9839595959595958,
-      "answer_relevancy": 0.3386669762127375,
-      "queries_evaluated": 50,
-      "average_score": 0.6613132860861667
+      "faithfulness": 0.9340874865874866,
+      "answer_relevancy": 0.15909355135881292,
+      "queries_evaluated": 40,
+      "average_score": 0.5465905189731498
+    },
+    {
+      "approach": "Advanced RAG",
+      "faithfulness": 0.016834795321637425,
+      "answer_relevancy": 0.06041962709575841,
+      "queries_evaluated": 40,
+      "average_score": 0.038627211208697915
+    },
+    {
+      "approach": "BM25 RAG",
+      "faithfulness": 0.9634902134902135,
+      "answer_relevancy": 0.07992048795996329,
+      "queries_evaluated": 40,
+      "average_score": 0.5217053507250884
+    },
+    {
+      "approach": "FAISS RAG",
+      "faithfulness": 0.943083959075862,
+      "answer_relevancy": 0.20167938581070569,
+      "queries_evaluated": 40,
+      "average_score": 0.5723816724432839
+    },
+    {
+      "approach": "Corrective RAG",
+      "faithfulness": 0.023579168509509068,
+      "answer_relevancy": 0.10574412288582917,
+      "queries_evaluated": 40,
+      "average_score": 0.06466164569766912
     }
   ],
   "summary": {
-    "total_approaches": 2,
-    "best_approach": "Naive RAG (Chroma DB)",
-    "best_score": 0.6613132860861667
+    "total_approaches": 6,
+    "best_approach": "FAISS RAG",
+    "best_score": 0.5723816724432839
   }
 }

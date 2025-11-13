@@ -1,0 +1,975 @@
+{
+  "system_name": "Naive RAG",
+  "total_documents": 30,
+  "total_chunks": 0,
+  "chunk_size": 500,
+  "chunk_overlap": 100,
+  "llm_model": "fallback (без LLM)",
+  "queries": [
+    {
+      "question": "What are the main business segments of the company according to the latest annual report?",
+      "answer": "RATIONS\nPlease read the following discussion and analysis of our financial condition and results of\noperations together with our consolidated financial statements and related notes included\nunder Part I, Item 1 of this Quarterly Report on Form 10-Q.\nExecutive Overview of Results\nBelow are our key financial results for the three months ended March 31, 2020\n(consolidated unless otherwise noted):\n•\nRevenues of $41.2 billion and revenue growth of 13% year over year, constant\n\ndated\nfinancial statements and related notes included under Item 1 of this Quarterly Report on Form\n10-Q as well as our Annual Report on Form 10-K for the fiscal year ended December  31,\n2024, including Part I, Item 1A \"Risk Factors.\"\nUnderstanding Alphabet’s Financial Results\nAlphabet is a collection of businesses — the largest of which is Google. We report\nGoogle in two segments, Google Services and Google Cloud; we also report all non-Google\nbusinesses collectively as Other Bets.\n\ndated\nfinancial statements and related notes included under Item 1 of this Quarterly Report on Form\n10-Q as well as our Annual Report on Form 10-K for the fiscal year ended December  31,\n2024, including Part I, Item 1A \"Risk Factors.\"\nUnderstanding Alphabet’s Financial Results\nAlphabet is a collection of businesses — the largest of which is Google. We report\nGoogle in two segments, Google Services and Google Cloud; we also report all non-Google\nbusinesses collectively as Other Bets.",
+      "relevant_chunks": 3,
+      "sources": [
+        "goog-20200331.pdf_chunk_233",
+        "goog-20250930.pdf_chunk_260",
+        "goog-20250630.pdf_chunk_249"
+      ],
+      "scores": [
+        0.7814808487892151,
+        0.7847877740859985,
+        0.7847877740859985
+      ],
+      "contexts": [
+        "RATIONS\nPlease read the following discussion and analysis of our financial condition and results of\noperations together with our consolidated financial statements and related notes included\nunder Part I, Item 1 of this Quarterly Report on Form 10-Q.\nExecutive Overview of Results\nBelow are our key financial results for the three months ended March 31, 2020\n(consolidated unless otherwise noted):\n•\nRevenues of $41.2 billion and revenue growth of 13% year over year, constant",
+        "dated\nfinancial statements and related notes included under Item 1 of this Quarterly Report on Form\n10-Q as well as our Annual Report on Form 10-K for the fiscal year ended December  31,\n2024, including Part I, Item 1A \"Risk Factors.\"\nUnderstanding Alphabet’s Financial Results\nAlphabet is a collection of businesses — the largest of which is Google. We report\nGoogle in two segments, Google Services and Google Cloud; we also report all non-Google\nbusinesses collectively as Other Bets.",
+        "dated\nfinancial statements and related notes included under Item 1 of this Quarterly Report on Form\n10-Q as well as our Annual Report on Form 10-K for the fiscal year ended December  31,\n2024, including Part I, Item 1A \"Risk Factors.\"\nUnderstanding Alphabet’s Financial Results\nAlphabet is a collection of businesses — the largest of which is Google. We report\nGoogle in two segments, Google Services and Google Cloud; we also report all non-Google\nbusinesses collectively as Other Bets."
+      ],
+      "execution_time": 0.23163318634033203,
+      "category": "company_overview",
+      "query_id": 1,
+      "difficulty": "easy"
+    },
+    {
+      "question": "In which geographic regions does the company generate most of its revenue?",
+      "answer": "venues by Geography\nThe following table presents revenues by geography as a percentage of revenues,\ndetermined based on the addresses of our customers:\nThree Months Ended\nSix Months Ended\n \nJune 30,\nJune 30,\n \n2021\n2022\n2021\n2022\nUnited States\n46 %\n47 %\n45 %\n47 %\nEMEA\n31 %\n29 %\n31 %\n30 %\nAPAC\n18 %\n17 %\n19 %\n17 %\nOther Americas\n5 %\n6 %\n5 %\n6 %\nHedging gains (losses)\n0 %\n1 %\n0 %\n0 %\nFor further details on revenues by geography, see Note 2 of the Notes to\n\nenues by geography as a percentage of revenues,\ndetermined based on the addresses of our customers:\nThree Months Ended\nSix Months Ended\n \nJune 30,\nJune 30,\n \n2022\n2023\n2022\n2023\nUnited States\n47 %\n47 %\n47 %\n47 %\nEMEA\n29 %\n30 %\n30 %\n30 %\nAPAC\n17 %\n17 %\n17 %\n17 %\nOther Americas\n6 %\n6 %\n6 %\n6 %\nHedging gains (losses)\n1 %\n0 %\n0 %\n0 %\nFor further details on revenues by geography, see Note 2 of the Notes to Consolidated\nFinancial Statements included in Item 1 of this Quarterly Report on Form 10-Q.\n\ncustomer usage, market dynamics, as\nwell as new product and service launches.\nRevenues by Geography\nThe following table presents our revenues by geography as a percentage of revenues, determined based on the\naddresses of our customers:\n \nYear Ended December 31,\n \n2019\n2020\nUnited States\n46 %\n47 %\nEMEA\n31 %\n30 %\nAPAC\n17 %\n18 %\nOther Americas\n6 %\n5 %\nFor further details on revenues by geography, see Note 2 of the Notes to Consolidated Financial Statements",
+      "relevant_chunks": 3,
+      "sources": [
+        "goog-20220630.pdf_chunk_277",
+        "goog-20230630.pdf_chunk_285",
+        "goog-20201231.pdf_chunk_417"
+      ],
+      "scores": [
+        0.656356692314148,
+        0.6719622611999512,
+        0.6768445372581482
+      ],
+      "contexts": [
+        "venues by Geography\nThe following table presents revenues by geography as a percentage of revenues,\ndetermined based on the addresses of our customers:\nThree Months Ended\nSix Months Ended\n \nJune 30,\nJune 30,\n \n2021\n2022\n2021\n2022\nUnited States\n46 %\n47 %\n45 %\n47 %\nEMEA\n31 %\n29 %\n31 %\n30 %\nAPAC\n18 %\n17 %\n19 %\n17 %\nOther Americas\n5 %\n6 %\n5 %\n6 %\nHedging gains (losses)\n0 %\n1 %\n0 %\n0 %\nFor further details on revenues by geography, see Note 2 of the Notes to",
+        "enues by geography as a percentage of revenues,\ndetermined based on the addresses of our customers:\nThree Months Ended\nSix Months Ended\n \nJune 30,\nJune 30,\n \n2022\n2023\n2022\n2023\nUnited States\n47 %\n47 %\n47 %\n47 %\nEMEA\n29 %\n30 %\n30 %\n30 %\nAPAC\n17 %\n17 %\n17 %\n17 %\nOther Americas\n6 %\n6 %\n6 %\n6 %\nHedging gains (losses)\n1 %\n0 %\n0 %\n0 %\nFor further details on revenues by geography, see Note 2 of the Notes to Consolidated\nFinancial Statements included in Item 1 of this Quarterly Report on Form 10-Q.",
+        "customer usage, market dynamics, as\nwell as new product and service launches.\nRevenues by Geography\nThe following table presents our revenues by geography as a percentage of revenues, determined based on the\naddresses of our customers:\n \nYear Ended December 31,\n \n2019\n2020\nUnited States\n46 %\n47 %\nEMEA\n31 %\n30 %\nAPAC\n17 %\n18 %\nOther Americas\n6 %\n5 %\nFor further details on revenues by geography, see Note 2 of the Notes to Consolidated Financial Statements"
+      ],
+      "execution_time": 0.1557910442352295,
+      "category": "company_overview",
+      "query_id": 2,
+      "difficulty": "medium"
+    },
+    {
+      "question": "Summarize the company’s core products and services described in the annual report.",
+      "answer": "tes to Consolidated Financial\nStatements included in Item 8 of this Annual Report on Form 10-K.\n42.\nTable of Contents\nAlphabet Inc.\nWe primarily utilize contract manufacturers for the assembly of our servers used in our technical infrastructure and\ndevices we sell. We have agreements where we may purchase components directly from suppliers and then supply\nthese components to contract manufacturers for use in the assembly of the servers and devices. Certain of these\n\notes to\nConsolidated Financial Statements included in Item 1 of this Quarterly Report on Form 10-Q.\nRevenues and Monetization Metrics\nWe generate revenues by delivering relevant, cost-effective online advertising; cloud-\nbased solutions that provide enterprise customers of all sizes with infrastructure and platform\nservices as well as communication and collaboration tools; sales of other products and\nservices, such as apps and in-app purchases, and hardware; and fees received for\n\notes to\nConsolidated Financial Statements included in Item 1 of this Quarterly Report on Form 10-Q.\nRevenues and Monetization Metrics\nWe generate revenues by delivering relevant, cost-effective online advertising; cloud-\nbased solutions that provide enterprise customers of all sizes with infrastructure and platform\nservices as well as communication and collaboration tools; sales of other products and\nservices, such as apps and in-app purchases, and hardware; and fees received for",
+      "relevant_chunks": 3,
+      "sources": [
+        "goog-20241231.pdf_chunk_515",
+        "goog-20230630.pdf_chunk_229",
+        "goog-20230331.pdf_chunk_210"
+      ],
+      "scores": [
+        0.9499371647834778,
+        0.9654169678688049,
+        0.9654169678688049
+      ],
+      "contexts": [
+        "tes to Consolidated Financial\nStatements included in Item 8 of this Annual Report on Form 10-K.\n42.\nTable of Contents\nAlphabet Inc.\nWe primarily utilize contract manufacturers for the assembly of our servers used in our technical infrastructure and\ndevices we sell. We have agreements where we may purchase components directly from suppliers and then supply\nthese components to contract manufacturers for use in the assembly of the servers and devices. Certain of these",
+        "otes to\nConsolidated Financial Statements included in Item 1 of this Quarterly Report on Form 10-Q.\nRevenues and Monetization Metrics\nWe generate revenues by delivering relevant, cost-effective online advertising; cloud-\nbased solutions that provide enterprise customers of all sizes with infrastructure and platform\nservices as well as communication and collaboration tools; sales of other products and\nservices, such as apps and in-app purchases, and hardware; and fees received for",
+        "otes to\nConsolidated Financial Statements included in Item 1 of this Quarterly Report on Form 10-Q.\nRevenues and Monetization Metrics\nWe generate revenues by delivering relevant, cost-effective online advertising; cloud-\nbased solutions that provide enterprise customers of all sizes with infrastructure and platform\nservices as well as communication and collaboration tools; sales of other products and\nservices, such as apps and in-app purchases, and hardware; and fees received for"
+      ],
+      "execution_time": 0.14489269256591797,
+      "category": "company_overview",
+      "query_id": 3,
+      "difficulty": "medium"
+    },
+    {
+      "question": "How does the company describe its overall business model and value proposition?",
+      "answer": "e required to implement more complex organizational management structures, particularly in light of\nour holding company structure, adverse changes to our corporate culture could harm our business operations.\nIn preparing our financial statements, we incorporate valuation methodologies that are subjective in\nnature and valuations may fluctuate over time.\nWe measure certain of our non-marketable equity and debt investments, certain other instruments including stock-\n\ne complex\norganizational management structures or adapt our corporate culture and work environments\nto ever-changing circumstances, such as during times of a natural disaster or pandemic\n(including COVID-19), and these changes could impact our ability to compete effectively or\nhave an adverse impact on our corporate culture.\nIn preparing our financial statements, we incorporate valuation methodologies\nthat are subjective in nature and valuations may fluctuate over time.\n\ne complex\norganizational management structures or adapt our corporate culture and work environments\nto ever-changing circumstances, such as during times of a natural disaster or pandemic\n(including COVID-19), and these changes could impact our ability to compete effectively or\nhave an adverse impact on our corporate culture.\nIn preparing our financial statements, we incorporate valuation methodologies\nthat are subjective in nature and valuations may fluctuate over time.",
+      "relevant_chunks": 3,
+      "sources": [
+        "Document.pdf_chunk_266",
+        "goog-20200630.pdf_chunk_627",
+        "goog-20200930.pdf_chunk_634"
+      ],
+      "scores": [
+        0.9394537210464478,
+        0.9485107660293579,
+        0.9485107660293579
+      ],
+      "contexts": [
+        "e required to implement more complex organizational management structures, particularly in light of\nour holding company structure, adverse changes to our corporate culture could harm our business operations.\nIn preparing our financial statements, we incorporate valuation methodologies that are subjective in\nnature and valuations may fluctuate over time.\nWe measure certain of our non-marketable equity and debt investments, certain other instruments including stock-",
+        "e complex\norganizational management structures or adapt our corporate culture and work environments\nto ever-changing circumstances, such as during times of a natural disaster or pandemic\n(including COVID-19), and these changes could impact our ability to compete effectively or\nhave an adverse impact on our corporate culture.\nIn preparing our financial statements, we incorporate valuation methodologies\nthat are subjective in nature and valuations may fluctuate over time.",
+        "e complex\norganizational management structures or adapt our corporate culture and work environments\nto ever-changing circumstances, such as during times of a natural disaster or pandemic\n(including COVID-19), and these changes could impact our ability to compete effectively or\nhave an adverse impact on our corporate culture.\nIn preparing our financial statements, we incorporate valuation methodologies\nthat are subjective in nature and valuations may fluctuate over time."
+      ],
+      "execution_time": 0.14104437828063965,
+      "category": "company_overview",
+      "query_id": 4,
+      "difficulty": "hard"
+    },
+    {
+      "question": "What key macroeconomic or industry trends does management highlight as influencing the company’s performance?",
+      "answer": "holder consultations, and ongoing\nevaluations of effectiveness, all requiring management discretion. This proposal, which would micromanage these ordinary business operations, such as\nthe use of industry surveys, would inappropriately supplant management’s judgment and undermine our ability to effectively run the company.\n \nOur engagement with organizations does not necessarily reflect an endorsement of their agendas\n\nof their agendas.\n \nThe proposal seeks to micromanage the company’s ordinary business operations\n \nDecisions regarding future participation in specific benchmarking tools are operational matters best executed by members of our management team who\npossess the necessary expertise and strategic insights. These decisions involve internal assessments, stakeholder consultations, and ongoing\nevaluations of effectiveness, all requiring management discretion.\n\n\"), including its\nmacroeconomic effects on our business, operations, and financial results; and the\neffect of governmental lockdowns, restrictions and new regulations on our\noperations and processes;\n•\nthe growth of our business and revenues and our expectations about the factors\nthat influence our success and trends in our business, including the size and\ntiming of the expected return on our continuing investments in our Google Cloud\nsegment;\n•",
+      "relevant_chunks": 3,
+      "sources": [
+        "ALPHABET INC. - DEF14A.pdf_chunk_692",
+        "ALPHABET INC. - DEF14A.pdf_chunk_691",
+        "goog-20210331.pdf_chunk_13"
+      ],
+      "scores": [
+        0.8745636343955994,
+        0.9791951775550842,
+        0.9917559027671814
+      ],
+      "contexts": [
+        "holder consultations, and ongoing\nevaluations of effectiveness, all requiring management discretion. This proposal, which would micromanage these ordinary business operations, such as\nthe use of industry surveys, would inappropriately supplant management’s judgment and undermine our ability to effectively run the company.\n \nOur engagement with organizations does not necessarily reflect an endorsement of their agendas",
+        "of their agendas.\n \nThe proposal seeks to micromanage the company’s ordinary business operations\n \nDecisions regarding future participation in specific benchmarking tools are operational matters best executed by members of our management team who\npossess the necessary expertise and strategic insights. These decisions involve internal assessments, stakeholder consultations, and ongoing\nevaluations of effectiveness, all requiring management discretion.",
+        "\"), including its\nmacroeconomic effects on our business, operations, and financial results; and the\neffect of governmental lockdowns, restrictions and new regulations on our\noperations and processes;\n•\nthe growth of our business and revenues and our expectations about the factors\nthat influence our success and trends in our business, including the size and\ntiming of the expected return on our continuing investments in our Google Cloud\nsegment;\n•"
+      ],
+      "execution_time": 0.15175795555114746,
+      "category": "company_overview",
+      "query_id": 36,
+      "difficulty": "medium"
+    },
+    {
+      "question": "What was the company’s total revenue in the most recent fiscal year, and how did it change compared to the previous year?",
+      "answer": "ential revenue growth rates.\n \nQuarter Ended\n \nMar 31,\n2019\nJun 30,\n2019\nSept 30,\n2019\nDec 31,\n2019\nMar 31,\n2020\nJun 30,\n2020\nSept 30,\n2020\nDec 31,\n2020\n(In millions, except per share amounts) (unaudited)\nConsolidated Statements of Income Data:\nRevenues\n$ 36,339  $ 38,944  $ 40,499  $ 46,075  $ 41,159  $ 38,297  $ 46,173 \n56,898 \nCosts and expenses:\nCost of revenues\n16,012 \n17,296 \n17,568 \n21,020 \n18,982 \n18,553 \n21,117 \n26,080 \nResearch and\ndevelopment\n6,029 \n6,213 \n6,554 \n7,222 \n6,820 \n6,875\n\n-level activities.\n•\nOperating cash flow was $125.3 billion for the year ended December 31, 2024.\n•\nCapital expenditures, which primarily reflected investments in technical infrastructure, were $52.5 billion for the\nyear ended December 31, 2024.\n•\nAs of December 31, 2024, we had 183,323 employees.\n35.\nTable of Contents\nAlphabet Inc.\nFinancial Results\nRevenues\nThe following table presents revenues by type (in millions):\nYear Ended December 31,\n2023\n2024\nGoogle Search & other\n$\n175,033 \n$\n\ncome from operations was $6.4 billion.\n•\nOther income (expense), net, was a gain of $1.9 billion.\n•\nEffective tax rate was 15.9%.\n•\nNet income was $7.0 billion with diluted net income per share of $10.13.\n•\nOperating cash flow was $14.0 billion.\n•\nCapital expenditures were $5.4 billion.\n•\nNumber of employees was 127,498 as of June 30, 2020. The majority of new hires\nduring the quarter were engineers and product managers. By product area, the",
+      "relevant_chunks": 3,
+      "sources": [
+        "goog-20201231.pdf_chunk_476",
+        "goog-20241231.pdf_chunk_447",
+        "goog-20200630.pdf_chunk_259"
+      ],
+      "scores": [
+        0.7181954979896545,
+        0.739340603351593,
+        0.7406151294708252
+      ],
+      "contexts": [
+        "ential revenue growth rates.\n \nQuarter Ended\n \nMar 31,\n2019\nJun 30,\n2019\nSept 30,\n2019\nDec 31,\n2019\nMar 31,\n2020\nJun 30,\n2020\nSept 30,\n2020\nDec 31,\n2020\n(In millions, except per share amounts) (unaudited)\nConsolidated Statements of Income Data:\nRevenues\n$ 36,339  $ 38,944  $ 40,499  $ 46,075  $ 41,159  $ 38,297  $ 46,173 \n56,898 \nCosts and expenses:\nCost of revenues\n16,012 \n17,296 \n17,568 \n21,020 \n18,982 \n18,553 \n21,117 \n26,080 \nResearch and\ndevelopment\n6,029 \n6,213 \n6,554 \n7,222 \n6,820 \n6,875",
+        "-level activities.\n•\nOperating cash flow was $125.3 billion for the year ended December 31, 2024.\n•\nCapital expenditures, which primarily reflected investments in technical infrastructure, were $52.5 billion for the\nyear ended December 31, 2024.\n•\nAs of December 31, 2024, we had 183,323 employees.\n35.\nTable of Contents\nAlphabet Inc.\nFinancial Results\nRevenues\nThe following table presents revenues by type (in millions):\nYear Ended December 31,\n2023\n2024\nGoogle Search & other\n$\n175,033 \n$",
+        "come from operations was $6.4 billion.\n•\nOther income (expense), net, was a gain of $1.9 billion.\n•\nEffective tax rate was 15.9%.\n•\nNet income was $7.0 billion with diluted net income per share of $10.13.\n•\nOperating cash flow was $14.0 billion.\n•\nCapital expenditures were $5.4 billion.\n•\nNumber of employees was 127,498 as of June 30, 2020. The majority of new hires\nduring the quarter were engineers and product managers. By product area, the"
+      ],
+      "execution_time": 0.1550590991973877,
+      "category": "financials",
+      "query_id": 5,
+      "difficulty": "easy"
+    },
+    {
+      "question": "What are the main drivers of revenue growth mentioned in the Management’s Discussion and Analysis (MD&A)?",
+      "answer": "as a result of a\nnumber of factors, including challenges in maintaining our growth rate as revenues\nincrease to higher levels; changes in our product mix; changes in advertising quality or\nformats and delivery; the evolution of the online advertising market; increasing competition;\nour investments in new business strategies; query growth rates; and shifts in the\ngeographic mix of our revenues. We also expect that our revenue growth rate will continue\n\nnses are generally less variable in nature and may not correlate to changes in revenue. We may also\nnot be able to continue to execute our efficiency efforts successfully or in a timely manner. Due to these factors and the\nevolving nature of our business, our historical revenue growth rate and historical operating margin may not be\nindicative of our future performance. For additional information, see Trends in Our Business and Financial Effect and\n\nnging from those in the research and development phase to those that are in the beginning stages of\ncommercialization, and our goal is for them to become thriving, successful businesses in the medium to long term.\nWhile these early-stage businesses naturally come with considerable uncertainty, some of them are already generating\nrevenue and making important strides in their industries. Revenues are primarily generated from internet and TV\nservices, as well as licensing and R&D services.",
+      "relevant_chunks": 3,
+      "sources": [
+        "goog-20210331.pdf_chunk_235",
+        "goog-20241231.pdf_chunk_160",
+        "goog-20201231.pdf_chunk_69"
+      ],
+      "scores": [
+        0.7144886255264282,
+        0.826691210269928,
+        0.840897798538208
+      ],
+      "contexts": [
+        "as a result of a\nnumber of factors, including challenges in maintaining our growth rate as revenues\nincrease to higher levels; changes in our product mix; changes in advertising quality or\nformats and delivery; the evolution of the online advertising market; increasing competition;\nour investments in new business strategies; query growth rates; and shifts in the\ngeographic mix of our revenues. We also expect that our revenue growth rate will continue",
+        "nses are generally less variable in nature and may not correlate to changes in revenue. We may also\nnot be able to continue to execute our efficiency efforts successfully or in a timely manner. Due to these factors and the\nevolving nature of our business, our historical revenue growth rate and historical operating margin may not be\nindicative of our future performance. For additional information, see Trends in Our Business and Financial Effect and",
+        "nging from those in the research and development phase to those that are in the beginning stages of\ncommercialization, and our goal is for them to become thriving, successful businesses in the medium to long term.\nWhile these early-stage businesses naturally come with considerable uncertainty, some of them are already generating\nrevenue and making important strides in their industries. Revenues are primarily generated from internet and TV\nservices, as well as licensing and R&D services."
+      ],
+      "execution_time": 0.1467142105102539,
+      "category": "financials",
+      "query_id": 6,
+      "difficulty": "medium"
+    },
+    {
+      "question": "How does the company break down its revenue by segment or product line?",
+      "answer": "primarily\ndriven by an increase in compensation expenses of $600 million, largely resulting from a\n21% increase in headcount, and an increase in professional services fees of $597 million.\nThe overall increase was partially offset by a decrease in charges related to legal matters\nof $792 million.\nSegment Profitability\nThe following table presents segment operating income (loss) (in millions).\nThree Months Ended\nSix Months Ended\nJune 30,\nJune 30,\n2021\n2022\n2021\n2022\nOperating income (loss):\n\nthe sale of internet services through Access as well as licensing and R&D\nservices through Verily.\nRevenues, cost of revenues, and operating expenses are generally directly attributed to\nour segments. Inter-segment revenues are not presented separately, as these amounts are\nimmaterial. Our Chief Operating Decision Maker does not evaluate operating segments using\nasset information.\nInformation about segments during the periods presented were as follows (in millions,\nunaudited):\n\napitalG, GV, Verily,\nWaymo, and X, among others. Revenues from the Other Bets are derived primarily\nthrough the sale of internet services through Access as well as licensing and R&D\nservices through Verily.\nRevenues, cost of revenues, and operating expenses are generally directly attributed to\nour segments. Inter-segment revenues are not presented separately, as these amounts are\nimmaterial. Our Chief Operating Decision Maker does not evaluate operating segments using\nasset information.\n28",
+      "relevant_chunks": 3,
+      "sources": [
+        "goog-20220630.pdf_chunk_303",
+        "goog-20200630.pdf_chunk_246",
+        "goog-20200331.pdf_chunk_225"
+      ],
+      "scores": [
+        0.7455002069473267,
+        0.7608014345169067,
+        0.7803360819816589
+      ],
+      "contexts": [
+        "primarily\ndriven by an increase in compensation expenses of $600 million, largely resulting from a\n21% increase in headcount, and an increase in professional services fees of $597 million.\nThe overall increase was partially offset by a decrease in charges related to legal matters\nof $792 million.\nSegment Profitability\nThe following table presents segment operating income (loss) (in millions).\nThree Months Ended\nSix Months Ended\nJune 30,\nJune 30,\n2021\n2022\n2021\n2022\nOperating income (loss):",
+        "the sale of internet services through Access as well as licensing and R&D\nservices through Verily.\nRevenues, cost of revenues, and operating expenses are generally directly attributed to\nour segments. Inter-segment revenues are not presented separately, as these amounts are\nimmaterial. Our Chief Operating Decision Maker does not evaluate operating segments using\nasset information.\nInformation about segments during the periods presented were as follows (in millions,\nunaudited):",
+        "apitalG, GV, Verily,\nWaymo, and X, among others. Revenues from the Other Bets are derived primarily\nthrough the sale of internet services through Access as well as licensing and R&D\nservices through Verily.\nRevenues, cost of revenues, and operating expenses are generally directly attributed to\nour segments. Inter-segment revenues are not presented separately, as these amounts are\nimmaterial. Our Chief Operating Decision Maker does not evaluate operating segments using\nasset information.\n28"
+      ],
+      "execution_time": 0.13767123222351074,
+      "category": "financials",
+      "query_id": 7,
+      "difficulty": "medium"
+    },
+    {
+      "question": "What are the company’s operating income and net income for the latest year, and what are the main reasons for any significant changes?",
+      "answer": "ation and\npercentages):\nYear Ended December 31,\n2021\n2022\n$ Change\n% Change\nConsolidated revenues\n$\n257,637 \n$\n282,836 \n$\n25,199 \n10 %\nChange in consolidated constant currency revenues\n14 %\nCost of revenues\n$\n110,939 \n$\n126,203 \n$\n15,264 \n14 %\nOperating expenses\n$\n67,984 \n$\n81,791 \n$\n13,807 \n20 %\nOperating income\n$\n78,714 \n$\n74,842 \n$\n(3,872)\n(5)%\nOperating margin\n31 %\n26 %\n(5)%\nOther income (expense), net\n$\n12,020 \n$\n(3,514)\n$\n(15,534)\n(129)%\nNet income\n$\n76,033 \n$\n59,972 \n$\n(16,061)\n(21)%\n\nthe nine\nmonths ended September 30, 2023 compared to an operating loss of $1.7 billion for the nine\nmonths ended September 30, 2022 represents an increase of $2.6 billion. The increase in\noperating income was primarily driven by revenue growth, partially offset by an increase in\ncompensation expenses. Additionally, operating income benefited from a reduction in costs\ndriven by the change in the estimated useful lives of our servers and certain network\nequipment.\nOther Bets\n\ns ended March\n31, 2021 to the three months ended March 31, 2022. The increase in operating loss was\ndue to an increase in expenses, primarily driven by compensation expenses, partially\noffset by an increase in revenues.\nOther Income (Expense), Net\nThe following table presents other income (expense), net (in millions):\nThree Months Ended\n \nMarch 31,\n \n2021\n2022\nOther income (expense), net\n$\n4,846  $\n(1,160)\nOther income (expense), net, decreased $6.0 billion from the three months ended",
+      "relevant_chunks": 3,
+      "sources": [
+        "goog-20221231.pdf_chunk_382",
+        "goog-20230930.pdf_chunk_333",
+        "goog-20220331.pdf_chunk_278"
+      ],
+      "scores": [
+        0.7258461713790894,
+        0.7474497556686401,
+        0.7549601793289185
+      ],
+      "contexts": [
+        "ation and\npercentages):\nYear Ended December 31,\n2021\n2022\n$ Change\n% Change\nConsolidated revenues\n$\n257,637 \n$\n282,836 \n$\n25,199 \n10 %\nChange in consolidated constant currency revenues\n14 %\nCost of revenues\n$\n110,939 \n$\n126,203 \n$\n15,264 \n14 %\nOperating expenses\n$\n67,984 \n$\n81,791 \n$\n13,807 \n20 %\nOperating income\n$\n78,714 \n$\n74,842 \n$\n(3,872)\n(5)%\nOperating margin\n31 %\n26 %\n(5)%\nOther income (expense), net\n$\n12,020 \n$\n(3,514)\n$\n(15,534)\n(129)%\nNet income\n$\n76,033 \n$\n59,972 \n$\n(16,061)\n(21)%",
+        "the nine\nmonths ended September 30, 2023 compared to an operating loss of $1.7 billion for the nine\nmonths ended September 30, 2022 represents an increase of $2.6 billion. The increase in\noperating income was primarily driven by revenue growth, partially offset by an increase in\ncompensation expenses. Additionally, operating income benefited from a reduction in costs\ndriven by the change in the estimated useful lives of our servers and certain network\nequipment.\nOther Bets",
+        "s ended March\n31, 2021 to the three months ended March 31, 2022. The increase in operating loss was\ndue to an increase in expenses, primarily driven by compensation expenses, partially\noffset by an increase in revenues.\nOther Income (Expense), Net\nThe following table presents other income (expense), net (in millions):\nThree Months Ended\n \nMarch 31,\n \n2021\n2022\nOther income (expense), net\n$\n4,846  $\n(1,160)\nOther income (expense), net, decreased $6.0 billion from the three months ended"
+      ],
+      "execution_time": 0.13638687133789062,
+      "category": "financials",
+      "query_id": 8,
+      "difficulty": "hard"
+    },
+    {
+      "question": "How much did the company spend on research and development (R&D) in the latest fiscal year?",
+      "answer": "search and Development\nThe following table presents R&D expenses (in millions, except percentages):\nThree Months Ended\n \nMarch 31,\n \n2021\n2022\nResearch and development expenses\n$\n7,485 \n$\n9,119 \nResearch and development expenses as a percentage\nof revenues\n13.5 %\n13.4 %\nR&D expenses increased $1.6 billion from the three months ended March 31, 2021 to\nthe three months ended March 31, 2022. The increase was primarily due to an increase in\n\n, relative to\nour advertising revenues.\n35\nTable of Contents\nAlphabet Inc.\nResearch and Development\nThe following table presents our R&D expenses (in millions):\n \nYear Ended December 31,\n \n2018\n2019\nResearch and development expenses\n$\n21,419\n$\n26,018\nResearch and development expenses as a percentage of revenues\n15.7%\n16.1%\nR&D expenses consist primarily of:\n•\nCompensation expenses (including SBC) and facilities-related costs for engineering and technical employees\n\ntages):\n \nYear Ended December 31,\n \n2021\n2022\nResearch and development expenses\n$\n31,562 \n$\n39,500 \nResearch and development expenses as a percentage of revenues\n12 %\n14 %\nR&D expenses increased $7.9 billion from 2021 to 2022 primarily driven by an increase in compensation\nexpenses of $5.4 billion, largely resulting from a 21% increase in average headcount, and an increase in third-party\nservice fees of $704 million.\nSales and Marketing",
+      "relevant_chunks": 3,
+      "sources": [
+        "goog-20220331.pdf_chunk_269",
+        "Document.pdf_chunk_388",
+        "goog-20221231.pdf_chunk_422"
+      ],
+      "scores": [
+        0.4068271517753601,
+        0.4647822976112366,
+        0.4858587980270386
+      ],
+      "contexts": [
+        "search and Development\nThe following table presents R&D expenses (in millions, except percentages):\nThree Months Ended\n \nMarch 31,\n \n2021\n2022\nResearch and development expenses\n$\n7,485 \n$\n9,119 \nResearch and development expenses as a percentage\nof revenues\n13.5 %\n13.4 %\nR&D expenses increased $1.6 billion from the three months ended March 31, 2021 to\nthe three months ended March 31, 2022. The increase was primarily due to an increase in",
+        ", relative to\nour advertising revenues.\n35\nTable of Contents\nAlphabet Inc.\nResearch and Development\nThe following table presents our R&D expenses (in millions):\n \nYear Ended December 31,\n \n2018\n2019\nResearch and development expenses\n$\n21,419\n$\n26,018\nResearch and development expenses as a percentage of revenues\n15.7%\n16.1%\nR&D expenses consist primarily of:\n•\nCompensation expenses (including SBC) and facilities-related costs for engineering and technical employees",
+        "tages):\n \nYear Ended December 31,\n \n2021\n2022\nResearch and development expenses\n$\n31,562 \n$\n39,500 \nResearch and development expenses as a percentage of revenues\n12 %\n14 %\nR&D expenses increased $7.9 billion from 2021 to 2022 primarily driven by an increase in compensation\nexpenses of $5.4 billion, largely resulting from a 21% increase in average headcount, and an increase in third-party\nservice fees of $704 million.\nSales and Marketing"
+      ],
+      "execution_time": 0.14920997619628906,
+      "category": "financials",
+      "query_id": 9,
+      "difficulty": "easy"
+    },
+    {
+      "question": "Describe the company’s capital structure: what is the mix between debt and equity according to the balance sheet?",
+      "answer": "by such companies, or any relationship with any of these\ncompanies.\n2\nTable of Contents\nAlphabet In\nPART I.    FINANCIAL INFORMATION\nITEM 1.\nFINANCIAL STATEMENTS\nAlphabet Inc.\nCONSOLIDATED BALANCE SHEETS\n(in millions, except share amounts which are reflected in thousands, and par value per share\namounts)\nAs of\nDecember 31,\n2019\nAs of\nSeptember 30,\n2020\n(unaudited)\nAssets\nCurrent assets:\nCash and cash equivalents\n$\n18,498  $\n20,129 \nMarketable securities\n101,177 \n112,467\n\nContents\nAlphabet Inc.\nPART I.    FINANCIAL INFORMATION\nITEM 1.\nFINANCIAL STATEMENTS\nAlphabet Inc.\nCONSOLIDATED BALANCE SHEETS\n(in millions, except par value per share amounts)\nAs of\nDecember 31,\n2022\nAs of\nSeptember 30,\n2023\n(unaudited)\nAssets\nCurrent assets:\nCash and cash equivalents\n$\n21,879  $\n30,702 \nMarketable securities\n91,883 \n89,233 \nTotal cash, cash equivalents, and marketable securities\n113,762 \n119,935 \nAccounts receivable, net\n40,258 \n41,020 \nInventory\n2,670 \n2,957\n\nContents\nAlphabet Inc.\nPART I.    FINANCIAL INFORMATION\nITEM 1.\nFINANCIAL STATEMENTS\nAlphabet Inc.\nCONSOLIDATED BALANCE SHEETS\n(in millions, except share amounts which are reflected in thousands, and par value per\nshare amounts)\nAs of\nDecember 31,\n2021\nAs of\nMarch 31, 2022\n(unaudited)\nAssets\nCurrent assets:\nCash and cash equivalents\n$\n20,945  $\n20,886 \nMarketable securities\n118,704 \n113,084 \nTotal cash, cash equivalents, and marketable\nsecurities\n139,649 \n133,970 \nAccounts receivable, net",
+      "relevant_chunks": 3,
+      "sources": [
+        "goog-20200930.pdf_chunk_29",
+        "goog-20230930.pdf_chunk_30",
+        "goog-20220331.pdf_chunk_29"
+      ],
+      "scores": [
+        0.7309852838516235,
+        0.7318140864372253,
+        0.7433222532272339
+      ],
+      "contexts": [
+        "by such companies, or any relationship with any of these\ncompanies.\n2\nTable of Contents\nAlphabet In\nPART I.    FINANCIAL INFORMATION\nITEM 1.\nFINANCIAL STATEMENTS\nAlphabet Inc.\nCONSOLIDATED BALANCE SHEETS\n(in millions, except share amounts which are reflected in thousands, and par value per share\namounts)\nAs of\nDecember 31,\n2019\nAs of\nSeptember 30,\n2020\n(unaudited)\nAssets\nCurrent assets:\nCash and cash equivalents\n$\n18,498  $\n20,129 \nMarketable securities\n101,177 \n112,467",
+        "Contents\nAlphabet Inc.\nPART I.    FINANCIAL INFORMATION\nITEM 1.\nFINANCIAL STATEMENTS\nAlphabet Inc.\nCONSOLIDATED BALANCE SHEETS\n(in millions, except par value per share amounts)\nAs of\nDecember 31,\n2022\nAs of\nSeptember 30,\n2023\n(unaudited)\nAssets\nCurrent assets:\nCash and cash equivalents\n$\n21,879  $\n30,702 \nMarketable securities\n91,883 \n89,233 \nTotal cash, cash equivalents, and marketable securities\n113,762 \n119,935 \nAccounts receivable, net\n40,258 \n41,020 \nInventory\n2,670 \n2,957",
+        "Contents\nAlphabet Inc.\nPART I.    FINANCIAL INFORMATION\nITEM 1.\nFINANCIAL STATEMENTS\nAlphabet Inc.\nCONSOLIDATED BALANCE SHEETS\n(in millions, except share amounts which are reflected in thousands, and par value per\nshare amounts)\nAs of\nDecember 31,\n2021\nAs of\nMarch 31, 2022\n(unaudited)\nAssets\nCurrent assets:\nCash and cash equivalents\n$\n20,945  $\n20,886 \nMarketable securities\n118,704 \n113,084 \nTotal cash, cash equivalents, and marketable\nsecurities\n139,649 \n133,970 \nAccounts receivable, net"
+      ],
+      "execution_time": 0.14970898628234863,
+      "category": "financials",
+      "query_id": 10,
+      "difficulty": "hard"
+    },
+    {
+      "question": "What is the company’s free cash flow in the latest year, if disclosed, and how is it calculated?",
+      "answer": "3 billion, an increase\nof 22% year over year, primarily driven by headcount growth and increases in\nadvertising and promotional expenses as well as charges related to legal matters.\nOther information\n•\nOperating cash flow was $21.9 billion for the three months ended June 30, 2021.\n•\nCapital expenditures, which primarily included investments in technical\ninfrastructure, were $5.5 billion for the three months ended June 30, 2021.\n•\nNumber of employees was 144,056 as of June 30, 2021.\nOur Segments\n\n% year over year.\n•\nOperating expenses (excluding cost of revenues) were $14.8 billion, an increase\nof 4% year over year primarily driven by headcount growth and partially offset by a\ndecline in our allowance for credit losses for accounts receivable.\nOther information:\n•\nOperating cash flow was $19.3 billion.\n•\nCapital expenditures, which primarily included investments in technical\ninfrastructure, were $5.9 billion.\n•\nNumber of employees was 139,995 as of March 31, 2021. The majority of new\n\ntructure, including the size, pace and form of capital return\nto stockholders.\n44\nTable of Contents\nAlphabet Inc.\nThe following table presents our cash flows (in millions):\n \nNine Months Ended\nSeptember 30,\n \n2020\n2021\nNet cash provided by operating activities\n$\n42,447  $\n66,718 \nNet cash used in investing activities\n$\n(25,492) $\n(24,507)\nNet cash used in financing activities\n$\n(15,138) $\n(44,851)\nCash Provided by Operating Activities",
+      "relevant_chunks": 3,
+      "sources": [
+        "goog-20210630.pdf_chunk_248",
+        "goog-20210331.pdf_chunk_226",
+        "goog-20210930.pdf_chunk_355"
+      ],
+      "scores": [
+        0.7078468799591064,
+        0.7361825704574585,
+        0.790021538734436
+      ],
+      "contexts": [
+        "3 billion, an increase\nof 22% year over year, primarily driven by headcount growth and increases in\nadvertising and promotional expenses as well as charges related to legal matters.\nOther information\n•\nOperating cash flow was $21.9 billion for the three months ended June 30, 2021.\n•\nCapital expenditures, which primarily included investments in technical\ninfrastructure, were $5.5 billion for the three months ended June 30, 2021.\n•\nNumber of employees was 144,056 as of June 30, 2021.\nOur Segments",
+        "% year over year.\n•\nOperating expenses (excluding cost of revenues) were $14.8 billion, an increase\nof 4% year over year primarily driven by headcount growth and partially offset by a\ndecline in our allowance for credit losses for accounts receivable.\nOther information:\n•\nOperating cash flow was $19.3 billion.\n•\nCapital expenditures, which primarily included investments in technical\ninfrastructure, were $5.9 billion.\n•\nNumber of employees was 139,995 as of March 31, 2021. The majority of new",
+        "tructure, including the size, pace and form of capital return\nto stockholders.\n44\nTable of Contents\nAlphabet Inc.\nThe following table presents our cash flows (in millions):\n \nNine Months Ended\nSeptember 30,\n \n2020\n2021\nNet cash provided by operating activities\n$\n42,447  $\n66,718 \nNet cash used in investing activities\n$\n(25,492) $\n(24,507)\nNet cash used in financing activities\n$\n(15,138) $\n(44,851)\nCash Provided by Operating Activities"
+      ],
+      "execution_time": 0.15059423446655273,
+      "category": "financials",
+      "query_id": 37,
+      "difficulty": "hard"
+    },
+    {
+      "question": "What are the top three risk factors highlighted in the Risk Factors section of the annual report?",
+      "answer": "Quarterly Report on Form 10-Q, which is incorporated herein by reference.\nITEM 1A.\nRISK FACTORS    \nOur operations and financial results are subject to various risks and uncertainties,\nincluding but not limited to those described below, which could harm our business, reputation,\nfinancial condition, and operating results.\nRisks Specific to our Company\nWe generate a significant portion of our revenues from advertising, and reduced\n\nQuarterly Report on Form 10-Q, which is incorporated herein by reference.\nITEM 1A.\nRISK FACTORS    \nOur operations and financial results are subject to various risks and uncertainties,\nincluding but not limited to those described below, which could harm our business, reputation,\nfinancial condition, and operating results.\nRisks Specific to our Company\nWe generate a significant portion of our revenues from advertising, and reduced\n\nin Part I, Item 1 of this Quarterly Report on Form 10-Q, which is incorporated herein\nby reference.\nITEM 1A.\nRISK FACTORS                \nOur operations and financial results are subject to various risks and uncertainties,\nincluding but not limited to those described in Part I, Item 1A, \"Risk Factors\" in our Annual\nReport on Form 10-K for the year ended December 31, 2023, as updated in our subsequent\nQuarterly Reports on Form 10-Q, which could harm our business, reputation, financial",
+      "relevant_chunks": 3,
+      "sources": [
+        "goog-20200331.pdf_chunk_395",
+        "goog-20200630.pdf_chunk_438",
+        "goog-20240930.pdf_chunk_385"
+      ],
+      "scores": [
+        0.7032524347305298,
+        0.7032524347305298,
+        0.7053869962692261
+      ],
+      "contexts": [
+        "Quarterly Report on Form 10-Q, which is incorporated herein by reference.\nITEM 1A.\nRISK FACTORS    \nOur operations and financial results are subject to various risks and uncertainties,\nincluding but not limited to those described below, which could harm our business, reputation,\nfinancial condition, and operating results.\nRisks Specific to our Company\nWe generate a significant portion of our revenues from advertising, and reduced",
+        "Quarterly Report on Form 10-Q, which is incorporated herein by reference.\nITEM 1A.\nRISK FACTORS    \nOur operations and financial results are subject to various risks and uncertainties,\nincluding but not limited to those described below, which could harm our business, reputation,\nfinancial condition, and operating results.\nRisks Specific to our Company\nWe generate a significant portion of our revenues from advertising, and reduced",
+        "in Part I, Item 1 of this Quarterly Report on Form 10-Q, which is incorporated herein\nby reference.\nITEM 1A.\nRISK FACTORS                \nOur operations and financial results are subject to various risks and uncertainties,\nincluding but not limited to those described in Part I, Item 1A, \"Risk Factors\" in our Annual\nReport on Form 10-K for the year ended December 31, 2023, as updated in our subsequent\nQuarterly Reports on Form 10-Q, which could harm our business, reputation, financial"
+      ],
+      "execution_time": 0.1710360050201416,
+      "category": "risks",
+      "query_id": 11,
+      "difficulty": "medium"
+    },
+    {
+      "question": "Does the company mention dependence on key suppliers or customers as a risk, and how is this described?",
+      "answer": "our\nability to remain a technology leader and continue to provide high-quality, innovative products\nand services that are truly useful and play a valuable role in a range of settings.\nWe face a number of manufacturing and supply chain risks that, if not properly\nmanaged, could harm our financial condition, operating results, and prospects.\nWe face a number of risks related to manufacturing and supply chain management,\n\nour\nability to remain a technology leader and continue to provide high-quality, innovative products\nand services that are truly useful and play a valuable role in a range of settings.\nWe face a number of manufacturing and supply chain risks that, if not properly\nmanaged, could harm our financial condition, operating results, and prospects.\nWe face a number of risks related to manufacturing and supply chain management,\n\number of risks related to manufacturing and supply chain management, which could affect our ability\nto supply both our products and our services.\nWe rely on contract manufacturers to manufacture or assemble our devices and servers and networking\nequipment used in our technical infrastructure, and we may supply the contract manufacturers with components to\nassemble the devices and equipment. We also rely on other companies to participate in the supply of components and",
+      "relevant_chunks": 3,
+      "sources": [
+        "goog-20200630.pdf_chunk_478",
+        "goog-20200930.pdf_chunk_482",
+        "goog-20231231.pdf_chunk_174"
+      ],
+      "scores": [
+        0.6874008774757385,
+        0.6874008774757385,
+        0.7080429792404175
+      ],
+      "contexts": [
+        "our\nability to remain a technology leader and continue to provide high-quality, innovative products\nand services that are truly useful and play a valuable role in a range of settings.\nWe face a number of manufacturing and supply chain risks that, if not properly\nmanaged, could harm our financial condition, operating results, and prospects.\nWe face a number of risks related to manufacturing and supply chain management,",
+        "our\nability to remain a technology leader and continue to provide high-quality, innovative products\nand services that are truly useful and play a valuable role in a range of settings.\nWe face a number of manufacturing and supply chain risks that, if not properly\nmanaged, could harm our financial condition, operating results, and prospects.\nWe face a number of risks related to manufacturing and supply chain management,",
+        "umber of risks related to manufacturing and supply chain management, which could affect our ability\nto supply both our products and our services.\nWe rely on contract manufacturers to manufacture or assemble our devices and servers and networking\nequipment used in our technical infrastructure, and we may supply the contract manufacturers with components to\nassemble the devices and equipment. We also rely on other companies to participate in the supply of components and"
+      ],
+      "execution_time": 0.15577077865600586,
+      "category": "risks",
+      "query_id": 12,
+      "difficulty": "medium"
+    },
+    {
+      "question": "How does the company describe competitive risks in its industry?",
+      "answer": "our\nability to remain a technology leader and continue to provide high-quality, innovative products\nand services that are truly useful and play a valuable role in a range of settings.\nWe face a number of manufacturing and supply chain risks that, if not properly\nmanaged, could harm our financial condition, operating results, and prospects.\nWe face a number of risks related to manufacturing and supply chain management,\n\nour\nability to remain a technology leader and continue to provide high-quality, innovative products\nand services that are truly useful and play a valuable role in a range of settings.\nWe face a number of manufacturing and supply chain risks that, if not properly\nmanaged, could harm our financial condition, operating results, and prospects.\nWe face a number of risks related to manufacturing and supply chain management,\n\nand enhance equity in our brands may harm our business, financial condition, and\noperating results. Our success will depend largely on our ability to remain a technology leader and continue to provide\nhigh-quality, innovative products and services that are truly useful and play a valuable role in a range of settings.\nWe face a number of manufacturing and supply chain risks that, if not properly managed, could harm our\nfinancial condition, operating results, and prospects.",
+      "relevant_chunks": 3,
+      "sources": [
+        "goog-20200630.pdf_chunk_478",
+        "goog-20200930.pdf_chunk_482",
+        "goog-20201231.pdf_chunk_145"
+      ],
+      "scores": [
+        0.6873267889022827,
+        0.6873267889022827,
+        0.7328339219093323
+      ],
+      "contexts": [
+        "our\nability to remain a technology leader and continue to provide high-quality, innovative products\nand services that are truly useful and play a valuable role in a range of settings.\nWe face a number of manufacturing and supply chain risks that, if not properly\nmanaged, could harm our financial condition, operating results, and prospects.\nWe face a number of risks related to manufacturing and supply chain management,",
+        "our\nability to remain a technology leader and continue to provide high-quality, innovative products\nand services that are truly useful and play a valuable role in a range of settings.\nWe face a number of manufacturing and supply chain risks that, if not properly\nmanaged, could harm our financial condition, operating results, and prospects.\nWe face a number of risks related to manufacturing and supply chain management,",
+        "and enhance equity in our brands may harm our business, financial condition, and\noperating results. Our success will depend largely on our ability to remain a technology leader and continue to provide\nhigh-quality, innovative products and services that are truly useful and play a valuable role in a range of settings.\nWe face a number of manufacturing and supply chain risks that, if not properly managed, could harm our\nfinancial condition, operating results, and prospects."
+      ],
+      "execution_time": 0.15630888938903809,
+      "category": "risks",
+      "query_id": 13,
+      "difficulty": "medium"
+    },
+    {
+      "question": "Are there any legal or regulatory proceedings disclosed that could materially affect the company’s financial position?",
+      "answer": "Company is failing to disclose these potential liabilities as material\nrisks in its public filings. There is currently no single source providing shareholders the information sought by this resolution.\n \nAlphabet Opposing Statement\n \nOur Board has considered this proposal and, for the reasons set forth below, does not believe that it is in the best interests of our company and our\nstockholders and recommends a vote AGAINST this proposal.\n\nhe Company is engaged in unconstitutional censorship, and whether the Company exercises its content\nmoderation in violation of its Terms of Service, opening the Company to liability claims by victims. Shareholders also need to know whether the Company\nis failing to disclose these potential liabilities as material risks in its public filings. There is currently no single source providing shareholders the\ninformation sought by this resolution.\n \n \n \n(1)\nEpstein, Dr. Robert.\n\nnot had a material adverse effect on our results of operations, cash flows, or financial position.\nHowever, to the extent that valid indemnification claims arise in the future, future payments by\nus could be significant and could have a material adverse effect on our results of operations or\ncash flows in a particular period.\nAs of March  31, 2023, we did not have any material indemnification claims that were\nprobable or reasonably possible.\n24\nTable of Contents\nAlphabet Inc.\nLegal Matters",
+      "relevant_chunks": 3,
+      "sources": [
+        "ALPHABET INC. DEF 14A.pdf_chunk_851",
+        "ALPHABET INC. - DEF 14A_2.pdf_chunk_1004",
+        "goog-20230331.pdf_chunk_156"
+      ],
+      "scores": [
+        0.7023240327835083,
+        0.7029162645339966,
+        0.7619624137878418
+      ],
+      "contexts": [
+        "Company is failing to disclose these potential liabilities as material\nrisks in its public filings. There is currently no single source providing shareholders the information sought by this resolution.\n \nAlphabet Opposing Statement\n \nOur Board has considered this proposal and, for the reasons set forth below, does not believe that it is in the best interests of our company and our\nstockholders and recommends a vote AGAINST this proposal.",
+        "he Company is engaged in unconstitutional censorship, and whether the Company exercises its content\nmoderation in violation of its Terms of Service, opening the Company to liability claims by victims. Shareholders also need to know whether the Company\nis failing to disclose these potential liabilities as material risks in its public filings. There is currently no single source providing shareholders the\ninformation sought by this resolution.\n \n \n \n(1)\nEpstein, Dr. Robert.",
+        "not had a material adverse effect on our results of operations, cash flows, or financial position.\nHowever, to the extent that valid indemnification claims arise in the future, future payments by\nus could be significant and could have a material adverse effect on our results of operations or\ncash flows in a particular period.\nAs of March  31, 2023, we did not have any material indemnification claims that were\nprobable or reasonably possible.\n24\nTable of Contents\nAlphabet Inc.\nLegal Matters"
+      ],
+      "execution_time": 0.15040993690490723,
+      "category": "risks",
+      "query_id": 14,
+      "difficulty": "hard"
+    },
+    {
+      "question": "Who are the key executive officers of the company according to the latest proxy statement or annual report?",
+      "answer": "other companies affiliated with our directors, executive officers, and significant stockholders or\ntheir immediate family members. We believe that all such arrangements have been entered into in the ordinary course of business and have been\nconducted on an arm’s-length basis and do not represent a material interest to such parties.\n \nAlphabet 2024 Proxy Statement     43\n \nBack to Contents\nProxy Statement\nSummary &\nHighlights\nCorporate\nGovernance\nDirector and\nExecutive\nCompensation\n\nussion and Analysis” beginning\non page 46.\n \nAlphabet 2024 Proxy Statement     14\n \nProxy Statement\nSummary &\nHighlights\nCorporate\nGovernance\nDirector and\nExecutive\nCompensation\nAudit Matters\nProposals\nQ&A\n \nAnnual Meeting of Stockholders\n \n \n \n \n \nTime and Date:\n9:00 a.m., Pacific Time, on\nFriday, June 7, 2024\n   \nVirtual Meeting Access:\nAlphabet stockholders (or their proxy holders) can participate in and vote at our Annual Meeting by visiting\nwww.virtualshareholdermeeting.com/GOOGL24\n\nInc.(7)\n \n416,003,093 \n7.0\n \n—\n \n—\n \n2.8\nEric E. Schmidt(8)\n \n6,966,070 \n*\n \n60,929,262\n \n6.9\n \n4.2\nThe Vanguard Group(9)\n \n482,277,696 \n8.1\n \n—\n \n—\n \n3.3\n \nALPHABET ● 2023 PROXY STATEMENT        39\n \nBack to contents\n \n1\nCorporate\nGovernance\n2\nDirector and\nExecutive\nCompensation\n3\nAudit\nMatters\n4\nManagement\nand Stockholder\nProposals\n5\nQuestions and\nAnswers\n6\nAppendices\n \n(1)",
+      "relevant_chunks": 3,
+      "sources": [
+        "ALPHABET INC. - DEF 14A.pdf_chunk_361",
+        "ALPHABET INC. - DEF 14A.pdf_chunk_99",
+        "ALPHABET INC. - DEF 14A_2.pdf_chunk_308"
+      ],
+      "scores": [
+        0.5772992372512817,
+        0.5887165665626526,
+        0.5918889045715332
+      ],
+      "contexts": [
+        "other companies affiliated with our directors, executive officers, and significant stockholders or\ntheir immediate family members. We believe that all such arrangements have been entered into in the ordinary course of business and have been\nconducted on an arm’s-length basis and do not represent a material interest to such parties.\n \nAlphabet 2024 Proxy Statement     43\n \nBack to Contents\nProxy Statement\nSummary &\nHighlights\nCorporate\nGovernance\nDirector and\nExecutive\nCompensation",
+        "ussion and Analysis” beginning\non page 46.\n \nAlphabet 2024 Proxy Statement     14\n \nProxy Statement\nSummary &\nHighlights\nCorporate\nGovernance\nDirector and\nExecutive\nCompensation\nAudit Matters\nProposals\nQ&A\n \nAnnual Meeting of Stockholders\n \n \n \n \n \nTime and Date:\n9:00 a.m., Pacific Time, on\nFriday, June 7, 2024\n   \nVirtual Meeting Access:\nAlphabet stockholders (or their proxy holders) can participate in and vote at our Annual Meeting by visiting\nwww.virtualshareholdermeeting.com/GOOGL24",
+        "Inc.(7)\n \n416,003,093 \n7.0\n \n—\n \n—\n \n2.8\nEric E. Schmidt(8)\n \n6,966,070 \n*\n \n60,929,262\n \n6.9\n \n4.2\nThe Vanguard Group(9)\n \n482,277,696 \n8.1\n \n—\n \n—\n \n3.3\n \nALPHABET ● 2023 PROXY STATEMENT        39\n \nBack to contents\n \n1\nCorporate\nGovernance\n2\nDirector and\nExecutive\nCompensation\n3\nAudit\nMatters\n4\nManagement\nand Stockholder\nProposals\n5\nQuestions and\nAnswers\n6\nAppendices\n \n(1)"
+      ],
+      "execution_time": 0.14591217041015625,
+      "category": "governance",
+      "query_id": 15,
+      "difficulty": "easy"
+    },
+    {
+      "question": "How is the board of directors structured (size, independence, key committees)?",
+      "answer": "aluation of the Board and management, and to\ndevelop and update our corporate governance principles. The Governance Committee’s responsibilities include but are not limited to:\n \n \n• Evaluating Board and Committee composition, including diversity, size, tenure, organization, and governance and determining future\nrequirements.\n \n• Establishing a policy for considering director nominees; evaluating and recommending candidates for election consistent with Board-approved\n\naluation of the Board and management, and to\ndevelop and update our corporate governance principles. The Governance Committee’s responsibilities include but are not limited to:\n \n \n• Evaluating Board and Committee composition, including size, tenure, organization, and governance and determining future requirements.\n \n• Establishing a policy for considering director nominees; evaluating and recommending candidates for election consistent with Board-approved\n\nlancing the appropriate size and composition of the Board of Directors and its respective committees with the qualifications of candidates in light of these needs. The Nominating and Corporate Governance Committee factors into its determination the following qualities, among others: integrity, professional reputation and strength of character, educational background, knowledge of our business, diversity of professional experience, including whether the person is a current or former chief executi",
+      "relevant_chunks": 3,
+      "sources": [
+        "ALPHABET INC. - DEF 14A.pdf_chunk_242",
+        "ALPHABET INC. - DEF14A.pdf_chunk_213",
+        "lgoog2020_def14a.pdf_chunk_776"
+      ],
+      "scores": [
+        0.5277455449104309,
+        0.5403734445571899,
+        0.5451812148094177
+      ],
+      "contexts": [
+        "aluation of the Board and management, and to\ndevelop and update our corporate governance principles. The Governance Committee’s responsibilities include but are not limited to:\n \n \n• Evaluating Board and Committee composition, including diversity, size, tenure, organization, and governance and determining future\nrequirements.\n \n• Establishing a policy for considering director nominees; evaluating and recommending candidates for election consistent with Board-approved",
+        "aluation of the Board and management, and to\ndevelop and update our corporate governance principles. The Governance Committee’s responsibilities include but are not limited to:\n \n \n• Evaluating Board and Committee composition, including size, tenure, organization, and governance and determining future requirements.\n \n• Establishing a policy for considering director nominees; evaluating and recommending candidates for election consistent with Board-approved",
+        "lancing the appropriate size and composition of the Board of Directors and its respective committees with the qualifications of candidates in light of these needs. The Nominating and Corporate Governance Committee factors into its determination the following qualities, among others: integrity, professional reputation and strength of character, educational background, knowledge of our business, diversity of professional experience, including whether the person is a current or former chief executi"
+      ],
+      "execution_time": 0.15512514114379883,
+      "category": "governance",
+      "query_id": 16,
+      "difficulty": "medium"
+    },
+    {
+      "question": "What performance metrics are used to determine executive compensation?",
+      "answer": "bility in determining\nwhat particular performance metrics to use to best increase stockholder value. The Compensation Committee adjusts its assessments as necessary to\nstay competitive and attract, retain, and motivate highly-qualified executive officers.\n \nOur Board believes that our current executive compensation policies and practices are appropriate and effective, serve the best interests of our\n\nhe financial, operational, and capital decisions that serve as inputs\nto our compensation programs.\n• Through discussions with management, the Compensation Committee gains insight into a reasonable range of future company performance\nexpectations. This information is incorporated into decisions regarding the compensation of our named executive officers.\n\nhe financial, operational, and capital decisions that serve as inputs\nto our compensation programs.\n• Through discussions with management, the Compensation Committee gains insight into a reasonable range of future company performance\nexpectations. This information is incorporated into decisions regarding the compensation of our named executive officers.",
+      "relevant_chunks": 3,
+      "sources": [
+        "ALPHABET INC. - DEF14A.pdf_chunk_647",
+        "ALPHABET INC. - DEF14A.pdf_chunk_401",
+        "ALPHABET INC. - DEF 14A.pdf_chunk_433"
+      ],
+      "scores": [
+        0.513882577419281,
+        0.6075007915496826,
+        0.6075007915496826
+      ],
+      "contexts": [
+        "bility in determining\nwhat particular performance metrics to use to best increase stockholder value. The Compensation Committee adjusts its assessments as necessary to\nstay competitive and attract, retain, and motivate highly-qualified executive officers.\n \nOur Board believes that our current executive compensation policies and practices are appropriate and effective, serve the best interests of our",
+        "he financial, operational, and capital decisions that serve as inputs\nto our compensation programs.\n• Through discussions with management, the Compensation Committee gains insight into a reasonable range of future company performance\nexpectations. This information is incorporated into decisions regarding the compensation of our named executive officers.",
+        "he financial, operational, and capital decisions that serve as inputs\nto our compensation programs.\n• Through discussions with management, the Compensation Committee gains insight into a reasonable range of future company performance\nexpectations. This information is incorporated into decisions regarding the compensation of our named executive officers."
+      ],
+      "execution_time": 0.15123581886291504,
+      "category": "governance",
+      "query_id": 17,
+      "difficulty": "hard"
+    },
+    {
+      "question": "Does the company mention any recent changes in leadership or the board, and what are the reasons?",
+      "answer": "he Leadership Development and Compensation Committee, now the Leadership Development, Inclusion and\nCompensation Committee, giving it increased oversight on matters relating to Alphabet’s human capital management, including with respect to diversity and\ninclusion, workplace environment and safety, and corporate culture.\n(3)\nIn July 2021, our Board amended the Corporate Governance Guidelines to reduce the maximum number of public company board memberships our directors can\n\ns with respect to improvements to such\nplans and programs or the adoption of new plans and programs. •Reviewing and recommending to our Board of Directors for approval compensation programs and stock ownership requirements, as well as salaries, fees, bonuses, and equity awards for the non-employee members of our Board of Directors in conjunction with the Nominating and Corporate Governance Committee. •Reviewing plans for the development, retention, and succession of our senior management.\n\nby the directors in meetings and in executive sessions of our Board. Directors become familiar with\npotential successors for key management positions through various means, including regular organization and talent reviews, presentations to our\nBoard, and informal meetings.\n \nALPHABET ● 2023 PROXY STATEMENT        35\n \nBack to contents\n \n1\nCorporate\nGovernance\n2\nDirector and\nExecutive\nCompensation\n3\nAudit\nMatters\n4\nManagement\nand Stockholder\nProposals\n5\nQuestions and\nAnswers\n6\nAppendices",
+      "relevant_chunks": 3,
+      "sources": [
+        "ALPHABET INC. DEF 14A.pdf_chunk_51",
+        "lgoog2020_def14a.pdf_chunk_174",
+        "ALPHABET INC. - DEF 14A_2.pdf_chunk_277"
+      ],
+      "scores": [
+        0.7868075370788574,
+        0.7917640209197998,
+        0.8081526756286621
+      ],
+      "contexts": [
+        "he Leadership Development and Compensation Committee, now the Leadership Development, Inclusion and\nCompensation Committee, giving it increased oversight on matters relating to Alphabet’s human capital management, including with respect to diversity and\ninclusion, workplace environment and safety, and corporate culture.\n(3)\nIn July 2021, our Board amended the Corporate Governance Guidelines to reduce the maximum number of public company board memberships our directors can",
+        "s with respect to improvements to such\nplans and programs or the adoption of new plans and programs. •Reviewing and recommending to our Board of Directors for approval compensation programs and stock ownership requirements, as well as salaries, fees, bonuses, and equity awards for the non-employee members of our Board of Directors in conjunction with the Nominating and Corporate Governance Committee. •Reviewing plans for the development, retention, and succession of our senior management.",
+        "by the directors in meetings and in executive sessions of our Board. Directors become familiar with\npotential successors for key management positions through various means, including regular organization and talent reviews, presentations to our\nBoard, and informal meetings.\n \nALPHABET ● 2023 PROXY STATEMENT        35\n \nBack to contents\n \n1\nCorporate\nGovernance\n2\nDirector and\nExecutive\nCompensation\n3\nAudit\nMatters\n4\nManagement\nand Stockholder\nProposals\n5\nQuestions and\nAnswers\n6\nAppendices"
+      ],
+      "execution_time": 0.14488816261291504,
+      "category": "governance",
+      "query_id": 18,
+      "difficulty": "medium"
+    },
+    {
+      "question": "Are there any shareholder proposals or significant voting results discussed in the proxy statement?",
+      "answer": "Proxy Statement     71\n \nBack to Contents\nProxy Statement\nSummary &\nHighlights\nCorporate\nGovernance\nDirector and\nExecutive\nCompensation\nAudit Matters\nProposals\nQ&A\n \nAlphabet Opposing Statement\n \n \nOur Board of Directors recommends a vote AGAINST the stockholder proposal because:\n \n•  Our commitment to a respectful, safe, inclusive workplace, including a wide range of viewpoints, is already embedded across our policies,\n\nProxy Statement     74\n \nBack to Contents\nProxy Statement\nSummary &\nHighlights\nCorporate\nGovernance\nDirector and\nExecutive\nCompensation\nAudit Matters\nProposals\nQ&A\n \nAlphabet Opposing Statement\n \nOur Board of Directors recommends a vote AGAINST the stockholder proposal because:\n \n• We have a long track record of transparency and already provide information about our climate goals, progress, policies, and practices\nin our existing environmental reporting.\n\nProposals” for stockholder proposals that are not intended to be included in our proxy statement.\n \nIn addition to satisfying the foregoing requirements under our Amended and Restated Bylaws, to comply with the universal proxy rules for purposes of\nour 2023 annual meeting of stockholders, stockholders who intend to solicit proxies in support of director nominees other than the company’s nominees",
+      "relevant_chunks": 3,
+      "sources": [
+        "ALPHABET INC. - DEF 14A.pdf_chunk_655",
+        "ALPHABET INC. - DEF14A.pdf_chunk_712",
+        "ALPHABET INC. DEF 14A.pdf_chunk_1200"
+      ],
+      "scores": [
+        0.5338248014450073,
+        0.5513066649436951,
+        0.5525708794593811
+      ],
+      "contexts": [
+        "Proxy Statement     71\n \nBack to Contents\nProxy Statement\nSummary &\nHighlights\nCorporate\nGovernance\nDirector and\nExecutive\nCompensation\nAudit Matters\nProposals\nQ&A\n \nAlphabet Opposing Statement\n \n \nOur Board of Directors recommends a vote AGAINST the stockholder proposal because:\n \n•  Our commitment to a respectful, safe, inclusive workplace, including a wide range of viewpoints, is already embedded across our policies,",
+        "Proxy Statement     74\n \nBack to Contents\nProxy Statement\nSummary &\nHighlights\nCorporate\nGovernance\nDirector and\nExecutive\nCompensation\nAudit Matters\nProposals\nQ&A\n \nAlphabet Opposing Statement\n \nOur Board of Directors recommends a vote AGAINST the stockholder proposal because:\n \n• We have a long track record of transparency and already provide information about our climate goals, progress, policies, and practices\nin our existing environmental reporting.",
+        "Proposals” for stockholder proposals that are not intended to be included in our proxy statement.\n \nIn addition to satisfying the foregoing requirements under our Amended and Restated Bylaws, to comply with the universal proxy rules for purposes of\nour 2023 annual meeting of stockholders, stockholders who intend to solicit proxies in support of director nominees other than the company’s nominees"
+      ],
+      "execution_time": 0.14194989204406738,
+      "category": "governance",
+      "query_id": 38,
+      "difficulty": "hard"
+    },
+    {
+      "question": "What are the company’s main strategic priorities for the next few years as described by management?",
+      "answer": "of their agendas.\n \nThe proposal seeks to micromanage the company’s ordinary business operations\n \nDecisions regarding future participation in specific benchmarking tools are operational matters best executed by members of our management team who\npossess the necessary expertise and strategic insights. These decisions involve internal assessments, stakeholder consultations, and ongoing\nevaluations of effectiveness, all requiring management discretion.\n\nagreed, and may in the future agree, to provide indemnification for certain potential liabilities,\nwhich could harm our financial condition and operating results.\nIf we were to lose the services of key personnel, we may not be able to execute our business strategy.\nOur future success depends in large part upon the continued service of key members of our senior management\nteam. For instance, Sundar Pichai is critical to the overall management of Alphabet and its subsidiaries and plays an\n\nwe were to lose the services of key personnel, we may not be able to execute our business strategy.\nOur future success depends in large part upon the continued service of key members of our senior management\nteam. For instance, Sundar Pichai is critical to the overall management of Alphabet and its subsidiaries and plays an\nimportant role in the development of our technology, maintaining our culture and setting our strategic direction. All of",
+      "relevant_chunks": 3,
+      "sources": [
+        "ALPHABET INC. - DEF14A.pdf_chunk_691",
+        "goog-20221231.pdf_chunk_308",
+        "goog-20201231.pdf_chunk_298"
+      ],
+      "scores": [
+        0.8568680882453918,
+        0.8573126792907715,
+        0.8645629286766052
+      ],
+      "contexts": [
+        "of their agendas.\n \nThe proposal seeks to micromanage the company’s ordinary business operations\n \nDecisions regarding future participation in specific benchmarking tools are operational matters best executed by members of our management team who\npossess the necessary expertise and strategic insights. These decisions involve internal assessments, stakeholder consultations, and ongoing\nevaluations of effectiveness, all requiring management discretion.",
+        "agreed, and may in the future agree, to provide indemnification for certain potential liabilities,\nwhich could harm our financial condition and operating results.\nIf we were to lose the services of key personnel, we may not be able to execute our business strategy.\nOur future success depends in large part upon the continued service of key members of our senior management\nteam. For instance, Sundar Pichai is critical to the overall management of Alphabet and its subsidiaries and plays an",
+        "we were to lose the services of key personnel, we may not be able to execute our business strategy.\nOur future success depends in large part upon the continued service of key members of our senior management\nteam. For instance, Sundar Pichai is critical to the overall management of Alphabet and its subsidiaries and plays an\nimportant role in the development of our technology, maintaining our culture and setting our strategic direction. All of"
+      ],
+      "execution_time": 0.13599801063537598,
+      "category": "strategy",
+      "query_id": 19,
+      "difficulty": "medium"
+    },
+    {
+      "question": "How does the company plan to allocate capital (e.g., investments, dividends, share buybacks, debt repayment)?",
+      "answer": "st positioned for allocating capital in a manner that is in the best interest of our stockholders\n \nOur Board regularly reviews our capital needs and guides the long-term capital structure of Alphabet to ensure we have sufficient capital to invest for\nfuture growth. After determining it has sufficient liquidity for short-term and long-term planning, Alphabet has repurchased shares under a stock\nrepurchase program to return value to our stockholders.\n\nan increase in\nrepurchases of stock partially offset by a decrease in net payments related to debt.\nLiquidity and Material Cash Requirements\nWe expect existing cash, cash equivalents, short-term marketable securities, cash flows\nfrom operations and financing activities to continue to be sufficient to fund our operating\nactivities and cash commitments for investing and financing activities for at least the next 12\nmonths and thereafter for the foreseeable future.\nCapital Expenditures and Leases\n\nfinancing activities for at least the next 12\nmonths, and thereafter for the foreseeable future.\n44\nCapital Expenditures and Leases\nWe make investments in land and buildings for data centers and offices and information\ntechnology assets through purchases of property and equipment and lease arrangements to\nprovide capacity for the growth of our services and products.\nCapital Expenditures\nOur capital investments in property and equipment consist primarily of the following major\ncategories:\n•",
+      "relevant_chunks": 3,
+      "sources": [
+        "ALPHABET INC. - DEF14A.pdf_chunk_641",
+        "goog-20230930.pdf_chunk_355",
+        "goog-20240630.pdf_chunk_332"
+      ],
+      "scores": [
+        0.8451187014579773,
+        0.8800253868103027,
+        0.8963091373443604
+      ],
+      "contexts": [
+        "st positioned for allocating capital in a manner that is in the best interest of our stockholders\n \nOur Board regularly reviews our capital needs and guides the long-term capital structure of Alphabet to ensure we have sufficient capital to invest for\nfuture growth. After determining it has sufficient liquidity for short-term and long-term planning, Alphabet has repurchased shares under a stock\nrepurchase program to return value to our stockholders.",
+        "an increase in\nrepurchases of stock partially offset by a decrease in net payments related to debt.\nLiquidity and Material Cash Requirements\nWe expect existing cash, cash equivalents, short-term marketable securities, cash flows\nfrom operations and financing activities to continue to be sufficient to fund our operating\nactivities and cash commitments for investing and financing activities for at least the next 12\nmonths and thereafter for the foreseeable future.\nCapital Expenditures and Leases",
+        "financing activities for at least the next 12\nmonths, and thereafter for the foreseeable future.\n44\nCapital Expenditures and Leases\nWe make investments in land and buildings for data centers and offices and information\ntechnology assets through purchases of property and equipment and lease arrangements to\nprovide capacity for the growth of our services and products.\nCapital Expenditures\nOur capital investments in property and equipment consist primarily of the following major\ncategories:\n•"
+      ],
+      "execution_time": 0.15463805198669434,
+      "category": "strategy",
+      "query_id": 20,
+      "difficulty": "hard"
+    },
+    {
+      "question": "Which acquisitions, divestitures, or major investments were completed during the reporting period?",
+      "answer": "litical events, including trade disputes.\n•\nChanges in global business or macroeconomic conditions.\nAcquisitions, joint ventures, investments, and divestitures could result in operating difficulties, dilution,\nand other consequences that may harm our business, financial condition, and operating results.\nAcquisitions, joint ventures, investments and divestitures are important elements of our overall corporate strategy\n\ng results.\nAcquisitions, joint ventures, investments and divestitures are important elements of our\noverall corporate strategy and use of capital, and these transactions could be material to our\nfinancial condition and operating results. We expect to continue to evaluate and enter into\ndiscussions regarding a wide array of potential strategic transactions, which could create\nunforeseen operating difficulties and expenditures. Some of the areas where we face risks\ninclude:\n•\n\nns, joint ventures, investments, and divestitures could result in operating difficulties, dilution,\nand other consequences that could harm our business, financial condition, and operating results.\nAcquisitions, joint ventures, investments, and divestitures are important elements of our overall corporate strategy\nand use of capital, and these transactions could be material to our financial condition and operating results. We expect",
+      "relevant_chunks": 3,
+      "sources": [
+        "goog-20201231.pdf_chunk_288",
+        "goog-20200630.pdf_chunk_613",
+        "goog-20221231.pdf_chunk_298"
+      ],
+      "scores": [
+        0.7436720132827759,
+        0.7632125020027161,
+        0.7640866041183472
+      ],
+      "contexts": [
+        "litical events, including trade disputes.\n•\nChanges in global business or macroeconomic conditions.\nAcquisitions, joint ventures, investments, and divestitures could result in operating difficulties, dilution,\nand other consequences that may harm our business, financial condition, and operating results.\nAcquisitions, joint ventures, investments and divestitures are important elements of our overall corporate strategy",
+        "g results.\nAcquisitions, joint ventures, investments and divestitures are important elements of our\noverall corporate strategy and use of capital, and these transactions could be material to our\nfinancial condition and operating results. We expect to continue to evaluate and enter into\ndiscussions regarding a wide array of potential strategic transactions, which could create\nunforeseen operating difficulties and expenditures. Some of the areas where we face risks\ninclude:\n•",
+        "ns, joint ventures, investments, and divestitures could result in operating difficulties, dilution,\nand other consequences that could harm our business, financial condition, and operating results.\nAcquisitions, joint ventures, investments, and divestitures are important elements of our overall corporate strategy\nand use of capital, and these transactions could be material to our financial condition and operating results. We expect"
+      ],
+      "execution_time": 0.15201592445373535,
+      "category": "strategy",
+      "query_id": 21,
+      "difficulty": "medium"
+    },
+    {
+      "question": "How does management describe the company’s competitive advantages or moats?",
+      "answer": "have many competitors in different industries. Our current and potential domestic and international\ncompetitors range from large and established companies to emerging start-ups. Some competitors have longer\noperating histories and well-established relationships in various sectors. They can use their experience and resources\nin ways that could affect our competitive position, including by making acquisitions and entering into other strategic\n\nhave many competitors in different industries. Our current and potential domestic and international\ncompetitors range from large and established companies to emerging start-ups. Some competitors have longer\noperating histories and well-established relationships in various sectors. They can use their experience and resources\nin ways that could affect our competitive position, including by making acquisitions and entering into other strategic\n\nding them competitive advantages. Our competitors may also be able to innovate and provide products\nand services faster than we can or may foresee the need for products and services before us.\nOur operating results may also suffer if our products and services are not responsive to the needs of our users,\nadvertisers, publishers, customers, and content providers. As technologies continue to develop, our competitors may",
+      "relevant_chunks": 3,
+      "sources": [
+        "goog-20241231.pdf_chunk_133",
+        "goog-20231231.pdf_chunk_137",
+        "goog-20211231.pdf_chunk_122"
+      ],
+      "scores": [
+        0.9414891600608826,
+        0.9414891600608826,
+        0.9539934396743774
+      ],
+      "contexts": [
+        "have many competitors in different industries. Our current and potential domestic and international\ncompetitors range from large and established companies to emerging start-ups. Some competitors have longer\noperating histories and well-established relationships in various sectors. They can use their experience and resources\nin ways that could affect our competitive position, including by making acquisitions and entering into other strategic",
+        "have many competitors in different industries. Our current and potential domestic and international\ncompetitors range from large and established companies to emerging start-ups. Some competitors have longer\noperating histories and well-established relationships in various sectors. They can use their experience and resources\nin ways that could affect our competitive position, including by making acquisitions and entering into other strategic",
+        "ding them competitive advantages. Our competitors may also be able to innovate and provide products\nand services faster than we can or may foresee the need for products and services before us.\nOur operating results may also suffer if our products and services are not responsive to the needs of our users,\nadvertisers, publishers, customers, and content providers. As technologies continue to develop, our competitors may"
+      ],
+      "execution_time": 0.1481337547302246,
+      "category": "strategy",
+      "query_id": 22,
+      "difficulty": "hard"
+    },
+    {
+      "question": "How does the company plan to address key risks and uncertainties mentioned in the report?",
+      "answer": "Our operations and financial results are subject to various risks and uncertainties,\nincluding those described in Part I, Item 1A, \"Risk Factors\" in our Annual Report on Form 10-K\nfor the year ended December 31, 2023, as updated in our Quarterly Report on Form 10-Q for\nthe quarter ended March 31, 2024, which could adversely affect our business, financial\ncondition, results of operations, cash flows, and the trading price of our stock. Below are\n\nrisk management would be welcomed by a broad array of stakeholders.\n \nAlphabet Opposing Statement\n \nGiven our existing robust program, controls, data privacy and security operations, and transparent disclosure, our Board of Directors does not believe\nthat the report requested by this proposal would be an effective use of company resources or provide additional information of value to our stockholders.\nOur Board therefore recommends a vote AGAINST this proposal.\n\nd publish a public report, omitting confidential or privileged\ninformation, by September 1, 2024.\n \nProponents recommend the review assess the extent to which the Committee has implemented or may implement best practices for corporate risk. The\nreport should recommend any appropriate mitigation measures such as additional access to internal and external experts, director training, increasing",
+      "relevant_chunks": 3,
+      "sources": [
+        "goog-20240630.pdf_chunk_367",
+        "ALPHABET INC. DEF 14A.pdf_chunk_909",
+        "ALPHABET INC. - DEF 14A_2.pdf_chunk_1044"
+      ],
+      "scores": [
+        0.7178031206130981,
+        0.7416497468948364,
+        0.7788531184196472
+      ],
+      "contexts": [
+        "Our operations and financial results are subject to various risks and uncertainties,\nincluding those described in Part I, Item 1A, \"Risk Factors\" in our Annual Report on Form 10-K\nfor the year ended December 31, 2023, as updated in our Quarterly Report on Form 10-Q for\nthe quarter ended March 31, 2024, which could adversely affect our business, financial\ncondition, results of operations, cash flows, and the trading price of our stock. Below are",
+        "risk management would be welcomed by a broad array of stakeholders.\n \nAlphabet Opposing Statement\n \nGiven our existing robust program, controls, data privacy and security operations, and transparent disclosure, our Board of Directors does not believe\nthat the report requested by this proposal would be an effective use of company resources or provide additional information of value to our stockholders.\nOur Board therefore recommends a vote AGAINST this proposal.",
+        "d publish a public report, omitting confidential or privileged\ninformation, by September 1, 2024.\n \nProponents recommend the review assess the extent to which the Committee has implemented or may implement best practices for corporate risk. The\nreport should recommend any appropriate mitigation measures such as additional access to internal and external experts, director training, increasing"
+      ],
+      "execution_time": 0.16053509712219238,
+      "category": "strategy",
+      "query_id": 40,
+      "difficulty": "hard"
+    },
+    {
+      "question": "What environmental, social, and governance (ESG) topics does the company highlight as most material?",
+      "answer": "de business strategy and performance, and environmental, social and governance (ESG) topics such as\nenvironmental sustainability, human capital, workforce diversity, executive compensation, and Board leadership and composition.\n \nOur engagement enables us to better understand our stockholders’ priorities and perspectives, gives us an opportunity to elaborate on our initiatives,\npolicies, and practices, and fosters open and constructive dialogue.\n\nr business, including our product and service offerings,\nfinancial condition, and operating results.\nExpectations relating to environmental, social, and governance (ESG) considerations could expose us to\npotential liabilities, increased costs, and reputational harm.\nWe are subject to laws, regulations, and other measures that govern a wide range of topics, including those\nrelated to matters beyond our core products and services. For instance, new laws, regulations, policies, and\n\nation OUR BOARD OF DIRECTORS RECOMMENDS A VOTE “AGAINST” THE STOCKHOLDER PROPOSAL.\nBack to Contents\nProposal Number 9 Stockholder Proposal Regarding Report on Sustainability Metrics WHEREAS: Studies suggest that companies that integrate environmental, social, and governance (ESG) factors into business strategy reduce reputational, legal, and regulatory risks and improve long-term performance.",
+      "relevant_chunks": 3,
+      "sources": [
+        "ALPHABET INC. DEF 14A.pdf_chunk_289",
+        "goog-20221231.pdf_chunk_268",
+        "lgoog2020_def14a.pdf_chunk_672"
+      ],
+      "scores": [
+        0.46711909770965576,
+        0.5908311009407043,
+        0.6003773212432861
+      ],
+      "contexts": [
+        "de business strategy and performance, and environmental, social and governance (ESG) topics such as\nenvironmental sustainability, human capital, workforce diversity, executive compensation, and Board leadership and composition.\n \nOur engagement enables us to better understand our stockholders’ priorities and perspectives, gives us an opportunity to elaborate on our initiatives,\npolicies, and practices, and fosters open and constructive dialogue.",
+        "r business, including our product and service offerings,\nfinancial condition, and operating results.\nExpectations relating to environmental, social, and governance (ESG) considerations could expose us to\npotential liabilities, increased costs, and reputational harm.\nWe are subject to laws, regulations, and other measures that govern a wide range of topics, including those\nrelated to matters beyond our core products and services. For instance, new laws, regulations, policies, and",
+        "ation OUR BOARD OF DIRECTORS RECOMMENDS A VOTE “AGAINST” THE STOCKHOLDER PROPOSAL.\nBack to Contents\nProposal Number 9 Stockholder Proposal Regarding Report on Sustainability Metrics WHEREAS: Studies suggest that companies that integrate environmental, social, and governance (ESG) factors into business strategy reduce reputational, legal, and regulatory risks and improve long-term performance."
+      ],
+      "execution_time": 0.14429712295532227,
+      "category": "esg",
+      "query_id": 23,
+      "difficulty": "medium"
+    },
+    {
+      "question": "Does the company disclose greenhouse gas (GHG) emissions or climate-related targets?",
+      "answer": "emissions and the challenge of meeting its goals, shareholders request Alphabet disclose additional\ninformation illustrating if and how it will meet its 2030 climate goals. This disclosure should be beyond existing disclosures, at reasonable cost, omitting\nproprietary information, and made annually.\n \n \n \n(1)\nhttps://www.gstatic.com/gumdrop/sustainability/google-2024-environmental-report.pdf#page=34\n(2)\nhttps://www.ball.\n\nto undermine our ability to\nmanage ordinary business operations and strategic initiatives\n \n \n \n \n•\nOur participation in organizations does not reflect an\nendorsement of their agendas\n7\nStockholder proposal regarding an enhanced\ndisclosure on climate goals (page 74)\n \nAGAINST\n \n•\nWe have a long track record of transparency and already\nprovide information about our climate goals, progress, policies,\nand practices in our existing environment reporting\n \n \n \n \n•\n\nousing, commitment to racial equity, and support for small businesses\nand COVID-19 crisis response.\n• We earned a spot on the CDP (formerly the Carbon Disclosure Project) Climate Change A List for the seventh consecutive year.\n• We announced a goal to enable 5 gigawatts of new carbon-free energy across our key manufacturing regions by 2030 through investment. We",
+      "relevant_chunks": 3,
+      "sources": [
+        "ALPHABET INC. - DEF14A.pdf_chunk_709",
+        "ALPHABET INC. - DEF14A.pdf_chunk_596",
+        "ALPHABET INC. - DEF 14A_3.pdf_chunk_633"
+      ],
+      "scores": [
+        0.5612456798553467,
+        0.6989008188247681,
+        0.8064392805099487
+      ],
+      "contexts": [
+        "emissions and the challenge of meeting its goals, shareholders request Alphabet disclose additional\ninformation illustrating if and how it will meet its 2030 climate goals. This disclosure should be beyond existing disclosures, at reasonable cost, omitting\nproprietary information, and made annually.\n \n \n \n(1)\nhttps://www.gstatic.com/gumdrop/sustainability/google-2024-environmental-report.pdf#page=34\n(2)\nhttps://www.ball.",
+        "to undermine our ability to\nmanage ordinary business operations and strategic initiatives\n \n \n \n \n•\nOur participation in organizations does not reflect an\nendorsement of their agendas\n7\nStockholder proposal regarding an enhanced\ndisclosure on climate goals (page 74)\n \nAGAINST\n \n•\nWe have a long track record of transparency and already\nprovide information about our climate goals, progress, policies,\nand practices in our existing environment reporting\n \n \n \n \n•",
+        "ousing, commitment to racial equity, and support for small businesses\nand COVID-19 crisis response.\n• We earned a spot on the CDP (formerly the Carbon Disclosure Project) Climate Change A List for the seventh consecutive year.\n• We announced a goal to enable 5 gigawatts of new carbon-free energy across our key manufacturing regions by 2030 through investment. We"
+      ],
+      "execution_time": 0.14728593826293945,
+      "category": "esg",
+      "query_id": 24,
+      "difficulty": "hard"
+    },
+    {
+      "question": "How does the company describe its approach to diversity, equity, and inclusion (DEI)?",
+      "answer": "ort for more information on our actions and progress.\n \nALPHABET ● 2023 PROXY STATEMENT        12\n \nDiversity, Equity, and Inclusion (DEI): Building a world where progress, equitable outcomes, diversity, and inclusion can be realities is at the heart of\nwhat we do — from how we build our products to how we build our workforce. We have deepened our efforts to drive meaningful change and we also\nknow there is more to be done.\n\nronmental sustainability initiatives. Please see our Sustainability website for more\ninformation.\n \nDiversity, Equity, and Inclusion (DEI): Building a world where progress, equitable outcomes, diversity, and inclusion can be realities is at the heart of\nwhat we do — from how we build our products to how we build our workforce. We have deepened our efforts to drive meaningful change but we know\nthere is more to be done.\n\nand developers, in addition to YouTube’s $100 million fund to\namplify Black creators and artists.\n \nBeyond that, to ensure a fair workplace, this year the Board agreed on a series of industry-leading principles and improvements that incorporated\ninput from both employees and stockholders, including the creation of a new Diversity, Equity, and Inclusion (DEI) Advisory Council, which comprises\ninternal senior executives and external DEI experts.",
+      "relevant_chunks": 3,
+      "sources": [
+        "ALPHABET INC. - DEF 14A_2.pdf_chunk_73",
+        "ALPHABET INC. DEF 14A.pdf_chunk_66",
+        "ALPHABET INC. - DEF 14A_3.pdf_chunk_20"
+      ],
+      "scores": [
+        0.5990324020385742,
+        0.622818648815155,
+        0.7315062284469604
+      ],
+      "contexts": [
+        "ort for more information on our actions and progress.\n \nALPHABET ● 2023 PROXY STATEMENT        12\n \nDiversity, Equity, and Inclusion (DEI): Building a world where progress, equitable outcomes, diversity, and inclusion can be realities is at the heart of\nwhat we do — from how we build our products to how we build our workforce. We have deepened our efforts to drive meaningful change and we also\nknow there is more to be done.",
+        "ronmental sustainability initiatives. Please see our Sustainability website for more\ninformation.\n \nDiversity, Equity, and Inclusion (DEI): Building a world where progress, equitable outcomes, diversity, and inclusion can be realities is at the heart of\nwhat we do — from how we build our products to how we build our workforce. We have deepened our efforts to drive meaningful change but we know\nthere is more to be done.",
+        "and developers, in addition to YouTube’s $100 million fund to\namplify Black creators and artists.\n \nBeyond that, to ensure a fair workplace, this year the Board agreed on a series of industry-leading principles and improvements that incorporated\ninput from both employees and stockholders, including the creation of a new Diversity, Equity, and Inclusion (DEI) Advisory Council, which comprises\ninternal senior executives and external DEI experts."
+      ],
+      "execution_time": 0.17670822143554688,
+      "category": "esg",
+      "query_id": 25,
+      "difficulty": "medium"
+    },
+    {
+      "question": "Are there any notable ESG-related risks or controversies mentioned in the report?",
+      "answer": "ese could harm existing key relationships, including with our users, customers, advertisers, and/or\ncontent providers, and impair our ability to attract new ones; harm our reputation; and increase costs, thereby\nnegatively affecting our business.\nRisks Related to Laws, Regulations, and Policies\nWe are subject to a variety of new, existing, and changing laws and regulations worldwide that could harm\n\n, for the reasons set forth below, does not believe that it is in the best interests of our company\nand our stockholders and recommends a vote AGAINST this proposal.\n \nOur Board Already Has Robust Oversight of ESG Risks and Opportunities\n \nBuilding a sustainable company and contributing to a sustainable future has long been core to our corporate DNA. Our Board oversees the risks and\n\nr business, including our product and service offerings,\nfinancial condition, and operating results.\nExpectations relating to ESG considerations could expose us to potential liabilities, increased costs, and\nreputational harm.\nWe are subject to laws, regulations, and other measures that govern a wide range of topics, including those\nrelated to matters beyond our core products and services. For instance, new laws, regulations, policies, and",
+      "relevant_chunks": 3,
+      "sources": [
+        "goog-20241231.pdf_chunk_253",
+        "ALPHABET INC. DEF 14A.pdf_chunk_1055",
+        "goog-20231231.pdf_chunk_298"
+      ],
+      "scores": [
+        0.7408424019813538,
+        0.7506089210510254,
+        0.8114851117134094
+      ],
+      "contexts": [
+        "ese could harm existing key relationships, including with our users, customers, advertisers, and/or\ncontent providers, and impair our ability to attract new ones; harm our reputation; and increase costs, thereby\nnegatively affecting our business.\nRisks Related to Laws, Regulations, and Policies\nWe are subject to a variety of new, existing, and changing laws and regulations worldwide that could harm",
+        ", for the reasons set forth below, does not believe that it is in the best interests of our company\nand our stockholders and recommends a vote AGAINST this proposal.\n \nOur Board Already Has Robust Oversight of ESG Risks and Opportunities\n \nBuilding a sustainable company and contributing to a sustainable future has long been core to our corporate DNA. Our Board oversees the risks and",
+        "r business, including our product and service offerings,\nfinancial condition, and operating results.\nExpectations relating to ESG considerations could expose us to potential liabilities, increased costs, and\nreputational harm.\nWe are subject to laws, regulations, and other measures that govern a wide range of topics, including those\nrelated to matters beyond our core products and services. For instance, new laws, regulations, policies, and"
+      ],
+      "execution_time": 0.21645712852478027,
+      "category": "esg",
+      "query_id": 26,
+      "difficulty": "hard"
+    },
+    {
+      "question": "Does the company link executive compensation to ESG or sustainability metrics?",
+      "answer": "es that integrate environmental, social, and governance (ESG) factors into business strategy reduce\nreputational, legal, and regulatory risks and improve long-term performance. Leading companies have integrated sustainability metrics into executive\npay plans, among them Unilever and Walmart. The UN Principles for Responsible Investment (2012) state that considering ESG factors in\ncompensation can help protect long-term shareholder value.\n\nusiness strategy reduce reputational, legal, and regulatory risks and improve long-term performance. Leading companies have integrated sustainability metrics into executive pay plans, among them Unilever and Walmart. The UN Principles for Responsible Investment (2012) state that considering ESG factors in compensation can help protect long-term shareholder value. Diversity, inclusion, and equity are key components of business sustainability and success: .\n\n– Environmental and Social – each with a maximum potential payout of $1.0 million. The Compensation\nCommittee is responsible for determining payout of the ESG Bonus for each ESG Participant, in conjunction with the CEO’s review of company-wide\nperformance and individual contributions made by each ESG Participant.\n \nFor the Environmental component, key accomplishments include progress toward advancing carbon-free energy across our global operations – as of",
+      "relevant_chunks": 3,
+      "sources": [
+        "ALPHABET INC. - DEF 14A_3.pdf_chunk_617",
+        "lgoog2020_def14a.pdf_chunk_673",
+        "ALPHABET INC. - DEF 14A_2.pdf_chunk_407"
+      ],
+      "scores": [
+        0.483326256275177,
+        0.5536947250366211,
+        0.5573607683181763
+      ],
+      "contexts": [
+        "es that integrate environmental, social, and governance (ESG) factors into business strategy reduce\nreputational, legal, and regulatory risks and improve long-term performance. Leading companies have integrated sustainability metrics into executive\npay plans, among them Unilever and Walmart. The UN Principles for Responsible Investment (2012) state that considering ESG factors in\ncompensation can help protect long-term shareholder value.",
+        "usiness strategy reduce reputational, legal, and regulatory risks and improve long-term performance. Leading companies have integrated sustainability metrics into executive pay plans, among them Unilever and Walmart. The UN Principles for Responsible Investment (2012) state that considering ESG factors in compensation can help protect long-term shareholder value. Diversity, inclusion, and equity are key components of business sustainability and success: .",
+        "– Environmental and Social – each with a maximum potential payout of $1.0 million. The Compensation\nCommittee is responsible for determining payout of the ESG Bonus for each ESG Participant, in conjunction with the CEO’s review of company-wide\nperformance and individual contributions made by each ESG Participant.\n \nFor the Environmental component, key accomplishments include progress toward advancing carbon-free energy across our global operations – as of"
+      ],
+      "execution_time": 0.14534497261047363,
+      "category": "esg",
+      "query_id": 39,
+      "difficulty": "hard"
+    },
+    {
+      "question": "How has the company’s revenue growth over the last three years compared to its net income growth?",
+      "answer": "ential revenue growth rates.\n \nQuarter Ended\n \nMar 31,\n2019\nJun 30,\n2019\nSept 30,\n2019\nDec 31,\n2019\nMar 31,\n2020\nJun 30,\n2020\nSept 30,\n2020\nDec 31,\n2020\n(In millions, except per share amounts) (unaudited)\nConsolidated Statements of Income Data:\nRevenues\n$ 36,339  $ 38,944  $ 40,499  $ 46,075  $ 41,159  $ 38,297  $ 46,173 \n56,898 \nCosts and expenses:\nCost of revenues\n16,012 \n17,296 \n17,568 \n21,020 \n18,982 \n18,553 \n21,117 \n26,080 \nResearch and\ndevelopment\n6,029 \n6,213 \n6,554 \n7,222 \n6,820 \n6,875\n\nRATIONS\nPlease read the following discussion and analysis of our financial condition and results of\noperations together with our consolidated financial statements and related notes included\nunder Part I, Item 1 of this Quarterly Report on Form 10-Q.\nExecutive Overview of Results\nBelow are our key financial results for the three months ended September 30, 2020\n(consolidated unless otherwise noted):\n•\nRevenues of $46.2 billion and revenue growth of 14% year over year, constant\n\nRATIONS\nPlease read the following discussion and analysis of our financial condition and results of\noperations together with our consolidated financial statements and related notes included\nunder Part I, Item 1 of this Quarterly Report on Form 10-Q.\nExecutive Overview of Results\nBelow are our key financial results for the three months ended March 31, 2020\n(consolidated unless otherwise noted):\n•\nRevenues of $41.2 billion and revenue growth of 13% year over year, constant",
+      "relevant_chunks": 3,
+      "sources": [
+        "goog-20201231.pdf_chunk_476",
+        "goog-20200930.pdf_chunk_254",
+        "goog-20200331.pdf_chunk_233"
+      ],
+      "scores": [
+        0.6744334697723389,
+        0.6946758031845093,
+        0.7139406204223633
+      ],
+      "contexts": [
+        "ential revenue growth rates.\n \nQuarter Ended\n \nMar 31,\n2019\nJun 30,\n2019\nSept 30,\n2019\nDec 31,\n2019\nMar 31,\n2020\nJun 30,\n2020\nSept 30,\n2020\nDec 31,\n2020\n(In millions, except per share amounts) (unaudited)\nConsolidated Statements of Income Data:\nRevenues\n$ 36,339  $ 38,944  $ 40,499  $ 46,075  $ 41,159  $ 38,297  $ 46,173 \n56,898 \nCosts and expenses:\nCost of revenues\n16,012 \n17,296 \n17,568 \n21,020 \n18,982 \n18,553 \n21,117 \n26,080 \nResearch and\ndevelopment\n6,029 \n6,213 \n6,554 \n7,222 \n6,820 \n6,875",
+        "RATIONS\nPlease read the following discussion and analysis of our financial condition and results of\noperations together with our consolidated financial statements and related notes included\nunder Part I, Item 1 of this Quarterly Report on Form 10-Q.\nExecutive Overview of Results\nBelow are our key financial results for the three months ended September 30, 2020\n(consolidated unless otherwise noted):\n•\nRevenues of $46.2 billion and revenue growth of 14% year over year, constant",
+        "RATIONS\nPlease read the following discussion and analysis of our financial condition and results of\noperations together with our consolidated financial statements and related notes included\nunder Part I, Item 1 of this Quarterly Report on Form 10-Q.\nExecutive Overview of Results\nBelow are our key financial results for the three months ended March 31, 2020\n(consolidated unless otherwise noted):\n•\nRevenues of $41.2 billion and revenue growth of 13% year over year, constant"
+      ],
+      "execution_time": 0.14400196075439453,
+      "category": "comparison",
+      "query_id": 27,
+      "difficulty": "hard"
+    },
+    {
+      "question": "Compare the share of revenue coming from the top business segment now versus two years ago.",
+      "answer": "ss otherwise noted):\n•\nRevenues of $41.2 billion and revenue growth of 13% year over year, constant\ncurrency revenue growth of 15% year over year.\n•\nGoogle segment revenues of $41.0 billion with revenue growth of 14% year over year\nand Other Bets revenues of $135 million with a decrease of 21% year over year.\n•\nRevenues from the United States, EMEA, APAC, and Other Americas were $18.9\nbillion, $12.8 billion, $7.2 billion, and $2.2 billion, respectively.\n•\nCost of revenues was $19.\n\nss otherwise noted):\n•\nRevenues of $46.2 billion and revenue growth of 14% year over year, constant\ncurrency revenues growth of 15% year over year.\n•\nGoogle segment revenues of $46.0 billion with revenue growth of 14% year over year\nand Other Bets revenues of $178 million with revenue growth of 15% year over year.\n•\nRevenues from the United States, EMEA, APAC, and Other Americas were $21.4\nbillion, $13.9 billion, $8.5 billion, and $2.4 billion, respectively.\n•\nCost of revenues was $21.\n\nential revenue growth rates.\n \nQuarter Ended\n \nMar 31,\n2019\nJun 30,\n2019\nSept 30,\n2019\nDec 31,\n2019\nMar 31,\n2020\nJun 30,\n2020\nSept 30,\n2020\nDec 31,\n2020\n(In millions, except per share amounts) (unaudited)\nConsolidated Statements of Income Data:\nRevenues\n$ 36,339  $ 38,944  $ 40,499  $ 46,075  $ 41,159  $ 38,297  $ 46,173 \n56,898 \nCosts and expenses:\nCost of revenues\n16,012 \n17,296 \n17,568 \n21,020 \n18,982 \n18,553 \n21,117 \n26,080 \nResearch and\ndevelopment\n6,029 \n6,213 \n6,554 \n7,222 \n6,820 \n6,875",
+      "relevant_chunks": 3,
+      "sources": [
+        "goog-20200331.pdf_chunk_234",
+        "goog-20200930.pdf_chunk_255",
+        "goog-20201231.pdf_chunk_476"
+      ],
+      "scores": [
+        0.788300096988678,
+        0.8133041858673096,
+        0.8590932488441467
+      ],
+      "contexts": [
+        "ss otherwise noted):\n•\nRevenues of $41.2 billion and revenue growth of 13% year over year, constant\ncurrency revenue growth of 15% year over year.\n•\nGoogle segment revenues of $41.0 billion with revenue growth of 14% year over year\nand Other Bets revenues of $135 million with a decrease of 21% year over year.\n•\nRevenues from the United States, EMEA, APAC, and Other Americas were $18.9\nbillion, $12.8 billion, $7.2 billion, and $2.2 billion, respectively.\n•\nCost of revenues was $19.",
+        "ss otherwise noted):\n•\nRevenues of $46.2 billion and revenue growth of 14% year over year, constant\ncurrency revenues growth of 15% year over year.\n•\nGoogle segment revenues of $46.0 billion with revenue growth of 14% year over year\nand Other Bets revenues of $178 million with revenue growth of 15% year over year.\n•\nRevenues from the United States, EMEA, APAC, and Other Americas were $21.4\nbillion, $13.9 billion, $8.5 billion, and $2.4 billion, respectively.\n•\nCost of revenues was $21.",
+        "ential revenue growth rates.\n \nQuarter Ended\n \nMar 31,\n2019\nJun 30,\n2019\nSept 30,\n2019\nDec 31,\n2019\nMar 31,\n2020\nJun 30,\n2020\nSept 30,\n2020\nDec 31,\n2020\n(In millions, except per share amounts) (unaudited)\nConsolidated Statements of Income Data:\nRevenues\n$ 36,339  $ 38,944  $ 40,499  $ 46,075  $ 41,159  $ 38,297  $ 46,173 \n56,898 \nCosts and expenses:\nCost of revenues\n16,012 \n17,296 \n17,568 \n21,020 \n18,982 \n18,553 \n21,117 \n26,080 \nResearch and\ndevelopment\n6,029 \n6,213 \n6,554 \n7,222 \n6,820 \n6,875"
+      ],
+      "execution_time": 0.13598012924194336,
+      "category": "comparison",
+      "query_id": 28,
+      "difficulty": "hard"
+    },
+    {
+      "question": "How has the company’s debt level changed over the last three reporting periods?",
+      "answer": "ts of debt.\nNet cash used in financing activities increased from the six months ended June 30, 2022\nto the six months ended June 30, 2023 primarily due to an increase in repurchases of stock\npartially offset by a decrease in net payments related to stock-based award activities.\nLiquidity and Material Cash Requirements\nWe expect existing cash, cash equivalents, short-term marketable securities, cash flows\nfrom operations and financing activities to continue to be sufficient to fund our operating\n\nncial Statements\n57\n2. Financial Statement Schedules\nSchedule II: Valuation and Qualifying Accounts\nThe table below details the activity of the allowance for credit losses and sales credits for the years ended\nDecember 31, 2022, 2023, and 2024 (in millions):\nBalance at\nBeginning of Year\nAdditions\nUsage\nBalance at\nEnd of Year\nYear ended December 31, 2022\n$\n1,389 \n$\n2,125 \n$\n(2,301)\n$\n1,213 \nYear ended December 31, 2023\n$\n1,213 \n$\n3,115 \n$\n(2,737)\n$\n1,591 \nYear ended December 31, 2024\n$\n1,591 \n$\n\nments of debt.\nNet cash used in financing activities increased from the nine months ended September\n30, 2021 to the nine months ended September 30, 2022 primarily due to an increase in\nrepurchases of stock.\nLiquidity and Material Cash Requirements\nWe expect existing cash, cash equivalents, short-term marketable securities, cash flows\nfrom operations and financing activities to continue to be sufficient to fund our operating",
+      "relevant_chunks": 3,
+      "sources": [
+        "goog-20230630.pdf_chunk_343",
+        "goog-20241231.pdf_chunk_944",
+        "goog-20220930.pdf_chunk_339"
+      ],
+      "scores": [
+        0.8701947331428528,
+        0.8811513185501099,
+        0.8838052749633789
+      ],
+      "contexts": [
+        "ts of debt.\nNet cash used in financing activities increased from the six months ended June 30, 2022\nto the six months ended June 30, 2023 primarily due to an increase in repurchases of stock\npartially offset by a decrease in net payments related to stock-based award activities.\nLiquidity and Material Cash Requirements\nWe expect existing cash, cash equivalents, short-term marketable securities, cash flows\nfrom operations and financing activities to continue to be sufficient to fund our operating",
+        "ncial Statements\n57\n2. Financial Statement Schedules\nSchedule II: Valuation and Qualifying Accounts\nThe table below details the activity of the allowance for credit losses and sales credits for the years ended\nDecember 31, 2022, 2023, and 2024 (in millions):\nBalance at\nBeginning of Year\nAdditions\nUsage\nBalance at\nEnd of Year\nYear ended December 31, 2022\n$\n1,389 \n$\n2,125 \n$\n(2,301)\n$\n1,213 \nYear ended December 31, 2023\n$\n1,213 \n$\n3,115 \n$\n(2,737)\n$\n1,591 \nYear ended December 31, 2024\n$\n1,591 \n$",
+        "ments of debt.\nNet cash used in financing activities increased from the nine months ended September\n30, 2021 to the nine months ended September 30, 2022 primarily due to an increase in\nrepurchases of stock.\nLiquidity and Material Cash Requirements\nWe expect existing cash, cash equivalents, short-term marketable securities, cash flows\nfrom operations and financing activities to continue to be sufficient to fund our operating"
+      ],
+      "execution_time": 0.13959193229675293,
+      "category": "comparison",
+      "query_id": 29,
+      "difficulty": "medium"
+    },
+    {
+      "question": "What changes in risk factors are highlighted when comparing the latest report to the previous year?",
+      "answer": "actual\nresults to differ materially from those reflected in the forward-looking statements. Factors\nthat could cause or contribute to such differences include, but are not limited to, those\ndiscussed in this Quarterly Report on Form 10-Q, and in particular, the risks discussed in\nPart I, Item 1A, \"Risk Factors\" in our Annual Report on Form 10-K for the fiscal year ended\nDecember 31, 2020, and those discussed in other documents we file with the SEC. We\n\nuse our actual results to differ materially from those reflected in the forward-\nlooking statements. Factors that could cause or contribute to such differences include, but are not limited to, those\ndiscussed in this Annual Report on Form 10-K, and in particular, the risks discussed in Item 1A, \"Risk Factors\" of this\nreport and those discussed in other documents we file with the SEC. We undertake no obligation to revise or publicly\n\n. Factors that could cause or contribute to such differences include, but are not limited to, those\ndiscussed in this Annual Report on Form 10-K, and in particular, the risks discussed in Item 1A, \"Risk Factors\" of this\nreport and those discussed in other documents we file with the SEC. We undertake no obligation to revise or publicly\nrelease the results of any revision to these forward-looking statements, except as required by law. Given these risks",
+      "relevant_chunks": 3,
+      "sources": [
+        "goog-20210331.pdf_chunk_27",
+        "Document.pdf_chunk_31",
+        "goog-20201231.pdf_chunk_34"
+      ],
+      "scores": [
+        0.4993906021118164,
+        0.5813496112823486,
+        0.582565188407898
+      ],
+      "contexts": [
+        "actual\nresults to differ materially from those reflected in the forward-looking statements. Factors\nthat could cause or contribute to such differences include, but are not limited to, those\ndiscussed in this Quarterly Report on Form 10-Q, and in particular, the risks discussed in\nPart I, Item 1A, \"Risk Factors\" in our Annual Report on Form 10-K for the fiscal year ended\nDecember 31, 2020, and those discussed in other documents we file with the SEC. We",
+        "use our actual results to differ materially from those reflected in the forward-\nlooking statements. Factors that could cause or contribute to such differences include, but are not limited to, those\ndiscussed in this Annual Report on Form 10-K, and in particular, the risks discussed in Item 1A, \"Risk Factors\" of this\nreport and those discussed in other documents we file with the SEC. We undertake no obligation to revise or publicly",
+        ". Factors that could cause or contribute to such differences include, but are not limited to, those\ndiscussed in this Annual Report on Form 10-K, and in particular, the risks discussed in Item 1A, \"Risk Factors\" of this\nreport and those discussed in other documents we file with the SEC. We undertake no obligation to revise or publicly\nrelease the results of any revision to these forward-looking statements, except as required by law. Given these risks"
+      ],
+      "execution_time": 0.14377999305725098,
+      "category": "comparison",
+      "query_id": 30,
+      "difficulty": "hard"
+    },
+    {
+      "question": "Locate and summarize the table that presents the breakdown of revenue by geographic region.",
+      "answer": "venues by Geography\nThe following table presents revenues by geography as a percentage of revenues,\ndetermined based on the addresses of our customers:\nThree Months Ended\nSix Months Ended\n \nJune 30,\nJune 30,\n \n2021\n2022\n2021\n2022\nUnited States\n46 %\n47 %\n45 %\n47 %\nEMEA\n31 %\n29 %\n31 %\n30 %\nAPAC\n18 %\n17 %\n19 %\n17 %\nOther Americas\n5 %\n6 %\n5 %\n6 %\nHedging gains (losses)\n0 %\n1 %\n0 %\n0 %\nFor further details on revenues by geography, see Note 2 of the Notes to\n\ncustomer usage, market dynamics, as\nwell as new product and service launches.\nRevenues by Geography\nThe following table presents our revenues by geography as a percentage of revenues, determined based on the\naddresses of our customers:\n \nYear Ended December 31,\n \n2019\n2020\nUnited States\n46 %\n47 %\nEMEA\n31 %\n30 %\nAPAC\n17 %\n18 %\nOther Americas\n6 %\n5 %\nFor further details on revenues by geography, see Note 2 of the Notes to Consolidated Financial Statements\n\nenues by geography as a percentage of revenues,\ndetermined based on the addresses of our customers:\nThree Months Ended\nSix Months Ended\n \nJune 30,\nJune 30,\n \n2022\n2023\n2022\n2023\nUnited States\n47 %\n47 %\n47 %\n47 %\nEMEA\n29 %\n30 %\n30 %\n30 %\nAPAC\n17 %\n17 %\n17 %\n17 %\nOther Americas\n6 %\n6 %\n6 %\n6 %\nHedging gains (losses)\n1 %\n0 %\n0 %\n0 %\nFor further details on revenues by geography, see Note 2 of the Notes to Consolidated\nFinancial Statements included in Item 1 of this Quarterly Report on Form 10-Q.",
+      "relevant_chunks": 3,
+      "sources": [
+        "goog-20220630.pdf_chunk_277",
+        "goog-20201231.pdf_chunk_417",
+        "goog-20230630.pdf_chunk_285"
+      ],
+      "scores": [
+        0.5891492366790771,
+        0.6687206625938416,
+        0.7123486995697021
+      ],
+      "contexts": [
+        "venues by Geography\nThe following table presents revenues by geography as a percentage of revenues,\ndetermined based on the addresses of our customers:\nThree Months Ended\nSix Months Ended\n \nJune 30,\nJune 30,\n \n2021\n2022\n2021\n2022\nUnited States\n46 %\n47 %\n45 %\n47 %\nEMEA\n31 %\n29 %\n31 %\n30 %\nAPAC\n18 %\n17 %\n19 %\n17 %\nOther Americas\n5 %\n6 %\n5 %\n6 %\nHedging gains (losses)\n0 %\n1 %\n0 %\n0 %\nFor further details on revenues by geography, see Note 2 of the Notes to",
+        "customer usage, market dynamics, as\nwell as new product and service launches.\nRevenues by Geography\nThe following table presents our revenues by geography as a percentage of revenues, determined based on the\naddresses of our customers:\n \nYear Ended December 31,\n \n2019\n2020\nUnited States\n46 %\n47 %\nEMEA\n31 %\n30 %\nAPAC\n17 %\n18 %\nOther Americas\n6 %\n5 %\nFor further details on revenues by geography, see Note 2 of the Notes to Consolidated Financial Statements",
+        "enues by geography as a percentage of revenues,\ndetermined based on the addresses of our customers:\nThree Months Ended\nSix Months Ended\n \nJune 30,\nJune 30,\n \n2022\n2023\n2022\n2023\nUnited States\n47 %\n47 %\n47 %\n47 %\nEMEA\n29 %\n30 %\n30 %\n30 %\nAPAC\n17 %\n17 %\n17 %\n17 %\nOther Americas\n6 %\n6 %\n6 %\n6 %\nHedging gains (losses)\n1 %\n0 %\n0 %\n0 %\nFor further details on revenues by geography, see Note 2 of the Notes to Consolidated\nFinancial Statements included in Item 1 of this Quarterly Report on Form 10-Q."
+      ],
+      "execution_time": 0.14328217506408691,
+      "category": "technical",
+      "query_id": 31,
+      "difficulty": "medium"
+    },
+    {
+      "question": "Identify the note in the financial statements that explains the company’s revenue recognition policy and summarize it.",
+      "answer": "e Sheets\n51\nConsolidated Statements of Income\n52\nConsolidated Statements of Comprehensive Income\n53\nConsolidated Statements of Stockholders’ Equity\n54\nConsolidated Statements of Cash Flows\n55\nNotes to Consolidated Financial Statements\n56\n47.\nTable of Contents\nAlphabet Inc.\nREPORT OF INDEPENDENT REGISTERED PUBLIC ACCOUNTING FIRM\nTo the Stockholders and the Board of Directors of Alphabet Inc.\nOpinion on the Financial Statements\n\nrevenue\nrecognition is largely driven by when the customer utilizes the services and our ability to\ndeliver in accordance with relevant contract terms, which could affect our estimate of the\nremaining performance obligations and when we expect to recognize such as revenues.\n12\nTable of Contents\nAlphabet Inc.\nNote 3. Financial Instruments\nDebt Securities\nWe classify our marketable debt securities, which are accounted for as available-for-\n\ncome\n56\nConsolidated Statements of Stockholders’ Equity\n57\nConsolidated Statements of Cash Flows\n58\nNotes to Consolidated Financial Statements\n59\nThe supplementary financial information required by this Item 8 is included in Item 7 under the caption “Quarterly\nResults of Operations.”\n50\nTable of Contents\nAlphabet Inc.\nREPORT OF ERNST & YOUNG LLP, INDEPENDENT REGISTERED PUBLIC ACCOUNTING FIRM\nTo the Stockholders and the Board of Directors of Alphabet Inc.\nOpinion on the Financial Statements",
+      "relevant_chunks": 3,
+      "sources": [
+        "goog-20231231.pdf_chunk_562",
+        "goog-20210630.pdf_chunk_76",
+        "goog-20201231.pdf_chunk_576"
+      ],
+      "scores": [
+        0.7347804307937622,
+        0.7445719838142395,
+        0.7688201665878296
+      ],
+      "contexts": [
+        "e Sheets\n51\nConsolidated Statements of Income\n52\nConsolidated Statements of Comprehensive Income\n53\nConsolidated Statements of Stockholders’ Equity\n54\nConsolidated Statements of Cash Flows\n55\nNotes to Consolidated Financial Statements\n56\n47.\nTable of Contents\nAlphabet Inc.\nREPORT OF INDEPENDENT REGISTERED PUBLIC ACCOUNTING FIRM\nTo the Stockholders and the Board of Directors of Alphabet Inc.\nOpinion on the Financial Statements",
+        "revenue\nrecognition is largely driven by when the customer utilizes the services and our ability to\ndeliver in accordance with relevant contract terms, which could affect our estimate of the\nremaining performance obligations and when we expect to recognize such as revenues.\n12\nTable of Contents\nAlphabet Inc.\nNote 3. Financial Instruments\nDebt Securities\nWe classify our marketable debt securities, which are accounted for as available-for-",
+        "come\n56\nConsolidated Statements of Stockholders’ Equity\n57\nConsolidated Statements of Cash Flows\n58\nNotes to Consolidated Financial Statements\n59\nThe supplementary financial information required by this Item 8 is included in Item 7 under the caption “Quarterly\nResults of Operations.”\n50\nTable of Contents\nAlphabet Inc.\nREPORT OF ERNST & YOUNG LLP, INDEPENDENT REGISTERED PUBLIC ACCOUNTING FIRM\nTo the Stockholders and the Board of Directors of Alphabet Inc.\nOpinion on the Financial Statements"
+      ],
+      "execution_time": 0.13707494735717773,
+      "category": "technical",
+      "query_id": 32,
+      "difficulty": "hard"
+    },
+    {
+      "question": "Which accounting standards (e.g., IFRS, US GAAP) does the company use, and are there any significant recent changes mentioned?",
+      "answer": "tion of consolidated financial statements in conformity with GAAP requires us to make estimates and\nassumptions that affect the amounts reported and disclosed in the financial statements and the accompanying notes.\nActual results could differ materially from these estimates due to uncertainties. On an ongoing basis, we evaluate our\nestimates, including those related to the allowance for credit losses; content licenses; contingent liabilities; fair values of\n\nonsolidated financial statements in conformity with generally accepted accounting principles in the\nUnited States (\"GAAP\") requires us to make estimates and assumptions that affect the amounts reported and disclosed\nin the financial statements and the accompanying notes. Actual results could differ materially from these estimates. On\nan ongoing basis, we evaluate our estimates, including those related to the allowance for credit losses, fair values of\n\ne of Estimates\nPreparation of consolidated financial statements in conformity with GAAP requires us\nto make estimates and assumptions that affect the amounts reported and disclosed in the\nfinancial statements and the accompanying notes. Actual results could differ materially\nfrom these estimates. On an ongoing basis, we evaluate our estimates, including those\nrelated to the allowance for credit losses, fair values of financial instruments, intangible",
+      "relevant_chunks": 3,
+      "sources": [
+        "goog-20231231.pdf_chunk_613",
+        "goog-20201231.pdf_chunk_629",
+        "goog-20210630.pdf_chunk_63"
+      ],
+      "scores": [
+        0.8167680501937866,
+        0.8171961307525635,
+        0.8192163705825806
+      ],
+      "contexts": [
+        "tion of consolidated financial statements in conformity with GAAP requires us to make estimates and\nassumptions that affect the amounts reported and disclosed in the financial statements and the accompanying notes.\nActual results could differ materially from these estimates due to uncertainties. On an ongoing basis, we evaluate our\nestimates, including those related to the allowance for credit losses; content licenses; contingent liabilities; fair values of",
+        "onsolidated financial statements in conformity with generally accepted accounting principles in the\nUnited States (\"GAAP\") requires us to make estimates and assumptions that affect the amounts reported and disclosed\nin the financial statements and the accompanying notes. Actual results could differ materially from these estimates. On\nan ongoing basis, we evaluate our estimates, including those related to the allowance for credit losses, fair values of",
+        "e of Estimates\nPreparation of consolidated financial statements in conformity with GAAP requires us\nto make estimates and assumptions that affect the amounts reported and disclosed in the\nfinancial statements and the accompanying notes. Actual results could differ materially\nfrom these estimates. On an ongoing basis, we evaluate our estimates, including those\nrelated to the allowance for credit losses, fair values of financial instruments, intangible"
+      ],
+      "execution_time": 0.13551092147827148,
+      "category": "technical",
+      "query_id": 33,
+      "difficulty": "medium"
+    },
+    {
+      "question": "Find and summarize any sensitivity analysis related to interest rates, foreign exchange, or other market risks.",
+      "answer": "nactive textual\nreferences only.\nITEM 3.\nQUANTITATIVE AND QUALITATIVE DISCLOSURES ABOUT MARKET\nRISK\nWe are exposed to financial market risks, including changes in foreign currency\nexchange rates, interest rates and equity investment risks. Our exposure to market risk\nhas not changed materially since December 31, 2020. For quantitative and qualitative\ndisclosures about market risk, refer to Part II, Item 7A, Quantitative and Qualitative\n\n.\" The\ncontent of our websites are not incorporated by reference into this Quarterly Report on Form\n10-Q or in any other report or document we file with the SEC, and any references to our\nwebsites are intended to be inactive textual references only.\nITEM 3.\nQUANTITATIVE AND QUALITATIVE DISCLOSURES ABOUT MARKET\nRISK\nWe are exposed to financial market risks, including changes in foreign currency\nexchange rates, interest rates and equity investment risks. Due to financial market\n\nTable of Contents\nAlphabet Inc.\nITEM 3.\nQUANTITATIVE AND QUALITATIVE DISCLOSURES ABOUT MARKET\nRISK\nWe are exposed to financial market risks, including changes in foreign currency\nexchange rates, interest rates and equity investment risks. Our exposure to market risk\nhas not changed materially since December 31, 2020. For quantitative and qualitative\ndisclosures about market risk, refer to Part II, Item 7A, Quantitative and Qualitative",
+      "relevant_chunks": 3,
+      "sources": [
+        "goog-20210630.pdf_chunk_378",
+        "goog-20200930.pdf_chunk_405",
+        "goog-20210331.pdf_chunk_337"
+      ],
+      "scores": [
+        0.7252339720726013,
+        0.7660542726516724,
+        0.7692453265190125
+      ],
+      "contexts": [
+        "nactive textual\nreferences only.\nITEM 3.\nQUANTITATIVE AND QUALITATIVE DISCLOSURES ABOUT MARKET\nRISK\nWe are exposed to financial market risks, including changes in foreign currency\nexchange rates, interest rates and equity investment risks. Our exposure to market risk\nhas not changed materially since December 31, 2020. For quantitative and qualitative\ndisclosures about market risk, refer to Part II, Item 7A, Quantitative and Qualitative",
+        ".\" The\ncontent of our websites are not incorporated by reference into this Quarterly Report on Form\n10-Q or in any other report or document we file with the SEC, and any references to our\nwebsites are intended to be inactive textual references only.\nITEM 3.\nQUANTITATIVE AND QUALITATIVE DISCLOSURES ABOUT MARKET\nRISK\nWe are exposed to financial market risks, including changes in foreign currency\nexchange rates, interest rates and equity investment risks. Due to financial market",
+        "Table of Contents\nAlphabet Inc.\nITEM 3.\nQUANTITATIVE AND QUALITATIVE DISCLOSURES ABOUT MARKET\nRISK\nWe are exposed to financial market risks, including changes in foreign currency\nexchange rates, interest rates and equity investment risks. Our exposure to market risk\nhas not changed materially since December 31, 2020. For quantitative and qualitative\ndisclosures about market risk, refer to Part II, Item 7A, Quantitative and Qualitative"
+      ],
+      "execution_time": 0.13824892044067383,
+      "category": "technical",
+      "query_id": 34,
+      "difficulty": "hard"
+    },
+    {
+      "question": "Does the report include non-GAAP financial measures, and how does the company reconcile them to GAAP/IFRS figures?",
+      "answer": "f Estimates\nPreparation of consolidated financial statements in conformity with GAAP requires us to\nmake estimates and assumptions that affect the amounts reported and disclosed in the\nfinancial statements and the accompanying notes. Actual results could differ materially from\nthese estimates. On an ongoing basis, we evaluate our estimates, including those related to\nthe allowance for credit losses, fair values of financial instruments, intangible assets and\n\ne of Estimates\nPreparation of consolidated financial statements in conformity with GAAP requires us\nto make estimates and assumptions that affect the amounts reported and disclosed in the\nfinancial statements and the accompanying notes. Actual results could differ materially\nfrom these estimates. On an ongoing basis, we evaluate our estimates, including those\nrelated to the allowance for credit losses, fair values of financial instruments, intangible\n\ntion of consolidated financial statements in conformity with GAAP requires us to make estimates and\nassumptions that affect the amounts reported and disclosed in the financial statements and the accompanying notes.\nActual results could differ materially from these estimates due to uncertainties. On an ongoing basis, we evaluate our\nestimates, including those related to the allowance for credit losses; content licenses; contingent liabilities; fair values of",
+      "relevant_chunks": 3,
+      "sources": [
+        "goog-20200331.pdf_chunk_57",
+        "goog-20210630.pdf_chunk_63",
+        "goog-20231231.pdf_chunk_613"
+      ],
+      "scores": [
+        0.623420000076294,
+        0.624819815158844,
+        0.6426465511322021
+      ],
+      "contexts": [
+        "f Estimates\nPreparation of consolidated financial statements in conformity with GAAP requires us to\nmake estimates and assumptions that affect the amounts reported and disclosed in the\nfinancial statements and the accompanying notes. Actual results could differ materially from\nthese estimates. On an ongoing basis, we evaluate our estimates, including those related to\nthe allowance for credit losses, fair values of financial instruments, intangible assets and",
+        "e of Estimates\nPreparation of consolidated financial statements in conformity with GAAP requires us\nto make estimates and assumptions that affect the amounts reported and disclosed in the\nfinancial statements and the accompanying notes. Actual results could differ materially\nfrom these estimates. On an ongoing basis, we evaluate our estimates, including those\nrelated to the allowance for credit losses, fair values of financial instruments, intangible",
+        "tion of consolidated financial statements in conformity with GAAP requires us to make estimates and\nassumptions that affect the amounts reported and disclosed in the financial statements and the accompanying notes.\nActual results could differ materially from these estimates due to uncertainties. On an ongoing basis, we evaluate our\nestimates, including those related to the allowance for credit losses; content licenses; contingent liabilities; fair values of"
+      ],
+      "execution_time": 0.13885116577148438,
+      "category": "technical",
+      "query_id": 35,
+      "difficulty": "hard"
+    }
+  ],
+  "metrics": {
+    "average_execution_time": 0.15152092576026915,
+    "average_top_score": 0.6987383306026459,
+    "total_queries": 40
+  }
+}

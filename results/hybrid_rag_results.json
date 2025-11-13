@@ -1,1266 +1,1016 @@
 {
   "system_name": "Hybrid RAG",
-  "total_documents": 50,
-  "total_chunks": 9022,
+  "total_documents": 30,
+  "total_chunks": 20378,
   "chunk_size": 500,
   "chunk_overlap": 100,
   "alpha": 0.5,
-  "llm_model": "ollama (llama3.2:3b)",
+  "llm_model": "fallback (без LLM)",
   "queries": [
     {
-      "question": "What is Retrieval-Augmented Generation (RAG)?",
-      "answer": "Retrieval-Augmented Generation (RAG) is an emerging hybrid architecture that addresses the limitations of pure generative models. It integrates two key components:\n\n1. A retrieval mechanism\n2. An answer generation process, which follows certain rules and a threshold.\n\nThis framework aims to improve upon traditional generative models by leveraging user queries with a collection of relevant documents.",
+      "question": "What are the main business segments of the company according to the latest annual report?",
+      "answer": "n regarding non-income taxes, see Note 10.\nNote 15. Information about Segments and Geographic Areas\nWe operate our business in multiple operating segments. Google is our only reportable\nsegment. None of our other segments meet the quantitative thresholds to qualify as reportable\nsegments; therefore, the other operating segments are combined and disclosed as Other\nBets.\nOur reported segments are:\n•\nGoogle – Google includes our main products such as ads, Android, Chrome,\n\nn regarding non-income taxes, see Note 10.\nNote 15. Information about Segments and Geographic Areas\nWe operate our business in multiple operating segments. Google is our only reportable\nsegment. None of our other segments meet the quantitative thresholds to qualify as reportable\nsegments; therefore, the other operating segments are combined and disclosed as Other\nBets.\nOur reported segments are:\n•\nGoogle – Google includes our main products such as ads, Android, Chrome,\n\nments\nWe operate our business in multiple operating segments. Google is our only reportable\nsegment. None of our other segments meet the quantitative thresholds to qualify as reportable\nsegments; therefore, the other operating segments are combined and disclosed as Other\nBets.\nOur reported segments are:\n•\nGoogle – Google includes our main products such as ads, Android, Chrome,\nhardware, Google Cloud, Google Maps, Google Play, Search, and YouTube. Our",
       "method": "convex",
       "alpha": 0.5,
       "relevant_chunks": 5,
       "sources": [
-        "2410.12837.pdf",
-        "2403.14403.pdf",
-        "2410.05779.pdf",
-        "2311.09476.pdf",
-        "2410.05779.pdf"
+        "goog-20200630.pdf",
+        "goog-20200930.pdf",
+        "goog-20200331.pdf",
+        "Document.pdf",
+        "ALPHABET INC. - DEF 14A.pdf"
       ],
       "scores": [
-        0.6061447094604719,
-        0.5925520838215216,
-        0.5704822191811136,
-        0.5399094948947378,
-        0.5390168479903122
+        0.6227029517191841,
+        0.6227029517191841,
+        0.5923235544655534,
+        0.5867682032817967,
+        0.5490634386186312
       ],
-      "execution_time": 4.8945677280426025,
-      "category": "definition",
+      "execution_time": 3.09930682182312,
+      "category": "company_overview",
       "query_id": 1,
       "difficulty": "easy"
     },
     {
-      "question": "What are the main components of a RAG system?",
-      "answer": "The context doesn't explicitly mention what the \"main components\" of an RAG (Retrieval-Answer Generation) system are, but based on the provided information, we can infer some key aspects that might be part of such a system.\n\nFrom the text, it is clear that a RAG system involves:\n\n1. Retrieval: This likely refers to the process of retrieving relevant documents or information from a database or repository.\n2. Generation (or Answering): This component involves generating answers or summaries based on the retrieved information.\n\nAdditionally, other components might include:\n\n3. Chunking: Breaking down documents into smaller units or chunks, which can affect the retrieval and generation processes.\n4. Embeddings: Representing entities or concepts as numerical vectors, which can be used for efficient similarity searches or comparisons.\n\nHowever, without explicit information on what constitutes a RAG system, it is difficult to provide an exhaustive list of its main components.",
+      "question": "In which geographic regions does the company generate most of its revenue?",
+      "answer": "will more astutely minimize business risk,\nmaximize opportunity, and increase shareholder value.\n \nResolved : Shareholders request that Alphabet report annually on its policies and practices to help ensure its elected Board of Directors attains racial\nand gender representation that is better aligned with the demographics of its customers and/or regions in which it operates.\n\nt any time during the taxable year, each of the three other most highly compensated officers of the\nCompany for the taxable year, and any other individual who was a covered employee of the company for the preceding tax year beginning after\nDecember 31, 2016.\n \nTHE FOREGOING IS ONLY A SUMMARY OF THE EFFECT OF U.S. FEDERAL INCOME TAXATION WITH RESPECT TO THE GRANT AND\nEXERCISE OF AWARDS UNDER THE PLAN. IT DOES NOT PURPORT TO BE COMPLETE AND DOES NOT DISCUSS THE TAX CONSEQUENCES\n\nt any time during the taxable year, each of the three other most highly compensated officers of the\nCompany for the taxable year, and any other individual who was a covered employee of the company for the preceding tax year beginning after\nDecember 31, 2016.\n \nTHE FOREGOING IS ONLY A SUMMARY OF THE EFFECT OF U.S. FEDERAL INCOME TAXATION WITH RESPECT TO THE GRANT AND\nEXERCISE OF AWARDS UNDER THE PLAN. IT DOES NOT PURPORT TO BE COMPLETE AND DOES NOT DISCUSS THE TAX CONSEQUENCES",
       "method": "convex",
       "alpha": 0.5,
       "relevant_chunks": 5,
       "sources": [
-        "2401.05856.pdf",
-        "2401.05856.pdf",
-        "2401.05856.pdf",
-        "2401.05856.pdf",
-        "2401.05856.pdf"
+        "ALPHABET INC. DEF 14A.pdf",
+        "ALPHABET INC. - DEF 14A_2.pdf",
+        "ALPHABET INC. DEF 14A.pdf",
+        "ALPHABET INC. - DEF 14A_3.pdf",
+        "ALPHABET INC. - DEF 14A_2.pdf"
       ],
       "scores": [
-        0.6213386474072335,
-        0.6137281407937962,
-        0.6078527929104275,
-        0.5997989904124167,
-        0.5799164573488699
+        0.5295124311673884,
+        0.5048730606630133,
+        0.5048730606630133,
+        0.5026049585487619,
+        0.5
       ],
-      "execution_time": 6.958236932754517,
-      "category": "definition",
+      "execution_time": 1.6624629497528076,
+      "category": "company_overview",
       "query_id": 2,
-      "difficulty": "easy"
+      "difficulty": "medium"
     },
     {
-      "question": "How does RAG differ from traditional LLMs?",
-      "answer": "The provided context does not directly answer the question \"How does RAG differ from traditional LLMs?\" However, based on the context of Answer 2 and the introduction to RAG models in Chapter 4.1, it can be inferred that RAG differs from traditional LLMs in its ability to incorporate dual-level retrieval and graph-based indexing, which enhance the generation quality of LightRAG.\n\nIn other words, while traditional LLMs may rely on standard metrics such as RMSE and MSE for evaluation, RAG models like LightRAG provide a more comprehensive framework that includes nuanced explanations of how different metrics interrelate and differ from one another. Additionally, RAG's ability to address research questions related to its performance and costs suggests a more advanced and adaptable approach compared to traditional LLMs.\n\nTherefore, the answer to the question can be paraphrased as: \"RAG differs from traditional LLMs in its use of dual-level retrieval and graph-based indexing, which provide enhanced generation quality and adaptability.\"",
+      "question": "Summarize the company’s core products and services described in the annual report.",
+      "answer": "tensively on information systems to manage our business and summarize and report operating results.\nIn 2019, we began a multi-year implementation of a new global enterprise resource planning (“ERP”) system, which will\nreplace much of our existing core financial systems. The ERP system is designed to accurately maintain the\nCompany’s financial records, enhance the flow of financial information, improve data management and provide timely\ninformation to the Company’s management team.\n\nngthy interruptions in our service. In addition, our products and services are highly technical and\ncomplex and may contain errors or vulnerabilities, which could result in interruptions in or failure of our services or\nsystems.\nIn addition, we rely extensively on information systems and technology to manage our business and summarize\noperating results. We are in the process of a multi-year implementation of a new ERP system, which will replace much\nof our existing core financial systems.\n\nn\nlengthy interruptions in our service. In addition, our products and services are highly technical\nand complex and may contain errors or vulnerabilities, which could result in interruptions in or\nfailure of our services or systems.\nIn addition, we rely extensively on information systems and technology to manage our\nbusiness and summarize operating results. We are in the process of a multi-year\nimplementation of a new ERP system, which will replace much of our existing core financial\nsystems.",
       "method": "convex",
       "alpha": 0.5,
       "relevant_chunks": 5,
       "sources": [
-        "2410.05779.pdf",
-        "2410.05779.pdf",
-        "Self_RAG_2023.pdf",
-        "2312.10997.pdf",
-        "RAG_Survey_2023.pdf"
+        "Document.pdf",
+        "Document.pdf",
+        "goog-20200331.pdf",
+        "ALPHABET INC. - DEF 14A_2.pdf",
+        "ALPHABET INC. DEF 14A.pdf"
       ],
       "scores": [
-        0.56195894803092,
-        0.5430036129772795,
-        0.539352441504474,
-        0.539352441504474,
-        0.539352441504474
+        0.6174510907694484,
+        0.6037742161211442,
+        0.6010456699741147,
+        0.5663758563763075,
+        0.5663706525209367
       ],
-      "execution_time": 7.830322980880737,
-      "category": "definition",
+      "execution_time": 1.4115080833435059,
+      "category": "company_overview",
       "query_id": 3,
       "difficulty": "medium"
     },
     {
-      "question": "What is the purpose of the retrieval component in RAG?",
-      "answer": "The Retrieval Component's purpose is to fetch relevant documents or information from an external knowledge database, identifying and retrieving the most pertinent data based on the input query.",
+      "question": "How does the company describe its overall business model and value proposition?",
+      "answer": "tial for the company to identify, address, and prevent adverse human rights impacts. It will aid in\nestablishing industry-wide accountability for human rights and assure shareholders that its business model is well positioned in the face of increasing\nregulation.\n \n(1)\nhttps://abc.xyz/assets/d4/4f/a48b94d548d0b2fdc029a95e8c63/2022-alphabet-annual-report.pdf\n(2)\nhttps://edri.org/wp-content/uploads/2021/06/EDRi_Discrimination_Online.pdf\n(3)\nhttps://blog.\n\nsfaction of performance criteria underlying the award.\n \nSection 4—Other Compensation Information\n \nThe first three sections of this CD&A describe how we think about compensation and how that affects our pay practices. Other compensation-related\ndetails that may be important considerations for our investors are discussed in this section.\n \nRisk Considerations\n\nutive\nCompensation\n3\nAudit\nMatters\n4\nManagement\nand Stockholder\nProposals\n5\nQuestions and\nAnswers\n6\nAppendices\n \nSection 4—Other Compensation Information\n \nThe first three sections of this CD&A describe how we think about compensation and how that affects our pay practices. Other compensation-related\ndetails that may be important considerations for our investors are discussed below.\n \nRisk Considerations",
       "method": "convex",
       "alpha": 0.5,
       "relevant_chunks": 5,
       "sources": [
-        "Corrective_RAG_2024.pdf",
-        "2410.05779.pdf",
-        "arxiv_1707.07792_2017.pdf",
-        "Self_RAG_2023.pdf",
-        "2312.10997.pdf"
+        "ALPHABET INC. - DEF 14A.pdf",
+        "ALPHABET INC. - DEF 14A.pdf",
+        "ALPHABET INC. - DEF 14A_2.pdf",
+        "ALPHABET INC. - DEF14A.pdf",
+        "ALPHABET INC. - DEF 14A_2.pdf"
       ],
       "scores": [
-        0.6117925266353748,
-        0.5268299368314955,
-        0.5254057985935492,
-        0.511004491489324,
-        0.511004491489324
+        0.5681681023824354,
+        0.5431770417731049,
+        0.5236100171724171,
+        0.5224650035966775,
+        0.520978597007452
       ],
-      "execution_time": 3.6535937786102295,
-      "category": "definition",
+      "execution_time": 1.4232041835784912,
+      "category": "company_overview",
       "query_id": 4,
-      "difficulty": "easy"
-    },
-    {
-      "question": "Explain the concept of grounding in RAG systems",
-      "answer": "In RAG systems, \"grounding\" refers to the process of retrieving relevant information from external knowledge sources and incorporating it into the generative process to improve the factual accuracy and relevance of generated responses. This is achieved by embedding queries in a vector space and finding the nearest context vectors, which are then used to generate responses that are grounded in factual, domain-specific knowledge.",
-      "method": "convex",
-      "alpha": 0.5,
-      "relevant_chunks": 5,
-      "sources": [
-        "2410.12837.pdf",
-        "2410.12837.pdf",
-        "2410.05779.pdf",
-        "2401.05856.pdf",
-        "2311.09476.pdf"
-      ],
-      "scores": [
-        0.6250529435130296,
-        0.5605584252355669,
-        0.5445591981059236,
-        0.471839617442959,
-        0.47041889435648365
-      ],
-      "execution_time": 4.755908966064453,
-      "category": "definition",
-      "query_id": 5,
-      "difficulty": "medium"
-    },
-    {
-      "question": "How does the retrieval mechanism work in RAG systems?",
-      "answer": "The text doesn't explicitly describe how the retrieval mechanism works in RAG (Retrieval-Augmented Generation) systems. However, based on the context of the passage and general knowledge about RAG systems, I can provide a possible answer.\n\nIn RAG systems, the retrieval mechanism typically involves using a retriever model to search for relevant documents or information that are related to the input query or question. The retriever model uses natural language processing (NLP) techniques such as masked language modeling, next sentence prediction, or other similar approaches to identify relevant passages from a large dataset.\n\nOnce relevant passages are retrieved, these passages are passed through a generator model, which generates text based on the retrieved information. The generator model can be an LLM (Large Language Model), such as GPT-4o-mini in this case, which uses self-attention mechanisms and transformer architecture to generate coherent and context-specific responses.\n\nThe retrieval mechanism is often implemented using graph-based indexing or dual-level retrieval, which allows for efficient searching of relevant documents and enables the RAG system to effectively leverage pre-existing knowledge and relationships between different pieces of information.",
-      "method": "convex",
-      "alpha": 0.5,
-      "relevant_chunks": 5,
-      "sources": [
-        "2410.05779.pdf",
-        "2401.05856.pdf",
-        "2410.05779.pdf",
-        "Corrective_RAG_2024.pdf",
-        "2410.12837.pdf"
-      ],
-      "scores": [
-        0.5977097550354497,
-        0.5462242380059569,
-        0.4823509729143663,
-        0.4779368919558462,
-        0.4735923599477392
-      ],
-      "execution_time": 8.166623830795288,
-      "category": "technical",
-      "query_id": 6,
-      "difficulty": "medium"
-    },
-    {
-      "question": "What is the role of embeddings in RAG?",
-      "answer": "Unfortunately, the provided context does not mention the specific role of embeddings in RAG (Recurrent Autoencoder for Graphs). The text only discusses various research papers on natural language processing and computational linguistics. \n\nIf you could provide more context or clarify which paper is being referred to, I'd be happy to try and help further.",
-      "method": "convex",
-      "alpha": 0.5,
-      "relevant_chunks": 5,
-      "sources": [
-        "2402.14558.pdf",
-        "2305.14283.pdf",
-        "2403.05530.pdf",
-        "2402.14558.pdf",
-        "arxiv_1805.08159_2018.pdf"
-      ],
-      "scores": [
-        0.582827771704439,
-        0.5529207429687577,
-        0.5452612635851914,
-        0.4926255220689377,
-        0.48253874100277716
-      ],
-      "execution_time": 4.658236980438232,
-      "category": "technical",
-      "query_id": 7,
-      "difficulty": "medium"
-    },
-    {
-      "question": "Explain how dense retrieval works in RAG",
-      "answer": "Dense retrieval in RAG (Relevance-based Active Generation) models utilizes self-attention mechanisms to capture contextual relationships within text, which enhances both retrieval accuracy and generation fluency. It leverages dense representations to retrieve relevant documents more effectively compared to traditional sparse methods like TF-IDF.\n\nIn essence, dense retrieval uses a dense embedding model, such as BERT (Bidirectional Encoder Representations from Transformers), to represent the input text in a high-dimensional space. This dense representation captures the nuances of the text and allows for more accurate retrieval of relevant documents.",
-      "method": "convex",
-      "alpha": 0.5,
-      "relevant_chunks": 5,
-      "sources": [
-        "2410.12837.pdf",
-        "2410.12837.pdf",
-        "Atlas_2022.pdf",
-        "Atlas_2022.pdf",
-        "2410.12837.pdf"
-      ],
-      "scores": [
-        0.6070707022515726,
-        0.5954003539575302,
-        0.5953741696406408,
-        0.5223842704284226,
-        0.5119138089022965
-      ],
-      "execution_time": 4.602058172225952,
-      "category": "technical",
-      "query_id": 8,
       "difficulty": "hard"
     },
     {
-      "question": "What is the difference between sparse and dense retrieval?",
-      "answer": "Based on the context provided, the answer to the question \"What is the difference between sparse and dense retrieval?\" can be inferred as follows:\n\nSparse retrieval models focus on capturing sparse relevance features, which likely implies that they identify a limited number of important features or cues for search. In contrast, dense retrieval models capture more comprehensive and detailed relevance features, indicating that they consider a broader range of relevant information.\n\nAdditionally, the context mentions that sparse retrieval models can be used to provide initial search results, suggesting that they may not capture all the necessary information, whereas dense retrieval models are likely capable of producing more accurate and complete results.",
+      "question": "What key macroeconomic or industry trends does management highlight as influencing the company’s performance?",
+      "answer": "t of our broader risk management system and processes. For example, some risks include our software\nsupply chain and other third-party dependencies, vulnerabilities in our products and services, theft of our intellectual\nproperty, and attempts to compromise our infrastructure. We obtain input, as appropriate, for our cybersecurity risk\nmanagement program on the security industry and threat trends from multiple external experts and internal threat\nintelligence teams.\n\nn the U.S. and elsewhere may be substantial. Furthermore, industry and market practices may further\ndevelop to become even more robust than what is required under any new laws and regulations, and we may have to\nexpend significant efforts and resources to keep up with market trends and stay competitive among our peers.\nA variety of new and existing laws and/or interpretations could harm our business.\nWe are subject to numerous U.S.\n\na comprehensive process for identifying, assessing, and managing material risks from cybersecurity\nthreats as part of our broader risk management system and processes. We obtain input, as appropriate, for our\ncybersecurity risk management program on the security industry and threat trends from multiple external experts and\ninternal threat intelligence teams. Teams of dedicated privacy, safety, and security professionals oversee cybersecurity",
       "method": "convex",
       "alpha": 0.5,
       "relevant_chunks": 5,
       "sources": [
-        "Self_RAG_2023.pdf",
-        "2312.10997.pdf",
-        "RAG_Survey_2023.pdf",
-        "Corrective_RAG_2024.pdf",
-        "Self_RAG_2023.pdf"
+        "goog-20241231.pdf",
+        "goog-20211231.pdf",
+        "goog-20231231.pdf",
+        "goog-20231231.pdf",
+        "ALPHABET INC. - DEF 14A.pdf"
       ],
       "scores": [
-        0.6274698430466827,
-        0.6274698430466827,
-        0.6274698430466827,
-        0.5564692217886384,
-        0.5564509390291408
-      ],
-      "execution_time": 5.775097131729126,
-      "category": "technical",
-      "query_id": 9,
-      "difficulty": "medium"
-    },
-    {
-      "question": "How does chunking strategy affect RAG performance?",
-      "answer": "Based on the context, it appears that a study is investigating the impact of chunking strategies on RAG (Retrieval-Augmentation Generation) systems. The research question suggests that even simple tasks like chunking documents can have significant effects on the retrieval process.\n\nThe answer to the question \"How does chunking strategy affect RAG performance?\" is likely that different chunking strategies can significantly impact the performance of RAG systems, potentially leading to variations in generation quality and retrieval effectiveness. The study may explore various chunking strategies, their strengths and weaknesses, and how they compare to one another in terms of RAG performance.\n\nThe fact that experts with formal training and experience in specific domains produced complex questions suggests that the impact of chunking on RAG performance may be nuanced and dependent on factors such as domain expertise, question complexity, and retrieval strategy. The study may examine how different chunking strategies handle these complexities and their effects on overall RAG performance.",
-      "method": "convex",
-      "alpha": 0.5,
-      "relevant_chunks": 5,
-      "sources": [
-        "2410.05779.pdf",
-        "2401.05856.pdf",
-        "2403.05530.pdf",
-        "DPR_2020.pdf",
-        "2410.05779.pdf"
-      ],
-      "scores": [
-        0.6012758896122989,
-        0.4157776547436802,
-        0.4050508806039514,
-        0.36037926200917325,
-        0.35598883883504967
-      ],
-      "execution_time": 6.238891839981079,
-      "category": "technical",
-      "query_id": 10,
-      "difficulty": "hard"
-    },
-    {
-      "question": "What is the role of the retriever in RAG architecture?",
-      "answer": "The retriever's role in RAG architecture is to fetch relevant documents from an external corpus, ensuring that the model's output is grounded in accurate information.",
-      "method": "convex",
-      "alpha": 0.5,
-      "relevant_chunks": 5,
-      "sources": [
-        "2305.14283.pdf",
-        "2410.12837.pdf",
-        "2311.09476.pdf",
-        "2401.05856.pdf",
-        "2410.12837.pdf"
-      ],
-      "scores": [
-        0.6008521749047843,
-        0.5386735448239058,
-        0.5008572487962253,
-        0.4995857075308021,
-        0.4356534440826616
-      ],
-      "execution_time": 3.710117816925049,
-      "category": "technical",
-      "query_id": 41,
-      "difficulty": "easy"
-    },
-    {
-      "question": "Explain the concept of semantic search in RAG",
-      "answer": "Based on the context, the concept of semantic search in RAG (Relational Aggregator Graph) refers to a method of routing that leverages the semantic information of a query to narrow down the search scope.\n\nIn this approach, keywords (entities) are extracted from the query and then filtered based on their relevance to metadata within chunks. This filtering process helps to reduce the search space and provide more accurate results.\n\nThe Semantic Router is a specific method for routing that utilizes semantic information to guide the search process. It appears to be a hybrid approach, combining elements of keyword-based filtering with semantic analysis.\n\nIn essence, semantic search in RAG aims to use the meaning and context of the query to identify relevant chunks and retrieve more accurate results, rather than simply relying on keywords or metadata alone.",
-      "method": "convex",
-      "alpha": 0.5,
-      "relevant_chunks": 5,
-      "sources": [
-        "arxiv_1906.02329_2019.pdf",
-        "arxiv_1610.09769_2016.pdf",
-        "Self_RAG_2023.pdf",
-        "2312.10997.pdf",
-        "RAG_Survey_2023.pdf"
-      ],
-      "scores": [
-        0.5935296856679,
-        0.590867606934031,
-        0.5827732873664888,
-        0.5827732873664888,
-        0.5827732873664888
-      ],
-      "execution_time": 5.54397988319397,
-      "category": "technical",
-      "query_id": 42,
-      "difficulty": "medium"
-    },
-    {
-      "question": "How do attention mechanisms work in RAG systems?",
-      "answer": "According to the provided context, in RAG systems, attention mechanisms, such as Infini-attention, are used to enable natural extension of existing LLMs to infinitely long contexts via continual pre-training and fine-tuning. These mechanisms allow for both masked local attention and long-term linear attention within a single Transformer block, addressing challenges with creating robust RAG systems.\n\nSpecifically, the context mentions:\n\n1. The development of Infini-attention, which builds on the standard attention mechanism to enable the reuse of key, value, and query states in a single Transformer block.\n2. The employment of temporal attention mechanisms for video representation learning, demonstrating their effectiveness in modeling temporal dynamics of video contents.\n3. The utilization of high-level semantic attributes for visual understanding tasks.\n\nWhile it doesn't provide explicit information on how general attention mechanisms work within RAG systems beyond the specific implementation mentioned (Infini-attention), it does highlight the importance and application of such mechanisms in enhancing LLM capabilities and robustness.",
-      "method": "convex",
-      "alpha": 0.5,
-      "relevant_chunks": 5,
-      "sources": [
-        "2404.07143.pdf",
-        "arxiv_1707.06355_2017.pdf",
-        "2401.05856.pdf",
-        "2410.12837.pdf",
-        "2410.12837.pdf"
-      ],
-      "scores": [
-        0.6104217496715012,
-        0.6080342815083875,
-        0.5815867717762029,
-        0.5766626877673927,
-        0.5601509657384376
-      ],
-      "execution_time": 6.537417888641357,
-      "category": "technical",
-      "query_id": 43,
-      "difficulty": "hard"
-    },
-    {
-      "question": "What is the purpose of document encoding in RAG?",
-      "answer": "The purpose of document encoding in RAG (Recurrent Attention Graph) is to create a document aware query encoding matrix that can be used as input to the distributed sub-network, allowing it to learn embeddings of both the query and document text before matching. This document encoding is achieved through an n-graph based representation of each term in the query and document, which helps in capturing complex relationships between terms at different positions in the documents.",
-      "method": "convex",
-      "alpha": 0.5,
-      "relevant_chunks": 5,
-      "sources": [
-        "arxiv_1911.00964_2019.pdf",
-        "arxiv_1610.08136_2016.pdf",
-        "arxiv_1806.03529_2018.pdf",
-        "arxiv_1812.02971_2018.pdf",
-        "arxiv_1911.00964_2019.pdf"
-      ],
-      "scores": [
-        0.636344684974295,
-        0.5392726590625713,
-        0.5017423933665607,
-        0.4905833505577679,
-        0.477030950874734
-      ],
-      "execution_time": 4.9518961906433105,
-      "category": "technical",
-      "query_id": 44,
-      "difficulty": "medium"
-    },
-    {
-      "question": "How does RAG handle out-of-domain queries?",
-      "answer": "Unfortunately, the provided context does not explicitly mention how RAG handles out-of-domain queries. However, based on the general understanding of Retrieval-Augmented Language Models (RAG) and their architecture, it is possible to make an educated inference.\n\nRAG combines retrieval mechanisms with generative language models to enhance the accuracy of outputs. This suggests that when faced with an out-of-domain query, RAG may rely on its retrieval mechanism to search for relevant information in a database or index, rather than relying solely on its generative capabilities. The retrieved information can then be used to generate a response that is more informed and accurate.\n\nHowever, without further information or specific details from the study, it's difficult to provide a definitive answer on how RAG handles out-of-domain queries.",
-      "method": "convex",
-      "alpha": 0.5,
-      "relevant_chunks": 5,
-      "sources": [
-        "2410.05779.pdf",
-        "2410.12837.pdf",
-        "2401.05856.pdf",
-        "arxiv_1911.00964_2019.pdf",
-        "arxiv_1809.05190_2018.pdf"
-      ],
-      "scores": [
-        0.5678502669261422,
-        0.5562986886877839,
-        0.5174149461551172,
-        0.5084070436686097,
-        0.5054622290110432
-      ],
-      "execution_time": 5.531076192855835,
-      "category": "technical",
-      "query_id": 45,
-      "difficulty": "hard"
-    },
-    {
-      "question": "What is Self-RAG and how does it differ from standard RAG?",
-      "answer": "Self-RAG stands for \"Self-RAG\" which refers to a model that uses a web as an additional component to enhance its performance in terms of accuracy and retrieval. In comparison to standard RAG ( Retrieval of Answerable Queries), Self-RAG incorporates the use of a web, indicating it utilizes external information sources beyond the query itself to improve retrieval performance.",
-      "method": "convex",
-      "alpha": 0.5,
-      "relevant_chunks": 5,
-      "sources": [
-        "Corrective_RAG_2024.pdf",
-        "2410.05779.pdf",
-        "arxiv_1901.08079_2019.pdf",
-        "2403.05530.pdf",
-        "arxiv_1901.08079_2019.pdf"
-      ],
-      "scores": [
-        0.5991808628547985,
-        0.5824340769734272,
-        0.5674691158755409,
-        0.5538249994858915,
-        0.5467565078618746
-      ],
-      "execution_time": 4.013997793197632,
-      "category": "approaches",
-      "query_id": 11,
-      "difficulty": "hard"
-    },
-    {
-      "question": "Explain the concept of Corrective RAG (CRAG)",
-      "answer": "Corrective Retrieval-Augmented Generation (CRAG) is a proposed method that aims to self-correct the results of retriever and improve the utilization of documents for augmenting generation. It is designed to address issues with retrieval, particularly when the retriever returns inaccurate results. CRAG uses a lightweight retrieval evaluator to assess the quality of retrieved documents and trigger different knowledge retrieval actions based on confidence levels. This approach enhances the robustness of generation by correcting errors in retrieval and providing more accurate information for informative generation.",
-      "method": "convex",
-      "alpha": 0.5,
-      "relevant_chunks": 5,
-      "sources": [
-        "Corrective_RAG_2024.pdf",
-        "Corrective_RAG_2024.pdf",
-        "Self_RAG_2023.pdf",
-        "2312.10997.pdf",
-        "RAG_Survey_2023.pdf"
-      ],
-      "scores": [
-        0.6180361341329129,
-        0.5795101770706782,
-        0.3868796776479475,
-        0.3868796776479475,
-        0.3868796776479475
-      ],
-      "execution_time": 5.160250186920166,
-      "category": "approaches",
-      "query_id": 12,
-      "difficulty": "hard"
-    },
-    {
-      "question": "How does Hybrid RAG combine different retrieval methods?",
-      "answer": "Hybrid RAG combines various retrieval strategies, such as dense and sparse retrieval, to achieve optimal performance for diverse tasks.",
-      "method": "convex",
-      "alpha": 0.5,
-      "relevant_chunks": 5,
-      "sources": [
-        "2410.12837.pdf",
-        "2410.12837.pdf",
-        "2410.12837.pdf",
-        "2410.05779.pdf",
-        "arxiv_1805.08159_2018.pdf"
-      ],
-      "scores": [
-        0.6259063119496714,
-        0.4127726428698482,
-        0.3739274387276699,
-        0.3706383092943453,
-        0.36971424259653757
-      ],
-      "execution_time": 3.459594964981079,
-      "category": "approaches",
-      "query_id": 13,
-      "difficulty": "medium"
-    },
-    {
-      "question": "What is the advantage of query rewriting in RAG?",
-      "answer": "According to the context, one of the advantages of query rewriting in Retrieval-Augmented Generative (RAG) models is that it improves scores on multiple-choice QA settings, especially when compared to ChatGPT. Specifically, with Vicuna as a reader, the proposed pipeline achieves more gains in four categories compared to ChatGPT.",
-      "method": "convex",
-      "alpha": 0.5,
-      "relevant_chunks": 5,
-      "sources": [
-        "2305.14283.pdf",
-        "2305.14283.pdf",
-        "2402.14558.pdf",
-        "Self_RAG_2023.pdf",
-        "2312.10997.pdf"
-      ],
-      "scores": [
-        0.6198888120961316,
-        0.598527209215082,
-        0.5949465845331381,
-        0.5775324855961488,
-        0.5775324855961488
-      ],
-      "execution_time": 4.630125045776367,
-      "category": "approaches",
-      "query_id": 14,
-      "difficulty": "medium"
-    },
-    {
-      "question": "Explain the re-ranking stage in Advanced RAG",
-      "answer": "Unfortunately, the provided context does not explicitly explain the re-ranking stage in Advanced RAG. However, based on general knowledge of Retrieval-Augmented Generation (RAG) and its variants, I can provide an inference.\n\nIn RAG, the re-ranking stage is a critical component that refines the retrieval results to select the most relevant information for generation. In Advanced RAG, it's likely that the re-ranking stage involves some form of post-retrieval processing, such as:\n\n1. **Ranking and selection**: The retrieved documents are ranked based on their relevance to the query, and the top-ranked documents are selected for further processing.\n2. **Post-processing**: The selected documents may undergo additional processing steps, such as tokenization, entity recognition, or named entity recognition, to extract specific information that can be used for generation.\n3. **Weighted scoring**: A weighted scoring system may be employed to assign scores to the retrieved documents based on their relevance, and these scores are used to inform the generation process.\n\nThe re-ranking stage in Advanced RAG likely aims to improve the quality of the generated output by selecting the most relevant information from the retrieval results. However, without more specific information or context, it's difficult to provide a more detailed explanation.",
-      "method": "convex",
-      "alpha": 0.5,
-      "relevant_chunks": 5,
-      "sources": [
-        "Self_RAG_2023.pdf",
-        "2312.10997.pdf",
-        "RAG_Survey_2023.pdf",
-        "Self_RAG_2023.pdf",
-        "2312.10997.pdf"
-      ],
-      "scores": [
-        0.5943804608214353,
-        0.5943804608214353,
-        0.5943804608214353,
-        0.5174467332033457,
-        0.5174467332033457
-      ],
-      "execution_time": 8.888553142547607,
-      "category": "approaches",
-      "query_id": 15,
-      "difficulty": "medium"
-    },
-    {
-      "question": "What is iterative RAG and when is it beneficial?",
-      "answer": "Iterative Retrieval is a process in RAG (Relevance-Accuracy Gap) systems where the knowledge base is repeatedly searched based on the initial query and the text generated so far, providing a more comprehensive knowledge. \n\nIt is beneficial as it helps to refine the search and generate more accurate responses by incorporating new information.",
-      "method": "convex",
-      "alpha": 0.5,
-      "relevant_chunks": 5,
-      "sources": [
-        "2403.05530.pdf",
-        "2401.05856.pdf",
-        "Self_RAG_2023.pdf",
-        "2312.10997.pdf",
-        "RAG_Survey_2023.pdf"
-      ],
-      "scores": [
-        0.5935335418649047,
-        0.5912207502830389,
-        0.5776476272188682,
-        0.5776476272188682,
-        0.5776476272188682
-      ],
-      "execution_time": 4.340054750442505,
-      "category": "approaches",
-      "query_id": 46,
-      "difficulty": "hard"
-    },
-    {
-      "question": "Explain the concept of fusion in hybrid RAG systems",
-      "answer": "In hybrid RAG systems, \"fusion\" refers to the process of combining the outputs of different models or components to generate more accurate and coherent text. In the context of RAG, fusion involves integrating the knowledge base from external retrieval mechanisms with the generated text produced by the natural language generation (NLG) model.\n\nIn other words, fusion in RAG systems allows the hybrid model to leverage the strengths of both approaches - the retrieval mechanism's ability to provide factual information and the NLG model's creativity and fluency. By combining these two components, the RAG system can generate more accurate and informative text while still maintaining the coherence and naturalness of human language.",
-      "method": "convex",
-      "alpha": 0.5,
-      "relevant_chunks": 5,
-      "sources": [
-        "2401.05856.pdf",
-        "2410.12837.pdf",
-        "2410.12837.pdf",
-        "2401.05856.pdf",
-        "2311.09476.pdf"
-      ],
-      "scores": [
-        0.5782431090240548,
-        0.5676714966838676,
-        0.5217964139217203,
-        0.4817466251500471,
-        0.4798224969844245
-      ],
-      "execution_time": 6.255414724349976,
-      "category": "approaches",
-      "query_id": 47,
-      "difficulty": "medium"
-    },
-    {
-      "question": "What is adaptive retrieval in Self-RAG?",
-      "answer": "In the context of the provided text, \"Adaptive Retrieval\" refers to an adaptive document retrieval strategy used in the Self-RAG (Self-Reinforcing Adaptive Gateway) system. It is a flexible approach that can adapt to different corpus sizes and achieves better performance compared to fixed document count strategies, particularly in terms of regret.",
-      "method": "convex",
-      "alpha": 0.5,
-      "relevant_chunks": 5,
-      "sources": [
-        "arxiv_1808.06528_2018.pdf",
-        "arxiv_1808.06528_2018.pdf",
-        "2403.14403.pdf",
-        "arxiv_1808.06528_2018.pdf",
-        "2403.14403.pdf"
-      ],
-      "scores": [
-        0.6400472653253659,
-        0.6002695221106102,
-        0.5669177890361013,
-        0.5519903140440603,
-        0.5482038721775897
-      ],
-      "execution_time": 4.354259014129639,
-      "category": "approaches",
-      "query_id": 48,
-      "difficulty": "hard"
-    },
-    {
-      "question": "How does context enrichment improve RAG performance?",
-      "answer": "Unfortunately, the provided text does not mention \"context enrichment\" specifically. However, based on the context of the research questions (RQ1-RQ4) related to the LightRAG framework in systems biology, I can make an educated guess.\n\nSince the question is not directly answered in the provided text, I'll provide a general answer that might be relevant to RAG (Retrieval-Augmentation-Generation) performance:\n\nContext enrichment can potentially improve RAG performance by providing additional information about the context or background of the input data. This can help the model better understand the relationships between entities and generate more accurate and relevant outputs.\n\nIn the context of LightRAG, context enrichment might refer to using external knowledge graphs, ontologies, or other sources to augment the retrieval and augmentation steps, thereby improving the overall performance of the system. However, without further information, it's difficult to provide a specific answer about how context enrichment improves RAG performance in this particular framework.",
-      "method": "convex",
-      "alpha": 0.5,
-      "relevant_chunks": 5,
-      "sources": [
-        "2410.05779.pdf",
-        "0912.2822.pdf",
-        "arxiv_1805.08159_2018.pdf",
-        "2410.05779.pdf",
-        "0912.2822.pdf"
-      ],
-      "scores": [
-        0.6069354619184442,
-        0.37575513386549314,
-        0.3626200854616503,
-        0.31498475358868666,
-        0.31004592297695627
-      ],
-      "execution_time": 7.523274898529053,
-      "category": "approaches",
-      "query_id": 49,
-      "difficulty": "medium"
-    },
-    {
-      "question": "What is the role of web search in Corrective RAG?",
-      "answer": "According to the context, Nicholas Ray and Elia Kazan have in common that they are both American authors (with Nicholas Ray being an author and director), and their original names were Raymond Nicholas Kienzle.\n\nThe role of web search in Corrective RAG is to introduce a new source of knowledge for correction when the retrieved knowledge from other sources is judged as inaccurate.",
-      "method": "convex",
-      "alpha": 0.5,
-      "relevant_chunks": 5,
-      "sources": [
-        "Corrective_RAG_2024.pdf",
-        "2305.14283.pdf",
-        "2403.05530.pdf",
-        "arxiv_1610.09769_2016.pdf",
-        "Corrective_RAG_2024.pdf"
-      ],
-      "scores": [
-        0.5858845007193723,
-        0.5780855697372506,
-        0.44011156402782947,
-        0.419512220653049,
-        0.4129301550091815
-      ],
-      "execution_time": 4.935941934585571,
-      "category": "approaches",
-      "query_id": 50,
-      "difficulty": "medium"
-    },
-    {
-      "question": "What metrics should be used to evaluate RAG systems?",
-      "answer": "U and ROUGE metrics are commonly used to evaluate answer quality and are also applicable to evaluate Retrieval Quality in RAG systems.",
-      "method": "convex",
-      "alpha": 0.5,
-      "relevant_chunks": 5,
-      "sources": [
-        "Self_RAG_2023.pdf",
-        "2312.10997.pdf",
-        "RAG_Survey_2023.pdf",
-        "arxiv_1304.7157_2013.pdf",
-        "arxiv_1304.7157_2013.pdf"
-      ],
-      "scores": [
-        0.6133958730896363,
-        0.6133958730896363,
-        0.6133958730896363,
-        0.5499828476869283,
-        0.5260222935092486
-      ],
-      "execution_time": 3.8707849979400635,
-      "category": "evaluation",
-      "query_id": 16,
-      "difficulty": "medium"
-    },
-    {
-      "question": "How do you measure faithfulness in RAG outputs?",
-      "answer": "No",
-      "method": "convex",
-      "alpha": 0.5,
-      "relevant_chunks": 5,
-      "sources": [
-        "2311.09476.pdf",
-        "2403.05530.pdf",
-        "2311.09476.pdf",
-        "2402.14558.pdf",
-        "arxiv_1901.08079_2019.pdf"
-      ],
-      "scores": [
-        0.5947909826179865,
-        0.5485156710779162,
-        0.4710702140687375,
-        0.45645661796878145,
-        0.4443575041208997
-      ],
-      "execution_time": 3.555873155593872,
-      "category": "evaluation",
-      "query_id": 17,
-      "difficulty": "hard"
-    },
-    {
-      "question": "What is RAGAS and how is it used for RAG evaluation?",
-      "answer": "RAGAS stands for an automated evaluation framework, but the specific details of what it entails are not provided in the context. However, based on the information given, it appears that RAGAS is a system used to evaluate RAG (Question Answer Generation) systems. \n\nIt seems like the RAGAS framework was replaced or surpassed by ARES, which is a more accurate and powerful framework for evaluating RAG systems.",
-      "method": "convex",
-      "alpha": 0.5,
-      "relevant_chunks": 5,
-      "sources": [
-        "2311.09476.pdf",
-        "2311.09476.pdf",
-        "arxiv_1901.08079_2019.pdf",
-        "arxiv_1901.08079_2019.pdf",
-        "2311.09476.pdf"
-      ],
-      "scores": [
-        0.5944672740087237,
-        0.5702461294973329,
-        0.5503930231703223,
-        0.5455113176709536,
-        0.5323158034366747
-      ],
-      "execution_time": 5.285604953765869,
-      "category": "evaluation",
-      "query_id": 18,
-      "difficulty": "hard"
-    },
-    {
-      "question": "Explain the difference between retrieval and generation metrics",
-      "answer": "Based on the context provided, the main difference between retrieval and generation metrics appears to be that retrieval metrics focus on evaluating the effectiveness of a system in providing relevant information or context (i.e., \"context sourced by the retriever component\"), whereas generation metrics evaluate the quality of generated output.\n\nIn other words, retrieval metrics assess how well a system retrieves relevant information or context, such as Hit Rate, MRR, and NDCG. These metrics are typically used to measure the performance of the retriever component.\n\nOn the other hand, generation metrics (such as Generation Quality) focus on evaluating the quality of the generated output itself, rather than just retrieving context. This suggests that generation metrics are concerned with how well the system can produce coherent and relevant text or responses.\n\nIt's worth noting that the two objectives (\"Retrieval Quality\" and \"Generation Quality\") seem to be combined in this passage, which may indicate that the evaluation framework is trying to assess both aspects of the RAG retrieval module.",
-      "method": "convex",
-      "alpha": 0.5,
-      "relevant_chunks": 5,
-      "sources": [
-        "arxiv_1304.7157_2013.pdf",
-        "Self_RAG_2023.pdf",
-        "2312.10997.pdf",
-        "RAG_Survey_2023.pdf",
-        "Corrective_RAG_2024.pdf"
-      ],
-      "scores": [
-        0.6096623203731609,
-        0.5612806578245262,
-        0.5612806578245262,
-        0.5612806578245262,
-        0.5286954455917714
-      ],
-      "execution_time": 7.497338056564331,
-      "category": "evaluation",
-      "query_id": 19,
-      "difficulty": "medium"
-    },
-    {
-      "question": "How can we detect hallucinations in RAG systems?",
-      "answer": "The context does not explicitly mention a method for detecting hallucinations in RAG systems. However, based on the general knowledge of AI and language models, it is possible to provide some insights.\n\nDetecting hallucinations in RAG systems is crucial to improve their accuracy and reliability, especially when dealing with critical applications. Here are a few potential strategies that could be explored:\n\n1. **Monitoring retrieval performance**: Analyzing the retrieval process can help identify patterns or anomalies that may indicate hallucination. This could involve evaluating the relevance of retrieved documents, the quality of the generated text, and the consistency of the output.\n2. **Evaluating user feedback**: Collecting feedback from users who interact with RAG systems can provide valuable insights into the accuracy and reliability of the model. By analyzing user responses, developers may be able to identify instances where hallucinations occur.\n3. **Implementing post-processing checks**: Additional processing steps, such as fact-checking or consistency checks, could be applied to generated text to detect potential hallucinations.\n4. **Using external validation sources**: RAG systems can benefit from integrating external validation sources, such as knowledge graphs or databases, to verify the accuracy of generated text.\n\nWhile these strategies may provide some insights into detecting hallucinations in RAG systems, further",
-      "method": "convex",
-      "alpha": 0.5,
-      "relevant_chunks": 5,
-      "sources": [
-        "2410.12837.pdf",
-        "2410.12837.pdf",
-        "Corrective_RAG_2024.pdf",
-        "2410.12837.pdf",
-        "RAG_Lewis_2020.pdf"
-      ],
-      "scores": [
-        0.5808788726242146,
-        0.4926295122393034,
-        0.48457466437059526,
-        0.4639365539081568,
-        0.4616123669631269
-      ],
-      "execution_time": 8.719059228897095,
-      "category": "evaluation",
-      "query_id": 20,
-      "difficulty": "hard"
-    },
-    {
-      "question": "What is the Lost in the Middle problem in RAG?",
-      "answer": "In RAG (RACE-based Answer Generation) models, the \"Lost in the middle\" problem refers to how LLMs (Large Language Models) tend to focus only on the beginning and end of long texts, while forgetting the middle portion.",
-      "method": "convex",
-      "alpha": 0.5,
-      "relevant_chunks": 5,
-      "sources": [
-        "RAG_Lewis_2020.pdf",
-        "RAG_Lewis_2020.pdf",
-        "Self_RAG_2023.pdf",
-        "2312.10997.pdf",
-        "RAG_Survey_2023.pdf"
-      ],
-      "scores": [
-        0.6498016297903899,
-        0.4448092615785331,
-        0.41523231294029816,
-        0.41523231294029816,
-        0.41523231294029816
-      ],
-      "execution_time": 4.242502927780151,
-      "category": "challenges",
-      "query_id": 21,
-      "difficulty": "hard"
-    },
-    {
-      "question": "How does context length affect RAG performance?",
-      "answer": "Unfortunately, the provided text doesn't explicitly mention how context length affects RAG (Retrieval-Augmented Generation) performance. However, based on the information given in the prompt, we can infer that the length penalty factor α may have an impact on the model's performance.\n\nAccording to Table 6, which is mentioned in the prompt, different values of the length penalty factor α affect the model's performance significantly. A small value of α tends to generate long phrases, while a big value tends to generate short ones. This suggests that the context length may be indirectly affected by the length penalty factor, as longer or shorter phrases may require more or less context information to generate accurate responses.\n\nHowever, without further information about how RAG models are specifically designed to handle varying context lengths, it's difficult to provide a definitive answer.",
-      "method": "convex",
-      "alpha": 0.5,
-      "relevant_chunks": 5,
-      "sources": [
-        "2410.05779.pdf",
-        "arxiv_1905.07689_2019.pdf",
-        "2403.05530.pdf",
-        "DPR_2020.pdf",
-        "2410.05779.pdf"
-      ],
-      "scores": [
-        0.6134462080317435,
-        0.4692231544651625,
-        0.4125771506115271,
-        0.36701340809793875,
-        0.3618704234239865
-      ],
-      "execution_time": 6.774917125701904,
-      "category": "challenges",
-      "query_id": 22,
-      "difficulty": "medium"
-    },
-    {
-      "question": "What are the common failure modes of RAG systems?",
-      "answer": "The common failure modes of RAG (Relevance-based Active Learning) systems include:\n\n1. Missing Content: This occurs when asking a question that cannot be answered from the available documents, and the system may provide an incorrect response.\n2. Missed the Top Ranked Documents: This happens when the answer to a question is related to the content but doesn't have answers among the top-ranked documents.\n\nThese are two of the identified failure points in RAG systems, as presented in the case studies.",
-      "method": "convex",
-      "alpha": 0.5,
-      "relevant_chunks": 5,
-      "sources": [
-        "2401.05856.pdf",
-        "2401.05856.pdf",
-        "2401.05856.pdf",
-        "2401.05856.pdf",
-        "2306.05685.pdf"
-      ],
-      "scores": [
-        0.6466844481226529,
-        0.5067061854751838,
-        0.4699478813761502,
-        0.4419861494512564,
-        0.38195175684308896
-      ],
-      "execution_time": 5.529944181442261,
-      "category": "challenges",
-      "query_id": 23,
-      "difficulty": "hard"
-    },
-    {
-      "question": "How can RAG systems handle multi-hop reasoning?",
-      "answer": "The answer to the question \"How can RAG systems handle multi-hop reasoning?\" is not explicitly stated in the provided context. However, based on the information presented, it can be inferred that RAG systems may benefit from using models that are well-suited for handling complex multi-task learning, such as T5.\n\nT5's ability to handle complex multi-task learning makes it a popular choice for RAG systems that need to tackle a diverse range of knowledge-intensive tasks. While the context does not explicitly discuss how RAG systems can handle multi-hop reasoning, it suggests that using models like T5 or BART could potentially help address this challenge.\n\nAdditionally, the context mentions the use of LLMs (Large Language Models) for generating questions from multiple documents, which could be related to multi-hop reasoning. However, without further information, it is difficult to provide a more specific answer on how RAG systems can handle multi-hop reasoning.",
-      "method": "convex",
-      "alpha": 0.5,
-      "relevant_chunks": 5,
-      "sources": [
-        "2410.12837.pdf",
-        "2401.05856.pdf",
-        "2410.12837.pdf",
-        "2410.12837.pdf",
-        "2401.05856.pdf"
-      ],
-      "scores": [
-        0.5715987428899018,
-        0.4896263185568925,
-        0.47204237956468753,
-        0.4630738902217476,
-        0.4498232798879665
-      ],
-      "execution_time": 7.058166027069092,
-      "category": "challenges",
-      "query_id": 24,
-      "difficulty": "hard"
-    },
-    {
-      "question": "What are the scalability challenges in RAG systems?",
-      "answer": "Scalability is one of the primary challenges for RAG models, which refers to the challenge of making RAG systems operate efficiently with large amounts of data and computational resources.",
-      "method": "convex",
-      "alpha": 0.5,
-      "relevant_chunks": 5,
-      "sources": [
-        "2410.12837.pdf",
-        "2401.05856.pdf",
-        "2401.05856.pdf",
-        "2410.12837.pdf",
-        "arxiv_1610.09769_2016.pdf"
-      ],
-      "scores": [
-        0.6946083439333693,
-        0.47755235091215376,
-        0.4515430866660582,
-        0.4141094169322232,
-        0.3806698423631968
-      ],
-      "execution_time": 3.8069210052490234,
-      "category": "challenges",
-      "query_id": 25,
-      "difficulty": "medium"
-    },
-    {
-      "question": "What is the optimal chunk size for RAG systems?",
-      "answer": "Unfortunately, the provided context does not mention an optimal chunk size for RAG systems. The text mentions \"evaluating the ideal chunk size for a rag system\" but does not provide a specific answer or solution. It appears to be highlighting the need for further research and experimentation on this topic.\n\nHowever, I can suggest that based on the references provided, such as [89] Langchain's documentation, which discusses a method for recursively splitting text by character, it is possible to infer that there is no one-size-fits-all optimal chunk size, but rather a range of suitable sizes depending on the specific use case and application.",
-      "method": "convex",
-      "alpha": 0.5,
-      "relevant_chunks": 5,
-      "sources": [
-        "2401.05856.pdf",
-        "Self_RAG_2023.pdf",
-        "2312.10997.pdf",
-        "RAG_Survey_2023.pdf",
-        "Self_RAG_2023.pdf"
-      ],
-      "scores": [
-        0.6295015309270793,
-        0.5031701819947488,
-        0.5031701819947488,
-        0.5031701819947488,
-        0.43812767223373056
-      ],
-      "execution_time": 6.1254189014434814,
-      "category": "implementation",
-      "query_id": 26,
-      "difficulty": "medium"
-    },
-    {
-      "question": "How should chunk overlap be configured in RAG?",
-      "answer": "Unfortunately, the context provided does not mention how to configure chunk overlap in RAG. It only discusses different models and their characteristics, but does not provide any information on chunk overlap configuration.",
-      "method": "convex",
-      "alpha": 0.5,
-      "relevant_chunks": 5,
-      "sources": [
-        "2401.05856.pdf",
-        "Self_RAG_2023.pdf",
-        "2312.10997.pdf",
-        "RAG_Survey_2023.pdf",
-        "Self_RAG_2023.pdf"
-      ],
-      "scores": [
-        0.6551619824293213,
-        0.4647332189445374,
-        0.4647332189445374,
-        0.4647332189445374,
-        0.4604161366553021
-      ],
-      "execution_time": 4.291344165802002,
-      "category": "implementation",
-      "query_id": 27,
-      "difficulty": "medium"
-    },
-    {
-      "question": "What embedding models are best for RAG retrieval?",
-      "answer": "The context doesn't explicitly state that there is a specific type of embedding model that is best for RAG retrieval. However, it does mention that \"open source sentence embedding models performed as well as closed source alternatives on small text.\" This suggests that open-source sentence embedding models may be suitable for RAG retrieval, but it's not a definitive answer.",
-      "method": "convex",
-      "alpha": 0.5,
-      "relevant_chunks": 5,
-      "sources": [
-        "2401.05856.pdf",
-        "2401.05856.pdf",
-        "Self_RAG_2023.pdf",
-        "2312.10997.pdf",
-        "RAG_Survey_2023.pdf"
-      ],
-      "scores": [
-        0.5818825983530187,
-        0.5438668829886296,
-        0.4940224200881886,
-        0.4940224200881886,
-        0.4940224200881886
-      ],
-      "execution_time": 4.845411062240601,
-      "category": "implementation",
-      "query_id": 28,
-      "difficulty": "medium"
-    },
-    {
-      "question": "How do you choose the number of retrieved documents (top-k)?",
-      "answer": "According to Figure 3 (left), the optimal number of retrieved documents is 10. This means that when choosing the number of retrieved documents for this task, you should aim to retrieve 10 options as answers.",
-      "method": "convex",
-      "alpha": 0.5,
-      "relevant_chunks": 5,
-      "sources": [
-        "arxiv_1808.06528_2018.pdf",
-        "RAG_Lewis_2020.pdf",
-        "2403.05530.pdf",
-        "2403.05530.pdf",
-        "2403.05530.pdf"
-      ],
-      "scores": [
-        0.6040832602573415,
-        0.6038942623558212,
-        0.5905818915496817,
-        0.5635163798594932,
-        0.5301430405793435
-      ],
-      "execution_time": 4.263304948806763,
-      "category": "implementation",
-      "query_id": 29,
-      "difficulty": "medium"
-    },
-    {
-      "question": "What vector databases are commonly used for RAG?",
-      "answer": "Based on the context provided, it is not explicitly mentioned which vector databases are commonly used for RAG (Reasoning About Graphs). However, I can provide some general information that might be relevant to your question.\n\nRAG (Reasoning About Graphs) is a reasoning engine that can work with various graph formats, including RDF triples. Vector databases like Annoy [not mentioned in the provided context], Faiss [not mentioned] and others are not specifically associated with RAG.\n\nHowever, there is another graph database system called Mulgara [147] which is mentioned as an example of a triple store, but it's not clear if it has vector databases or not.",
-      "method": "convex",
-      "alpha": 0.5,
-      "relevant_chunks": 5,
-      "sources": [
-        "0912.2822.pdf",
-        "2410.12837.pdf",
-        "arxiv_1901.08079_2019.pdf",
-        "0912.2307.pdf",
-        "2401.05856.pdf"
-      ],
-      "scores": [
-        0.5688168886161186,
-        0.557857619123319,
-        0.553602274997374,
-        0.47906550332567654,
-        0.47254340189409955
-      ],
-      "execution_time": 6.203983783721924,
-      "category": "implementation",
-      "query_id": 30,
-      "difficulty": "easy"
-    },
-    {
-      "question": "Compare BM25 and dense vector retrieval methods",
-      "answer": "BM25 is more suitable for simpler, keyword-based queries, while Dense Passage Retrieval (DPR) tends to outperform it in semantically complex tasks.",
-      "method": "convex",
-      "alpha": 0.5,
-      "relevant_chunks": 5,
-      "sources": [
-        "2410.12837.pdf",
-        "2410.12837.pdf",
-        "RAG_Lewis_2020.pdf",
-        "2410.12837.pdf",
-        "DPR_2020.pdf"
-      ],
-      "scores": [
-        0.6625206025551377,
-        0.6509929351662436,
-        0.6473261650101961,
-        0.4736695926719581,
-        0.45186717696664486
-      ],
-      "execution_time": 3.9357528686523438,
-      "category": "comparison",
-      "query_id": 31,
-      "difficulty": "medium"
-    },
-    {
-      "question": "When should you use Naive RAG vs Advanced RAG?",
-      "answer": "Unfortunately, the provided context does not explicitly state when to use Naive RAG versus Advanced RAG. However, based on the information given, it can be inferred that:\n\n* Naive RAG is an early methodology that gained prominence shortly after something (likely the introduction of RAG method).\n* Advanced RAG was developed as a response to the specific shortcomings in Naive RAG.\n* Modular RAG seems to be the latest stage, which suggests that Advanced RAG might have been developed before it.\n\nWithout more context or information on the specific requirements and constraints of a project, it's difficult to provide a definitive answer on when to use Naive RAG versus Advanced RAG.",
-      "method": "convex",
-      "alpha": 0.5,
-      "relevant_chunks": 5,
-      "sources": [
-        "Self_RAG_2023.pdf",
-        "2312.10997.pdf",
-        "RAG_Survey_2023.pdf",
-        "Self_RAG_2023.pdf",
-        "2312.10997.pdf"
-      ],
-      "scores": [
-        0.6779273620919287,
-        0.6779273620919287,
-        0.6779273620919287,
-        0.5157110805072804,
-        0.5157110805072804
-      ],
-      "execution_time": 6.01963472366333,
-      "category": "comparison",
-      "query_id": 32,
-      "difficulty": "medium"
-    },
-    {
-      "question": "Compare Self-RAG with Corrective RAG approaches",
-      "answer": "According to the table, Self-RAG outperforms Self-CRAG in most cases. The comparison results between CRAG and Self-RAG are as follows:\n\n- CRAG: 29.0 and 24.9\n- Self-RAG: 54.9 and 57.9",
-      "method": "convex",
-      "alpha": 0.5,
-      "relevant_chunks": 5,
-      "sources": [
-        "Corrective_RAG_2024.pdf",
-        "Corrective_RAG_2024.pdf",
-        "Corrective_RAG_2024.pdf",
-        "2403.14403.pdf",
-        "Corrective_RAG_2024.pdf"
-      ],
-      "scores": [
-        0.6440793616820191,
-        0.5941076891581929,
-        0.574275565302079,
-        0.5337492945241408,
-        0.5181774820060939
-      ],
-      "execution_time": 4.581613779067993,
-      "category": "comparison",
-      "query_id": 33,
-      "difficulty": "hard"
-    },
-    {
-      "question": "What are the trade-offs between hybrid and pure dense retrieval?",
-      "answer": "The question is asking about the trade-offs between hybrid and pure dense retrieval in the context of Retrieval-Augmented Generation (RAG). However, the provided text does not explicitly mention \"hybrid\" and \"pure dense retrieval\". \n\nBased on the provided context, it can be inferred that \"dense retrieval\" might refer to a specific type of retrieval mechanism used in RAG. Unfortunately, the exact definition or comparison between hybrid and pure dense retrieval is not clear from the given text.\n\nHowever, considering the context of RAG and its components, it can be assumed that the trade-offs between different types of retrieval mechanisms (e.g., hybrid vs. pure dense) might relate to factors such as precision, recall, and efficiency. A more specific question or additional context would be needed to provide a definitive answer to this question.",
-      "method": "convex",
-      "alpha": 0.5,
-      "relevant_chunks": 5,
-      "sources": [
-        "2410.12837.pdf",
-        "2410.05779.pdf",
-        "2405.04517.pdf",
-        "2405.04517.pdf",
-        "2402.14558.pdf"
-      ],
-      "scores": [
-        0.5711069255599113,
-        0.5039680567618692,
-        0.47260346974052847,
-        0.47072711576579745,
-        0.4189222245647335
-      ],
-      "execution_time": 6.605754137039185,
-      "category": "comparison",
-      "query_id": 34,
-      "difficulty": "medium"
-    },
-    {
-      "question": "Compare single-stage vs multi-stage retrieval in RAG",
-      "answer": "Unfortunately, the provided context does not mention single-stage vs multi-stage retrieval in RAG. The text only discusses augmentation of LLMs, comparison with Fine-tuning (FT) and prompt engineering, and mentions fine-tuning as an example of collaborative fine-tuning. There is no information about RAG's retrieval methods, let alone comparing single-stage to multi-stage retrieval.",
-      "method": "convex",
-      "alpha": 0.5,
-      "relevant_chunks": 5,
-      "sources": [
-        "Self_RAG_2023.pdf",
-        "2312.10997.pdf",
-        "RAG_Survey_2023.pdf",
-        "2306.05685.pdf",
-        "2401.05856.pdf"
-      ],
-      "scores": [
-        0.5878919145044913,
-        0.5878919145044913,
-        0.5878919145044913,
-        0.5175351757231277,
-        0.5026554657442124
-      ],
-      "execution_time": 4.580151796340942,
-      "category": "comparison",
-      "query_id": 35,
-      "difficulty": "hard"
-    },
-    {
-      "question": "How can we improve retrieval quality in RAG?",
-      "answer": "According to the context, you can improve retrieval quality in RAG by using a Corrective Retrieval Augmented Generation (CRAG) method. This involves designing a lightweight retrieval evaluator that assesses the overall quality of retrieved documents for a query and returns a confidence degree based on which different knowledge retrieval actions can be triggered.",
-      "method": "convex",
-      "alpha": 0.5,
-      "relevant_chunks": 5,
-      "sources": [
-        "Corrective_RAG_2024.pdf",
-        "Corrective_RAG_2024.pdf",
-        "Self_RAG_2023.pdf",
-        "2312.10997.pdf",
-        "RAG_Survey_2023.pdf"
-      ],
-      "scores": [
-        0.6533543019155446,
-        0.5377020201121361,
-        0.4787779044493936,
-        0.4787779044493936,
-        0.4787779044493936
-      ],
-      "execution_time": 4.5939342975616455,
-      "category": "optimization",
+        0.5230359334805703,
+        0.5083648124163805,
+        0.5,
+        0.49603527952372994,
+        0.4609204617298837
+      ],
+      "execution_time": 2.1293160915374756,
+      "category": "company_overview",
       "query_id": 36,
       "difficulty": "medium"
     },
     {
-      "question": "What techniques reduce hallucinations in RAG systems?",
-      "answer": "The provided context does not specifically mention techniques that directly reduce hallucinations in RAG systems. However, it mentions improving the alignment between retrieved passages and the generation model's output, which can help minimize inconsistencies or factual hallucinations in final responses.\n\nThat being said, based on general knowledge about Retrieval-Augmented Generation (RAG) models, some techniques that may help reduce hallucinations include:\n\n1. Coherence techniques: Improving coherence by incorporating contextual information and relevant passages from the retrieval results.\n2. Passage ranking: Using more effective passage ranking algorithms to select the most relevant and accurate passages for generation.\n3. Model updates: Regularly updating the model with new data and fine-tuning it on specific tasks or domains to reduce hallucinations.\n\nThese techniques are not explicitly mentioned in the context, but they are general strategies that can help improve RAG systems' performance and reduce hallucinations.",
+      "question": "What was the company’s total revenue in the most recent fiscal year, and how did it change compared to the previous year?",
+      "answer": "and updated annually thereafter, which assesses the risks to the Company’s operations and finances,\nand to public welfare, presented by the real or potential unethical or improper usage of external data in the development, training, and deployment of its\nartificial intelligence offerings; what steps the Company takes to mitigate those risks; and how it measures the effectiveness of such efforts.\n \n \n(1)\nhttps://www.wsj.com/tech/ai/ai-training-data-synthetic-openai-anthropic-9230f8d8\n(2)\n\nit is focused on explaining what the algorithm is intended to do and how it\nworks in general terms. That is why we publish a number of policies and reports that provide meaningful visibility into how those services operate, as well\nas provide easy-to-use tools that put users in control, including:\n \n●An overview of How Search Works, including how we build and operate Google Search, when and why we remove content from search results, how\n\nrevenues, excluding hedging effect\n$\n136,957 \n$\n161,402 \nTotal revenue percentage change\n18 %\n13 %\nTotal constant currency revenue percentage change\n20 %\n14 %\n    Total revenues and hedging gains (losses) for the year ended December 31, 2018 were $136,819 million and $(138) million,\nrespectively.\nEMEA revenue percentage change from 2019 to 2020 was not significantly affected by foreign currency exchange\nrates, primarily due to the U.S. dollar weakening relative to the Euro offset by the U.S.",
       "method": "convex",
       "alpha": 0.5,
       "relevant_chunks": 5,
       "sources": [
-        "2410.12837.pdf",
-        "2410.12837.pdf",
-        "Self_RAG_2023.pdf",
-        "2312.10997.pdf",
-        "RAG_Survey_2023.pdf"
+        "ALPHABET INC. - DEF14A.pdf",
+        "ALPHABET INC. - DEF 14A_2.pdf",
+        "goog-20201231.pdf",
+        "ALPHABET INC. - DEF 14A_2.pdf",
+        "goog-20241231.pdf"
       ],
       "scores": [
-        0.5998235508212169,
-        0.5173754666203176,
-        0.42252549510459886,
-        0.42252549510459886,
-        0.42252549510459886
+        0.5389386690146548,
+        0.5281821921650742,
+        0.518135797968388,
+        0.5115083634190482,
+        0.5067356966326234
       ],
-      "execution_time": 6.978092193603516,
-      "category": "optimization",
+      "execution_time": 1.7762460708618164,
+      "category": "financials",
+      "query_id": 5,
+      "difficulty": "easy"
+    },
+    {
+      "question": "What are the main drivers of revenue growth mentioned in the Management’s Discussion and Analysis (MD&A)?",
+      "answer": "et In\nITEM 2.\nMANAGEMENT’S DISCUSSION AND ANALYSIS OF FINANCIAL\nCONDITION AND RESULTS OF OPERATIONS\nPlease read the following discussion and analysis of our financial condition and results of\noperations together with our consolidated financial statements and related notes included\nunder Part I, Item 1 of this Quarterly Report on Form 10-Q.\nExecutive Overview of Results\nBelow are our key financial results for the three months ended June 30, 2020\n(consolidated unless otherwise noted):\n•\n\n0,\n2020\n \n \n(unaudited)\nLong-lived assets:\nUnited States\n$\n94,907  $\n101,405 \nInternational\n28,424 \n33,469 \nTotal long-lived assets\n$\n123,331  $\n134,874 \nFor revenues by geography, see Note 2.\n34\nTable of Contents\nAlphabet In\nITEM 2.\nMANAGEMENT’S DISCUSSION AND ANALYSIS OF FINANCIAL\nCONDITION AND RESULTS OF OPERATIONS\nPlease read the following discussion and analysis of our financial condition and results of\n\nInc.\nITEM 2.\nMANAGEMENT’S DISCUSSION AND ANALYSIS OF FINANCIAL\nCONDITION AND RESULTS OF OPERATIONS\nPlease read the following discussion and analysis of our financial condition and\nresults of operations together with \"Note About Forward-Looking Statements\" and our\nconsolidated financial statements and related notes included under Item 1 of this Quarterly\nReport on Form 10-Q as well as our Annual Report on Form 10-K for the fiscal year ended",
+      "method": "convex",
+      "alpha": 0.5,
+      "relevant_chunks": 5,
+      "sources": [
+        "goog-20200630.pdf",
+        "goog-20200930.pdf",
+        "goog-20220331.pdf",
+        "goog-20220930.pdf",
+        "goog-20230930.pdf"
+      ],
+      "scores": [
+        0.6287059718380335,
+        0.615784459161662,
+        0.6157302498038929,
+        0.6127174322751189,
+        0.6127174322751189
+      ],
+      "execution_time": 1.6200151443481445,
+      "category": "financials",
+      "query_id": 6,
+      "difficulty": "medium"
+    },
+    {
+      "question": "How does the company break down its revenue by segment or product line?",
+      "answer": "inues to improve rapidly, we are focused on transforming our products to provide our users the most\nhelpful tools. Examples include AI Overviews, which allow users to ask their most complex questions, break down\nconcepts in a format that is useful for them, or take a video and ask a question out loud, and NotebookLM, which helps\nusers understand complex information by summarizing sources and providing relevant quotes. We are embedding the\n\novery of its amortized cost basis, we will write down the security to its fair value and record the\ncorresponding charge as a component of OI&E.\nFor non-marketable equity securities, including equity method investments, we consider whether impairment\nindicators exist by evaluating the companies' financial and liquidity position and access to capital resources, among\nother indicators. If the assessment indicates that the investment is impaired, we write down the investment to its fair\n\nite down the security to its fair value and record the\ncorresponding charge as a component of OI&E.\nFor non-marketable equity securities, including equity method investments, we consider whether impairment\nindicators exist by evaluating the companies' financial and liquidity position and access to capital resources, among\nother indicators. If the assessment indicates that the investment is impaired, we write down the investment to its fair",
+      "method": "convex",
+      "alpha": 0.5,
+      "relevant_chunks": 5,
+      "sources": [
+        "goog-20241231.pdf",
+        "goog-20241231.pdf",
+        "goog-20231231.pdf",
+        "goog-20210331.pdf",
+        "ALPHABET INC. DEF 14A.pdf"
+      ],
+      "scores": [
+        0.5866522912609033,
+        0.4971788876621973,
+        0.49545677714404357,
+        0.41408015054596886,
+        0.4085203799751302
+      ],
+      "execution_time": 1.4249658584594727,
+      "category": "financials",
+      "query_id": 7,
+      "difficulty": "medium"
+    },
+    {
+      "question": "What are the company’s operating income and net income for the latest year, and what are the main reasons for any significant changes?",
+      "answer": "company’s personalized advertising policies, with separate pages for sensitive\ninterest categories.\n• For the past decade, we have published an Ads Safety Report each year which outlines our efforts to prevent malicious use of our ads platforms.\n \nWe use a combination of automated and human evaluation to ensure Google Ads comply with these policies. We also provide information about our\ntargeted ad services, including what the algorithms allow and what they prohibit.\n\np them easily explore the range of places available to determine what might be most\nhelpful to them. Our ranking systems on Search and Maps are designed to return the most relevant results from the most reliable sources. For topics\nwhere quality information is particularly important — like health — we place an even greater emphasis on factors related to expertise and\ntrustworthiness. We work hard to surface results that are relevant and reliable, and help users find what they are looking for.\n\ne 13. Income Taxes\nThe following table presents provision for income taxes (in millions, except for\neffective tax rate):\nThree Months Ended\nMarch 31,\n2021\n2022\nIncome before provision for income taxes\n$\n21,283 \n$\n18,934 \nProvision for income taxes\n$\n3,353 \n$\n2,498 \nEffective tax rate\n15.8 %\n13.2 %\nWe are subject to income taxes in the U.S. and foreign jurisdictions. Significant\njudgment is required in evaluating our uncertain tax positions and determining our\nprovision for income taxes.",
+      "method": "convex",
+      "alpha": 0.5,
+      "relevant_chunks": 5,
+      "sources": [
+        "ALPHABET INC. DEF 14A.pdf",
+        "ALPHABET INC. - DEF 14A.pdf",
+        "goog-20220331.pdf",
+        "Document.pdf",
+        "ALPHABET INC. - DEF 14A.pdf"
+      ],
+      "scores": [
+        0.5910529353666784,
+        0.5523571429018598,
+        0.5117520436409186,
+        0.44573398402717057,
+        0.4445400736023036
+      ],
+      "execution_time": 1.4453098773956299,
+      "category": "financials",
+      "query_id": 8,
+      "difficulty": "hard"
+    },
+    {
+      "question": "How much did the company spend on research and development (R&D) in the latest fiscal year?",
+      "answer": "and provide\ncompetitive compensation programs, as well as to continue to invest in acquisitions;\n•\nour expectation that our cost of revenues, research and development (R&D) expenses, sales and marketing\nexpenses, and general and administrative expenses will increase in amount and may increase as a percentage\nof revenues may be affected by a number of factors;\n•\nestimates of our future compensation expenses;\n•\n\nproducts, services and\ntechnologies, systems, land and buildings for data centers and offices, and\ninfrastructure, as well as to continue to invest in acquisitions and strategic\ninvestments;\n•\nour pace of hiring and our plans to provide competitive compensation programs;\n•\nour expectation that our cost of revenues, research and development (R&D)\nexpenses, sales and marketing expenses, and general and administrative expenses\n\nterm initiatives, in particular in support of artificial intelligence\n(AI) products and services;\n•\nour plans to continue to invest in new businesses, products, services and\ntechnologies, and systems, as well as to continue to invest in acquisitions and\nstrategic investments;\n•\nour pace of hiring and our plans to provide competitive compensation programs;\n•\nour expectation that our cost of revenues, research and development (R&D)",
+      "method": "convex",
+      "alpha": 0.5,
+      "relevant_chunks": 5,
+      "sources": [
+        "Document.pdf",
+        "goog-20220930.pdf",
+        "goog-20240630.pdf",
+        "goog-20231231.pdf",
+        "goog-20241231.pdf"
+      ],
+      "scores": [
+        0.5840584126791587,
+        0.5837604071428505,
+        0.5746084535660053,
+        0.5664754064525129,
+        0.5610180794199487
+      ],
+      "execution_time": 1.5892329216003418,
+      "category": "financials",
+      "query_id": 9,
+      "difficulty": "easy"
+    },
+    {
+      "question": "Describe the company’s capital structure: what is the mix between debt and equity according to the balance sheet?",
+      "answer": "Corporate underperformance can be avoided if directors exercise greater risk oversight objectively. According to Alphabet’s Investor Relations, “the\nfundamental responsibility of the directors is to exercise their business judgment to act in what they reasonably believe to be the best interests of\nAlphabet and its stockholders,”10 but shareholders are uninformed about members’ ideological and political views. Greater transparency is needed for\n\nce” is similar to that of the Financial Reporting Council (FRC) in its UK Corporate Governance Code. According to the FRC, “This term has been carefully chosen to capture the complexity and diversity of modern contractual relationships between companies and individuals undertaking work for them. The culture of\nthe company, its strategy and values, and decisions made by the board and senior management, will have impact on all those paid to work for the company (see https:// www.frc.org.\n\nstandard equity awards for these individuals and selected the employee with the median award value. After identifying the median employee, we calculated annual total compensation for the median employee according to the methodology used to report the annual compensation of our named executive officers in the Summary Compensation Table on page 45.\nBack to Contents\nEQUITY COMPENSATION PLAN INFORMATION The following table summarizes our equity compensation plan information as of December 31, 2019.",
+      "method": "convex",
+      "alpha": 0.5,
+      "relevant_chunks": 5,
+      "sources": [
+        "ALPHABET INC. - DEF 14A.pdf",
+        "lgoog2020_def14a.pdf",
+        "lgoog2020_def14a.pdf",
+        "ALPHABET INC. - DEF 14A_2.pdf",
+        "ALPHABET INC. DEF 14A.pdf"
+      ],
+      "scores": [
+        0.5765436036379081,
+        0.48991353965141404,
+        0.4658408221592319,
+        0.4392810915637611,
+        0.4269992227676452
+      ],
+      "execution_time": 2.1012978553771973,
+      "category": "financials",
+      "query_id": 10,
+      "difficulty": "hard"
+    },
+    {
+      "question": "What is the company’s free cash flow in the latest year, if disclosed, and how is it calculated?",
+      "answer": "it is focused on explaining what the algorithm is intended to do and how it\nworks in general terms. That is why we publish a number of policies and reports that provide meaningful visibility into how those services operate, as well\nas provide easy-to-use tools that put users in control, including:\n \n●An overview of How Search Works, including how we build and operate Google Search, when and why we remove content from search results, how\n\ntaining to our policies provide examples of what content is prohibited, how we evaluate content for\nEducational, Documentary, Scientific or Artistic (EDSA) context, and content that may have monetization restrictions placed on it.\n●The How YouTube Works website, which explains how YouTube provides a responsible platform. It includes information on YouTube’s policies,\nincluding the YouTube Community Guidelines that outline what type of content is not allowed on YouTube.\n\nency must consider the serious risk that information could be exploited by bad actors, user privacy\ncould be impacted, and commercially sensitive information could be exposed. The algorithms that platforms use to manage content are confidential and\ncore to how they serve and protect users.\n \nWe believe that algorithmic transparency can be effective — and safe — where it is focused on explaining what the algorithm is intended to do and how it\nworks in general terms.",
+      "method": "convex",
+      "alpha": 0.5,
+      "relevant_chunks": 5,
+      "sources": [
+        "ALPHABET INC. - DEF 14A_2.pdf",
+        "ALPHABET INC. - DEF 14A_2.pdf",
+        "ALPHABET INC. - DEF 14A_2.pdf",
+        "ALPHABET INC. - DEF 14A_3.pdf",
+        "ALPHABET INC. - DEF14A.pdf"
+      ],
+      "scores": [
+        0.6159174683810068,
+        0.5684526237914446,
+        0.51907974865633,
+        0.5097192625083966,
+        0.4952390005142385
+      ],
+      "execution_time": 1.4439198970794678,
+      "category": "financials",
       "query_id": 37,
       "difficulty": "hard"
     },
     {
-      "question": "How can we optimize RAG for low-latency applications?",
-      "answer": "Unfortunately, the provided context does not mention anything about optimizing RAG for low-latency applications. The text focuses on optimizing the model parameters of research in LLMs community, introducing main downstream tasks and datasets, and evaluating RAG systems.\n\nHowever, I can provide some general guidance on how to optimize RAG models for low-latency applications. Optimizing RAG models for low-latency applications might involve:\n\n1. **Model pruning**: Remove unnecessary weights or connections from the model to reduce computational complexity.\n2. **Quantization**: Represent model weights and activations using fewer bits (e.g., from 32-bit floating-point numbers to 8-bit integers) to reduce memory usage and computation time.\n3. **Knowledge distillation**: Train a smaller, faster model (the \"student\") to mimic the behavior of a larger, more complex model (the \"teacher\").\n4. **Low-precision arithmetic**: Use lower precision arithmetic operations (e.g., 16-bit floating-point numbers) to reduce computational overhead.\n5. **Efficient computing architectures**: Leverage specialized computing hardware, such as tensor processing units (TPUs), graphics processing units (GPUs), or field-programmable gate arrays (FPGAs).\n\nThese optimizations can help reduce the latency and computational requirements of",
+      "question": "What are the top three risk factors highlighted in the Risk Factors section of the annual report?",
+      "answer": "t significant risks we face, including risks related to user data collection, privacy,\nand security. In fact, six of our risk factors discuss these risks, and two risk factors give detailed descriptions of these risks and the steps we take to\nmanage them. Specifically, our risk factors disclose:\n \n• The adequacy of our practices with regard to the collection, use, governance, disclosure, or security of personal information or other data privacy-\n\ntrategic planning, in light of risk factors like\nwidespread violations of human and civil rights.\n \nAlphabet Opposing Statement\n \nIn their letter to our stockholders at the time of Google’s initial public offering in 2004, our Co-Founders, Larry and Sergey, highlighted Google’s goal\nto “develop services that significantly improve the lives of as many people as possible.” This vision continues today –we believe in technology’s\n\nmeaningful, and you should not rely on our past results as an indication of our future\nperformance. Our quarterly, year-to-date, and annual expenses as a percentage of our\nrevenues may differ significantly from our historical rates. Our operating results in future\nquarters may fall below expectations. Any of these events could cause our stock price to fall.\nEach of the risk factors listed in this section in addition to the following factors may affect our\noperating results:\n•",
       "method": "convex",
       "alpha": 0.5,
       "relevant_chunks": 5,
       "sources": [
-        "arxiv_1906.02329_2019.pdf",
-        "Self_RAG_2023.pdf",
-        "2312.10997.pdf",
-        "RAG_Survey_2023.pdf",
-        "2405.04517.pdf"
+        "ALPHABET INC. DEF 14A.pdf",
+        "ALPHABET INC. - DEF 14A_3.pdf",
+        "goog-20200930.pdf",
+        "goog-20200630.pdf",
+        "goog-20220630.pdf"
       ],
       "scores": [
-        0.5934452304310063,
-        0.5593272113429734,
-        0.5593272113429734,
-        0.5593272113429734,
-        0.5386603603128686
+        0.636604736574736,
+        0.601445613523026,
+        0.5782498759065505,
+        0.5747354227487449,
+        0.5345605535662603
       ],
-      "execution_time": 8.662442207336426,
-      "category": "optimization",
+      "execution_time": 1.3513591289520264,
+      "category": "risks",
+      "query_id": 11,
+      "difficulty": "medium"
+    },
+    {
+      "question": "Does the company mention dependence on key suppliers or customers as a risk, and how is this described?",
+      "answer": "change reporting, our Board does not believe that the report requested by this proposal would be an\neffective use of company resources or provide additional information that would be of value to our stockholders and therefore recommends a vote\nAGAINST this proposal.\n \nWe Maintain an Effective Climate Risk Assessment Process\n \nSustainability is one of our key priorities. In April 2021, we formally expressed our support for the Task Force on Climate Related Financial Disclosures\n\nthe quality of our products and services does not meet expectations or our products or services are\ndefective or require a recall, it could harm our reputation, financial condition, and operating results.\nWe require our suppliers and business partners to comply with laws and, where applicable, our company policies\nand practices, such as the Google Supplier Code of Conduct, regarding workplace and employment practices, data\n\nuppliers. If the quality of our products and services does not meet expectations or our products or\nservices are defective, it could harm our reputation, financial condition, and operating results.\nWe require our suppliers and business partners to comply with laws and, where applicable, our company policies,\nsuch as the Google Supplier Code of Conduct, regarding workplace and employment practices, data security,",
+      "method": "convex",
+      "alpha": 0.5,
+      "relevant_chunks": 5,
+      "sources": [
+        "ALPHABET INC. DEF 14A.pdf",
+        "goog-20231231.pdf",
+        "goog-20211231.pdf",
+        "goog-20241231.pdf",
+        "goog-20221231.pdf"
+      ],
+      "scores": [
+        0.5751755181965694,
+        0.5479819343926975,
+        0.5247125820961469,
+        0.5229816103258851,
+        0.5213663482286129
+      ],
+      "execution_time": 1.3621389865875244,
+      "category": "risks",
+      "query_id": 12,
+      "difficulty": "medium"
+    },
+    {
+      "question": "How does the company describe competitive risks in its industry?",
+      "answer": "sfaction of performance criteria underlying the award.\n \nSection 4—Other Compensation Information\n \nThe first three sections of this CD&A describe how we think about compensation and how that affects our pay practices. Other compensation-related\ndetails that may be important considerations for our investors are discussed in this section.\n \nRisk Considerations\n\n,609 to Ruth, 75,217 to Philipp, and 37,609 to Kent.\n \nSection 5 — Other Compensation Information\n \nThe first three sections of this CD&A describe how we think about compensation and how that affects our pay practices. Other compensation-related\ndetails that may be important considerations for our investors are discussed in this section.\n \nRisk Considerations\n\nCompany is failing to disclose these potential liabilities as material\nrisks in its public filings. There is currently no single source providing shareholders the information sought by this resolution.\n \nAlphabet Opposing Statement\n \nOur Board has considered this proposal and, for the reasons set forth below, does not believe that it is in the best interests of our company and our\nstockholders and recommends a vote AGAINST this proposal.",
+      "method": "convex",
+      "alpha": 0.5,
+      "relevant_chunks": 5,
+      "sources": [
+        "ALPHABET INC. - DEF 14A.pdf",
+        "ALPHABET INC. - DEF14A.pdf",
+        "ALPHABET INC. DEF 14A.pdf",
+        "ALPHABET INC. - DEF 14A_2.pdf",
+        "ALPHABET INC. - DEF 14A_2.pdf"
+      ],
+      "scores": [
+        0.6060255484306795,
+        0.5799151407574351,
+        0.5788218356839796,
+        0.5777434377152896,
+        0.5627899332524011
+      ],
+      "execution_time": 1.3329310417175293,
+      "category": "risks",
+      "query_id": 13,
+      "difficulty": "medium"
+    },
+    {
+      "question": "Are there any legal or regulatory proceedings disclosed that could materially affect the company’s financial position?",
+      "answer": "investigations,\nproceedings, and other contingencies, including the possibility that certain legal\nproceedings to which we are a party could harm our business, financial condition, and\noperating results;\n3\nTable of Contents\nAlphabet Inc.\n•\nour expectation that we will continue to face heightened regulatory scrutiny, and\nchanges in regulatory conditions, laws, and public policies, which could affect our\nbusiness practices and financial results;\n•\n\ninvestigations,\nproceedings, and other contingencies, including the possibility that certain legal\nproceedings to which we are a party could harm our business, financial condition, and\noperating results;\n3\nTable of Contents\nAlphabet Inc.\n•\nour expectation that we will continue to face heightened regulatory scrutiny, and\nchanges in regulatory conditions, laws, and public policies, which could affect our\nbusiness practices and financial results;\n•\n\n•\nour potential exposure in connection with new and pending investigations, proceedings, and other\ncontingencies, including the possibility that certain legal proceedings to which we are a party could harm our\nbusiness, financial condition, and operating results;\n•\nour expectation that we will continue to face heightened regulatory scrutiny and changes in regulatory\nconditions, laws, and public policies, which could affect our business practices and financial results;\n3.\nTable of Contents",
+      "method": "convex",
+      "alpha": 0.5,
+      "relevant_chunks": 5,
+      "sources": [
+        "goog-20250930.pdf",
+        "goog-20250331.pdf",
+        "goog-20231231.pdf",
+        "goog-20240930.pdf",
+        "goog-20231231.pdf"
+      ],
+      "scores": [
+        0.6476593882952905,
+        0.6476593882952905,
+        0.6199242555276028,
+        0.5724936678095531,
+        0.5708287022599279
+      ],
+      "execution_time": 1.4281980991363525,
+      "category": "risks",
+      "query_id": 14,
+      "difficulty": "hard"
+    },
+    {
+      "question": "Who are the key executive officers of the company according to the latest proxy statement or annual report?",
+      "answer": "wards have been made under the 2021 Stock Plan. The benefits or amounts that will be received by or\nallocated to each named executive officer, all current executive officers as a group, all directors who are not executive officers as a group, and all\nemployees who are not executive officers as a group under the 2021 Stock Plan are not presently determinable.\n \nRequired Vote\n\nmedian level, we assessed the grant date fair value of standard equity awards for these individuals\nand selected the employee with the median award value. After identifying the median employee, we calculated annual total\ncompensation for the median employee according to the methodology used to report the annual compensation of our named\nexecutive officers in the Summary Compensation Table on page 44.\n \nALPHABET • 2021 PROXY STATEMENT\n48\n \nBack to Contents\nEQUITY COMPENSATION PLAN\nINFORMATION\n\na long-term period, and our PSU awards are earned based on company performance. As the compensation\nof our named executive officers is tied to long-term performance, their interests are closely aligned with our stockholders’ interests and they are\nmotivated to carefully assess risks to the company to protect their compensation.\n \nAlphabet 2024 Proxy Statement     50\n \nBack to Contents\nProxy Statement\nSummary &\nHighlights\nCorporate\nGovernance\nDirector and\nExecutive\nCompensation\nAudit Matters",
+      "method": "convex",
+      "alpha": 0.5,
+      "relevant_chunks": 5,
+      "sources": [
+        "ALPHABET INC. - DEF 14A_3.pdf",
+        "ALPHABET INC. - DEF 14A_3.pdf",
+        "ALPHABET INC. - DEF 14A.pdf",
+        "ALPHABET INC. - DEF14A.pdf",
+        "ALPHABET INC. - DEF 14A.pdf"
+      ],
+      "scores": [
+        0.6147321193611885,
+        0.6129173489514455,
+        0.611166986695083,
+        0.5790604857341171,
+        0.5476638518026489
+      ],
+      "execution_time": 2.404892921447754,
+      "category": "governance",
+      "query_id": 15,
+      "difficulty": "easy"
+    },
+    {
+      "question": "How is the board of directors structured (size, independence, key committees)?",
+      "answer": "candidates to ensure the continuity of our culture, and making key management succession decisions. Management succession is regularly discussed by the directors in board meetings and in executive sessions of the Board of Directors. Directors become familiar with potential successors for key management positions through various means, including regular organization and talent reviews, presentations to the Board of Directors, and informal meetings.\nBack to Contents\n\n(“Alphabet”) ask the board of directors to report to shareholders on how it oversees risks related\nto anticompetitive practices, including whether the full board or board committee has oversight responsibility, whether and how consideration of such\nrisks is incorporated into board deliberations regarding strategy, and the board’s role in Alphabet’s public policy activities related to such risks. The\n\nstructure that promotes long-term stockholder value creation by providing effective leadership and\nBoard of Directors composition while providing our stockholders with both the opportunity to provide direct feedback and key substantive rights to\nensure accountability. Our Board of Directors believes that having a mix of directors with complementary qualifications, expertise, experience, and",
+      "method": "convex",
+      "alpha": 0.5,
+      "relevant_chunks": 5,
+      "sources": [
+        "lgoog2020_def14a.pdf",
+        "ALPHABET INC. - DEF 14A_3.pdf",
+        "ALPHABET INC. - DEF 14A_3.pdf",
+        "ALPHABET INC. - DEF 14A_3.pdf",
+        "lgoog2020_def14a.pdf"
+      ],
+      "scores": [
+        0.5979734247811901,
+        0.5494484751603692,
+        0.5003119339350236,
+        0.49749364698472154,
+        0.49032966497131714
+      ],
+      "execution_time": 1.4097998142242432,
+      "category": "governance",
+      "query_id": 16,
+      "difficulty": "medium"
+    },
+    {
+      "question": "What performance metrics are used to determine executive compensation?",
+      "answer": "bility in determining\nwhat particular performance metrics to use to best increase stockholder value. The Compensation Committee adjusts its assessments as necessary to\nstay competitive and attract, retain, and motivate highly-qualified executive officers.\n \nOur Board believes that our current executive compensation policies and practices are appropriate and effective, serve the best interests of our\n\nfactors that may impact share price. How should the company reasonably quantify the impact of stock\nbuybacks on its stock price over a multi-year period? This is further complicated as similar adjustments would presumably need to be made for TSR of\nthe S&P 100 given other companies’ stock repurchases. Our Board believes that the Compensation Committee should retain its flexibility in determining\nwhat particular performance metrics to use to best increase stockholder value.\n\nepurchase trends, when setting performance metrics for executive compensation awards. This proposal\nwould limit our ability to align our executive compensation arrangements with our overall capital allocation strategy and would unduly restrict our ability to\nuse all tools at our disposal to maximize alignment with our stockholders’ interests.\n \nIt is unclear how this proposal might even be implemented",
+      "method": "convex",
+      "alpha": 0.5,
+      "relevant_chunks": 5,
+      "sources": [
+        "ALPHABET INC. - DEF14A.pdf",
+        "ALPHABET INC. - DEF14A.pdf",
+        "ALPHABET INC. - DEF14A.pdf",
+        "ALPHABET INC. - DEF 14A.pdf",
+        "ALPHABET INC. - DEF 14A.pdf"
+      ],
+      "scores": [
+        0.6279989781540238,
+        0.4137435108838935,
+        0.40306328013286435,
+        0.40223212186257123,
+        0.37764457351447656
+      ],
+      "execution_time": 1.579519271850586,
+      "category": "governance",
+      "query_id": 17,
+      "difficulty": "hard"
+    },
+    {
+      "question": "Does the company mention any recent changes in leadership or the board, and what are the reasons?",
+      "answer": "which are heightened by the Company’s recent moves into health, location, and financial data;2 and . Exacerbating bias, reinforcing discrimination, or facilitating disinformation, harassment, hate speech, incitements to violence through algorithms that show user-targeted content.3 Currently, Google’s Code of Conduct,4 applicable only to its own operations, and its Supplier Code of Conduct5 do mention certain human rights issues.\n\n600 Amphitheatre Parkway\nMountain View, California 94043\n \n \nEmail:\ndirectors@abc.xyz\n \n \n \n \n \n \n \nAny matter intended for our Board, or for any individual member or members of our Board, should be directed to the email address or street address\nnoted above, with a request to forward the communication to the intended recipient or recipients. In general, any stockholder communication about bona\n\n600 Amphitheatre Parkway\nMountain View, California 94043\n \n \nEmail:\ndirectors@abc.xyz\n \n \n \n \n \n \n \nAny matter intended for our Board, or for any individual member or members of our Board, should be directed to the email address or street address\nnoted above, with a request to forward the communication to the intended recipient or recipients. In general, any stockholder communication about bona",
+      "method": "convex",
+      "alpha": 0.5,
+      "relevant_chunks": 5,
+      "sources": [
+        "lgoog2020_def14a.pdf",
+        "ALPHABET INC. - DEF14A.pdf",
+        "ALPHABET INC. - DEF 14A.pdf",
+        "goog-20211231.pdf",
+        "ALPHABET INC. DEF 14A.pdf"
+      ],
+      "scores": [
+        0.5,
+        0.4905250042795621,
+        0.4905250042795621,
+        0.48951152760636635,
+        0.48060959611623405
+      ],
+      "execution_time": 1.613853931427002,
+      "category": "governance",
+      "query_id": 18,
+      "difficulty": "medium"
+    },
+    {
+      "question": "Are there any shareholder proposals or significant voting results discussed in the proxy statement?",
+      "answer": "s, which includes our Annual Report on Form 10-K for the fiscal year ended December 31, 2024; and\n \n• the proxy card or a voting instruction form for the Annual Meeting.\n \n3.\nWhat information is contained in this proxy statement?\n \nThe information in this proxy statement relates to the proposals to be voted on at the Annual Meeting, the voting process, the compensation of our\ndirectors and certain of our executive officers, corporate governance, and certain other required information.\n \n4.\n\nended December 31, 2019; and •the proxy card or a voting instruction form for the Annual Meeting. 3. What information is contained in this proxy statement? The information in this proxy statement relates to the proposals to be voted on at the Annual Meeting, the voting process, the compensation of our directors and certain of our executive officers, corporate governance, and certain other required information. 4. Why did I receive a notice in the mail regarding the Internet availability of\n\nort, which includes our Annual Report on Form 10-K for the fiscal year ended December 31, 2021; and\n• the proxy card or a voting instruction form for the Annual Meeting.\n \n3.\nWhat information is contained in this proxy statement?\n \nThe information in this proxy statement relates to the proposals to be voted on at the Annual Meeting, the voting process, the compensation of our\ndirectors and certain of our executive officers, corporate governance, and certain other required information.\n \n4.",
+      "method": "convex",
+      "alpha": 0.5,
+      "relevant_chunks": 5,
+      "sources": [
+        "ALPHABET INC. - DEF14A.pdf",
+        "lgoog2020_def14a.pdf",
+        "ALPHABET INC. DEF 14A.pdf",
+        "ALPHABET INC. - DEF 14A_2.pdf",
+        "ALPHABET INC. - DEF 14A_3.pdf"
+      ],
+      "scores": [
+        0.6400248143139862,
+        0.6387668232827421,
+        0.6380550619213777,
+        0.6377103735827592,
+        0.6373524410851088
+      ],
+      "execution_time": 2.604757070541382,
+      "category": "governance",
       "query_id": 38,
       "difficulty": "hard"
     },
     {
-      "question": "What is context compression in RAG and why is it useful?",
-      "answer": "Based on the provided context, here is an answer to the question \"What is context compression in RAG and why is it useful?\":\n\nContext compression in RAG (Rationalizing Analogies in Graph) refers to the process of reducing the size of contextual information while maintaining its essential meaning. It is particularly relevant for training prompt compression techniques.\n\nThe importance of efficient compression objective for training such techniques has been highlighted by studies, including those involving AutoCompressors and Infini-Transformer models.\n\nIn the context of RAG, context compression can be useful as it enables more efficient processing and retrieval of contextual information. By reducing the size of this information while preserving its critical aspects, context compression can improve the overall performance and efficiency of RAG-based systems.",
+      "question": "What are the company’s main strategic priorities for the next few years as described by management?",
+      "answer": "n, acquisitions and strategic investments are an important part of our strategy and use of capital,\ncontributing to the breadth and depth of our offerings, expanding our expertise in engineering and other functional\nareas, and building strong partnerships around strategic initiatives. For example, in 2020 we announced our Google for\nIndia Digitization Fund to invest approximately $10 billion into India over the next 5-7 years through a mix of equity\n\nhas been made\nwith the implementation of various modules. Additional implementation activities are\nexpected to continue in phases over the next few years. There have been no changes in\nour internal control over financial reporting that occurred during the quarter ended June 30,\n2022 that have materially affected, or are reasonably likely to materially affect, our internal\ncontrol over financial reporting. However, as the phased implementation of the new ERP\n\nexpected to\ncontinue in phases over the next few years. There have been no changes in our internal\ncontrol over financial reporting that occurred during the quarter ended September 30, 2021\nthat have materially affected, or are reasonably likely to materially affect, our internal\ncontrol over financial reporting. However, as the phased implementation of the new ERP\nsystem continues, we will change our processes and procedures, which in turn, could",
       "method": "convex",
       "alpha": 0.5,
       "relevant_chunks": 5,
       "sources": [
-        "2404.07143.pdf",
-        "arxiv_1901.08079_2019.pdf",
-        "arxiv_1707.07792_2017.pdf",
-        "arxiv_1809.05190_2018.pdf",
-        "arxiv_1812.02971_2018.pdf"
+        "goog-20201231.pdf",
+        "goog-20220630.pdf",
+        "goog-20210930.pdf",
+        "goog-20210630.pdf",
+        "ALPHABET INC. DEF 14A.pdf"
       ],
       "scores": [
-        0.5886945282192338,
-        0.5878919185068417,
-        0.5359232783120027,
-        0.513554654720143,
-        0.4864080282241181
+        0.5758699543382737,
+        0.504646007700051,
+        0.48793080034553266,
+        0.46646031080667216,
+        0.45086601305508933
       ],
-      "execution_time": 6.392506122589111,
-      "category": "optimization",
+      "execution_time": 1.4821038246154785,
+      "category": "strategy",
+      "query_id": 19,
+      "difficulty": "medium"
+    },
+    {
+      "question": "How does the company plan to allocate capital (e.g., investments, dividends, share buybacks, debt repayment)?",
+      "answer": "uding through Rule\n10b5-1 plans. The repurchase program does not have an expiration date.\nDividends\nDuring the year ended December 31, 2024, total cash dividends, which were first paid in June 2024, were $3.5\nbillion, $519 million, and $3.3 billion for Class A, Class B, and Class C shares, respectively.\nThe company intends to pay quarterly cash dividends in the future, subject to review and approval by the\ncompany’s Board of Directors in its sole discretion.\nNote 12. Net Income Per Share\n\nan amendment to the Plan to increase the share reserve by 8,500,000 shares of Class C capital stock. Our stockholders have previously authorized us to issue under the Plan up to a total of 88,000,000 shares of Class C capital stock, subject to adjustment upon certain changes in our capital structure.\n\nnvest in a wide range of investments, including through the Plan’s self-directed brokerage option\n \nGoogle is committed to helping our Plan participants feel supported as retirement investors. The Plan offers a wide range of options and investment\nstrategies, including all-in-one investments, passive and active investments, and even the choice to invest outside of the Plan. For example, the Plan’s",
+      "method": "convex",
+      "alpha": 0.5,
+      "relevant_chunks": 5,
+      "sources": [
+        "goog-20241231.pdf",
+        "lgoog2020_def14a.pdf",
+        "ALPHABET INC. - DEF 14A.pdf",
+        "ALPHABET INC. DEF 14A.pdf",
+        "lgoog2020_def14a.pdf"
+      ],
+      "scores": [
+        0.5793730416238189,
+        0.5219981077752499,
+        0.5081833637097675,
+        0.4890162980848411,
+        0.47238140798940476
+      ],
+      "execution_time": 1.3726611137390137,
+      "category": "strategy",
+      "query_id": 20,
+      "difficulty": "hard"
+    },
+    {
+      "question": "Which acquisitions, divestitures, or major investments were completed during the reporting period?",
+      "answer": "ial information, improve data management and provide timely information to our management team. The\nimplementation is expected to occur in phases over the next several years. The initial phase, which included changes\nto our general ledger and consolidated financial reporting systems, was completed during the third quarter of 2020.\nThere have been no changes in our internal control over financial reporting that occurred during the quarter ended\n\nly in response to various factors, many of which are beyond our control, including,\namong others:\n•\nQuarterly variations in our operating results or those of our competitors.\n•\nAnnouncements by us or our competitors of acquisitions, divestitures, investments, new products, significant\ncontracts, commercial relationships, or capital commitments.\n•\nRecommendations by securities analysts or changes in earnings estimates.\n•\n\ny fluctuate widely in response to various factors, many of which are beyond our control, including,\namong others announcements by us or our competitors of acquisitions, divestitures, investments, new products,\nsignificant contracts, commercial relationships, or capital commitments; recommendations by securities analysts or\nchanges in their earnings estimates; announcements about our or our competitors' earnings that are not in line with",
+      "method": "convex",
+      "alpha": 0.5,
+      "relevant_chunks": 5,
+      "sources": [
+        "goog-20201231.pdf",
+        "Document.pdf",
+        "goog-20201231.pdf",
+        "goog-20211231.pdf",
+        "Document.pdf"
+      ],
+      "scores": [
+        0.5798798820889519,
+        0.5554112477988964,
+        0.5473094566805721,
+        0.5316737809180357,
+        0.5307455902129955
+      ],
+      "execution_time": 1.3664190769195557,
+      "category": "strategy",
+      "query_id": 21,
+      "difficulty": "medium"
+    },
+    {
+      "question": "How does management describe the company’s competitive advantages or moats?",
+      "answer": "and other commitments that may provide them with competitive advantages and may affect our\nsupply.\nOur devices have had, and in the future may have, quality issues resulting from design, manufacturing, or\noperations. Sometimes, these issues may be caused by components we purchase from other manufacturers or\nsuppliers. If the quality of our products and services does not meet expectations or our products or services are\n\nvide them with competitive advantages and may affect our supply.\n12\nTable of Contents\nAlphabet Inc.\nOur products and services have had, and in the future may have, quality issues resulting from design,\nmanufacturing, or operations. Sometimes, these issues may be caused by components we purchase from other\nmanufacturers or suppliers. If the quality of our products and services does not meet expectations or our products or\n\nand other commitments that may provide them with competitive advantages and\nmay affect our supply.\nOur products and services have had, and in the future may have, quality issues resulting from design,\nmanufacturing, or operations. Sometimes, these issues may be caused by components we purchase from other\n12\nTable of Contents\nAlphabet Inc.\nmanufacturers or suppliers. If the quality of our products and services does not meet expectations or our products or",
+      "method": "convex",
+      "alpha": 0.5,
+      "relevant_chunks": 5,
+      "sources": [
+        "goog-20231231.pdf",
+        "goog-20211231.pdf",
+        "goog-20221231.pdf",
+        "Document.pdf",
+        "Document.pdf"
+      ],
+      "scores": [
+        0.604784968789254,
+        0.599432646206156,
+        0.5838518394725625,
+        0.5809289350773666,
+        0.5761385014660697
+      ],
+      "execution_time": 1.3704299926757812,
+      "category": "strategy",
+      "query_id": 22,
+      "difficulty": "hard"
+    },
+    {
+      "question": "How does the company plan to address key risks and uncertainties mentioned in the report?",
+      "answer": "ormation about risks and uncertainties applicable to our work on sustainability and efficiency, see\nItem 1A Risk Factors of this Annual Report on Form 10-K.\nCulture and Workforce\nWe are a company of curious, talented, and passionate people. We embrace collaboration and creativity, and\nencourage the iteration of ideas to address complex challenges in technology and society.\nOur people are critical for our continued success, so we work hard to create an environment where employees\n\nitiative to address concerns similar to those raised in this proposal. For these reasons, our Board\ndoes not believe that implementing the requests of this proposal would provide additional useful information to stockholders and therefore recommends\nAGAINST this proposal.\n \nOur Human Rights Governance and Management Structure Provides Effective Oversight of Key Human\nRights Risks and Mitigation Strategies\n\nrs of the progress we are making\nto evaluate and address climate-related risks and opportunities.\n \nOur existing disclosures provide meaningful insight into how we identify, assess, and mitigate climate-related risks, including physical risks. As a result,\nour Board does not believe that the additional reporting requested in this proposal would provide substantial additional information to our stockholders.\n \nRequired Vote",
+      "method": "convex",
+      "alpha": 0.5,
+      "relevant_chunks": 5,
+      "sources": [
+        "goog-20241231.pdf",
+        "ALPHABET INC. - DEF 14A_2.pdf",
+        "ALPHABET INC. DEF 14A.pdf",
+        "goog-20241231.pdf",
+        "ALPHABET INC. - DEF 14A.pdf"
+      ],
+      "scores": [
+        0.6060687497049447,
+        0.5885013178134468,
+        0.55454686481451,
+        0.5443830785775368,
+        0.5331010593669331
+      ],
+      "execution_time": 1.706120252609253,
+      "category": "strategy",
+      "query_id": 40,
+      "difficulty": "hard"
+    },
+    {
+      "question": "What environmental, social, and governance (ESG) topics does the company highlight as most material?",
+      "answer": "in remaining current with best\npractices and developments in corporate governance.\n \n \nEngagement\n \nWe proactively engage with our stockholders and other stakeholders throughout the year on a broad range of topics that are of interest and priority to the\ncompany and our stockholders. These include business strategy and performance, and environmental, social and governance (ESG) topics such as\n\non the world and further the long-term interests of our business, stockholders, and stakeholders.\n \nOur Board and its committees provide oversight of environmental, social, and governance matters. At the committee level, oversight of specific\nenvironmental, social, and governance topics is assigned to the relevant committees, including:\n \n• Our Audit and Compliance Committee has the primary responsibility for oversight of risks associated with, among other matters, data privacy and\n\nd transparency we provide on the topics discussed above, we are continually focused on evolving our\nEnvironmental, Social, and Governance (ESG) reporting to align with best practices and stockholder and stakeholder expectations. To that end, we\nexpect to share in the upcoming months our first index of ESG disclosures mapped to the Sustainable Accounting Standards Board (SASB) and to the\nTask Force on Climate-Related Financial Disclosures (TCFD) framework.",
+      "method": "convex",
+      "alpha": 0.5,
+      "relevant_chunks": 5,
+      "sources": [
+        "ALPHABET INC. DEF 14A.pdf",
+        "ALPHABET INC. - DEF 14A.pdf",
+        "ALPHABET INC. DEF 14A.pdf",
+        "lgoog2020_def14a.pdf",
+        "ALPHABET INC. - DEF 14A_3.pdf"
+      ],
+      "scores": [
+        0.6702124984311267,
+        0.625279440980299,
+        0.6064176118812273,
+        0.5669443939487466,
+        0.5477955220151153
+      ],
+      "execution_time": 2.071521043777466,
+      "category": "esg",
+      "query_id": 23,
+      "difficulty": "medium"
+    },
+    {
+      "question": "Does the company disclose greenhouse gas (GHG) emissions or climate-related targets?",
+      "answer": "Google’s direct customers who buy a product on Google Shopping or purchase Made by Google hardware. •The Environmental Insights Explorer is enabling municipalities — which represent more than 70% of global greenhouse gas emissions according to the 2016 United Nations Habitat World Cities Report — to estimate emissions and develop climate action plans. In 2019, we expanded this tool to more than 100 cities worldwide.\n\nogle’s direct customers who buy a product on Google Shopping or purchase Made by Google\nhardware.\n•\nThe Environmental Insights Explorer is enabling municipalities — which represent more than 70% of global\ngreenhouse gas emissions according to the 2016 United Nations Habitat World Cities Report — to estimate\nemissions and develop climate action plans. In 2019, we expanded this tool to more than 100 cities worldwide.\n\nnergy (CFE) – that is,\nmatching its global electricity demand with clean energy around the clock.\n \nIn 2021, Alphabet announced it would reach net-zero greenhouse gas (GHG) emissions, reduce 50 percent of its operational and value chain emissions,\nand source 24/7 CFE for its worldwide operations by 2030.\n \nIn its 2023 10-K, Alphabet acknowledges that not meeting its goals creates significant risk and states that “Any failure, or perceived failure...to meet",
+      "method": "convex",
+      "alpha": 0.5,
+      "relevant_chunks": 5,
+      "sources": [
+        "lgoog2020_def14a.pdf",
+        "Document.pdf",
+        "ALPHABET INC. - DEF14A.pdf",
+        "ALPHABET INC. DEF 14A.pdf",
+        "ALPHABET INC. - DEF 14A.pdf"
+      ],
+      "scores": [
+        0.6234908772977241,
+        0.6220324160163495,
+        0.6161841021705595,
+        0.5804373819806958,
+        0.5642767161013427
+      ],
+      "execution_time": 1.461860179901123,
+      "category": "esg",
+      "query_id": 24,
+      "difficulty": "hard"
+    },
+    {
+      "question": "How does the company describe its approach to diversity, equity, and inclusion (DEI)?",
+      "answer": "ronmental sustainability initiatives. Please see our Sustainability website for more\ninformation.\n \nDiversity, Equity, and Inclusion (DEI): Building a world where progress, equitable outcomes, diversity, and inclusion can be realities is at the heart of\nwhat we do — from how we build our products to how we build our workforce. We have deepened our efforts to drive meaningful change but we know\nthere is more to be done.\n\nort for more information on our actions and progress.\n \nALPHABET ● 2023 PROXY STATEMENT        12\n \nDiversity, Equity, and Inclusion (DEI): Building a world where progress, equitable outcomes, diversity, and inclusion can be realities is at the heart of\nwhat we do — from how we build our products to how we build our workforce. We have deepened our efforts to drive meaningful change and we also\nknow there is more to be done.\n\nnally and we are using this data to help inform how we approach our diversity and inclusion efforts. To achieve these goals, Google has built a strategy anchored in further operationalizing its longstanding commitment to equity, diversity,\ninclusion, and integrity. For example, one of our goals is to engage with aspiring technologists early and often — ensuring that anyone can see themselves in technology and can make that future a reality.",
+      "method": "convex",
+      "alpha": 0.5,
+      "relevant_chunks": 5,
+      "sources": [
+        "ALPHABET INC. DEF 14A.pdf",
+        "ALPHABET INC. - DEF 14A_2.pdf",
+        "lgoog2020_def14a.pdf",
+        "goog-20221231.pdf",
+        "goog-20231231.pdf"
+      ],
+      "scores": [
+        0.6478262961357619,
+        0.6415988298898276,
+        0.6298947971066795,
+        0.5291518237429036,
+        0.5281984800628484
+      ],
+      "execution_time": 1.3925659656524658,
+      "category": "esg",
+      "query_id": 25,
+      "difficulty": "medium"
+    },
+    {
+      "question": "Are there any notable ESG-related risks or controversies mentioned in the report?",
+      "answer": "f the donations\nand the Company’s intention with regard to future donations to the organization;\n4.\nInclude management’s analysis of the risks to the Company’s brand, reputation, or shareholder value posed by public controversies associated\nwith the donations, including an explanation of the objective and consistent standards by which such controversies were discovered and their\neffect on the Company gauged; and\n5.\n\ndinary in nature and beyond a company’s ordinary business operations,”1 and so is amenable, without\nomission, to shareholder proposals to require reporting about them and about potential or realized risks and controversies arising from them, so long\nas the proposal relates to the corporation’s “charitable contributions generally,” rather than merely to some segment of the corporation’s charitable\ncontributions.2\n\ntandards by which such controversies were discovered and their\neffect on the Company gauged; and\n5.\nIdentify, if and as appropriate, philanthropic areas of initiatives considered most germane to corporate values while posting less risk to Company\nreputation; or in the alternative, any decision to scale back without replacement risky or misused donations.\n \nSupporting Statement",
+      "method": "convex",
+      "alpha": 0.5,
+      "relevant_chunks": 5,
+      "sources": [
+        "ALPHABET INC. - DEF 14A_3.pdf",
+        "ALPHABET INC. - DEF 14A_3.pdf",
+        "ALPHABET INC. - DEF 14A_3.pdf",
+        "lgoog2020_def14a.pdf",
+        "ALPHABET INC. - DEF 14A_2.pdf"
+      ],
+      "scores": [
+        0.6700618392976823,
+        0.5156271943826276,
+        0.515183609079614,
+        0.5021021460769772,
+        0.4530877246198223
+      ],
+      "execution_time": 1.4294459819793701,
+      "category": "esg",
+      "query_id": 26,
+      "difficulty": "hard"
+    },
+    {
+      "question": "Does the company link executive compensation to ESG or sustainability metrics?",
+      "answer": "s for the ESG Participants by 50%. As a result, each individual’s 2022 ESG Bonus payout is $775,000. While both the\nCompensation Committee and the ESG Participants recognize each ESG Participant’s strong individual performance against ESG goals in 2022, each\nESG Participant also encouraged the Compensation Committee’s decision, in its sole discretion, to adjust ESG bonuses downward in order to reflect\nmacroeconomic conditions.\n \nEquity Awards\n\nusiness strategy reduce reputational, legal, and regulatory risks and improve long-term performance. Leading companies have integrated sustainability metrics into executive pay plans, among them Unilever and Walmart. The UN Principles for Responsible Investment (2012) state that considering ESG factors in compensation can help protect long-term shareholder value. Diversity, inclusion, and equity are key components of business sustainability and success: .\n\nation Committee decided to align the amounts of the 2022 ESG Bonus payouts for all\nfour individuals. Based on the strong Google and individual performance against ESG goals in 2022, the Compensation Committee initially proposed a\nbonus amount of $1.55 million for each ESG Participant. However, in light of macroeconomic conditions, the Compensation Committee decided to\nreduce ESG Bonus payouts for the ESG Participants by 50%. As a result, each individual’s 2022 ESG Bonus payout is $775,000.",
+      "method": "convex",
+      "alpha": 0.5,
+      "relevant_chunks": 5,
+      "sources": [
+        "ALPHABET INC. - DEF 14A_2.pdf",
+        "lgoog2020_def14a.pdf",
+        "ALPHABET INC. - DEF 14A_2.pdf",
+        "ALPHABET INC. DEF 14A.pdf",
+        "ALPHABET INC. - DEF 14A_3.pdf"
+      ],
+      "scores": [
+        0.6398393060196925,
+        0.6070197661116657,
+        0.5844219039998418,
+        0.4981321946162065,
+        0.4545471711326864
+      ],
+      "execution_time": 1.5792880058288574,
+      "category": "esg",
       "query_id": 39,
       "difficulty": "hard"
     },
     {
-      "question": "How does prompt engineering affect RAG quality?",
-      "answer": "Based on the context, it appears that prompt engineering plays a crucial role in affecting the quality (RAG) of Response Artifact Generation (RAG) systems. The evaluation dimensions mentioned, such as Comprehensiveness, Diversity, and Empowerment, suggest that well-designed prompts can lead to higher-quality responses.\n\nThe fact that the authors conducted an empirical experiment using LLMs specifically for this purpose implies that prompt engineering is a key factor in influencing RAG quality. By analyzing the impact of different prompts on response quality, the authors aim to provide insights and knowledge on how to realise robust systems with LLMs.\n\nIn summary, prompt engineering has a significant effect on RAG quality, and by optimizing prompts, it's possible to improve the comprehensiveness, diversity, and empowerment of model responses.",
+      "question": "How has the company’s revenue growth over the last three years compared to its net income growth?",
+      "answer": "ge rates;\n•\nfees advertisers are willing to pay based on how they manage their advertising\ncosts;\n•\ngeneral economic conditions including the impact of COVID-19;\n•\nseasonality; and\n•\ntraffic growth in emerging markets compared to more mature markets and across\nvarious advertising verticals and channels.\nOur advertising revenue growth rate has been affected over time as a result of a\nnumber of factors, including challenges in maintaining our growth rate as revenues\n\nrmats, delivery or policy;\n•\nchanges in device mix;\n•\nchanges in foreign currency exchange rates;\n•\nfees advertisers are willing to pay based on how they manage their advertising costs;\n•\ngeneral economic conditions;\n•\nseasonality; and\n•\ntraffic growth in emerging markets compared to more mature markets and across\nvarious advertising verticals and channels.\nOur advertising revenue growth rate has been affected over time as a result of a number\n\n•\nseasonality; and\n•\ntraffic growth in emerging markets compared to more mature markets and across\nvarious advertising verticals and channels.\nOur advertising revenue growth rate has been affected over time as a result of a number\nof factors, including challenges in maintaining our growth rate as revenues increase to higher\nlevels; changes in our product mix; changes in advertising quality or formats and delivery; the",
       "method": "convex",
       "alpha": 0.5,
       "relevant_chunks": 5,
       "sources": [
-        "2401.05856.pdf",
-        "2410.05779.pdf",
-        "2403.05530.pdf",
-        "2401.05856.pdf",
-        "2401.05856.pdf"
+        "goog-20210331.pdf",
+        "goog-20200930.pdf",
+        "goog-20200630.pdf",
+        "goog-20210930.pdf",
+        "goog-20210630.pdf"
       ],
       "scores": [
-        0.6134778922648634,
-        0.5768156420060494,
-        0.5712426455675396,
-        0.5566773445425355,
-        0.5104447343987492
+        0.6125344078295858,
+        0.5759351159489247,
+        0.5471963936081083,
+        0.5223419137232314,
+        0.5144646052285795
       ],
-      "execution_time": 6.5667901039123535,
-      "category": "optimization",
-      "query_id": 40,
+      "execution_time": 1.414917230606079,
+      "category": "comparison",
+      "query_id": 27,
+      "difficulty": "hard"
+    },
+    {
+      "question": "Compare the share of revenue coming from the top business segment now versus two years ago.",
+      "answer": "products and services have come a long way since the company was founded more than two decades ago.\nRather than the ten blue links in our early search results, users can now get direct answers to their questions using\ntheir computer, mobile device, or their own voice, making it quicker, easier and more natural to find what you're looking\nfor.\nThis drive to make information more accessible and helpful has led us over the years to improve the discovery\n\nServices' core products and platforms include ads, Android, Chrome, hardware, Gmail, Google Drive,\nGoogle Maps, Google Photos, Google Play, Search, and YouTube, each with broad and growing adoption by users\naround the world.\nOur products and services have come a long way since the company was founded more than two decades ago.\nRather than the ten blue links in our early search results, users can now get direct answers to their questions using\n\nAnnual Report on Form 10-K.\n7\nTable of Contents\nAlphabet Inc.\nOngoing Commitment to Sustainability\nWe believe that every business has the opportunity and obligation to protect our planet. Sustainability is one of our\ncore values at Google, and we strive to build sustainability into everything we do. We have been a leader on\nsustainability and climate change since Google’s founding over 20 years ago. These are some of our key achievements\nover the past two decades:\n•",
+      "method": "convex",
+      "alpha": 0.5,
+      "relevant_chunks": 5,
+      "sources": [
+        "goog-20201231.pdf",
+        "goog-20211231.pdf",
+        "goog-20211231.pdf",
+        "goog-20221231.pdf",
+        "goog-20221231.pdf"
+      ],
+      "scores": [
+        0.5744201861281248,
+        0.4976692929049844,
+        0.4919626877311435,
+        0.48858520013405143,
+        0.4828712268735186
+      ],
+      "execution_time": 2.470737934112549,
+      "category": "comparison",
+      "query_id": 28,
+      "difficulty": "hard"
+    },
+    {
+      "question": "How has the company’s debt level changed over the last three reporting periods?",
+      "answer": "able basis for our opinion.\nDefinition and Limitations of Internal Control Over Financial Reporting\nA company’s internal control over financial reporting is a process designed to provide reasonable assurance regarding\nthe reliability of financial reporting and the preparation of financial statements for external purposes in accordance with\ngenerally accepted accounting principles. A company’s internal control over financial reporting includes those policies\n\nable basis for our opinion.\nDefinition and Limitations of Internal Control Over Financial Reporting\nA company’s internal control over financial reporting is a process designed to provide reasonable assurance regarding\nthe reliability of financial reporting and the preparation of financial statements for external purposes in accordance with\ngenerally accepted accounting principles. A company’s internal control over financial reporting includes those policies\n\nable basis for our opinion.\nDefinition and Limitations of Internal Control Over Financial Reporting\nA company’s internal control over financial reporting is a process designed to provide reasonable assurance regarding\nthe reliability of financial reporting and the preparation of financial statements for external purposes in accordance with\ngenerally accepted accounting principles. A company’s internal control over financial reporting includes those policies",
+      "method": "convex",
+      "alpha": 0.5,
+      "relevant_chunks": 5,
+      "sources": [
+        "goog-20241231.pdf",
+        "goog-20221231.pdf",
+        "goog-20231231.pdf",
+        "goog-20211231.pdf",
+        "goog-20201231.pdf"
+      ],
+      "scores": [
+        0.6304513307225719,
+        0.6304513307225719,
+        0.6304513307225719,
+        0.6304513307225719,
+        0.6304513307225719
+      ],
+      "execution_time": 2.6482510566711426,
+      "category": "comparison",
+      "query_id": 29,
       "difficulty": "medium"
+    },
+    {
+      "question": "What changes in risk factors are highlighted when comparing the latest report to the previous year?",
+      "answer": "trategic planning, in light of risk factors like\nwidespread violations of human and civil rights.\n \nAlphabet Opposing Statement\n \nIn their letter to our stockholders at the time of Google’s initial public offering in 2004, our Co-Founders, Larry and Sergey, highlighted Google’s goal\nto “develop services that significantly improve the lives of as many people as possible.” This vision continues today –we believe in technology’s\n\nreview property and equipment, long-term prepayments and intangible assets, excluding goodwill, for\nimpairment when events or changes in circumstances indicate the carrying amount may not be recoverable. We\nmeasure recoverability of these assets by comparing the carrying amounts to the future undiscounted cash flows that\nthe assets or the asset group are expected to generate. If the carrying value of the assets or asset group are not\n\nairment when events or\nchanges in circumstances indicate the carrying amount may not be recoverable. The evaluation is performed at the\nlowest level of identifiable cash flows independent of other assets. We measure recoverability of these assets by\n57\nTable of Contents\nAlphabet Inc.\ncomparing the carrying amounts to the future undiscounted cash flows that the assets or the asset group are expected\nto generate.",
+      "method": "convex",
+      "alpha": 0.5,
+      "relevant_chunks": 5,
+      "sources": [
+        "ALPHABET INC. - DEF 14A_3.pdf",
+        "goog-20201231.pdf",
+        "goog-20221231.pdf",
+        "Document.pdf",
+        "goog-20240331.pdf"
+      ],
+      "scores": [
+        0.5796422712202425,
+        0.5507712171853842,
+        0.5430327181900536,
+        0.5380215560424775,
+        0.5200709702810423
+      ],
+      "execution_time": 1.560845136642456,
+      "category": "comparison",
+      "query_id": 30,
+      "difficulty": "hard"
+    },
+    {
+      "question": "Locate and summarize the table that presents the breakdown of revenue by geographic region.",
+      "answer": "ffected by a\ncombination of factors such as geographic mix, product mix, and revenue share\nterms;\n•\nRelative revenue growth rates of Google properties and Google Network\nproperties;\n•\nCertain costs that are less variable in nature and may not correlate with the related\nrevenues;\n36\nTable of Contents\nAlphabet Inc.\n•\nCosts associated with our data centers and other operations to support ads,\nGoogle Cloud, Search, YouTube and other products;\n•\n\n0  \n3  \nTotal depreciation, amortization, and\nimpairment\n$\n2,835   $\n3,386   $\n5,448   $\n6,494  \n(3) Reconciling items relate to corporate administrative and other costs that are not allocated to individual\nsegments.\n(4) For purposes of segment reporting, SBC represents awards that we expect to settle in Alphabet stock.\n32\nTable of Contents\nAlphabet In\nThe following table presents our long-lived assets by geographic area (in millions):\nAs of\nDecember 31,\n2019\nAs of\nJune 30, 2020\n\ns relate to corporate administrative and other costs that are not allocated to\nindividual segments.\nFor purposes of segment reporting, SBC represents awards that we expect to settle in Alphabet\nstock.\n(3)\n(4)\n(3)\n(3)       \n(4)       \n33\nTable of Contents\nAlphabet In\nThe following table presents our long-lived assets by geographic area (in millions):\nAs of\nDecember 31,\n2019\nAs of\nSeptember 30,\n2020\n \n \n(unaudited)\nLong-lived assets:\nUnited States\n$\n94,907  $\n101,405 \nInternational\n28,424",
+      "method": "convex",
+      "alpha": 0.5,
+      "relevant_chunks": 5,
+      "sources": [
+        "goog-20210331.pdf",
+        "goog-20200630.pdf",
+        "goog-20200930.pdf",
+        "goog-20200630.pdf",
+        "goog-20210331.pdf"
+      ],
+      "scores": [
+        0.5772289026552712,
+        0.5726456942688026,
+        0.5724482225741335,
+        0.5644370404677579,
+        0.5588839119421105
+      ],
+      "execution_time": 2.228795289993286,
+      "category": "technical",
+      "query_id": 31,
+      "difficulty": "medium"
+    },
+    {
+      "question": "Identify the note in the financial statements that explains the company’s revenue recognition policy and summarize it.",
+      "answer": "taining to our policies provide examples of what content is prohibited, how we evaluate content for\nEducational, Documentary, Scientific or Artistic (EDSA) context, and content that may have monetization restrictions placed on it.\n●The How YouTube Works website, which explains how YouTube provides a responsible platform. It includes information on YouTube’s policies,\nincluding the YouTube Community Guidelines that outline what type of content is not allowed on YouTube.\n\ntensively on information systems to manage our business and summarize and report operating results.\nIn 2019, we began a multi-year implementation of a new global enterprise resource planning (“ERP”) system, which will\nreplace much of our existing core financial systems. The ERP system is designed to accurately maintain the\nCompany’s financial records, enhance the flow of financial information, improve data management and provide timely\ninformation to the Company’s management team.\n\ncussed in Note 1 to the financial statements, the Company changed its method for accounting for the\nrecognition, measurement, presentation and disclosure of certain equity securities in the year ended December 31,\n2018.\nBasis for Opinion\nThese financial statements are the responsibility of the Company's management. Our responsibility is to express\nan opinion on the Company’s financial statements based on our audits. We are a public accounting firm registered with",
+      "method": "convex",
+      "alpha": 0.5,
+      "relevant_chunks": 5,
+      "sources": [
+        "ALPHABET INC. - DEF 14A_2.pdf",
+        "Document.pdf",
+        "Document.pdf",
+        "goog-20220331.pdf",
+        "goog-20220630.pdf"
+      ],
+      "scores": [
+        0.5772718998488798,
+        0.54122806350049,
+        0.5079824260691544,
+        0.461960184954385,
+        0.45893138433143077
+      ],
+      "execution_time": 1.4846022129058838,
+      "category": "technical",
+      "query_id": 32,
+      "difficulty": "hard"
+    },
+    {
+      "question": "Which accounting standards (e.g., IFRS, US GAAP) does the company use, and are there any significant recent changes mentioned?",
+      "answer": "-K for the fiscal year ended December 31,\n2023 filed with the SEC.\nRecent Accounting Pronouncements\nIn November 2023, the Financial Accounting Standards Board (FASB) issued Accounting\nStandards Update (ASU) 2023-07 \"Segment Reporting (Topic 280): Improvements to\nReportable Segment Disclosures\" which expands annual and interim disclosure requirements\nfor reportable segments, primarily through enhanced disclosures about significant segment\nexpenses.\n\n-K for the fiscal year ended December 31,\n2023 filed with the SEC.\nRecent Accounting Pronouncements\nIn November 2023, the Financial Accounting Standards Board (FASB) issued Accounting\nStandards Update (ASU) 2023-07 \"Segment Reporting (Topic 280): Improvements to\nReportable Segment Disclosures\" which expands annual and interim disclosure requirements\nfor reportable segments, primarily through enhanced disclosures about significant segment\nexpenses.\n\nnet foreign exchange transaction gains and losses resulting from the conversion of the transaction\ncurrency to functional currency as a component of foreign currency exchange gain (loss) in OI&E.\nRecent Accounting Pronouncements\nIn November 2023, the Financial Standards Accounting Board (FASB) issued Accounting Standards Update\n(ASU) 2023-07 \"Segment Reporting (Topic 280):Improvements to Reportable Segment Disclosures\" which expands",
+      "method": "convex",
+      "alpha": 0.5,
+      "relevant_chunks": 5,
+      "sources": [
+        "goog-20240630.pdf",
+        "goog-20240331.pdf",
+        "goog-20231231.pdf",
+        "goog-20240930.pdf",
+        "Document.pdf"
+      ],
+      "scores": [
+        0.6128043500247914,
+        0.6128043500247914,
+        0.5465571383736487,
+        0.5166518273259116,
+        0.5152944536314182
+      ],
+      "execution_time": 1.444478988647461,
+      "category": "technical",
+      "query_id": 33,
+      "difficulty": "medium"
+    },
+    {
+      "question": "Find and summarize any sensitivity analysis related to interest rates, foreign exchange, or other market risks.",
+      "answer": ".\" The\ncontent of our websites are not incorporated by reference into this Quarterly Report on Form\n10-Q or in any other report or document we file with the SEC, and any references to our\nwebsites are intended to be inactive textual references only.\nITEM 3.\nQUANTITATIVE AND QUALITATIVE DISCLOSURES ABOUT MARKET\nRISK\nWe are exposed to financial market risks, including changes in foreign currency\nexchange rates, interest rates and equity investment risks. Due to financial market\n\ned to financial market risks, including changes in foreign currency exchange rates, interest rates,\nand equity investment risks.\nForeign Currency Exchange Risk\nWe transact business globally in multiple currencies. Our international revenues, as well as costs and expenses\ndenominated in foreign currencies, expose us to the risk of fluctuations in foreign currency exchange rates against the\nU.S. dollar.\n\nservers and network equipment.\nITEM 7A.\nQUANTITATIVE AND QUALITATIVE DISCLOSURES ABOUT MARKET RISK\nWe are exposed to financial market risks, including changes in foreign currency exchange rates, interest rates,\nand equity investment risks.\nForeign Currency Exchange Risk\nWe transact business globally in multiple currencies. International revenues, as well as costs and expenses\ndenominated in foreign currencies, expose us to the risk of fluctuations in foreign currency exchange rates against the",
+      "method": "convex",
+      "alpha": 0.5,
+      "relevant_chunks": 5,
+      "sources": [
+        "goog-20200930.pdf",
+        "goog-20201231.pdf",
+        "goog-20221231.pdf",
+        "Document.pdf",
+        "goog-20231231.pdf"
+      ],
+      "scores": [
+        0.6051706840696309,
+        0.5795270157672804,
+        0.5713519237671603,
+        0.5620758430511796,
+        0.5487816336006843
+      ],
+      "execution_time": 1.6288208961486816,
+      "category": "technical",
+      "query_id": 34,
+      "difficulty": "hard"
+    },
+    {
+      "question": "Does the report include non-GAAP financial measures, and how does the company reconcile them to GAAP/IFRS figures?",
+      "answer": "w and ongoing legal matters, including competition\nlegal matters, on Google’s Public Policy blog.\n \nOur Board of Directors does not believe that an additional report as detailed in the proposal would enhance our stockholders’ understanding of how\nthe company oversees competition risks. In fact, the requested report could be a detriment to both the company’s and our stockholders’ interests. As\n\nt any time during the taxable year, each of the three other most highly compensated officers of the\nCompany for the taxable year, and any other individual who was a covered employee of the company for the preceding tax year beginning after\nDecember 31, 2016.\n \nTHE FOREGOING IS ONLY A SUMMARY OF THE EFFECT OF U.S. FEDERAL INCOME TAXATION WITH RESPECT TO THE GRANT AND\nEXERCISE OF AWARDS UNDER THE PLAN. IT DOES NOT PURPORT TO BE COMPLETE AND DOES NOT DISCUSS THE TAX CONSEQUENCES\n\nt any time during the taxable year, each of the three other most highly compensated officers of the\nCompany for the taxable year, and any other individual who was a covered employee of the company for the preceding tax year beginning after\nDecember 31, 2016.\n \nTHE FOREGOING IS ONLY A SUMMARY OF THE EFFECT OF U.S. FEDERAL INCOME TAXATION WITH RESPECT TO THE GRANT AND\nEXERCISE OF AWARDS UNDER THE PLAN. IT DOES NOT PURPORT TO BE COMPLETE AND DOES NOT DISCUSS THE TAX CONSEQUENCES",
+      "method": "convex",
+      "alpha": 0.5,
+      "relevant_chunks": 5,
+      "sources": [
+        "ALPHABET INC. - DEF 14A_3.pdf",
+        "ALPHABET INC. - DEF 14A_2.pdf",
+        "ALPHABET INC. DEF 14A.pdf",
+        "ALPHABET INC. - DEF 14A_3.pdf",
+        "lgoog2020_def14a.pdf"
+      ],
+      "scores": [
+        0.583482098028022,
+        0.4760597980186332,
+        0.4760597980186332,
+        0.4741104742906975,
+        0.4379122141765568
+      ],
+      "execution_time": 2.841002941131592,
+      "category": "technical",
+      "query_id": 35,
+      "difficulty": "hard"
     }
   ],
   "metrics": {
-    "average_execution_time": 5.567134790420532,
-    "average_top_score": 0.6102955877131839,
-    "total_queries": 50
+    "average_execution_time": 1.7292275786399842,
+    "average_top_score": 0.5994836983514846,
+    "total_queries": 40
   }
 }
