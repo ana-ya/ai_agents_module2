@@ -23,8 +23,16 @@ import math
 from collections import Counter
 import sys
 import json
+import os
+from dotenv import load_dotenv
 
 sys.path.append(str(Path(__file__).parent.parent))
+
+# Завантаження змінних середовища з .env (шукаємо в поточній та батьківській директорії)
+load_dotenv()  # Спочатку поточна директорія
+if not os.getenv('OPENAI_API_KEY'):
+    # Якщо не знайшли, шукаємо в батьківській директорії
+    load_dotenv(Path(__file__).parent.parent / '.env')
 
 
 def generate_answer_with_llm(question: str, contexts: List[str], max_tokens: int = 256) -> str:
@@ -58,7 +66,6 @@ def generate_answer_with_llm(question: str, contexts: List[str], max_tokens: int
     # Спроба 2: OpenAI (якщо є API key)
     # Для використання: export OPENAI_API_KEY=your_key
     try:
-        import os
         api_key = os.getenv("OPENAI_API_KEY")
         if api_key:
             from openai import OpenAI
@@ -92,7 +99,6 @@ def detect_llm_provider() -> str:
         pass
 
     # Перевіряємо OpenAI
-    import os
     if os.getenv("OPENAI_API_KEY"):
         return "openai (gpt-4o-mini)"
 
