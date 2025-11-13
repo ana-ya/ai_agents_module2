@@ -1,719 +1,307 @@
 {
   "metadata": {
-    "description": "Уніфікований тестовий датасет для всіх RAG підходів",
-    "total_queries": 100,
+    "description": "Financial reports test dataset for RAG over 10-K / 10-Q / Annual Reports / Proxy Statements",
+    "total_queries": 40,
     "categories": [
-      "definition",
-      "technical",
-      "approaches",
-      "evaluation",
-      "challenges",
-      "implementation",
+      "company_overview",
+      "financials",
+      "risks",
+      "governance",
+      "strategy",
+      "esg",
       "comparison",
-      "optimization"
+      "technical"
     ],
-    "purpose": "Однакові запити для коректного порівняння різних RAG систем"
+    "purpose": "Evaluate RAG system on real-world financial documents of public companies"
   },
   "queries": [
     {
       "id": 1,
-      "category": "definition",
-      "question": "What is Retrieval-Augmented Generation (RAG)?",
+      "category": "company_overview",
+      "question": "What are the main business segments of the company according to the latest annual report?",
       "difficulty": "easy",
-      "expected_concepts": ["retrieval", "generation", "LLM", "external knowledge"]
+      "expected_concepts": ["business segments", "segment names", "segment description"]
     },
     {
       "id": 2,
-      "category": "definition",
-      "question": "What are the main components of a RAG system?",
-      "difficulty": "easy",
-      "expected_concepts": ["retriever", "generator", "knowledge base"]
+      "category": "company_overview",
+      "question": "In which geographic regions does the company generate most of its revenue?",
+      "difficulty": "medium",
+      "expected_concepts": ["geographic regions", "revenue by region", "major markets"]
     },
     {
       "id": 3,
-      "category": "definition",
-      "question": "How does RAG differ from traditional LLMs?",
+      "category": "company_overview",
+      "question": "Summarize the company’s core products and services described in the annual report.",
       "difficulty": "medium",
-      "expected_concepts": ["external knowledge", "parametric knowledge", "grounding"]
+      "expected_concepts": ["products", "services", "key offerings", "business model"]
     },
     {
       "id": 4,
-      "category": "definition",
-      "question": "What is the purpose of the retrieval component in RAG?",
-      "difficulty": "easy",
-      "expected_concepts": ["relevant documents", "context", "knowledge base search"]
+      "category": "company_overview",
+      "question": "How does the company describe its overall business model and value proposition?",
+      "difficulty": "hard",
+      "expected_concepts": ["business model", "value creation", "customers", "distribution"]
     },
+
     {
       "id": 5,
-      "category": "definition",
-      "question": "Explain the concept of grounding in RAG systems",
-      "difficulty": "medium",
-      "expected_concepts": ["factual accuracy", "source attribution", "hallucination prevention"]
+      "category": "financials",
+      "question": "What was the company’s total revenue in the most recent fiscal year, and how did it change compared to the previous year?",
+      "difficulty": "easy",
+      "expected_concepts": ["total revenue", "growth rate", "year-over-year change"]
     },
     {
       "id": 6,
-      "category": "technical",
-      "question": "How does the retrieval mechanism work in RAG systems?",
+      "category": "financials",
+      "question": "What are the main drivers of revenue growth mentioned in the Management’s Discussion and Analysis (MD&A)?",
       "difficulty": "medium",
-      "expected_concepts": ["embeddings", "similarity search", "vector database"]
+      "expected_concepts": ["growth drivers", "MD&A", "demand", "pricing", "volume"]
     },
     {
       "id": 7,
-      "category": "technical",
-      "question": "What is the role of embeddings in RAG?",
+      "category": "financials",
+      "question": "How does the company break down its revenue by segment or product line?",
       "difficulty": "medium",
-      "expected_concepts": ["semantic representation", "vector space", "similarity"]
+      "expected_concepts": ["segment reporting", "revenue by segment", "product categories"]
     },
     {
       "id": 8,
-      "category": "technical",
-      "question": "Explain how dense retrieval works in RAG",
+      "category": "financials",
+      "question": "What are the company’s operating income and net income for the latest year, and what are the main reasons for any significant changes?",
       "difficulty": "hard",
-      "expected_concepts": ["dense vectors", "neural encoders", "approximate nearest neighbor"]
+      "expected_concepts": ["operating income", "net income", "profitability", "explanations of change"]
     },
     {
       "id": 9,
-      "category": "technical",
-      "question": "What is the difference between sparse and dense retrieval?",
-      "difficulty": "medium",
-      "expected_concepts": ["keyword matching", "semantic similarity", "BM25", "embeddings"]
+      "category": "financials",
+      "question": "How much did the company spend on research and development (R&D) in the latest fiscal year?",
+      "difficulty": "easy",
+      "expected_concepts": ["R&D expenses", "innovation investment", "trend vs prior year"]
     },
     {
       "id": 10,
-      "category": "technical",
-      "question": "How does chunking strategy affect RAG performance?",
+      "category": "financials",
+      "question": "Describe the company’s capital structure: what is the mix between debt and equity according to the balance sheet?",
       "difficulty": "hard",
-      "expected_concepts": ["chunk size", "overlap", "context window", "granularity"]
+      "expected_concepts": ["total debt", "shareholders' equity", "leverage", "capital structure"]
     },
+
     {
       "id": 11,
-      "category": "approaches",
-      "question": "What is Self-RAG and how does it differ from standard RAG?",
-      "difficulty": "hard",
-      "expected_concepts": ["adaptive retrieval", "self-reflection", "critique"]
+      "category": "risks",
+      "question": "What are the top three risk factors highlighted in the Risk Factors section of the annual report?",
+      "difficulty": "medium",
+      "expected_concepts": ["risk factors", "regulatory risk", "market risk", "operational risk"]
     },
     {
       "id": 12,
-      "category": "approaches",
-      "question": "Explain the concept of Corrective RAG (CRAG)",
-      "difficulty": "hard",
-      "expected_concepts": ["relevance evaluation", "web search fallback", "iterative refinement"]
+      "category": "risks",
+      "question": "Does the company mention dependence on key suppliers or customers as a risk, and how is this described?",
+      "difficulty": "medium",
+      "expected_concepts": ["customer concentration", "supplier dependency", "concentration risk"]
     },
     {
       "id": 13,
-      "category": "approaches",
-      "question": "How does Hybrid RAG combine different retrieval methods?",
+      "category": "risks",
+      "question": "How does the company describe competitive risks in its industry?",
       "difficulty": "medium",
-      "expected_concepts": ["sparse retrieval", "dense retrieval", "fusion", "reciprocal rank"]
+      "expected_concepts": ["competition", "market share", "pricing pressure", "innovation risk"]
     },
     {
       "id": 14,
-      "category": "approaches",
-      "question": "What is the advantage of query rewriting in RAG?",
-      "difficulty": "medium",
-      "expected_concepts": ["query expansion", "reformulation", "multiple perspectives"]
+      "category": "risks",
+      "question": "Are there any legal or regulatory proceedings disclosed that could materially affect the company’s financial position?",
+      "difficulty": "hard",
+      "expected_concepts": ["legal proceedings", "regulatory investigations", "material impact"]
     },
+
     {
       "id": 15,
-      "category": "approaches",
-      "question": "Explain the re-ranking stage in Advanced RAG",
-      "difficulty": "medium",
-      "expected_concepts": ["relevance scoring", "cross-encoder", "reordering"]
+      "category": "governance",
+      "question": "Who are the key executive officers of the company according to the latest proxy statement or annual report?",
+      "difficulty": "easy",
+      "expected_concepts": ["CEO", "CFO", "executive team", "roles"]
     },
     {
       "id": 16,
-      "category": "evaluation",
-      "question": "What metrics should be used to evaluate RAG systems?",
+      "category": "governance",
+      "question": "How is the board of directors structured (size, independence, key committees)?",
       "difficulty": "medium",
-      "expected_concepts": ["faithfulness", "relevancy", "precision", "recall"]
+      "expected_concepts": ["board size", "independent directors", "audit committee", "compensation committee"]
     },
     {
       "id": 17,
-      "category": "evaluation",
-      "question": "How do you measure faithfulness in RAG outputs?",
+      "category": "governance",
+      "question": "What performance metrics are used to determine executive compensation?",
       "difficulty": "hard",
-      "expected_concepts": ["grounding verification", "hallucination detection", "source alignment"]
+      "expected_concepts": ["total shareholder return", "revenue growth", "EPS", "operating margin"]
     },
     {
       "id": 18,
-      "category": "evaluation",
-      "question": "What is RAGAS and how is it used for RAG evaluation?",
-      "difficulty": "hard",
-      "expected_concepts": ["automated metrics", "LLM-based evaluation", "context relevance"]
+      "category": "governance",
+      "question": "Does the company mention any recent changes in leadership or the board, and what are the reasons?",
+      "difficulty": "medium",
+      "expected_concepts": ["leadership change", "board refresh", "succession planning"]
     },
+
     {
       "id": 19,
-      "category": "evaluation",
-      "question": "Explain the difference between retrieval and generation metrics",
+      "category": "strategy",
+      "question": "What are the company’s main strategic priorities for the next few years as described by management?",
       "difficulty": "medium",
-      "expected_concepts": ["recall at k", "precision", "answer quality", "relevance"]
+      "expected_concepts": ["growth strategy", "innovation", "market expansion", "cost efficiency"]
     },
     {
       "id": 20,
-      "category": "evaluation",
-      "question": "How can we detect hallucinations in RAG systems?",
+      "category": "strategy",
+      "question": "How does the company plan to allocate capital (e.g., investments, dividends, share buybacks, debt repayment)?",
       "difficulty": "hard",
-      "expected_concepts": ["fact verification", "source checking", "consistency"]
+      "expected_concepts": ["capital allocation", "capex", "dividends", "buybacks", "deleveraging"]
     },
     {
       "id": 21,
-      "category": "challenges",
-      "question": "What is the Lost in the Middle problem in RAG?",
-      "difficulty": "hard",
-      "expected_concepts": ["context length", "attention mechanism", "position bias"]
+      "category": "strategy",
+      "question": "Which acquisitions, divestitures, or major investments were completed during the reporting period?",
+      "difficulty": "medium",
+      "expected_concepts": ["M&A activity", "acquisitions", "divestitures", "strategic investments"]
     },
     {
       "id": 22,
-      "category": "challenges",
-      "question": "How does context length affect RAG performance?",
-      "difficulty": "medium",
-      "expected_concepts": ["token limits", "information density", "relevance ranking"]
+      "category": "strategy",
+      "question": "How does management describe the company’s competitive advantages or moats?",
+      "difficulty": "hard",
+      "expected_concepts": ["competitive advantage", "network effects", "brand", "technology", "scale"]
     },
+
     {
       "id": 23,
-      "category": "challenges",
-      "question": "What are the common failure modes of RAG systems?",
-      "difficulty": "hard",
-      "expected_concepts": ["retrieval failure", "hallucination", "irrelevant context"]
+      "category": "esg",
+      "question": "What environmental, social, and governance (ESG) topics does the company highlight as most material?",
+      "difficulty": "medium",
+      "expected_concepts": ["ESG priorities", "climate", "social responsibility", "governance practices"]
     },
     {
       "id": 24,
-      "category": "challenges",
-      "question": "How can RAG systems handle multi-hop reasoning?",
+      "category": "esg",
+      "question": "Does the company disclose greenhouse gas (GHG) emissions or climate-related targets?",
       "difficulty": "hard",
-      "expected_concepts": ["iterative retrieval", "chain of thought", "decomposition"]
+      "expected_concepts": ["GHG emissions", "net-zero targets", "science-based targets", "climate risk"]
     },
     {
       "id": 25,
-      "category": "challenges",
-      "question": "What are the scalability challenges in RAG systems?",
+      "category": "esg",
+      "question": "How does the company describe its approach to diversity, equity, and inclusion (DEI)?",
       "difficulty": "medium",
-      "expected_concepts": ["index size", "latency", "computational cost"]
+      "expected_concepts": ["DEI initiatives", "workforce diversity", "inclusion programs"]
     },
     {
       "id": 26,
-      "category": "implementation",
-      "question": "What is the optimal chunk size for RAG systems?",
-      "difficulty": "medium",
-      "expected_concepts": ["context granularity", "retrieval precision", "trade-offs"]
+      "category": "esg",
+      "question": "Are there any notable ESG-related risks or controversies mentioned in the report?",
+      "difficulty": "hard",
+      "expected_concepts": ["ESG risk", "controversies", "regulatory scrutiny", "reputation risk"]
     },
+
     {
       "id": 27,
-      "category": "implementation",
-      "question": "How should chunk overlap be configured in RAG?",
-      "difficulty": "medium",
-      "expected_concepts": ["context continuity", "redundancy", "boundary issues"]
+      "category": "comparison",
+      "question": "How has the company’s revenue growth over the last three years compared to its net income growth?",
+      "difficulty": "hard",
+      "expected_concepts": ["revenue trend", "net income trend", "growth comparison"]
     },
     {
       "id": 28,
-      "category": "implementation",
-      "question": "What embedding models are best for RAG retrieval?",
-      "difficulty": "medium",
-      "expected_concepts": ["BERT", "sentence transformers", "domain adaptation"]
+      "category": "comparison",
+      "question": "Compare the share of revenue coming from the top business segment now versus two years ago.",
+      "difficulty": "hard",
+      "expected_concepts": ["segment revenue share", "trend analysis", "business mix"]
     },
     {
       "id": 29,
-      "category": "implementation",
-      "question": "How do you choose the number of retrieved documents (top-k)?",
+      "category": "comparison",
+      "question": "How has the company’s debt level changed over the last three reporting periods?",
       "difficulty": "medium",
-      "expected_concepts": ["precision-recall trade-off", "context window", "relevance threshold"]
+      "expected_concepts": ["total debt trend", "leverage", "debt reduction or increase"]
     },
     {
       "id": 30,
-      "category": "implementation",
-      "question": "What vector databases are commonly used for RAG?",
-      "difficulty": "easy",
-      "expected_concepts": ["FAISS", "Pinecone", "Weaviate", "Chroma"]
+      "category": "comparison",
+      "question": "What changes in risk factors are highlighted when comparing the latest report to the previous year?",
+      "difficulty": "hard",
+      "expected_concepts": ["new risks", "removed risks", "changed emphasis in risk factors"]
     },
+
     {
       "id": 31,
-      "category": "comparison",
-      "question": "Compare BM25 and dense vector retrieval methods",
+      "category": "technical",
+      "question": "Locate and summarize the table that presents the breakdown of revenue by geographic region.",
       "difficulty": "medium",
-      "expected_concepts": ["keyword matching", "semantic similarity", "speed", "accuracy"]
+      "expected_concepts": ["table extraction", "region names", "revenue amounts", "summary"]
     },
     {
       "id": 32,
-      "category": "comparison",
-      "question": "When should you use Naive RAG vs Advanced RAG?",
-      "difficulty": "medium",
-      "expected_concepts": ["simplicity", "accuracy requirements", "latency constraints"]
+      "category": "technical",
+      "question": "Identify the note in the financial statements that explains the company’s revenue recognition policy and summarize it.",
+      "difficulty": "hard",
+      "expected_concepts": ["accounting policy", "revenue recognition", "IFRS/GAAP references"]
     },
     {
       "id": 33,
-      "category": "comparison",
-      "question": "Compare Self-RAG with Corrective RAG approaches",
-      "difficulty": "hard",
-      "expected_concepts": ["adaptive retrieval", "self-reflection", "external knowledge"]
+      "category": "technical",
+      "question": "Which accounting standards (e.g., IFRS, US GAAP) does the company use, and are there any significant recent changes mentioned?",
+      "difficulty": "medium",
+      "expected_concepts": ["IFRS", "US GAAP", "new standards", "adoption impacts"]
     },
     {
       "id": 34,
-      "category": "comparison",
-      "question": "What are the trade-offs between hybrid and pure dense retrieval?",
-      "difficulty": "medium",
-      "expected_concepts": ["complexity", "accuracy", "computational cost"]
+      "category": "technical",
+      "question": "Find and summarize any sensitivity analysis related to interest rates, foreign exchange, or other market risks.",
+      "difficulty": "hard",
+      "expected_concepts": ["sensitivity analysis", "market risk", "interest rate", "FX exposure"]
     },
     {
       "id": 35,
-      "category": "comparison",
-      "question": "Compare single-stage vs multi-stage retrieval in RAG",
+      "category": "technical",
+      "question": "Does the report include non-GAAP financial measures, and how does the company reconcile them to GAAP/IFRS figures?",
       "difficulty": "hard",
-      "expected_concepts": ["candidate generation", "re-ranking", "precision-recall"]
+      "expected_concepts": ["non-GAAP measures", "adjusted EBITDA", "reconciliation tables"]
     },
+
     {
       "id": 36,
-      "category": "optimization",
-      "question": "How can we improve retrieval quality in RAG?",
+      "category": "company_overview",
+      "question": "What key macroeconomic or industry trends does management highlight as influencing the company’s performance?",
       "difficulty": "medium",
-      "expected_concepts": ["better embeddings", "query expansion", "re-ranking"]
+      "expected_concepts": ["macroeconomic trends", "industry trends", "demand drivers"]
     },
     {
       "id": 37,
-      "category": "optimization",
-      "question": "What techniques reduce hallucinations in RAG systems?",
+      "category": "financials",
+      "question": "What is the company’s free cash flow in the latest year, if disclosed, and how is it calculated?",
       "difficulty": "hard",
-      "expected_concepts": ["grounding", "attribution", "confidence scoring"]
+      "expected_concepts": ["free cash flow", "operating cash flow", "capex", "definition used"]
     },
     {
       "id": 38,
-      "category": "optimization",
-      "question": "How can we optimize RAG for low-latency applications?",
+      "category": "governance",
+      "question": "Are there any shareholder proposals or significant voting results discussed in the proxy statement?",
       "difficulty": "hard",
-      "expected_concepts": ["caching", "approximate search", "smaller models"]
+      "expected_concepts": ["shareholder proposals", "voting outcomes", "support percentages"]
     },
     {
       "id": 39,
-      "category": "optimization",
-      "question": "What is context compression in RAG and why is it useful?",
+      "category": "esg",
+      "question": "Does the company link executive compensation to ESG or sustainability metrics?",
       "difficulty": "hard",
-      "expected_concepts": ["token efficiency", "information density", "summarization"]
+      "expected_concepts": ["ESG-linked pay", "incentive metrics", "long-term plans"]
     },
     {
       "id": 40,
-      "category": "optimization",
-      "question": "How does prompt engineering affect RAG quality?",
-      "difficulty": "medium",
-      "expected_concepts": ["instruction clarity", "output format", "few-shot examples"]
-    },
-    {
-      "id": 41,
-      "category": "technical",
-      "question": "What is the role of the retriever in RAG architecture?",
-      "difficulty": "easy",
-      "expected_concepts": ["document selection", "relevance ranking", "context provision"]
-    },
-    {
-      "id": 42,
-      "category": "technical",
-      "question": "Explain the concept of semantic search in RAG",
-      "difficulty": "medium",
-      "expected_concepts": ["meaning-based retrieval", "embedding similarity", "context understanding"]
-    },
-    {
-      "id": 43,
-      "category": "technical",
-      "question": "How do attention mechanisms work in RAG systems?",
+      "category": "strategy",
+      "question": "How does the company plan to address key risks and uncertainties mentioned in the report?",
       "difficulty": "hard",
-      "expected_concepts": ["transformer architecture", "context weighting", "relevance focus"]
-    },
-    {
-      "id": 44,
-      "category": "technical",
-      "question": "What is the purpose of document encoding in RAG?",
-      "difficulty": "medium",
-      "expected_concepts": ["vector representation", "semantic capture", "efficient search"]
-    },
-    {
-      "id": 45,
-      "category": "technical",
-      "question": "How does RAG handle out-of-domain queries?",
-      "difficulty": "hard",
-      "expected_concepts": ["domain adaptation", "fallback mechanisms", "uncertainty"]
-    },
-    {
-      "id": 46,
-      "category": "approaches",
-      "question": "What is iterative RAG and when is it beneficial?",
-      "difficulty": "hard",
-      "expected_concepts": ["multi-step retrieval", "refinement", "complex queries"]
-    },
-    {
-      "id": 47,
-      "category": "approaches",
-      "question": "Explain the concept of fusion in hybrid RAG systems",
-      "difficulty": "medium",
-      "expected_concepts": ["score combination", "reciprocal rank fusion", "weighted merging"]
-    },
-    {
-      "id": 48,
-      "category": "approaches",
-      "question": "What is adaptive retrieval in Self-RAG?",
-      "difficulty": "hard",
-      "expected_concepts": ["dynamic decision", "retrieval necessity", "confidence-based"]
-    },
-    {
-      "id": 49,
-      "category": "approaches",
-      "question": "How does context enrichment improve RAG performance?",
-      "difficulty": "medium",
-      "expected_concepts": ["neighboring chunks", "expanded context", "coherence"]
-    },
-    {
-      "id": 50,
-      "category": "approaches",
-      "question": "What is the role of web search in Corrective RAG?",
-      "difficulty": "medium",
-      "expected_concepts": ["external knowledge", "fallback mechanism", "completeness"]
-    },
-    {
-      "id": 51,
-      "category": "evaluation",
-      "question": "How do you measure context relevance in RAG?",
-      "difficulty": "medium",
-      "expected_concepts": ["precision at k", "relevance scoring", "ground truth comparison"]
-    },
-    {
-      "id": 52,
-      "category": "evaluation",
-      "question": "What is the difference between intrinsic and extrinsic RAG evaluation?",
-      "difficulty": "hard",
-      "expected_concepts": ["component testing", "end-to-end quality", "task performance"]
-    },
-    {
-      "id": 53,
-      "category": "evaluation",
-      "question": "How can synthetic data be used for RAG evaluation?",
-      "difficulty": "hard",
-      "expected_concepts": ["test generation", "controlled experiments", "RAGAS"]
-    },
-    {
-      "id": 54,
-      "category": "evaluation",
-      "question": "What are the key performance indicators for RAG systems?",
-      "difficulty": "medium",
-      "expected_concepts": ["accuracy", "latency", "faithfulness", "user satisfaction"]
-    },
-    {
-      "id": 55,
-      "category": "evaluation",
-      "question": "How do you evaluate the retrieval component separately?",
-      "difficulty": "medium",
-      "expected_concepts": ["recall", "precision", "nDCG", "relevance judgment"]
-    },
-    {
-      "id": 56,
-      "category": "challenges",
-      "question": "What are the privacy concerns with RAG systems?",
-      "difficulty": "medium",
-      "expected_concepts": ["data leakage", "sensitive information", "access control"]
-    },
-    {
-      "id": 57,
-      "category": "challenges",
-      "question": "How does RAG handle contradictory information in documents?",
-      "difficulty": "hard",
-      "expected_concepts": ["conflict resolution", "source credibility", "temporal ordering"]
-    },
-    {
-      "id": 58,
-      "category": "challenges",
-      "question": "What are the computational costs of RAG systems?",
-      "difficulty": "medium",
-      "expected_concepts": ["embedding generation", "search operations", "LLM inference"]
-    },
-    {
-      "id": 59,
-      "category": "challenges",
-      "question": "How can RAG systems maintain factual consistency?",
-      "difficulty": "hard",
-      "expected_concepts": ["grounding", "verification", "attribution"]
-    },
-    {
-      "id": 60,
-      "category": "challenges",
-      "question": "What happens when RAG retrieves no relevant documents?",
-      "difficulty": "medium",
-      "expected_concepts": ["fallback behavior", "abstention", "uncertainty handling"]
-    },
-    {
-      "id": 61,
-      "category": "implementation",
-      "question": "How do you handle document updates in RAG systems?",
-      "difficulty": "medium",
-      "expected_concepts": ["incremental indexing", "version control", "cache invalidation"]
-    },
-    {
-      "id": 62,
-      "category": "implementation",
-      "question": "What preprocessing steps are important for RAG documents?",
-      "difficulty": "medium",
-      "expected_concepts": ["cleaning", "chunking", "metadata extraction"]
-    },
-    {
-      "id": 63,
-      "category": "implementation",
-      "question": "How do you implement caching in RAG systems?",
-      "difficulty": "medium",
-      "expected_concepts": ["query caching", "embedding caching", "result caching"]
-    },
-    {
-      "id": 64,
-      "category": "implementation",
-      "question": "What are the best practices for RAG prompt design?",
-      "difficulty": "medium",
-      "expected_concepts": ["context formatting", "instruction clarity", "output structure"]
-    },
-    {
-      "id": 65,
-      "category": "implementation",
-      "question": "How do you monitor RAG system performance in production?",
-      "difficulty": "medium",
-      "expected_concepts": ["logging", "metrics tracking", "user feedback"]
-    },
-    {
-      "id": 66,
-      "category": "comparison",
-      "question": "Compare FAISS and traditional database search for RAG",
-      "difficulty": "medium",
-      "expected_concepts": ["vector similarity", "approximate search", "scalability"]
-    },
-    {
-      "id": 67,
-      "category": "comparison",
-      "question": "What are the differences between RAG and fine-tuning?",
-      "difficulty": "medium",
-      "expected_concepts": ["external knowledge", "model parameters", "update flexibility"]
-    },
-    {
-      "id": 68,
-      "category": "comparison",
-      "question": "Compare single-vector vs multi-vector retrieval",
-      "difficulty": "hard",
-      "expected_concepts": ["granularity", "precision", "ColBERT", "late interaction"]
-    },
-    {
-      "id": 69,
-      "category": "comparison",
-      "question": "When should you use graph-based RAG vs vector RAG?",
-      "difficulty": "hard",
-      "expected_concepts": ["relationship modeling", "entity connections", "traversal"]
-    },
-    {
-      "id": 70,
-      "category": "comparison",
-      "question": "Compare closed-book vs open-book QA in context of RAG",
-      "difficulty": "medium",
-      "expected_concepts": ["parametric knowledge", "retrieval augmentation", "accuracy"]
-    },
-    {
-      "id": 71,
-      "category": "optimization",
-      "question": "How can you reduce the number of false positives in retrieval?",
-      "difficulty": "medium",
-      "expected_concepts": ["threshold tuning", "re-ranking", "semantic filtering"]
-    },
-    {
-      "id": 72,
-      "category": "optimization",
-      "question": "What strategies improve RAG answer quality?",
-      "difficulty": "medium",
-      "expected_concepts": ["context selection", "prompt engineering", "model choice"]
-    },
-    {
-      "id": 73,
-      "category": "optimization",
-      "question": "How do you balance precision and recall in RAG?",
-      "difficulty": "hard",
-      "expected_concepts": ["threshold adjustment", "top-k tuning", "hybrid approaches"]
-    },
-    {
-      "id": 74,
-      "category": "optimization",
-      "question": "What techniques reduce latency in RAG systems?",
-      "difficulty": "medium",
-      "expected_concepts": ["approximate search", "caching", "model optimization"]
-    },
-    {
-      "id": 75,
-      "category": "optimization",
-      "question": "How can you improve RAG performance on rare queries?",
-      "difficulty": "hard",
-      "expected_concepts": ["query expansion", "fallback strategies", "long-tail handling"]
-    },
-    {
-      "id": 76,
-      "category": "definition",
-      "question": "What is the difference between extractive and abstractive RAG?",
-      "difficulty": "medium",
-      "expected_concepts": ["direct copying", "paraphrasing", "generation flexibility"]
-    },
-    {
-      "id": 77,
-      "category": "definition",
-      "question": "Explain the concept of knowledge-grounded generation",
-      "difficulty": "medium",
-      "expected_concepts": ["external evidence", "factual basis", "attribution"]
-    },
-    {
-      "id": 78,
-      "category": "definition",
-      "question": "What does it mean for a RAG system to be faithful?",
-      "difficulty": "medium",
-      "expected_concepts": ["source adherence", "no hallucination", "verifiability"]
-    },
-    {
-      "id": 79,
-      "category": "definition",
-      "question": "What is the retrieval-generation trade-off?",
-      "difficulty": "hard",
-      "expected_concepts": ["context quality vs quantity", "latency vs accuracy"]
-    },
-    {
-      "id": 80,
-      "category": "definition",
-      "question": "Explain parametric vs non-parametric knowledge in RAG",
-      "difficulty": "hard",
-      "expected_concepts": ["model weights", "external documents", "updateability"]
-    },
-    {
-      "id": 81,
-      "category": "technical",
-      "question": "How does approximate nearest neighbor search work in RAG?",
-      "difficulty": "hard",
-      "expected_concepts": ["HNSW", "IVF", "speed-accuracy trade-off"]
-    },
-    {
-      "id": 82,
-      "category": "technical",
-      "question": "What is the role of metadata in RAG retrieval?",
-      "difficulty": "medium",
-      "expected_concepts": ["filtering", "boosting", "hybrid signals"]
-    },
-    {
-      "id": 83,
-      "category": "technical",
-      "question": "How do cross-encoders improve RAG re-ranking?",
-      "difficulty": "hard",
-      "expected_concepts": ["joint encoding", "interaction modeling", "accuracy improvement"]
-    },
-    {
-      "id": 84,
-      "category": "technical",
-      "question": "What is document-level vs passage-level retrieval?",
-      "difficulty": "medium",
-      "expected_concepts": ["granularity", "context scope", "precision trade-offs"]
-    },
-    {
-      "id": 85,
-      "category": "technical",
-      "question": "How does negative sampling affect RAG training?",
-      "difficulty": "hard",
-      "expected_concepts": ["contrastive learning", "hard negatives", "model quality"]
-    },
-    {
-      "id": 86,
-      "category": "approaches",
-      "question": "What is multi-hop retrieval in RAG?",
-      "difficulty": "hard",
-      "expected_concepts": ["iterative search", "chain reasoning", "information aggregation"]
-    },
-    {
-      "id": 87,
-      "category": "approaches",
-      "question": "Explain the concept of retrieve-and-refine in RAG",
-      "difficulty": "medium",
-      "expected_concepts": ["iterative improvement", "feedback loop", "quality enhancement"]
-    },
-    {
-      "id": 88,
-      "category": "approaches",
-      "question": "What is the difference between early and late fusion in hybrid RAG?",
-      "difficulty": "hard",
-      "expected_concepts": ["score combination timing", "representation mixing", "effectiveness"]
-    },
-    {
-      "id": 89,
-      "category": "approaches",
-      "question": "How does RAG-Fusion improve retrieval diversity?",
-      "difficulty": "hard",
-      "expected_concepts": ["query generation", "parallel retrieval", "reciprocal ranking"]
-    },
-    {
-      "id": 90,
-      "category": "approaches",
-      "question": "What is parent document retrieval in RAG?",
-      "difficulty": "medium",
-      "expected_concepts": ["chunk-document relationship", "context expansion", "coherence"]
-    },
-    {
-      "id": 91,
-      "category": "evaluation",
-      "question": "How do you measure retrieval diversity in RAG?",
-      "difficulty": "hard",
-      "expected_concepts": ["MMR", "coverage", "redundancy reduction"]
-    },
-    {
-      "id": 92,
-      "category": "evaluation",
-      "question": "What is the role of human evaluation in RAG systems?",
-      "difficulty": "medium",
-      "expected_concepts": ["quality assessment", "metric validation", "edge cases"]
-    },
-    {
-      "id": 93,
-      "category": "evaluation",
-      "question": "How do you create a benchmark dataset for RAG?",
-      "difficulty": "hard",
-      "expected_concepts": ["query collection", "ground truth annotation", "diversity"]
-    },
-    {
-      "id": 94,
-      "category": "evaluation",
-      "question": "What are the limitations of automated RAG metrics?",
-      "difficulty": "medium",
-      "expected_concepts": ["correlation with human judgment", "edge cases", "gaming"]
-    },
-    {
-      "id": 95,
-      "category": "evaluation",
-      "question": "How do you evaluate RAG on multi-turn conversations?",
-      "difficulty": "hard",
-      "expected_concepts": ["context tracking", "coherence", "information accumulation"]
-    },
-    {
-      "id": 96,
-      "category": "challenges",
-      "question": "How does RAG handle ambiguous queries?",
-      "difficulty": "medium",
-      "expected_concepts": ["clarification", "multiple interpretations", "ranking"]
-    },
-    {
-      "id": 97,
-      "category": "challenges",
-      "question": "What are the challenges of multilingual RAG?",
-      "difficulty": "hard",
-      "expected_concepts": ["cross-lingual retrieval", "translation", "language-specific models"]
-    },
-    {
-      "id": 98,
-      "category": "challenges",
-      "question": "How can RAG systems handle time-sensitive information?",
-      "difficulty": "hard",
-      "expected_concepts": ["temporal filtering", "freshness", "version control"]
-    },
-    {
-      "id": 99,
-      "category": "challenges",
-      "question": "What are the ethical considerations in RAG systems?",
-      "difficulty": "medium",
-      "expected_concepts": ["bias", "fairness", "transparency", "privacy"]
-    },
-    {
-      "id": 100,
-      "category": "challenges",
-      "question": "How do you handle very long documents in RAG?",
-      "difficulty": "medium",
-      "expected_concepts": ["hierarchical chunking", "summarization", "sliding windows"]
+      "expected_concepts": ["risk mitigation plans", "strategic responses", "management actions"]
     }
   ]
 }

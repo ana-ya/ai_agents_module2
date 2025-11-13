@@ -1,35 +1,33 @@
 {
-  "definition": [
-    "What is Retrieval-Augmented Generation (RAG) and how does it work?",
-    "Explain the main components of a RAG system",
-    "What are the key advantages of using RAG over traditional language models?"
+  "company_overview": [
+    "What are the main business segments of the company according to the latest annual report?",
+    "In which geographic regions does the company generate most of its revenue?",
+    "Summarize the company’s core products and services described in the annual report.",
+    "How does the company describe its overall business model and value proposition?"
   ],
-  "technical": [
-    "How does the retrieval mechanism work in RAG systems?",
-    "What is the role of the retriever in RAG architecture?",
-    "Explain the difference between dense and sparse retrievers in RAG",
-    "How are embeddings used in RAG systems?",
-    "What is the purpose of reranking in advanced RAG?"
+  "financials": [
+    "What was the company’s total revenue in the most recent fiscal year, and how did it change compared to the previous year?",
+    "How does the company break down its revenue by segment or product line?",
+    "What are the company’s operating income and net income for the latest year, and what are the main reasons for any significant changes?",
+    "How much did the company spend on research and development (R&D) in the latest fiscal year?",
+    "How has the company’s total debt level changed over the last three reporting periods?"
   ],
-  "approaches": [
-    "What is Self-RAG and how does it differ from standard RAG?",
-    "Explain the concept of Corrective RAG (CRAG)",
-    "What is REPLUG and how does it improve RAG performance?",
-    "How does Atlas approach retrieval-augmented generation?",
-    "What are the main differences between naive RAG and advanced RAG?"
+  "risks": [
+    "What are the top three risk factors highlighted in the Risk Factors section of the annual report?",
+    "Does the company mention dependence on key suppliers or customers as a risk, and how is this described?",
+    "How does the company describe competitive risks in its industry?",
+    "Are there any legal or regulatory proceedings disclosed that could materially affect the company’s financial position?"
   ],
-  "evaluation": [
-    "How can we evaluate the quality of RAG systems?",
-    "What metrics are commonly used to assess RAG performance?",
-    "What is faithfulness in RAG evaluation?",
-    "How do we measure context precision and recall in RAG?"
+  "governance": [
+    "Who are the key executive officers of the company according to the latest proxy statement or annual report?",
+    "How is the board of directors structured in terms of size, independence, and key committees?",
+    "What performance metrics are used to determine executive compensation?",
+    "Are there any shareholder proposals or significant voting results discussed in the proxy statement?"
   ],
-  "practical": [
-    "What are the main challenges in implementing RAG systems?",
-    "How can we optimize retrieval performance in production RAG systems?",
-    "What are the trade-offs between different RAG approaches?",
-    "How does query rewriting improve RAG accuracy?",
-    "What is hybrid search and why is it effective in RAG?",
-    "What is the role of chunking in RAG systems?"
+  "strategy": [
+    "What are the company’s main strategic priorities for the next few years as described by management?",
+    "How does the company plan to allocate capital between investments, dividends, share buybacks, and debt repayment?",
+    "Which acquisitions, divestitures, or major investments were completed during the reporting period?",
+    "How does the company describe its competitive advantages or moats compared to other players in the industry?"
   ]
 }
