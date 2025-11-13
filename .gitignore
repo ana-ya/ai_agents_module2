@@ -50,3 +50,5 @@ Thumbs.db
 *.bak
 *.swp
 *~
+naive_rag_chromadb/
+.venv/
