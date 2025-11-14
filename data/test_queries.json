@@ -1,33 +1,67 @@
 {
   "company_overview": [
     "What are the main business segments of the company according to the latest annual report?",
-    "In which geographic regions does the company generate most of its revenue?",
-    "Summarize the company’s core products and services described in the annual report.",
-    "How does the company describe its overall business model and value proposition?"
+    "What is the company's primary business and how does it generate revenue?",
+    "Summarize the company's core products and services described in the annual report.",
+    "How does the company describe its overall business model and value proposition?",
+    "What are the company's main geographic markets and regions of operation?"
   ],
   "financials": [
-    "What was the company’s total revenue in the most recent fiscal year, and how did it change compared to the previous year?",
-    "How does the company break down its revenue by segment or product line?",
-    "What are the company’s operating income and net income for the latest year, and what are the main reasons for any significant changes?",
-    "How much did the company spend on research and development (R&D) in the latest fiscal year?",
-    "How has the company’s total debt level changed over the last three reporting periods?"
+    "What was the company's total revenue in the most recent fiscal year, and how did it change compared to the previous year?",
+    "What was the company's net income for the most recent quarter?",
+    "How did the company's operating expenses change compared to the previous period?",
+    "What is the company's cash and cash equivalents balance?",
+    "How much did the company spend on research and development (R&D) in the most recent period?",
+    "What is the company's total assets and how has it changed over time?",
+    "How does the company's operating margin compare to previous periods?",
+    "What was the company's free cash flow in the most recent reporting period?"
   ],
   "risks": [
-    "What are the top three risk factors highlighted in the Risk Factors section of the annual report?",
-    "Does the company mention dependence on key suppliers or customers as a risk, and how is this described?",
-    "How does the company describe competitive risks in its industry?",
-    "Are there any legal or regulatory proceedings disclosed that could materially affect the company’s financial position?"
+    "What are the principal risk factors identified in the company's risk factors section?",
+    "What regulatory risks does the company face in its operations?",
+    "How does the company describe competitive risks and market competition?",
+    "What cybersecurity risks and data privacy concerns are mentioned in the report?",
+    "What are the company's foreign currency and international risks?",
+    "What are the company's intellectual property and patent risks?"
   ],
   "governance": [
-    "Who are the key executive officers of the company according to the latest proxy statement or annual report?",
-    "How is the board of directors structured in terms of size, independence, and key committees?",
-    "What performance metrics are used to determine executive compensation?",
-    "Are there any shareholder proposals or significant voting results discussed in the proxy statement?"
+    "Who are the members of the company's board of directors?",
+    "What is the executive compensation structure for the CEO and other named executive officers?",
+    "What are the company's corporate governance policies and practices?",
+    "What is the composition and structure of the board committees?",
+    "What is the company's approach to risk management and internal controls?",
+    "What is the company's code of conduct and ethics policies?"
   ],
   "strategy": [
-    "What are the company’s main strategic priorities for the next few years as described by management?",
-    "How does the company plan to allocate capital between investments, dividends, share buybacks, and debt repayment?",
-    "Which acquisitions, divestitures, or major investments were completed during the reporting period?",
-    "How does the company describe its competitive advantages or moats compared to other players in the industry?"
+    "What are the company's strategic priorities and key initiatives for the coming year?",
+    "How does the company plan to invest in future growth opportunities?",
+    "What is the company's approach to mergers, acquisitions, and strategic partnerships?",
+    "How does the company describe its competitive advantages and market position?",
+    "What are the company's long-term strategic goals and vision?",
+    "What is the company's approach to innovation and research and development?"
+  ],
+  "segments": [
+    "What is the revenue breakdown by business segment in the most recent period?",
+    "How did each business segment perform compared to the previous year?",
+    "What are the operating margins for each business segment?",
+    "Which business segment showed the strongest growth in the most recent quarter?",
+    "What are the geographic revenue breakdowns by region?",
+    "What are the key products or services within each major business segment?"
+  ],
+  "comparison": [
+    "How does the current quarter's revenue compare to the same quarter last year?",
+    "What are the key differences in financial performance between the current and previous fiscal year?",
+    "What are the trends in operating expenses over the past several quarters?",
+    "How does the company's profitability compare across different reporting periods?",
+    "How has the company's customer base or user base changed over time?",
+    "What are the trends in the company's return on equity and return on assets?"
+  ],
+  "technical": [
+    "What accounting policies and estimates are significant to the company's financial statements?",
+    "How does the company recognize revenue from its different business activities?",
+    "What is the company's approach to stock-based compensation accounting?",
+    "How are intangible assets and goodwill accounted for in the financial statements?",
+    "What are the company's significant legal proceedings and contingencies?",
+    "What are the company's fair value measurements and valuation techniques?"
   ]
 }

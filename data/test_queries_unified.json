@@ -1,18 +1,20 @@
 {
   "metadata": {
-    "description": "Financial reports test dataset for RAG over 10-K / 10-Q / Annual Reports / Proxy Statements",
-    "total_queries": 40,
+    "description": "Уніфікований тестовий датасет для всіх RAG підходів - Financial Reports (10-Q, 10-K, DEF 14A)",
+    "total_queries": 100,
     "categories": [
       "company_overview",
       "financials",
       "risks",
       "governance",
       "strategy",
-      "esg",
+      "segments",
       "comparison",
       "technical"
     ],
-    "purpose": "Evaluate RAG system on real-world financial documents of public companies"
+    "purpose": "Однакові запити для коректного порівняння різних RAG систем на фінансових звітах",
+    "document_types": ["10-Q Quarterly Reports", "DEF 14A Proxy Statements", "10-K Annual Reports", "ESG Reports"],
+    "company": "Generic - applicable to any public company"
   },
   "queries": [
     {
@@ -20,288 +22,700 @@
       "category": "company_overview",
       "question": "What are the main business segments of the company according to the latest annual report?",
       "difficulty": "easy",
-      "expected_concepts": ["business segments", "segment names", "segment description"]
+      "expected_concepts": ["business segments", "segment names", "segment description", "reportable segments"]
     },
     {
       "id": 2,
       "category": "company_overview",
-      "question": "In which geographic regions does the company generate most of its revenue?",
-      "difficulty": "medium",
-      "expected_concepts": ["geographic regions", "revenue by region", "major markets"]
+      "question": "What is the company's primary business and how does it generate revenue?",
+      "difficulty": "easy",
+      "expected_concepts": ["revenue model", "primary business", "products", "services", "revenue streams"]
     },
     {
       "id": 3,
       "category": "company_overview",
-      "question": "Summarize the company’s core products and services described in the annual report.",
+      "question": "Summarize the company's core products and services described in the annual report.",
       "difficulty": "medium",
-      "expected_concepts": ["products", "services", "key offerings", "business model"]
+      "expected_concepts": ["products", "services", "key offerings", "product portfolio", "service lines"]
     },
     {
       "id": 4,
       "category": "company_overview",
       "question": "How does the company describe its overall business model and value proposition?",
       "difficulty": "hard",
-      "expected_concepts": ["business model", "value creation", "customers", "distribution"]
+      "expected_concepts": ["business model", "value creation", "customers", "distribution channels", "value proposition"]
     },
-
     {
       "id": 5,
-      "category": "financials",
-      "question": "What was the company’s total revenue in the most recent fiscal year, and how did it change compared to the previous year?",
-      "difficulty": "easy",
-      "expected_concepts": ["total revenue", "growth rate", "year-over-year change"]
+      "category": "company_overview",
+      "question": "What are the company's main geographic markets and regions of operation?",
+      "difficulty": "medium",
+      "expected_concepts": ["geographic segments", "regional operations", "international operations", "geographic markets"]
     },
     {
       "id": 6,
-      "category": "financials",
-      "question": "What are the main drivers of revenue growth mentioned in the Management’s Discussion and Analysis (MD&A)?",
-      "difficulty": "medium",
-      "expected_concepts": ["growth drivers", "MD&A", "demand", "pricing", "volume"]
+      "category": "company_overview",
+      "question": "What is the company's mission statement and corporate values?",
+      "difficulty": "easy",
+      "expected_concepts": ["mission", "values", "corporate culture", "company philosophy", "corporate mission"]
     },
     {
       "id": 7,
-      "category": "financials",
-      "question": "How does the company break down its revenue by segment or product line?",
+      "category": "company_overview",
+      "question": "How many employees does the company have and how has headcount changed?",
       "difficulty": "medium",
-      "expected_concepts": ["segment reporting", "revenue by segment", "product categories"]
+      "expected_concepts": ["employees", "headcount", "workforce", "personnel", "employee count"]
     },
     {
       "id": 8,
-      "category": "financials",
-      "question": "What are the company’s operating income and net income for the latest year, and what are the main reasons for any significant changes?",
-      "difficulty": "hard",
-      "expected_concepts": ["operating income", "net income", "profitability", "explanations of change"]
+      "category": "company_overview",
+      "question": "What are the company's main facilities and locations?",
+      "difficulty": "medium",
+      "expected_concepts": ["facilities", "locations", "offices", "headquarters", "operations", "manufacturing facilities"]
     },
     {
       "id": 9,
-      "category": "financials",
-      "question": "How much did the company spend on research and development (R&D) in the latest fiscal year?",
-      "difficulty": "easy",
-      "expected_concepts": ["R&D expenses", "innovation investment", "trend vs prior year"]
+      "category": "company_overview",
+      "question": "What is the company's history and how has it evolved over time?",
+      "difficulty": "medium",
+      "expected_concepts": ["company history", "evolution", "founding", "milestones", "corporate history", "restructuring"]
     },
     {
       "id": 10,
-      "category": "financials",
-      "question": "Describe the company’s capital structure: what is the mix between debt and equity according to the balance sheet?",
-      "difficulty": "hard",
-      "expected_concepts": ["total debt", "shareholders' equity", "leverage", "capital structure"]
+      "category": "company_overview",
+      "question": "What are the company's main brands, products, or service lines?",
+      "difficulty": "easy",
+      "expected_concepts": ["brands", "product portfolio", "service lines", "brand portfolio", "product offerings"]
     },
-
     {
       "id": 11,
-      "category": "risks",
-      "question": "What are the top three risk factors highlighted in the Risk Factors section of the annual report?",
+      "category": "company_overview",
+      "question": "What is the company's approach to talent acquisition and retention?",
       "difficulty": "medium",
-      "expected_concepts": ["risk factors", "regulatory risk", "market risk", "operational risk"]
+      "expected_concepts": ["talent", "recruitment", "retention", "human resources", "workforce", "employee benefits"]
     },
     {
       "id": 12,
-      "category": "risks",
-      "question": "Does the company mention dependence on key suppliers or customers as a risk, and how is this described?",
+      "category": "company_overview",
+      "question": "What is the company's approach to corporate social responsibility and community engagement?",
       "difficulty": "medium",
-      "expected_concepts": ["customer concentration", "supplier dependency", "concentration risk"]
+      "expected_concepts": ["CSR", "corporate social responsibility", "community engagement", "social impact", "philanthropy"]
     },
     {
       "id": 13,
-      "category": "risks",
-      "question": "How does the company describe competitive risks in its industry?",
-      "difficulty": "medium",
-      "expected_concepts": ["competition", "market share", "pricing pressure", "innovation risk"]
+      "category": "financials",
+      "question": "What was the company's total revenue in the most recent fiscal year, and how did it change compared to the previous year?",
+      "difficulty": "easy",
+      "expected_concepts": ["total revenue", "growth rate", "year-over-year change", "fiscal year"]
     },
     {
       "id": 14,
-      "category": "risks",
-      "question": "Are there any legal or regulatory proceedings disclosed that could materially affect the company’s financial position?",
-      "difficulty": "hard",
-      "expected_concepts": ["legal proceedings", "regulatory investigations", "material impact"]
+      "category": "financials",
+      "question": "What was the company's net income for the most recent quarter?",
+      "difficulty": "easy",
+      "expected_concepts": ["net income", "profit", "earnings", "quarterly results", "net profit"]
     },
-
     {
       "id": 15,
-      "category": "governance",
-      "question": "Who are the key executive officers of the company according to the latest proxy statement or annual report?",
-      "difficulty": "easy",
-      "expected_concepts": ["CEO", "CFO", "executive team", "roles"]
+      "category": "financials",
+      "question": "How did the company's operating expenses change compared to the previous period?",
+      "difficulty": "medium",
+      "expected_concepts": ["operating expenses", "cost structure", "expense growth", "efficiency", "OpEx"]
     },
     {
       "id": 16,
-      "category": "governance",
-      "question": "How is the board of directors structured (size, independence, key committees)?",
-      "difficulty": "medium",
-      "expected_concepts": ["board size", "independent directors", "audit committee", "compensation committee"]
+      "category": "financials",
+      "question": "What is the company's cash and cash equivalents balance?",
+      "difficulty": "easy",
+      "expected_concepts": ["cash", "cash equivalents", "liquidity", "balance sheet", "cash position"]
     },
     {
       "id": 17,
-      "category": "governance",
-      "question": "What performance metrics are used to determine executive compensation?",
-      "difficulty": "hard",
-      "expected_concepts": ["total shareholder return", "revenue growth", "EPS", "operating margin"]
+      "category": "financials",
+      "question": "How much did the company spend on research and development (R&D) in the most recent period?",
+      "difficulty": "medium",
+      "expected_concepts": ["R&D", "research and development", "innovation spending", "investment", "R&D expenses"]
     },
     {
       "id": 18,
-      "category": "governance",
-      "question": "Does the company mention any recent changes in leadership or the board, and what are the reasons?",
+      "category": "financials",
+      "question": "What is the company's total assets and how has it changed over time?",
       "difficulty": "medium",
-      "expected_concepts": ["leadership change", "board refresh", "succession planning"]
+      "expected_concepts": ["total assets", "asset growth", "balance sheet", "asset composition", "asset base"]
     },
-
     {
       "id": 19,
-      "category": "strategy",
-      "question": "What are the company’s main strategic priorities for the next few years as described by management?",
-      "difficulty": "medium",
-      "expected_concepts": ["growth strategy", "innovation", "market expansion", "cost efficiency"]
+      "category": "financials",
+      "question": "How does the company's operating margin compare to previous periods?",
+      "difficulty": "hard",
+      "expected_concepts": ["operating margin", "profitability", "efficiency", "margin trends", "operating income margin"]
     },
     {
       "id": 20,
-      "category": "strategy",
-      "question": "How does the company plan to allocate capital (e.g., investments, dividends, share buybacks, debt repayment)?",
+      "category": "financials",
+      "question": "What is the company's free cash flow and how is it calculated?",
       "difficulty": "hard",
-      "expected_concepts": ["capital allocation", "capex", "dividends", "buybacks", "deleveraging"]
+      "expected_concepts": ["free cash flow", "FCF", "cash flow", "operating cash flow", "capital expenditures", "CapEx"]
     },
     {
       "id": 21,
-      "category": "strategy",
-      "question": "Which acquisitions, divestitures, or major investments were completed during the reporting period?",
+      "category": "financials",
+      "question": "What are the company's capital expenditures and investment plans?",
       "difficulty": "medium",
-      "expected_concepts": ["M&A activity", "acquisitions", "divestitures", "strategic investments"]
+      "expected_concepts": ["capital expenditures", "CapEx", "investments", "capital spending", "infrastructure investment"]
     },
     {
       "id": 22,
-      "category": "strategy",
-      "question": "How does management describe the company’s competitive advantages or moats?",
+      "category": "financials",
+      "question": "What is the company's debt structure and outstanding debt obligations?",
       "difficulty": "hard",
-      "expected_concepts": ["competitive advantage", "network effects", "brand", "technology", "scale"]
+      "expected_concepts": ["debt", "borrowings", "debt structure", "liabilities", "credit facilities", "long-term debt"]
     },
-
     {
       "id": 23,
-      "category": "esg",
-      "question": "What environmental, social, and governance (ESG) topics does the company highlight as most material?",
-      "difficulty": "medium",
-      "expected_concepts": ["ESG priorities", "climate", "social responsibility", "governance practices"]
+      "category": "financials",
+      "question": "How does the company manage working capital and cash conversion cycles?",
+      "difficulty": "hard",
+      "expected_concepts": ["working capital", "cash conversion", "liquidity management", "cash cycle", "working capital management"]
     },
     {
       "id": 24,
-      "category": "esg",
-      "question": "Does the company disclose greenhouse gas (GHG) emissions or climate-related targets?",
-      "difficulty": "hard",
-      "expected_concepts": ["GHG emissions", "net-zero targets", "science-based targets", "climate risk"]
+      "category": "financials",
+      "question": "What are the company's share repurchase programs and dividend policies?",
+      "difficulty": "medium",
+      "expected_concepts": ["share repurchase", "stock buyback", "dividends", "capital return", "shareholder returns"]
     },
     {
       "id": 25,
-      "category": "esg",
-      "question": "How does the company describe its approach to diversity, equity, and inclusion (DEI)?",
-      "difficulty": "medium",
-      "expected_concepts": ["DEI initiatives", "workforce diversity", "inclusion programs"]
+      "category": "financials",
+      "question": "What are the company's pension and post-retirement benefit obligations?",
+      "difficulty": "hard",
+      "expected_concepts": ["pension", "retirement benefits", "benefit obligations", "employee benefits", "pension liabilities"]
     },
     {
       "id": 26,
-      "category": "esg",
-      "question": "Are there any notable ESG-related risks or controversies mentioned in the report?",
+      "category": "financials",
+      "question": "What are the company's off-balance sheet arrangements and commitments?",
       "difficulty": "hard",
-      "expected_concepts": ["ESG risk", "controversies", "regulatory scrutiny", "reputation risk"]
+      "expected_concepts": ["off-balance sheet", "commitments", "contingencies", "off-balance sheet items", "contractual obligations"]
     },
-
     {
       "id": 27,
-      "category": "comparison",
-      "question": "How has the company’s revenue growth over the last three years compared to its net income growth?",
-      "difficulty": "hard",
-      "expected_concepts": ["revenue trend", "net income trend", "growth comparison"]
+      "category": "risks",
+      "question": "What are the principal risk factors identified in the company's risk factors section?",
+      "difficulty": "easy",
+      "expected_concepts": ["risk factors", "business risks", "operational risks", "market risks", "key risks"]
     },
     {
       "id": 28,
-      "category": "comparison",
-      "question": "Compare the share of revenue coming from the top business segment now versus two years ago.",
-      "difficulty": "hard",
-      "expected_concepts": ["segment revenue share", "trend analysis", "business mix"]
+      "category": "risks",
+      "question": "What regulatory risks does the company face in its operations?",
+      "difficulty": "medium",
+      "expected_concepts": ["regulatory risks", "compliance", "government regulations", "legal risks", "antitrust", "privacy regulations"]
     },
     {
       "id": 29,
-      "category": "comparison",
-      "question": "How has the company’s debt level changed over the last three reporting periods?",
+      "category": "risks",
+      "question": "How does the company describe competitive risks and market competition?",
       "difficulty": "medium",
-      "expected_concepts": ["total debt trend", "leverage", "debt reduction or increase"]
+      "expected_concepts": ["competition", "competitive risks", "market share", "competitive landscape", "competitive pressures"]
     },
     {
       "id": 30,
-      "category": "comparison",
-      "question": "What changes in risk factors are highlighted when comparing the latest report to the previous year?",
+      "category": "risks",
+      "question": "What cybersecurity risks and data privacy concerns are mentioned in the report?",
       "difficulty": "hard",
-      "expected_concepts": ["new risks", "removed risks", "changed emphasis in risk factors"]
+      "expected_concepts": ["cybersecurity", "data privacy", "security risks", "data breaches", "privacy", "GDPR"]
     },
-
     {
       "id": 31,
-      "category": "technical",
-      "question": "Locate and summarize the table that presents the breakdown of revenue by geographic region.",
-      "difficulty": "medium",
-      "expected_concepts": ["table extraction", "region names", "revenue amounts", "summary"]
+      "category": "risks",
+      "question": "What are the company's foreign currency and international risks?",
+      "difficulty": "hard",
+      "expected_concepts": ["foreign currency", "exchange rate", "international risks", "currency exposure", "FX risk"]
     },
     {
       "id": 32,
-      "category": "technical",
-      "question": "Identify the note in the financial statements that explains the company’s revenue recognition policy and summarize it.",
-      "difficulty": "hard",
-      "expected_concepts": ["accounting policy", "revenue recognition", "IFRS/GAAP references"]
+      "category": "risks",
+      "question": "How does the company address supply chain and operational disruption risks?",
+      "difficulty": "medium",
+      "expected_concepts": ["supply chain", "operational risks", "disruption", "business continuity", "supply chain risks"]
     },
     {
       "id": 33,
-      "category": "technical",
-      "question": "Which accounting standards (e.g., IFRS, US GAAP) does the company use, and are there any significant recent changes mentioned?",
+      "category": "risks",
+      "question": "What are the company's liquidity and capital resources risks?",
       "difficulty": "medium",
-      "expected_concepts": ["IFRS", "US GAAP", "new standards", "adoption impacts"]
+      "expected_concepts": ["liquidity", "capital resources", "financial risks", "funding", "liquidity risk"]
     },
     {
       "id": 34,
-      "category": "technical",
-      "question": "Find and summarize any sensitivity analysis related to interest rates, foreign exchange, or other market risks.",
+      "category": "risks",
+      "question": "How does the company manage interest rate and credit risks?",
       "difficulty": "hard",
-      "expected_concepts": ["sensitivity analysis", "market risk", "interest rate", "FX exposure"]
+      "expected_concepts": ["interest rate risk", "credit risk", "financial risk management", "hedging", "interest rate exposure"]
     },
     {
       "id": 35,
-      "category": "technical",
-      "question": "Does the report include non-GAAP financial measures, and how does the company reconcile them to GAAP/IFRS figures?",
-      "difficulty": "hard",
-      "expected_concepts": ["non-GAAP measures", "adjusted EBITDA", "reconciliation tables"]
+      "category": "risks",
+      "question": "What are the company's environmental, social, and governance (ESG) risks?",
+      "difficulty": "medium",
+      "expected_concepts": ["ESG risks", "environmental risks", "social risks", "sustainability", "climate risks"]
     },
-
     {
       "id": 36,
-      "category": "company_overview",
-      "question": "What key macroeconomic or industry trends does management highlight as influencing the company’s performance?",
+      "category": "risks",
+      "question": "How does the company address climate change and environmental risks?",
       "difficulty": "medium",
-      "expected_concepts": ["macroeconomic trends", "industry trends", "demand drivers"]
+      "expected_concepts": ["climate change", "environmental risks", "sustainability", "carbon footprint", "environmental impact"]
     },
     {
       "id": 37,
-      "category": "financials",
-      "question": "What is the company’s free cash flow in the latest year, if disclosed, and how is it calculated?",
+      "category": "risks",
+      "question": "What are the company's intellectual property and patent risks?",
       "difficulty": "hard",
-      "expected_concepts": ["free cash flow", "operating cash flow", "capex", "definition used"]
+      "expected_concepts": ["intellectual property", "patents", "IP risks", "technology risks", "patent litigation"]
     },
     {
       "id": 38,
-      "category": "governance",
-      "question": "Are there any shareholder proposals or significant voting results discussed in the proxy statement?",
-      "difficulty": "hard",
-      "expected_concepts": ["shareholder proposals", "voting outcomes", "support percentages"]
+      "category": "risks",
+      "question": "What are the company's data privacy and regulatory compliance risks?",
+      "difficulty": "medium",
+      "expected_concepts": ["data privacy", "regulatory compliance", "GDPR", "privacy regulations", "compliance risks"]
     },
     {
       "id": 39,
-      "category": "esg",
-      "question": "Does the company link executive compensation to ESG or sustainability metrics?",
-      "difficulty": "hard",
-      "expected_concepts": ["ESG-linked pay", "incentive metrics", "long-term plans"]
+      "category": "risks",
+      "question": "What are the company's key person risks and dependency on key personnel?",
+      "difficulty": "medium",
+      "expected_concepts": ["key person risk", "key personnel", "talent dependency", "leadership dependency", "executive retention"]
     },
     {
       "id": 40,
-      "category": "strategy",
-      "question": "How does the company plan to address key risks and uncertainties mentioned in the report?",
+      "category": "governance",
+      "question": "Who are the members of the company's board of directors?",
+      "difficulty": "easy",
+      "expected_concepts": ["board of directors", "directors", "governance", "board members", "independent directors"]
+    },
+    {
+      "id": 41,
+      "category": "governance",
+      "question": "What is the executive compensation structure for the CEO and other named executive officers?",
       "difficulty": "hard",
-      "expected_concepts": ["risk mitigation plans", "strategic responses", "management actions"]
+      "expected_concepts": ["executive compensation", "CEO pay", "NEO compensation", "salary", "equity", "stock awards"]
+    },
+    {
+      "id": 42,
+      "category": "governance",
+      "question": "What are the company's corporate governance policies and practices?",
+      "difficulty": "medium",
+      "expected_concepts": ["corporate governance", "policies", "best practices", "board oversight", "governance framework"]
+    },
+    {
+      "id": 43,
+      "category": "governance",
+      "question": "How does the company handle related party transactions and conflicts of interest?",
+      "difficulty": "hard",
+      "expected_concepts": ["related party transactions", "conflicts of interest", "governance", "transparency", "related parties"]
+    },
+    {
+      "id": 44,
+      "category": "governance",
+      "question": "What is the company's policy on stock ownership by directors and executives?",
+      "difficulty": "medium",
+      "expected_concepts": ["stock ownership", "insider ownership", "equity ownership", "shareholding", "director ownership"]
+    },
+    {
+      "id": 45,
+      "category": "governance",
+      "question": "What is the composition and structure of the board committees?",
+      "difficulty": "medium",
+      "expected_concepts": ["board committees", "audit committee", "compensation committee", "governance committee", "nominating committee"]
+    },
+    {
+      "id": 46,
+      "category": "governance",
+      "question": "What are the company's policies on shareholder rights and proxy voting?",
+      "difficulty": "hard",
+      "expected_concepts": ["shareholder rights", "proxy voting", "corporate governance", "voting rights", "shareholder proposals"]
+    },
+    {
+      "id": 47,
+      "category": "governance",
+      "question": "What is the company's code of conduct and ethics policies?",
+      "difficulty": "medium",
+      "expected_concepts": ["code of conduct", "ethics", "compliance", "corporate ethics", "ethical standards"]
+    },
+    {
+      "id": 48,
+      "category": "governance",
+      "question": "How does the company ensure diversity and inclusion in its leadership?",
+      "difficulty": "medium",
+      "expected_concepts": ["diversity", "inclusion", "board diversity", "leadership diversity", "diversity initiatives"]
+    },
+    {
+      "id": 49,
+      "category": "governance",
+      "question": "What is the company's approach to executive succession planning?",
+      "difficulty": "hard",
+      "expected_concepts": ["succession planning", "executive succession", "leadership transition", "talent management", "CEO succession"]
+    },
+    {
+      "id": 50,
+      "category": "governance",
+      "question": "What is the company's approach to risk management and internal controls?",
+      "difficulty": "hard",
+      "expected_concepts": ["risk management", "internal controls", "SOX", "control framework", "internal audit"]
+    },
+    {
+      "id": 51,
+      "category": "governance",
+      "question": "What is the company's approach to shareholder engagement and communication?",
+      "difficulty": "medium",
+      "expected_concepts": ["shareholder engagement", "investor relations", "communication", "transparency", "shareholder communication"]
+    },
+    {
+      "id": 52,
+      "category": "strategy",
+      "question": "What are the company's strategic priorities and key initiatives for the coming year?",
+      "difficulty": "medium",
+      "expected_concepts": ["strategic priorities", "initiatives", "growth strategy", "business strategy", "strategic focus"]
+    },
+    {
+      "id": 53,
+      "category": "strategy",
+      "question": "How does the company plan to invest in future growth opportunities?",
+      "difficulty": "hard",
+      "expected_concepts": ["investment strategy", "growth investments", "capital allocation", "future opportunities", "strategic investments"]
+    },
+    {
+      "id": 54,
+      "category": "strategy",
+      "question": "What is the company's approach to mergers, acquisitions, and strategic partnerships?",
+      "difficulty": "hard",
+      "expected_concepts": ["M&A", "acquisitions", "partnerships", "strategic transactions", "mergers"]
+    },
+    {
+      "id": 55,
+      "category": "strategy",
+      "question": "How does the company describe its competitive advantages and market position?",
+      "difficulty": "medium",
+      "expected_concepts": ["competitive advantages", "market position", "differentiation", "competitive moat", "market leadership"]
+    },
+    {
+      "id": 56,
+      "category": "strategy",
+      "question": "What is the company's approach to innovation and research and development?",
+      "difficulty": "medium",
+      "expected_concepts": ["innovation", "R&D strategy", "research", "development", "technology", "innovation culture"]
+    },
+    {
+      "id": 57,
+      "category": "strategy",
+      "question": "How does the company plan to expand into new markets or geographies?",
+      "difficulty": "hard",
+      "expected_concepts": ["market expansion", "geographic expansion", "international growth", "new markets", "global expansion"]
+    },
+    {
+      "id": 58,
+      "category": "strategy",
+      "question": "What is the company's digital transformation strategy?",
+      "difficulty": "hard",
+      "expected_concepts": ["digital transformation", "technology strategy", "digital initiatives", "innovation", "AI strategy"]
+    },
+    {
+      "id": 59,
+      "category": "strategy",
+      "question": "How does the company approach sustainability and corporate responsibility?",
+      "difficulty": "medium",
+      "expected_concepts": ["sustainability", "corporate responsibility", "ESG", "sustainable practices", "environmental responsibility"]
+    },
+    {
+      "id": 60,
+      "category": "strategy",
+      "question": "What are the company's key strategic partnerships and alliances?",
+      "difficulty": "medium",
+      "expected_concepts": ["strategic partnerships", "alliances", "partnerships", "collaborations", "business partnerships"]
+    },
+    {
+      "id": 61,
+      "category": "strategy",
+      "question": "What are the company's plans for technology infrastructure and digital capabilities?",
+      "difficulty": "hard",
+      "expected_concepts": ["technology infrastructure", "digital capabilities", "IT strategy", "technology investment", "infrastructure investment"]
+    },
+    {
+      "id": 62,
+      "category": "strategy",
+      "question": "What are the company's long-term strategic goals and vision?",
+      "difficulty": "medium",
+      "expected_concepts": ["strategic goals", "vision", "long-term strategy", "strategic vision", "future vision"]
+    },
+    {
+      "id": 63,
+      "category": "segments",
+      "question": "What is the revenue breakdown by business segment in the most recent period?",
+      "difficulty": "easy",
+      "expected_concepts": ["segment revenue", "revenue breakdown", "segment performance", "business segments", "reportable segments"]
+    },
+    {
+      "id": 64,
+      "category": "segments",
+      "question": "How did each business segment perform compared to the previous year?",
+      "difficulty": "medium",
+      "expected_concepts": ["segment growth", "year-over-year", "segment comparison", "performance", "segment trends"]
+    },
+    {
+      "id": 65,
+      "category": "segments",
+      "question": "What are the operating margins for each business segment?",
+      "difficulty": "hard",
+      "expected_concepts": ["segment margins", "operating margin", "profitability by segment", "segment profitability", "segment operating income"]
+    },
+    {
+      "id": 66,
+      "category": "segments",
+      "question": "Which business segment showed the strongest growth in the most recent quarter?",
+      "difficulty": "medium",
+      "expected_concepts": ["segment growth", "fastest growing", "growth rate", "segment performance", "growth leader"]
+    },
+    {
+      "id": 67,
+      "category": "segments",
+      "question": "What are the key products or services within each major business segment?",
+      "difficulty": "hard",
+      "expected_concepts": ["segment products", "segment services", "segment offerings", "product portfolio", "segment offerings"]
+    },
+    {
+      "id": 68,
+      "category": "segments",
+      "question": "What are the geographic revenue breakdowns by region?",
+      "difficulty": "medium",
+      "expected_concepts": ["geographic revenue", "regional revenue", "international revenue", "revenue by region", "geographic segments"]
+    },
+    {
+      "id": 69,
+      "category": "segments",
+      "question": "What are the key performance indicators for each business segment?",
+      "difficulty": "hard",
+      "expected_concepts": ["KPIs", "performance metrics", "segment metrics", "key indicators", "segment KPIs"]
+    },
+    {
+      "id": 70,
+      "category": "segments",
+      "question": "How does the company allocate resources across different business segments?",
+      "difficulty": "hard",
+      "expected_concepts": ["resource allocation", "capital allocation", "segment investment", "allocation strategy", "segment funding"]
+    },
+    {
+      "id": 71,
+      "category": "segments",
+      "question": "What are the growth prospects for each business segment?",
+      "difficulty": "hard",
+      "expected_concepts": ["growth prospects", "segment outlook", "future growth", "growth potential", "segment forecast"]
+    },
+    {
+      "id": 72,
+      "category": "segments",
+      "question": "How does the company measure and report segment profitability?",
+      "difficulty": "hard",
+      "expected_concepts": ["segment profitability", "segment reporting", "profitability metrics", "segment analysis", "segment financials"]
+    },
+    {
+      "id": 73,
+      "category": "segments",
+      "question": "What are the inter-segment transactions and how are they eliminated?",
+      "difficulty": "hard",
+      "expected_concepts": ["inter-segment transactions", "segment elimination", "consolidation", "segment accounting", "elimination entries"]
+    },
+    {
+      "id": 74,
+      "category": "comparison",
+      "question": "How does the current quarter's revenue compare to the same quarter last year?",
+      "difficulty": "easy",
+      "expected_concepts": ["year-over-year", "quarterly comparison", "revenue growth", "YoY growth", "quarter comparison"]
+    },
+    {
+      "id": 75,
+      "category": "comparison",
+      "question": "What are the key differences in financial performance between the current and previous fiscal year?",
+      "difficulty": "hard",
+      "expected_concepts": ["year-over-year comparison", "financial performance", "trends", "changes", "fiscal year comparison"]
+    },
+    {
+      "id": 76,
+      "category": "comparison",
+      "question": "How has the company's market share changed over the reporting periods?",
+      "difficulty": "hard",
+      "expected_concepts": ["market share", "competitive position", "market trends", "industry position", "market dominance"]
+    },
+    {
+      "id": 77,
+      "category": "comparison",
+      "question": "What are the trends in operating expenses over the past several quarters?",
+      "difficulty": "medium",
+      "expected_concepts": ["expense trends", "cost trends", "operating expenses", "quarterly trends", "expense trajectory"]
+    },
+    {
+      "id": 78,
+      "category": "comparison",
+      "question": "How does the company's profitability compare across different reporting periods?",
+      "difficulty": "hard",
+      "expected_concepts": ["profitability trends", "margin trends", "earnings trends", "profitability comparison", "margin analysis"]
+    },
+    {
+      "id": 79,
+      "category": "comparison",
+      "question": "How has the company's customer base or user base changed over time?",
+      "difficulty": "medium",
+      "expected_concepts": ["customers", "user base", "customer growth", "customer metrics", "active users"]
+    },
+    {
+      "id": 80,
+      "category": "comparison",
+      "question": "What are the seasonal patterns or cyclical trends in the company's business?",
+      "difficulty": "hard",
+      "expected_concepts": ["seasonality", "cyclical trends", "business cycles", "seasonal patterns", "quarterly patterns"]
+    },
+    {
+      "id": 81,
+      "category": "comparison",
+      "question": "How has the company's market capitalization or enterprise value changed?",
+      "difficulty": "hard",
+      "expected_concepts": ["market capitalization", "enterprise value", "valuation", "market value", "company valuation"]
+    },
+    {
+      "id": 82,
+      "category": "comparison",
+      "question": "How has the company's customer acquisition cost and lifetime value changed?",
+      "difficulty": "hard",
+      "expected_concepts": ["customer acquisition cost", "CAC", "lifetime value", "LTV", "customer metrics", "customer economics"]
+    },
+    {
+      "id": 83,
+      "category": "comparison",
+      "question": "How does the company's performance compare to industry benchmarks or peers?",
+      "difficulty": "hard",
+      "expected_concepts": ["industry comparison", "peer comparison", "benchmarks", "competitive analysis", "peer group"]
+    },
+    {
+      "id": 84,
+      "category": "comparison",
+      "question": "What are the trends in the company's return on equity and return on assets?",
+      "difficulty": "hard",
+      "expected_concepts": ["ROE", "ROA", "return on equity", "return on assets", "profitability ratios", "return metrics"]
+    },
+    {
+      "id": 85,
+      "category": "comparison",
+      "question": "How does the company's financial performance compare to its guidance or forecasts?",
+      "difficulty": "hard",
+      "expected_concepts": ["guidance", "forecasts", "earnings guidance", "performance vs guidance", "guidance comparison"]
+    },
+    {
+      "id": 86,
+      "category": "technical",
+      "question": "What accounting policies and estimates are significant to the company's financial statements?",
+      "difficulty": "hard",
+      "expected_concepts": ["accounting policies", "accounting estimates", "financial reporting", "GAAP", "significant accounting policies"]
+    },
+    {
+      "id": 87,
+      "category": "technical",
+      "question": "How does the company recognize revenue from its different business activities?",
+      "difficulty": "hard",
+      "expected_concepts": ["revenue recognition", "accounting standards", "ASC 606", "revenue policies", "revenue recognition principles"]
+    },
+    {
+      "id": 88,
+      "category": "technical",
+      "question": "What is the company's approach to stock-based compensation accounting?",
+      "difficulty": "hard",
+      "expected_concepts": ["stock-based compensation", "equity compensation", "share-based payments", "accounting", "stock options"]
+    },
+    {
+      "id": 89,
+      "category": "technical",
+      "question": "How are intangible assets and goodwill accounted for in the financial statements?",
+      "difficulty": "hard",
+      "expected_concepts": ["intangible assets", "goodwill", "amortization", "impairment", "intangible asset accounting"]
+    },
+    {
+      "id": 90,
+      "category": "technical",
+      "question": "What is the company's policy on income taxes and tax provisions?",
+      "difficulty": "hard",
+      "expected_concepts": ["income taxes", "tax provision", "effective tax rate", "tax accounting", "tax policies"]
+    },
+    {
+      "id": 91,
+      "category": "technical",
+      "question": "What are the company's significant legal proceedings and contingencies?",
+      "difficulty": "hard",
+      "expected_concepts": ["legal proceedings", "litigation", "contingencies", "legal risks", "legal matters"]
+    },
+    {
+      "id": 92,
+      "category": "technical",
+      "question": "What are the company's critical accounting estimates and judgments?",
+      "difficulty": "hard",
+      "expected_concepts": ["accounting estimates", "judgments", "critical estimates", "accounting assumptions", "management estimates"]
+    },
+    {
+      "id": 93,
+      "category": "technical",
+      "question": "How does the company account for business combinations and acquisitions?",
+      "difficulty": "hard",
+      "expected_concepts": ["business combinations", "acquisitions", "purchase accounting", "M&A accounting", "acquisition accounting"]
+    },
+    {
+      "id": 94,
+      "category": "technical",
+      "question": "What are the company's significant accounting pronouncements and their impact?",
+      "difficulty": "hard",
+      "expected_concepts": ["accounting standards", "pronouncements", "GAAP changes", "accounting updates", "new accounting standards"]
+    },
+    {
+      "id": 95,
+      "category": "technical",
+      "question": "How does the company account for leases under the new lease accounting standard?",
+      "difficulty": "hard",
+      "expected_concepts": ["lease accounting", "ASC 842", "operating leases", "finance leases", "lease obligations"]
+    },
+    {
+      "id": 96,
+      "category": "technical",
+      "question": "What are the company's fair value measurements and valuation techniques?",
+      "difficulty": "hard",
+      "expected_concepts": ["fair value", "valuation", "fair value measurements", "valuation techniques", "fair value hierarchy"]
+    },
+    {
+      "id": 97,
+      "category": "technical",
+      "question": "What is the company's organizational structure and reporting hierarchy?",
+      "difficulty": "hard",
+      "expected_concepts": ["organizational structure", "reporting structure", "hierarchy", "management structure", "corporate structure"]
+    },
+    {
+      "id": 98,
+      "category": "technical",
+      "question": "What are the company's segment reporting policies and how are segments defined?",
+      "difficulty": "hard",
+      "expected_concepts": ["segment reporting", "segment definition", "reportable segments", "segment accounting", "segment policies"]
+    },
+    {
+      "id": 99,
+      "category": "technical",
+      "question": "How does the company account for investments in equity securities and other investments?",
+      "difficulty": "hard",
+      "expected_concepts": ["equity securities", "investments", "investment accounting", "fair value", "investment portfolio"]
+    },
+    {
+      "id": 100,
+      "category": "technical",
+      "question": "What are the company's policies on revenue recognition for different revenue streams?",
+      "difficulty": "hard",
+      "expected_concepts": ["revenue recognition", "revenue policies", "service revenue", "product revenue", "revenue streams"]
     }
   ]
 }
