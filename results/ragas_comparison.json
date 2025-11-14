@@ -2,22 +2,57 @@
   "ragas_comparison": [
     {
       "approach": "Naive RAG",
-      "faithfulness": 0.9575326872201871,
-      "answer_relevancy": 0.10942964744767414,
+      "faithfulness": 0.8112229225023342,
+      "answer_relevancy": 0.3639434722176176,
       "queries_evaluated": 50,
-      "average_score": 0.5334811673339306
+      "average_score": 0.5875831973599759
     },
     {
       "approach": "Naive RAG (Chroma DB)",
-      "faithfulness": 0.9839595959595958,
-      "answer_relevancy": 0.3386669762127375,
+      "faithfulness": 0.8717747242437645,
+      "answer_relevancy": 0.7387747588546949,
       "queries_evaluated": 50,
-      "average_score": 0.6613132860861667
+      "average_score": 0.8052747415492296
+    },
+    {
+      "approach": "Advanced RAG",
+      "faithfulness": 0.2250173335436493,
+      "answer_relevancy": 0.558045157970159,
+      "queries_evaluated": 50,
+      "average_score": 0.3915312457569041
+    },
+    {
+      "approach": "BM25 RAG",
+      "faithfulness": 0.8131760252131768,
+      "answer_relevancy": 0.5952169336385426,
+      "queries_evaluated": 50,
+      "average_score": 0.7041964794258597
+    },
+    {
+      "approach": "FAISS RAG",
+      "faithfulness": 0.890330616379378,
+      "answer_relevancy": 0.7650337140632757,
+      "queries_evaluated": 50,
+      "average_score": 0.8276821652213269
+    },
+    {
+      "approach": "Hybrid RAG (All)",
+      "faithfulness": 0.24374789915966386,
+      "answer_relevancy": 0.5254028260679996,
+      "queries_evaluated": 50,
+      "average_score": 0.38457536261383174
+    },
+    {
+      "approach": "Corrective RAG",
+      "faithfulness": 0.3122326086611801,
+      "answer_relevancy": 0.47576870322133324,
+      "queries_evaluated": 50,
+      "average_score": 0.39400065594125666
     }
   ],
   "summary": {
-    "total_approaches": 2,
-    "best_approach": "Naive RAG (Chroma DB)",
-    "best_score": 0.6613132860861667
+    "total_approaches": 7,
+    "best_approach": "FAISS RAG",
+    "best_score": 0.8276821652213269
   }
 }

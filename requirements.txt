@@ -8,6 +8,8 @@ python-dotenv>=1.0.0  # для завантаження .env файлів
 # Опціонально: для FAISS RAG
 # faiss-cpu>=1.7.4  # для CPU
 # faiss-gpu>=1.7.4  # для GPU
+faiss-cpu==1.12.0
+sentence-transformers==5.1.2
 
 # Для ChromaDB RAG
 chromadb>=0.4.0

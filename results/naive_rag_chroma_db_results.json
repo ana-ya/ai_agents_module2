@@ -1,0 +1,1215 @@
+{
+  "system_name": "Naive RAG",
+  "total_documents": 30,
+  "total_chunks": 20378,
+  "chunk_size": 500,
+  "chunk_overlap": 100,
+  "llm_model": "openai (gpt-4o-mini)",
+  "queries": [
+    {
+      "question": "What are the main business segments of the company according to the latest annual report?",
+      "answer": "According to the context provided, the main business segments of the company, Alphabet, are Google Services, Google Cloud, and Other Bets (which includes all non-Google businesses).",
+      "relevant_chunks": 3,
+      "sources": [
+        "goog-20200331.pdf_chunk_233",
+        "goog-20250930.pdf_chunk_260",
+        "goog-20250630.pdf_chunk_249"
+      ],
+      "scores": [
+        0.7814808487892151,
+        0.7847877740859985,
+        0.7847877740859985
+      ],
+      "contexts": [
+        "RATIONS\nPlease read the following discussion and analysis of our financial condition and results of\noperations together with our consolidated financial statements and related notes included\nunder Part I, Item 1 of this Quarterly Report on Form 10-Q.\nExecutive Overview of Results\nBelow are our key financial results for the three months ended March 31, 2020\n(consolidated unless otherwise noted):\n•\nRevenues of $41.2 billion and revenue growth of 13% year over year, constant",
+        "dated\nfinancial statements and related notes included under Item 1 of this Quarterly Report on Form\n10-Q as well as our Annual Report on Form 10-K for the fiscal year ended December  31,\n2024, including Part I, Item 1A \"Risk Factors.\"\nUnderstanding Alphabet’s Financial Results\nAlphabet is a collection of businesses — the largest of which is Google. We report\nGoogle in two segments, Google Services and Google Cloud; we also report all non-Google\nbusinesses collectively as Other Bets.",
+        "dated\nfinancial statements and related notes included under Item 1 of this Quarterly Report on Form\n10-Q as well as our Annual Report on Form 10-K for the fiscal year ended December  31,\n2024, including Part I, Item 1A \"Risk Factors.\"\nUnderstanding Alphabet’s Financial Results\nAlphabet is a collection of businesses — the largest of which is Google. We report\nGoogle in two segments, Google Services and Google Cloud; we also report all non-Google\nbusinesses collectively as Other Bets."
+      ],
+      "execution_time": 2.0136048793792725,
+      "category": "company_overview",
+      "query_id": 1,
+      "difficulty": "easy"
+    },
+    {
+      "question": "What is the company's primary business and how does it generate revenue?",
+      "answer": "The company's primary business involves supporting early-stage businesses in the research and development phase as well as those in the beginning stages of commercialization. It aims for these businesses to become successful in the medium to long term. The company generates revenue primarily from internet and TV services, licensing, R&D services, and the sale of healthcare-related services.",
+      "relevant_chunks": 3,
+      "sources": [
+        "goog-20201231.pdf_chunk_69",
+        "goog-20211231.pdf_chunk_71",
+        "goog-20231231.pdf_chunk_91"
+      ],
+      "scores": [
+        0.8830154538154602,
+        0.8905768394470215,
+        0.9327239394187927
+      ],
+      "contexts": [
+        "nging from those in the research and development phase to those that are in the beginning stages of\ncommercialization, and our goal is for them to become thriving, successful businesses in the medium to long term.\nWhile these early-stage businesses naturally come with considerable uncertainty, some of them are already generating\nrevenue and making important strides in their industries. Revenues are primarily generated from internet and TV\nservices, as well as licensing and R&D services.",
+        "n the R&D phase to those that are in the beginning stages of commercialization, and our goal is for\nthem to become thriving, successful businesses in the medium to long term. While these early-stage businesses\nnaturally come with considerable uncertainty, some of them are already generating revenue and making important\nstrides in their industries. Revenues from Other Bets are generated primarily from the sale of health technology and\ninternet services.",
+        "h independent members and outside investors. While these early-stage businesses naturally come with\nconsiderable uncertainty, some of them are already generating revenue and making important strides in their industries.\nRevenues from Other Bets are generated primarily from the sale of healthcare-related services and internet services.\nCompetition\nOur business is characterized by rapid change as well as new and disruptive technologies. We face formidable"
+      ],
+      "execution_time": 2.0298781394958496,
+      "category": "company_overview",
+      "query_id": 2,
+      "difficulty": "easy"
+    },
+    {
+      "question": "Summarize the company's core products and services described in the annual report.",
+      "answer": "The company generates revenues primarily through the following core products and services:\n\n1. **Online Advertising**: Delivering relevant and cost-effective advertising solutions.\n2. **Cloud-Based Solutions**: Providing enterprise customers with infrastructure and platform services, as well as communication and collaboration tools.\n3. **Sales of Products and Services**: This includes sales of apps, in-app purchases, and hardware.\n4. **Fees for Additional Services**: This encompasses various fees received for additional services provided. \n\nOverall, the company focuses on a combination of advertising, cloud services, and digital products to drive its revenue.",
+      "relevant_chunks": 3,
+      "sources": [
+        "goog-20241231.pdf_chunk_515",
+        "goog-20230630.pdf_chunk_229",
+        "goog-20230331.pdf_chunk_210"
+      ],
+      "scores": [
+        0.9602052569389343,
+        0.9929176568984985,
+        0.9929176568984985
+      ],
+      "contexts": [
+        "tes to Consolidated Financial\nStatements included in Item 8 of this Annual Report on Form 10-K.\n42.\nTable of Contents\nAlphabet Inc.\nWe primarily utilize contract manufacturers for the assembly of our servers used in our technical infrastructure and\ndevices we sell. We have agreements where we may purchase components directly from suppliers and then supply\nthese components to contract manufacturers for use in the assembly of the servers and devices. Certain of these",
+        "otes to\nConsolidated Financial Statements included in Item 1 of this Quarterly Report on Form 10-Q.\nRevenues and Monetization Metrics\nWe generate revenues by delivering relevant, cost-effective online advertising; cloud-\nbased solutions that provide enterprise customers of all sizes with infrastructure and platform\nservices as well as communication and collaboration tools; sales of other products and\nservices, such as apps and in-app purchases, and hardware; and fees received for",
+        "otes to\nConsolidated Financial Statements included in Item 1 of this Quarterly Report on Form 10-Q.\nRevenues and Monetization Metrics\nWe generate revenues by delivering relevant, cost-effective online advertising; cloud-\nbased solutions that provide enterprise customers of all sizes with infrastructure and platform\nservices as well as communication and collaboration tools; sales of other products and\nservices, such as apps and in-app purchases, and hardware; and fees received for"
+      ],
+      "execution_time": 3.355818271636963,
+      "category": "company_overview",
+      "query_id": 3,
+      "difficulty": "medium"
+    },
+    {
+      "question": "How does the company describe its overall business model and value proposition?",
+      "answer": "The company describes its overall business model as one that necessitates the implementation of complex organizational management structures, particularly due to its holding company structure. It emphasizes the importance of adapting its corporate culture and work environments to changing circumstances, such as natural disasters or pandemics, which could affect its competitive ability and corporate culture.\n\nAdditionally, the company incorporates subjective valuation methodologies in preparing its financial statements, indicating that its value proposition may be influenced by the fluctuating valuations of its non-marketable equity and debt investments. This suggests a focus on navigating complex financial landscapes while maintaining adaptability in its operations to ensure continued competitiveness and operational effectiveness.",
+      "relevant_chunks": 3,
+      "sources": [
+        "Document.pdf_chunk_266",
+        "goog-20200630.pdf_chunk_627",
+        "goog-20200930.pdf_chunk_634"
+      ],
+      "scores": [
+        0.9394537210464478,
+        0.9485107660293579,
+        0.9485107660293579
+      ],
+      "contexts": [
+        "e required to implement more complex organizational management structures, particularly in light of\nour holding company structure, adverse changes to our corporate culture could harm our business operations.\nIn preparing our financial statements, we incorporate valuation methodologies that are subjective in\nnature and valuations may fluctuate over time.\nWe measure certain of our non-marketable equity and debt investments, certain other instruments including stock-",
+        "e complex\norganizational management structures or adapt our corporate culture and work environments\nto ever-changing circumstances, such as during times of a natural disaster or pandemic\n(including COVID-19), and these changes could impact our ability to compete effectively or\nhave an adverse impact on our corporate culture.\nIn preparing our financial statements, we incorporate valuation methodologies\nthat are subjective in nature and valuations may fluctuate over time.",
+        "e complex\norganizational management structures or adapt our corporate culture and work environments\nto ever-changing circumstances, such as during times of a natural disaster or pandemic\n(including COVID-19), and these changes could impact our ability to compete effectively or\nhave an adverse impact on our corporate culture.\nIn preparing our financial statements, we incorporate valuation methodologies\nthat are subjective in nature and valuations may fluctuate over time."
+      ],
+      "execution_time": 1.9329309463500977,
+      "category": "company_overview",
+      "query_id": 4,
+      "difficulty": "hard"
+    },
+    {
+      "question": "What are the company's main geographic markets and regions of operation?",
+      "answer": "The company's main geographic markets and regions of operation are North America, Europe, South America, and Asia.",
+      "relevant_chunks": 3,
+      "sources": [
+        "goog-20201231.pdf_chunk_326",
+        "goog-20211231.pdf_chunk_333",
+        "Document.pdf_chunk_288"
+      ],
+      "scores": [
+        0.8713576793670654,
+        0.8863367438316345,
+        0.8884347677230835
+      ],
+      "contexts": [
+        "and development sites around the world, primarily in\nNorth America, Europe, South America, and Asia. We own and operate data centers in the U.S., Europe, South\nAmerica, and Asia. We believe our existing facilities, both owned and leased, are in good condition and suitable for the\nconduct of our business.\nITEM 3.\nLEGAL PROCEEDINGS\nFor a description of our material pending legal proceedings, please see Legal Matters in Note 10 of the Notes to",
+        "uth America, and Asia. We own and operate data centers in the U.S.,\nEurope, South America, and Asia. We believe our existing facilities, both owned and leased, are in good condition and\nsuitable for the conduct of our business.\nITEM 3.\nLEGAL PROCEEDINGS\nFor a description of our material pending legal proceedings, see Legal Matters in Note 10 of the Notes to\nConsolidated Financial Statements included in Part II, Item 8 of this Annual Report on Form 10-K, which is incorporated\nherein by reference.",
+        "uth America, and Asia. We own and operate data centers in the U.S., Europe, South\nAmerica, and Asia. We believe our existing facilities, both owned and leased, are in good condition and suitable for the\nconduct of our business.\nITEM 3.\nLEGAL PROCEEDINGS\nFor a description of our material pending legal proceedings, please see Note 10 “Commitments and\nContingencies - Legal Matters” of the Notes to Consolidated Financial Statements included in Item 8 of this Annual"
+      ],
+      "execution_time": 1.6957902908325195,
+      "category": "company_overview",
+      "query_id": 5,
+      "difficulty": "medium"
+    },
+    {
+      "question": "What is the company's mission statement and corporate values?",
+      "answer": "The context provided does not explicitly state the company's mission statement or corporate values. However, it implies that the company's basic purpose is to provide value to shareholders by serving customers. This suggests a focus on shareholder value, customer service, and possibly a commitment to ethical considerations in its operations. For a definitive answer regarding the company's mission statement and corporate values, additional specific information from the company itself would be needed.",
+      "relevant_chunks": 3,
+      "sources": [
+        "goog-20200630.pdf_chunk_627",
+        "goog-20200930.pdf_chunk_634",
+        "ALPHABET INC. - DEF 14A_2.pdf_chunk_744"
+      ],
+      "scores": [
+        0.9003027677536011,
+        0.9003027677536011,
+        0.9440212249755859
+      ],
+      "contexts": [
+        "e complex\norganizational management structures or adapt our corporate culture and work environments\nto ever-changing circumstances, such as during times of a natural disaster or pandemic\n(including COVID-19), and these changes could impact our ability to compete effectively or\nhave an adverse impact on our corporate culture.\nIn preparing our financial statements, we incorporate valuation methodologies\nthat are subjective in nature and valuations may fluctuate over time.",
+        "e complex\norganizational management structures or adapt our corporate culture and work environments\nto ever-changing circumstances, such as during times of a natural disaster or pandemic\n(including COVID-19), and these changes could impact our ability to compete effectively or\nhave an adverse impact on our corporate culture.\nIn preparing our financial statements, we incorporate valuation methodologies\nthat are subjective in nature and valuations may fluctuate over time.",
+        "from them) that their capital is in part being used to pursue this anti-human, anti-\nfreedom agenda. Moreover, none of this is congruent with the Company’s basic purpose of providing value to shareholders by serving customers.\n \n \n \n(1)\nhttps://www.google.org/our-work/; https://www.google.org/racial-justice/; https://impactchallenge.withgoogle.com/bayarea2021/charities;\nhttps://www.google.com/nonprofits/success-stories/; https://impactchallendge.withgoogle."
+      ],
+      "execution_time": 2.597831964492798,
+      "category": "company_overview",
+      "query_id": 6,
+      "difficulty": "easy"
+    },
+    {
+      "question": "How many employees does the company have and how has headcount changed?",
+      "answer": "As of June 30, 2023, the company has 181,798 employees. The context indicates that there has been a reduction in the workforce, with most of the affected employees no longer included in the headcount as of that date. The company expects that the remaining affected employees will also be removed from the headcount by the end of 2023, subject to local laws and consultation requirements. The context does not provide the exact number of employees before the reduction, but it does indicate that there was a significant increase in headcount prior to the reductions.",
+      "relevant_chunks": 3,
+      "sources": [
+        "goog-20230630.pdf_chunk_268",
+        "goog-20200630.pdf_chunk_348",
+        "Document.pdf_chunk_328"
+      ],
+      "scores": [
+        0.7913137674331665,
+        0.8383585214614868,
+        0.8422150611877441
+      ],
+      "contexts": [
+        "billion for the three months ended June 30, 2023.\n•\nAs of June  30, 2023, we had 181,798 employees. The substantial majority of the\nemployees affected by the reduction of our workforce are no longer included in our\nheadcount as of June 30, 2023. We expect most of the remaining employees affected\nwill no longer be reflected in our headcount by the end of 2023, subject to local law and\nconsultation requirements.\n37\nTable of Contents\nAlphabet Inc.\nFinancial Results\nRevenues",
+        "BC) and facilities-related costs of $349 million, largely resulting from a 7%\nincrease in headcount.\nSales and marketing expenses increased $284 million from the six months ended June\n30, 2019 to the six months ended June 30, 2020. The increase was primarily due to an\nincrease in compensation expenses (including SBC) and facilities-related costs of $733\nmillion, largely resulting from a 8% increase in headcount. The increase was partially offset by",
+        "re of $49.16.\n•\nOperating cash flow was $54.5 billion.\n•\nCapital expenditures were $23.5 billion.\n•\nNumber of employees was 118,899 as of December 31, 2019. The majority of new hires during the year were\nengineers and product managers. By product area, the largest headcount additions were in Google Cloud and\nSearch.\nInformation about Segments\nWe operate our business in multiple operating segments. Google is our only reportable segment. None of our"
+      ],
+      "execution_time": 2.7368557453155518,
+      "category": "company_overview",
+      "query_id": 7,
+      "difficulty": "medium"
+    },
+    {
+      "question": "What are the company's main facilities and locations?",
+      "answer": "The company's main facilities and locations include its headquarters in Mountain View, California, as well as owned and leased office and building space in the surrounding areas. Additionally, the company has office/building space and research and development sites around the world, primarily in North America, Europe, South America, and Asia. The company also owns and operates data centers located in the U.S., Europe, South America, and Asia.",
+      "relevant_chunks": 3,
+      "sources": [
+        "goog-20211231.pdf_chunk_332",
+        "goog-20221231.pdf_chunk_315",
+        "goog-20201231.pdf_chunk_325"
+      ],
+      "scores": [
+        0.8644459247589111,
+        0.9017438292503357,
+        0.9395262002944946
+      ],
+      "contexts": [
+        "actual operating performance.\nITEM 1B.\nUNRESOLVED STAFF COMMENTS\nNot applicable.\nITEM 2.\nPROPERTIES\nOur headquarters are located in Mountain View, California. We also own and lease office and building space in the\nsurrounding areas near our headquarters. In addition, we own and lease office/building space and R&D sites around\nthe world, primarily in North America, Europe, South America, and Asia. We own and operate data centers in the U.S.,\nEurope, South America, and Asia.",
+        "fectively and maintain our corporate culture.\nITEM 1B.\nUNRESOLVED STAFF COMMENTS\nNot applicable.\n22\nTable of Contents\nAlphabet Inc.\nITEM 2.\nPROPERTIES\nOur headquarters are located in Mountain View, California. We own and lease office facilities and data centers\naround the world, primarily in North America, Europe, and Asia. We believe our existing facilities are in good condition\nand suitable for the conduct of our business.\nITEM 3.\nLEGAL PROCEEDINGS",
+        "1B.\nUNRESOLVED STAFF COMMENTS\nNot applicable.\n24\nTable of Contents\nAlphabet Inc.\nITEM 2.\nPROPERTIES\nOur headquarters are located in Mountain View, California. We also own and lease office and building space in the\nsurrounding areas near our headquarters, which we believe is sufficient to accommodate anticipated future growth. In\naddition, we own and lease office/building space and research and development sites around the world, primarily in\nNorth America, Europe, South America, and Asia."
+      ],
+      "execution_time": 2.3172218799591064,
+      "category": "company_overview",
+      "query_id": 8,
+      "difficulty": "medium"
+    },
+    {
+      "question": "What is the company's history and how has it evolved over time?",
+      "answer": "The company, founded by Larry Page and Sergey Brin, has a history that spans 22 years, marked by a commitment to innovation and long-term growth. Initially grounded in the vision of its co-founders, the company has evolved under the leadership of Sundar Pichai, the current CEO of Alphabet. This evolution reflects a consistent track record of building a strong corporate identity and creating value for stockholders.\n\nOver the years, the company has developed a robust capital structure that provides stability and allows it to focus on long-term interests rather than short-term pressures. This structure has facilitated the establishment of a diverse portfolio of businesses with varying time horizons, enabling independent ventures, referred to as \"Other Bets,\" such as Waymo and Verily, to attract external investment.\n\nOverall, the company's history is characterized by a strong foundation in innovation, a strategic approach to growth, and a flexible corporate framework that has allowed it to adapt and thrive over more than two decades.",
+      "relevant_chunks": 3,
+      "sources": [
+        "ALPHABET INC. DEF 14A.pdf_chunk_834",
+        "lgoog2020_def14a.pdf_chunk_19",
+        "ALPHABET INC. - DEF 14A.pdf_chunk_842"
+      ],
+      "scores": [
+        0.9005348682403564,
+        0.9696211814880371,
+        1.001270055770874
+      ],
+      "contexts": [
+        "originated by our co-founders, Larry and Sergey, and carried on today by Alphabet CEO\nSundar Pichai. Through their collective leadership and focus on innovation and long-term growth, we have established a track record of building a strong\ncompany and creating stockholder value. This value creation is further enabled by the stability provided by our capital structure, which insulates us from",
+        "any with the vision and inventiveness that made us what we are today, 22 years after it all started. I am also very excited to see where Sundar takes us going forward. The Alphabet structure allows us to have a portfolio of different businesses with different time horizons, while also allowing us to set up independent companies that can raise money from outside investors, which Other Bets like Waymo and Verily have successfully done.",
+        "dership and vision originated by our co-founders, who continue to oversee the company’s strategy as\nmembers of our Board, and carried on today by Alphabet CEO Sundar Pichai. We have established a consistent track record for continuously building a\nstrong company and creating stockholder value. This value creation is supported by the stability provided by our capital structure, which insulates us\nfrom short-term pressures and gives us greater ability to focus on long-term interests."
+      ],
+      "execution_time": 4.747260808944702,
+      "category": "company_overview",
+      "query_id": 9,
+      "difficulty": "medium"
+    },
+    {
+      "question": "What are the company's main brands, products, or service lines?",
+      "answer": "The provided context does not specify any particular brands, products, or service lines of the company. It discusses the relevance of advertising, the ability to generate sales leads, and the delivery of advertisements across various channels, but does not mention specific names or categories of products or services.",
+      "relevant_chunks": 3,
+      "sources": [
+        "goog-20221231.pdf_chunk_76",
+        "goog-20231231.pdf_chunk_96",
+        "goog-20211231.pdf_chunk_79"
+      ],
+      "scores": [
+        1.0638327598571777,
+        1.0638327598571777,
+        1.0638327598571777
+      ],
+      "contexts": [
+        "other products and services are literally one click away, largely on the basis of the relevance of\nour advertising, as well as the general usefulness, security, and availability of our products and services;\n•\nadvertisers, primarily based on our ability to generate sales leads, and ultimately customers, and to deliver their\nadvertisements in an efficient and effective manner across a variety of distribution channels; and\n•",
+        "other products and services are literally one click away, largely on the basis of the relevance of\nour advertising, as well as the general usefulness, security, and availability of our products and services;\n•\nadvertisers, primarily based on our ability to generate sales leads, and ultimately customers, and to deliver their\nadvertisements in an efficient and effective manner across a variety of distribution channels; and\n•",
+        "other products and services are literally one click away, largely on the basis of the relevance of\nour advertising, as well as the general usefulness, security, and availability of our products and services;\n•\nadvertisers, primarily based on our ability to generate sales leads, and ultimately customers, and to deliver their\nadvertisements in an efficient and effective manner across a variety of distribution channels; and\n•"
+      ],
+      "execution_time": 1.9428799152374268,
+      "category": "company_overview",
+      "query_id": 10,
+      "difficulty": "easy"
+    },
+    {
+      "question": "What is the company's approach to talent acquisition and retention?",
+      "answer": "The company's approach to talent acquisition and retention emphasizes the importance of identifying, hiring, developing, motivating, and retaining highly skilled personnel across all areas of the organization. They recognize that their performance and future success largely depend on the talents and efforts of these skilled individuals. The company acknowledges the intense competition in their industry for qualified employees, as well as the challenge of competitors targeting their staff. To address these challenges, the company uses compensation arrangements, including equity award programs, although they note that these may not always be successful in attracting new employees or retaining and motivating existing ones. Overall, the company is focused on maintaining a strong corporate culture and ensuring a strategic direction that supports effective talent management.",
+      "relevant_chunks": 3,
+      "sources": [
+        "goog-20200630.pdf_chunk_624",
+        "Document.pdf_chunk_264",
+        "goog-20241231.pdf_chunk_355"
+      ],
+      "scores": [
+        0.7970439195632935,
+        0.8343782424926758,
+        0.8405618667602539
+      ],
+      "contexts": [
+        "motivate key\npersonnel, hire qualified personnel, or maintain our corporate culture, we may not be\nable to grow effectively.\nOur performance largely depends on the talents and efforts of highly skilled individuals.\nOur future success depends on our continuing ability to identify, hire, develop, motivate, and\nretain highly skilled personnel for all areas of our organization. Competition in our industry for\nqualified employees is intense, and certain of our competitors have directly targeted our",
+        "ify, hire, develop, motivate, and retain highly skilled personnel for all areas of\nour organization. Competition in our industry for qualified employees is intense, and certain of our competitors have\ndirectly targeted our employees. In addition, our compensation arrangements, such as our equity award programs, may\nnot always be successful in attracting new employees and retaining and motivating our existing employees. Our",
+        "in the development of our technology, maintaining our culture,\nand setting our strategic direction.\nOur ability to compete effectively and our future success depend on our continuing to identify, hire, develop,\nmotivate, and retain highly skilled personnel for all areas of our organization. Competition in our industry for qualified\nemployees is intense, and certain of our competitors have directly targeted, and may continue to target, our employees."
+      ],
+      "execution_time": 3.422111988067627,
+      "category": "company_overview",
+      "query_id": 11,
+      "difficulty": "medium"
+    },
+    {
+      "question": "What is the company's approach to corporate social responsibility and community engagement?",
+      "answer": "The company's approach to corporate social responsibility (CSR) and community engagement involves proactive engagement with stockholders and other stakeholders on a variety of topics that are important to both the company and its shareholders. This includes discussions on business strategy, performance, and environmental, social, and governance (ESG) topics such as environmental sustainability and human capital. The company emphasizes the importance of these engagements to align with stakeholder interests while also addressing traditional shareholder concerns. However, there is also a critique regarding the potential conflict between the interests of selected stakeholders and those of shareholders, highlighting a tension in the company's governance approach.",
+      "relevant_chunks": 3,
+      "sources": [
+        "ALPHABET INC. DEF 14A.pdf_chunk_288",
+        "ALPHABET INC. - DEF 14A_2.pdf_chunk_741",
+        "ALPHABET INC. - DEF 14A_2.pdf_chunk_58"
+      ],
+      "scores": [
+        0.7902990579605103,
+        0.9310582280158997,
+        0.9353992938995361
+      ],
+      "contexts": [
+        "in remaining current with best\npractices and developments in corporate governance.\n \n \nEngagement\n \nWe proactively engage with our stockholders and other stakeholders throughout the year on a broad range of topics that are of interest and priority to the\ncompany and our stockholders. These include business strategy and performance, and environmental, social and governance (ESG) topics such as",
+        "terests of “stakeholders” rather than the\nfundamental interests of its owners, the shareholders.9\n \nThose agendas are incongruent with the interests of Alphabet shareholders and the traditional – and legally binding – definition of a corporation. The\nmore the Board pays favor to hand-picked “stakeholders,” the less it’s accountable to capital-providing shareholders. In partnering and conspiring with",
+        "orporate governance and risk oversight framework, see “Directors, Executive Officers, and Corporate\nGovernance—Corporate Governance and Board Matters” beginning on page 29.\n \nEngagement\n \nWe proactively engage with our stockholders and other stakeholders throughout the year on a broad range of topics that are of interest and priority to the\ncompany and our stockholders. These include business strategy and performance, and ESG topics such as environmental sustainability, human capital,"
+      ],
+      "execution_time": 1.826909065246582,
+      "category": "company_overview",
+      "query_id": 12,
+      "difficulty": "medium"
+    },
+    {
+      "question": "What was the company's total revenue in the most recent fiscal year, and how did it change compared to the previous year?",
+      "answer": "The company's total revenue for the year ended December 31, 2024, was $175,033 million. Comparing it to the previous year (2023), it indicates a change in revenue; however, the specific revenue figure for 2023 is not provided in the context. Therefore, we cannot determine the exact change in revenue between 2023 and 2024 based on the available information.",
+      "relevant_chunks": 3,
+      "sources": [
+        "goog-20201231.pdf_chunk_476",
+        "goog-20241231.pdf_chunk_447",
+        "goog-20200630.pdf_chunk_259"
+      ],
+      "scores": [
+        0.7189028859138489,
+        0.7437646389007568,
+        0.7438610792160034
+      ],
+      "contexts": [
+        "ential revenue growth rates.\n \nQuarter Ended\n \nMar 31,\n2019\nJun 30,\n2019\nSept 30,\n2019\nDec 31,\n2019\nMar 31,\n2020\nJun 30,\n2020\nSept 30,\n2020\nDec 31,\n2020\n(In millions, except per share amounts) (unaudited)\nConsolidated Statements of Income Data:\nRevenues\n$ 36,339  $ 38,944  $ 40,499  $ 46,075  $ 41,159  $ 38,297  $ 46,173 \n56,898 \nCosts and expenses:\nCost of revenues\n16,012 \n17,296 \n17,568 \n21,020 \n18,982 \n18,553 \n21,117 \n26,080 \nResearch and\ndevelopment\n6,029 \n6,213 \n6,554 \n7,222 \n6,820 \n6,875",
+        "-level activities.\n•\nOperating cash flow was $125.3 billion for the year ended December 31, 2024.\n•\nCapital expenditures, which primarily reflected investments in technical infrastructure, were $52.5 billion for the\nyear ended December 31, 2024.\n•\nAs of December 31, 2024, we had 183,323 employees.\n35.\nTable of Contents\nAlphabet Inc.\nFinancial Results\nRevenues\nThe following table presents revenues by type (in millions):\nYear Ended December 31,\n2023\n2024\nGoogle Search & other\n$\n175,033 \n$",
+        "come from operations was $6.4 billion.\n•\nOther income (expense), net, was a gain of $1.9 billion.\n•\nEffective tax rate was 15.9%.\n•\nNet income was $7.0 billion with diluted net income per share of $10.13.\n•\nOperating cash flow was $14.0 billion.\n•\nCapital expenditures were $5.4 billion.\n•\nNumber of employees was 127,498 as of June 30, 2020. The majority of new hires\nduring the quarter were engineers and product managers. By product area, the"
+      ],
+      "execution_time": 2.3518319129943848,
+      "category": "financials",
+      "query_id": 13,
+      "difficulty": "easy"
+    },
+    {
+      "question": "What was the company's net income for the most recent quarter?",
+      "answer": "The company's net income for the most recent quarter, which ended June 30, 2025, was $28,196 million.",
+      "relevant_chunks": 3,
+      "sources": [
+        "goog-20200630.pdf_chunk_259",
+        "goog-20250630.pdf_chunk_282",
+        "goog-20230331.pdf_chunk_239"
+      ],
+      "scores": [
+        0.5506768822669983,
+        0.6692662835121155,
+        0.6755142211914062
+      ],
+      "contexts": [
+        "come from operations was $6.4 billion.\n•\nOther income (expense), net, was a gain of $1.9 billion.\n•\nEffective tax rate was 15.9%.\n•\nNet income was $7.0 billion with diluted net income per share of $10.13.\n•\nOperating cash flow was $14.0 billion.\n•\nCapital expenditures were $5.4 billion.\n•\nNumber of employees was 127,498 as of June 30, 2020. The majority of new hires\nduring the quarter were engineers and product managers. By product area, the",
+        "nths Ended\nJune 30,\n2024\n2025\n$ Change\n% Change\nConsolidated revenues\n$\n84,742 \n$\n96,428 \n$\n11,686 \n14 %\nChange in consolidated constant\ncurrency revenues\n13 %\nCost of revenues\n$\n35,507 \n$\n39,039 \n$\n3,532 \n10 %\nOperating expenses\n$\n21,810 \n$\n26,118 \n$\n4,308 \n20 %\nOperating income\n$\n27,425 \n$\n31,271 \n$\n3,846 \n14 %\nOperating margin\n32 %\n32 %\n0 %\nOther income (expense), net\n$\n126 \n$\n2,662 \n$\n2,536 \n2,013 %\nNet income\n$\n23,619 \n$\n28,196 \n$\n4,577 \n19 %\nDiluted EPS \n$\n1.89 \n$\n2.31 \n$\n0.42 \n22 %",
+        "nths Ended\nMarch 31,\n2022\n2023\n$ Change\n% Change\nConsolidated revenues\n$\n68,011 \n$\n69,787 \n$\n1,776 \n3 %\nChange in consolidated constant\ncurrency revenues\n6 %\nCost of revenues\n$\n29,599 \n$\n30,612 \n$\n1,013 \n3 %\nOperating expenses\n$\n18,318 \n$\n21,760 \n$\n3,442 \n19 %\nOperating income\n$\n20,094 \n$\n17,415 \n$\n(2,679)\n(13)%\nOperating margin\n30 %\n25 %\n(5)%\nOther income (expense), net\n$\n(1,160)\n$\n790 \n$\n1,950 \nNM\nNet Income\n$\n16,436 \n$\n15,051 \n$\n(1,385)\n(8)%\nDiluted EPS\n$\n1.23 \n$\n1.17 \n$\n(0.06)\n(5)%"
+      ],
+      "execution_time": 1.436945915222168,
+      "category": "financials",
+      "query_id": 14,
+      "difficulty": "easy"
+    },
+    {
+      "question": "How did the company's operating expenses change compared to the previous period?",
+      "answer": "The company's operating expenses showed mixed results compared to the previous period. In one instance, operating expenses were $21.4 billion, reflecting a decrease of 2% year over year, primarily due to reductions in office space optimization charges and compensation expenses. In another instance, operating expenses were reported at $89.8 billion, which represented an increase of 10% year over year, driven by higher compensation expenses and charges related to office space optimization. Additionally, there was a report of operating expenses at $26.1 billion, which indicated an increase of 20% year over year, attributed to legal expenses, employee compensation, and depreciation. Overall, the changes in operating expenses varied significantly across the different reports.",
+      "relevant_chunks": 3,
+      "sources": [
+        "goog-20240331.pdf_chunk_239",
+        "goog-20231231.pdf_chunk_426",
+        "goog-20250630.pdf_chunk_285"
+      ],
+      "scores": [
+        0.6752654910087585,
+        0.6968846321105957,
+        0.7171176671981812
+      ],
+      "contexts": [
+        "ation expense.\nThese increases were partially offset by decreases in compensation expenses, largely\nthe result of a reduction in employee severance and related charges, and charges\nrelated to our office space optimization efforts.\n•\nOperating expenses were $21.4 billion, a decrease of 2% year over year, primarily\ndriven by decreases in charges related to our office space optimization efforts,\ncompensation expenses, largely the result of a reduction in employee severance and",
+        "related to employee severance associated with the reduction in our workforce. Additionally, cost of\nrevenues benefited from a reduction in depreciation due to the change in estimated useful lives of our servers\nand network equipment.\n•\nOperating expenses were $89.8 billion, an increase of 10% year over year, primarily driven by an increase in\ncompensation expenses and charges related to our office space optimization efforts. The increase in",
+        "year over year.\n•\nCost of revenues was $39.0 billion, an increase of 10% year over year, primarily\ndriven by increases in TAC, content acquisition costs, and depreciation expense.\n39\n•\nOperating expenses were $26.1 billion, an increase of 20% year over year, primarily\ndriven by increases in expenses related to legal and other matters, employee\ncompensation expenses, and depreciation expense.\nOther Information:\n•\nGeneral and administrative expenses of $5."
+      ],
+      "execution_time": 3.621185779571533,
+      "category": "financials",
+      "query_id": 15,
+      "difficulty": "medium"
+    },
+    {
+      "question": "What is the company's cash and cash equivalents balance?",
+      "answer": "As of September 30, 2020, the company's cash and cash equivalents balance is $20,129 million.",
+      "relevant_chunks": 3,
+      "sources": [
+        "goog-20200930.pdf_chunk_29",
+        "goog-20201231.pdf_chunk_625",
+        "goog-20200331.pdf_chunk_50"
+      ],
+      "scores": [
+        0.7086813449859619,
+        0.7128664255142212,
+        0.7548248171806335
+      ],
+      "contexts": [
+        "by such companies, or any relationship with any of these\ncompanies.\n2\nTable of Contents\nAlphabet In\nPART I.    FINANCIAL INFORMATION\nITEM 1.\nFINANCIAL STATEMENTS\nAlphabet Inc.\nCONSOLIDATED BALANCE SHEETS\n(in millions, except share amounts which are reflected in thousands, and par value per share\namounts)\nAs of\nDecember 31,\n2019\nAs of\nSeptember 30,\n2020\n(unaudited)\nAssets\nCurrent assets:\nCash and cash equivalents\n$\n18,498  $\n20,129 \nMarketable securities\n101,177 \n112,467",
+        "on cash and cash equivalents\n(302)\n(23)\n24 \nNet increase in cash and cash equivalents\n5,986 \n1,797 \n7,967 \nCash and cash equivalents at beginning of period\n10,715 \n16,701 \n18,498 \nCash and cash equivalents at end of period\n$\n16,701 \n$\n18,498 \n$\n26,465 \nSupplemental disclosures of cash flow information\nCash paid for taxes, net of refunds\n$\n5,671 \n$\n8,203 \n$\n4,990 \nSee accompanying notes.\n58\nTable of Contents\nAlphabet Inc.\nAlphabet Inc.\nNOTES TO CONSOLIDATED FINANCIAL STATEMENTS\nNote 1.",
+        "on cash and cash\nequivalents\n18  \n(272) \nNet increase in cash and cash equivalents\n2,447  \n1,146  \nCash and cash equivalents at beginning of period\n16,701  \n18,498  \nCash and cash equivalents at end of period\n$\n19,148   $\n19,644  \nSee accompanying notes.\n7\nTable of Contents\nAlphabet In\nAlphabet Inc.\nNOTES TO CONSOLIDATED FINANCIAL STATEMENTS\n(Unaudited)\nNote 1. Nature of Operations and Summary of Significant Accounting Policies\nNature of Operations"
+      ],
+      "execution_time": 3.193011999130249,
+      "category": "financials",
+      "query_id": 16,
+      "difficulty": "easy"
+    },
+    {
+      "question": "How much did the company spend on research and development (R&D) in the most recent period?",
+      "answer": "In the most recent period, which is the three months ended March 31, 2022, the company spent $9,119 million on research and development (R&D).",
+      "relevant_chunks": 3,
+      "sources": [
+        "goog-20220331.pdf_chunk_269",
+        "Document.pdf_chunk_388",
+        "goog-20211231.pdf_chunk_433"
+      ],
+      "scores": [
+        0.4639914929866791,
+        0.5266304612159729,
+        0.530799388885498
+      ],
+      "contexts": [
+        "search and Development\nThe following table presents R&D expenses (in millions, except percentages):\nThree Months Ended\n \nMarch 31,\n \n2021\n2022\nResearch and development expenses\n$\n7,485 \n$\n9,119 \nResearch and development expenses as a percentage\nof revenues\n13.5 %\n13.4 %\nR&D expenses increased $1.6 billion from the three months ended March 31, 2021 to\nthe three months ended March 31, 2022. The increase was primarily due to an increase in",
+        ", relative to\nour advertising revenues.\n35\nTable of Contents\nAlphabet Inc.\nResearch and Development\nThe following table presents our R&D expenses (in millions):\n \nYear Ended December 31,\n \n2018\n2019\nResearch and development expenses\n$\n21,419\n$\n26,018\nResearch and development expenses as a percentage of revenues\n15.7%\n16.1%\nR&D expenses consist primarily of:\n•\nCompensation expenses (including SBC) and facilities-related costs for engineering and technical employees",
+        "vers and certain network equipment beginning in the first quarter of 2021.\nResearch and Development\nThe following table presents R&D expenses (in millions, except percentages):\n \nYear Ended December 31,\n \n2020\n2021\nResearch and development expenses\n$\n27,573 \n$\n31,562 \nResearch and development expenses as a percentage of revenues\n15.1 %\n12.3 %\nR&D expenses increased $4.0 billion from 2020 to 2021. The increase was primarily due to an increase in\ncompensation expenses of $3."
+      ],
+      "execution_time": 1.5876200199127197,
+      "category": "financials",
+      "query_id": 17,
+      "difficulty": "medium"
+    },
+    {
+      "question": "What is the company's total assets and how has it changed over time?",
+      "answer": "To determine the company's total assets, we need to sum up the various asset categories provided for the dates mentioned. \n\nAs of December 31, 2024, the total assets can be calculated as follows:\n\n1. Current Assets:\n   - Cash and cash equivalents: $23,466\n   - Marketable securities: $72,191\n   - Accounts receivable, net: $52,340\n   - Other current assets: $15,714\n   - Total current assets: $163,711\n\n2. Non-current Assets:\n   - Non-marketable securities: $37,982\n   - Deferred income taxes: $17,180\n   - Property and equipment, net: $171,036\n\nTotal assets as of December 31, 2024:\n\\[ \nTotal Assets = Total Current Assets + Non-marketable securities + Deferred income taxes + Property and equipment \n\\]\n\\[\nTotal Assets = 163,711 + 37,982 + 17,180 + 171,036 = 389,909\n\\]\n\nAs of March 31, 2025 (unaudited), the total assets are:\n\n1. Current Assets:\n   - Cash and cash equivalents: $23,264\n   - Marketable securities",
+      "relevant_chunks": 3,
+      "sources": [
+        "goog-20250331.pdf_chunk_31",
+        "goog-20230630.pdf_chunk_160",
+        "goog-20250930.pdf_chunk_32"
+      ],
+      "scores": [
+        0.739337682723999,
+        0.7451924085617065,
+        0.7542181611061096
+      ],
+      "contexts": [
+        "per share amounts)\nAs of\nDecember 31,\n2024\nAs of\nMarch 31, 2025\n(unaudited)\nAssets\nCurrent assets:\nCash and cash equivalents\n$\n23,466  $\n23,264 \nMarketable securities\n72,191 \n72,064 \nTotal cash, cash equivalents, and marketable\nsecurities\n95,657 \n95,328 \nAccounts receivable, net\n52,340 \n51,000 \nOther current assets\n15,714 \n15,724 \nTotal current assets\n163,711 \n162,052 \nNon-marketable securities\n37,982 \n51,029 \nDeferred income taxes\n17,180 \n18,386 \nProperty and equipment, net\n171,036 \n185,062",
+        "Inc.\nOther Intangible Assets\nInformation regarding intangible assets was as follows (in millions):\nAs of December 31, 2022\nAs of June 30, 2023\n \nGross\nCarrying\nAmount\nAccumulated\nAmortization\nNet\nCarrying\nAmount\nGross\nCarrying\nAmount\nAccumulated\nAmortization\nNet\nCarrying\nAmount\nPatents and\ndeveloped\ntechnology\n$\n1,164  $\n354  $\n810  $\n1,181  $\n420  $\n761 \nCustomer\nrelationships\n862 \n235 \n627 \n884 \n306 \n578 \nTrade names and\nother\n527 \n120 \n407 \n536 \n145 \n391 \nTotal definite-lived",
+        "share amounts)\nAs of\nDecember 31,\n2024\nAs of\nSeptember 30,\n2025\n(unaudited)\nAssets\nCurrent assets:\nCash and cash equivalents\n$\n23,466  $\n23,090 \nMarketable securities\n72,191 \n75,406 \nTotal cash, cash equivalents, and marketable\nsecurities\n95,657 \n98,496 \nAccounts receivable, net\n52,340 \n57,148 \nOther current assets\n15,714 \n18,303 \nTotal current assets\n163,711 \n173,947 \nNon-marketable securities\n37,982 \n63,800 \nDeferred income taxes\n17,180 \n10,331 \nProperty and equipment, net\n171,036 \n223,787"
+      ],
+      "execution_time": 6.163865089416504,
+      "category": "financials",
+      "query_id": 18,
+      "difficulty": "medium"
+    },
+    {
+      "question": "How does the company's operating margin compare to previous periods?",
+      "answer": "The company's operating margin may differ significantly from previous periods due to fluctuations in operating results caused by various factors, many of which are outside the company's control. As such, comparing the operating margin on a period-to-period basis may not be meaningful, and past results should not be relied upon as an indication of future performance. Therefore, there is no definitive statement about how the operating margin compares to previous periods.",
+      "relevant_chunks": 3,
+      "sources": [
+        "goog-20200630.pdf_chunk_605",
+        "goog-20200331.pdf_chunk_563",
+        "Document.pdf_chunk_245"
+      ],
+      "scores": [
+        0.7660036683082581,
+        0.797184944152832,
+        0.8058130145072937
+      ],
+      "contexts": [
+        "h makes our results difficult to predict\nand could cause our results to fall short of expectations.\nOur operating results may fluctuate as a result of a number of factors, many outside of\nour control.\nAs a result, comparing our operating results on a period-to-period basis may not be\nmeaningful, and you should not rely on our past results as an indication of our future\nperformance. Our quarterly, year-to-date, and annual expenses as a percentage of our",
+        "ur operating results may fluctuate as a result of a number of factors, many outside of\nour control.\nAs a result, comparing our operating results on a period-to-period basis may not be\nmeaningful, and you should not rely on our past results as an indication of our future\nperformance. Our quarterly, year-to-date, and annual expenses as a percentage of our\nrevenues may differ significantly from our historical rates. Our operating results in future\nquarters may fall below expectations.",
+        "results may fluctuate as a result of a number of factors, many outside of our control. As a result,\ncomparing our operating results on a period-to-period basis may not be meaningful, and you should not rely on our past\nresults as an indication of our future performance. Our quarterly, year-to-date, and annual expenses as a percentage of\nour revenues may differ significantly from our historical rates. Our operating results in future quarters may fall below\nexpectations."
+      ],
+      "execution_time": 1.916806936264038,
+      "category": "financials",
+      "query_id": 19,
+      "difficulty": "hard"
+    },
+    {
+      "question": "What is the company's free cash flow and how is it calculated?",
+      "answer": "Free cash flow (FCF) is calculated as the cash generated by a company's operations that is available for distribution after accounting for capital expenditures. The formula to calculate free cash flow is:\n\n**Free Cash Flow = Operating Cash Flow - Capital Expenditures**\n\nFrom the provided context, we can extract the following values for the three months ended June 30, 2021:\n\n- Operating cash flow: $21.9 billion\n- Capital expenditures: $5.5 billion\n\nNow, using the formula:\n\n**Free Cash Flow = $21.9 billion - $5.5 billion = $16.4 billion**\n\nTherefore, the company's free cash flow for the three months ended June 30, 2021, is **$16.4 billion**.",
+      "relevant_chunks": 3,
+      "sources": [
+        "goog-20210630.pdf_chunk_248",
+        "goog-20220630.pdf_chunk_321",
+        "goog-20210331.pdf_chunk_226"
+      ],
+      "scores": [
+        0.8755201101303101,
+        0.8948630690574646,
+        0.8997606635093689
+      ],
+      "contexts": [
+        "3 billion, an increase\nof 22% year over year, primarily driven by headcount growth and increases in\nadvertising and promotional expenses as well as charges related to legal matters.\nOther information\n•\nOperating cash flow was $21.9 billion for the three months ended June 30, 2021.\n•\nCapital expenditures, which primarily included investments in technical\ninfrastructure, were $5.5 billion for the three months ended June 30, 2021.\n•\nNumber of employees was 144,056 as of June 30, 2021.\nOur Segments",
+        "ur cash and capital structure, including the size, pace and form of capital return\nto stockholders.\nThe following table presents our cash flows (in millions):\n \nSix Months Ended\nJune 30,\n \n2021\n2022\nNet cash provided by operating activities\n$\n41,179  $\n44,528 \nNet cash used in investing activities\n$\n(14,457) $\n(13,238)\nNet cash used in financing activities\n$\n(29,597) $\n(34,031)\nCash Provided by Operating Activities\nOur largest source of cash provided by operations are advertising revenues",
+        "% year over year.\n•\nOperating expenses (excluding cost of revenues) were $14.8 billion, an increase\nof 4% year over year primarily driven by headcount growth and partially offset by a\ndecline in our allowance for credit losses for accounts receivable.\nOther information:\n•\nOperating cash flow was $19.3 billion.\n•\nCapital expenditures, which primarily included investments in technical\ninfrastructure, were $5.9 billion.\n•\nNumber of employees was 139,995 as of March 31, 2021. The majority of new"
+      ],
+      "execution_time": 2.9067273139953613,
+      "category": "financials",
+      "query_id": 20,
+      "difficulty": "hard"
+    },
+    {
+      "question": "What are the company's capital expenditures and investment plans?",
+      "answer": "The company's capital expenditures and investment plans include:\n\n1. Continued investment in new businesses, products, services, technologies, systems, land, and buildings for data centers and offices.\n2. Investment in infrastructure.\n3. Ongoing investments in acquisitions and strategic investments.\n4. Plans to maintain a competitive pace of hiring and provide competitive compensation programs.\n5. Anticipation of costs related to revenues, research and development (R&D) expenses, sales and marketing expenses, and general and administrative expenses.\n\nAdditionally, for the three months ended March 31, 2020, the company spent $6.0 billion, and for the same period in 2021, it spent $5.0 billion on capital expenditures.",
+      "relevant_chunks": 3,
+      "sources": [
+        "goog-20220630.pdf_chunk_18",
+        "goog-20220331.pdf_chunk_18",
+        "goog-20210331.pdf_chunk_327"
+      ],
+      "scores": [
+        0.6923508644104004,
+        0.6923508644104004,
+        0.6937177181243896
+      ],
+      "contexts": [
+        "r capital expenditures;\n•\nour plans to continue to invest in new businesses, products, services and\ntechnologies, systems, land and buildings for data centers and offices, and\ninfrastructure, as well as to continue to invest in acquisitions and strategic\ninvestments;\n•\nour pace of hiring and our plans to provide competitive compensation programs;\n•\nour expectation that our cost of revenues, research and development (R&D)\nexpenses, sales and marketing expenses, and general and administrative",
+        "r capital expenditures;\n•\nour plans to continue to invest in new businesses, products, services and\ntechnologies, systems, land and buildings for data centers and offices, and\ninfrastructure, as well as to continue to invest in acquisitions and strategic\ninvestments;\n•\nour pace of hiring and our plans to provide competitive compensation programs;\n•\nour expectation that our cost of revenues, research and development (R&D)\nexpenses, sales and marketing expenses, and general and administrative",
+        "s included in Part\nI, Item 1 of this Quarterly Report on Form 10-Q.\nCapital Expenditures and Leases\nWe make investments in land and buildings for data centers and offices and\ninformation technology assets through purchases of property and equipment and lease\narrangements to provide capacity for the growth of our services and products.\nDuring the three months ended March 31, 2020 and 2021, we spent $6.0 billion and\n$5."
+      ],
+      "execution_time": 4.055492877960205,
+      "category": "financials",
+      "query_id": 21,
+      "difficulty": "medium"
+    },
+    {
+      "question": "What is the company's debt structure and outstanding debt obligations?",
+      "answer": "The company's debt structure consists of both short-term and long-term debt. As of the provided dates, the outstanding debt includes:\n\n1. **Short-Term Debt**: This includes the current portion of certain long-term debt. The company had no commercial paper outstanding as of December 31, 2020, September 30, 2021, December 31, 2021, and December 31, 2022.\n\n2. **Long-Term Debt**: The total outstanding long-term debt as of December 31, 2021, and December 31, 2022, was $13,000 million. The debt consists of notes issued between 2014 and 2020, with maturities ranging from 2024 to 2060. The coupon rates for this debt range from 0.45% to 3.38%, and the effective interest rate was 0.57% to 3.38% as of December 31, 2022.\n\n3. **Investments in Marketable Debt Securities**: As of December 31, 2023, the company had investments in available-for-sale marketable debt securities totaling $82,275 million, with various maturities:\n   - Due in one year or less: $",
+      "relevant_chunks": 3,
+      "sources": [
+        "goog-20210930.pdf_chunk_152",
+        "goog-20221231.pdf_chunk_723",
+        "goog-20231231.pdf_chunk_717"
+      ],
+      "scores": [
+        0.7861312031745911,
+        0.7940959930419922,
+        0.7975600957870483
+      ],
+      "contexts": [
+        "Net proceeds\nfrom this program are used for general corporate purposes. We had no commercial paper\noutstanding as of December 31, 2020 and September 30, 2021.\nOur short-term debt balance also includes the current portion of certain long-term\ndebt.\nLong-Term Debt\nThe total outstanding debt is summarized below (in millions, except percentages):\nMaturity\nCoupon Rate\nEffective\nInterest Rate\nAs of\nDecember\n31, 2020\nAs of\nSeptember\n30, 2021\nDebt\n2011-2020 Notes\nIssuances\n2024 -\n2060\n0.45% -\n3.38%\n0.",
+        "eneral corporate purposes. We had no commercial paper outstanding as of\nDecember 31, 2021 and 2022.\nOur short-term debt balance also includes the current portion of certain long-term debt.\n68\nTable of Contents\nAlphabet Inc.\nLong-Term Debt\nTotal outstanding debt is summarized below (in millions, except percentages):\nEffective Interest\nRate\nAs of December 31,\nMaturity\nCoupon Rate\n2021\n2022\nDebt\n2014-2020 Notes issuances\n2024 - 2060\n0.45% - 3.38%\n0.57% - 3.38%\n$\n13,000 \n$\n13,000",
+        "e hierarchy at the time of measurement.\n(1)\n(2)\n65.\nTable of Contents\nAlphabet Inc.\nDebt Securities\nThe following table summarizes the estimated fair value of investments in available-for-sale marketable debt\nsecurities by effective contractual maturity dates (in millions):\nAs of December 31,\n2023\nDue in one year or less\n$\n11,231 \nDue in one year through five years\n41,477 \nDue in five years through 10 years\n15,351 \nDue after 10 years\n14,216 \nTotal\n$\n82,275"
+      ],
+      "execution_time": 6.5209901332855225,
+      "category": "financials",
+      "query_id": 22,
+      "difficulty": "hard"
+    },
+    {
+      "question": "How does the company manage working capital and cash conversion cycles?",
+      "answer": "Based on the provided context, the company manages working capital and cash conversion cycles primarily through careful evaluation of its cash flows, capital structure, and investments. Here are some key points regarding their management strategies:\n\n1. **Operating Cash Flow Focus**: The company emphasizes generating cash from operating activities, which is highlighted by the significant net cash provided by operating activities in both 2021 and 2022 ($41,179 million and $44,528 million, respectively). This indicates a strong focus on ensuring that operations contribute positively to cash flow.\n\n2. **Investment in Long-term Growth**: The primary use of capital is directed towards long-term growth investments. By prioritizing investments that are expected to yield future returns, the company can enhance its operational efficiency and potentially improve its cash conversion cycles in the long run.\n\n3. **Capital Return to Stockholders**: The company regularly evaluates the size, pace, and form of capital returns to stockholders. This suggests a strategic approach to managing excess cash, ensuring that stockholder returns are balanced with the need to invest in growth and maintain adequate liquidity.\n\n4. **Liquidity Management**: The company maintains a variety of liquidity sources, including cash, cash equivalents, and marketable securities. This diverse liquidity position allows for flexibility in managing working",
+      "relevant_chunks": 3,
+      "sources": [
+        "goog-20220630.pdf_chunk_321",
+        "goog-20211231.pdf_chunk_450",
+        "goog-20241231.pdf_chunk_621"
+      ],
+      "scores": [
+        0.8461912870407104,
+        0.891066312789917,
+        0.9006516933441162
+      ],
+      "contexts": [
+        "ur cash and capital structure, including the size, pace and form of capital return\nto stockholders.\nThe following table presents our cash flows (in millions):\n \nSix Months Ended\nJune 30,\n \n2021\n2022\nNet cash provided by operating activities\n$\n41,179  $\n44,528 \nNet cash used in investing activities\n$\n(14,457) $\n(13,238)\nNet cash used in financing activities\n$\n(29,597) $\n(34,031)\nCash Provided by Operating Activities\nOur largest source of cash provided by operations are advertising revenues",
+        "ources of liquidity are cash, cash equivalents, and marketable securities, as well as the cash flow\nthat we generate from operations. The primary use of capital continues to be to invest for the long-term growth of the\nbusiness. We regularly evaluate our cash and capital structure, including the size, pace and form of capital return to\nstockholders.\nThe following table presents our cash flows (in millions):\n \nYear Ended December 31,\n \n2020\n2021\nNet cash provided by operating activities\n$",
+        "sh and cash equivalents\n(506)\n(421)\n(612)\nNet increase (decrease) in cash and cash equivalents\n934 \n2,169 \n(582)\nCash and cash equivalents at beginning of period\n20,945 \n21,879 \n24,048 \nCash and cash equivalents at end of period\n$\n21,879 \n$\n24,048 \n$\n23,466 \nSee accompanying notes.\n56.\nTable of Contents\nAlphabet Inc.\nAlphabet Inc.\nNOTES TO CONSOLIDATED FINANCIAL STATEMENTS\nNote 1. Summary of Significant Accounting Policies\nNature of Operations"
+      ],
+      "execution_time": 5.3000030517578125,
+      "category": "financials",
+      "query_id": 23,
+      "difficulty": "hard"
+    },
+    {
+      "question": "What are the company's share repurchase programs and dividend policies?",
+      "answer": "The company's share repurchase program involves the repurchase and retirement of shares, which can be executed periodically based on general business and market conditions, as well as other investment opportunities. The repurchases can be carried out through open market purchases or privately negotiated transactions, including arrangements made under Rule 10b5-1 plans. Importantly, the share repurchase program does not have an expiration date, allowing flexibility in the timing of repurchases.\n\nDuring the three months ended September 30, 2023, the company repurchased and retired 122 million shares for a total of $15.9 billion. For the nine months ended September 30, 2023, the company repurchased 410 million shares, costing $46.2 billion. Over a broader timeframe, the total share repurchases amounted to 528 million shares for $62.2 billion.\n\nAs for dividends, the context provided does not specify detailed information about the company's dividend policies or the amounts distributed as dividends. However, it mentions that certain arrangements related to cash received from contract manufacturers may affect the presentation of cash flows in the company's financial statements, indicating that dividends could be part of their financial activities.",
+      "relevant_chunks": 3,
+      "sources": [
+        "goog-20240630.pdf_chunk_192",
+        "goog-20230930.pdf_chunk_368",
+        "goog-20241231.pdf_chunk_854"
+      ],
+      "scores": [
+        0.6467613577842712,
+        0.6479641795158386,
+        0.6750476360321045
+      ],
+      "contexts": [
+        "re repurchases\n73 \n12,333 \n160 \n25,040 \nTotal share repurchases\n92  $\n15,598 \n203  $\n31,655 \n(1)\n27\nShares repurchased include unsettled repurchases as of June 30, 2024.\nRepurchases are executed from time to time, subject to general business and market\nconditions and other investment opportunities, through open market purchases or privately\nnegotiated transactions, including through Rule 10b5-1 plans. The repurchase program does\nnot have an expiration date.\nDividends",
+        "ertain of these\narrangements result in a portion of the cash received from and paid to the contract\nmanufacturers to be presented as financing activities in the Consolidated Statements of Cash\nFlows included in Item 1 of this Quarterly Report on Form 10-Q.\nShare Repurchase Program\nDuring the three and nine months ended September 30, 2023, we repurchased and\nsubsequently retired 122 million and 410 million shares for $15.9 billion and $46.2 billion,\nrespectively.",
+        "tal share repurchases\n528 $\n62,184 \n379 $\n62,047 \nShares repurchased include unsettled repurchases.\nRepurchases are executed from time to time, subject to general business and market conditions and other\ninvestment opportunities, through open market purchases or privately negotiated transactions, including through Rule\n10b5-1 plans. The repurchase program does not have an expiration date.\nDividends"
+      ],
+      "execution_time": 5.288174152374268,
+      "category": "financials",
+      "query_id": 24,
+      "difficulty": "medium"
+    },
+    {
+      "question": "What are the company's pension and post-retirement benefit obligations?",
+      "answer": "The company's pension and post-retirement benefit obligations include the following:\n\n1. **Retirement Benefits**: The company maintains a tax-qualified 401(k) retirement savings plan that offers both pre-tax and after-tax Roth savings features for eligible employees, including named executive officers.\n\n2. **Disability Insurance**: The company provides disability insurance as part of its benefits package.\n\n3. **Life Insurance**: The company pays life insurance premiums for all employees, except for two specific individuals (Larry and Sergey).\n\n4. **Survivor Income Benefit**: This benefit is included in the company's obligations to support employees' families in the event of their passing.\n\n5. **Employee Assistance Programs**: These programs include confidential counseling services for employees.\n\n6. **Paid Time Off**: The company offers paid time off, which is also considered a post-retirement obligation as it contributes to the overall compensation of employees.\n\n7. **Travel Insurance**: This is provided for employees as part of their benefits.\n\n8. **Matching Gift Program**: While not a direct pension or retirement benefit, this program contributes to the overall employee benefits package.\n\nThese elements collectively represent the company's obligations related to pension and post-retirement benefits for its employees.",
+      "relevant_chunks": 3,
+      "sources": [
+        "lgoog2020_def14a.pdf_chunk_395",
+        "ALPHABET INC. DEF 14A.pdf_chunk_432",
+        "ALPHABET INC. - DEF 14A_3.pdf_chunk_380"
+      ],
+      "scores": [
+        0.8487101793289185,
+        0.8700398206710815,
+        0.8733198642730713
+      ],
+      "contexts": [
+        "rment, disability, and travel insurance, survivor income benefit, employee assistance programs (e.g., confidential counseling), and paid time off. We also pay life insurance premiums for all employees (other than Larry and Sergey). In addition, we maintain a tax qualified 401(k) retirement savings plan with both pre-tax and after-tax Roth savings features for eligible employees, including our named executive officers.",
+        "rment, disability, and travel insurance, survivor\nincome benefit, employee assistance programs (e.g., confidential counseling), matching gift program, and paid time off. We also pay life insurance\npremiums for all employees (other than Larry and Sergey).\n \nIn addition, we maintain a tax-qualified 401(k) retirement savings plan with both pre-tax and after-tax Roth savings features for eligible employees,\nincluding our named executive officers.",
+        "rment, disability, and travel insurance,\nsurvivor income benefit, employee assistance programs (e.g., confidential counseling), matching gift program, and paid time off. We also pay life\ninsurance premiums for all employees (other than Larry and Sergey).\n \nIn addition, we maintain a tax qualified 401(k) retirement savings plan with both pre-tax and after-tax Roth savings features for eligible employees,\nincluding our named executive officers."
+      ],
+      "execution_time": 5.498944044113159,
+      "category": "financials",
+      "query_id": 25,
+      "difficulty": "hard"
+    },
+    {
+      "question": "What are the company's off-balance sheet arrangements and commitments?",
+      "answer": "Based on the provided context, the company did not have any off-balance sheet arrangements as of December 31, 2019, or December 31, 2020, that would materially affect its financial condition, revenues, expenses, results of operations, liquidity, capital expenditures, or capital resources. \n\nHowever, the company did have $5.7 billion of other non-cancelable contractual obligations as of December 31, 2019. These obligations were primarily related to:\n\n- Data center operations and build-outs\n- Digital media content licensing\n- Purchases of inventory\n\nAdditionally, in the normal course of business, the company engages in indemnifications to facilitate transactions involving its services and products.",
+      "relevant_chunks": 3,
+      "sources": [
+        "Document.pdf_chunk_446",
+        "goog-20201231.pdf_chunk_517",
+        "Document.pdf_chunk_755"
+      ],
+      "scores": [
+        0.6105388402938843,
+        0.6110193729400635,
+        0.7516410946846008
+      ],
+      "contexts": [
+        "r 31, 2019, we did not have any off-balance sheet arrangements, as defined in Item 303(a)(4)(ii) of\nRegulation S-K, that have or are reasonably likely to have a current or future effect on our financial condition, changes\nin our financial condition, revenues, or expenses, results of operations, liquidity, capital expenditures, or capital\nresources that is material to investors.\n41\nTable of Contents\nAlphabet Inc.\nCritical Accounting Policies and Estimates",
+        "r 31, 2020, we did not have any off-balance sheet arrangements, as defined in Item 303(a)(4)(ii) of\nRegulation S-K, that have or are reasonably likely to have a current or future effect on our financial condition, changes\nin our financial condition, revenues, or expenses, results of operations, liquidity, capital expenditures, or capital\nresources that is material to investors. See Note 10 included in Part II, Item 8 of this annual report on Form 10-K for",
+        ",979\nNote 10. Commitments and Contingencies\nPurchase Obligations\nAs of December 31, 2019, we had $5.7 billion of other non-cancelable contractual obligations, primarily related to\ndata center operations and build-outs, digital media content licensing, and purchases of inventory.\nIndemnifications\nIn the normal course of business, to facilitate transactions in our services and products, we indemnify certain"
+      ],
+      "execution_time": 3.354339122772217,
+      "category": "financials",
+      "query_id": 26,
+      "difficulty": "hard"
+    },
+    {
+      "question": "What are the principal risk factors identified in the company's risk factors section?",
+      "answer": "The principal risk factors identified in the company's risk factors section include:\n\n1. **Revenue Dependency on Advertising**: A significant portion of the company's revenues is generated from advertising, which poses a risk if there is a reduction in advertising spending.\n\n2. **Impact on Business and Financial Results**: The operations and financial results are subject to various risks and uncertainties that could harm the company's business, reputation, financial condition, and operating results.\n\n3. **Effect on Stock Trading Price**: The risks mentioned may also affect the trading price of the company's Class A and Class C stock.\n\nOverall, the emphasis is on the reliance on advertising revenue and the potential broader implications of various risks on the company's performance and stock value.",
+      "relevant_chunks": 3,
+      "sources": [
+        "goog-20200331.pdf_chunk_395",
+        "goog-20200630.pdf_chunk_438",
+        "goog-20241231.pdf_chunk_124"
+      ],
+      "scores": [
+        0.8800953030586243,
+        0.8800953030586243,
+        0.8863908052444458
+      ],
+      "contexts": [
+        "Quarterly Report on Form 10-Q, which is incorporated herein by reference.\nITEM 1A.\nRISK FACTORS    \nOur operations and financial results are subject to various risks and uncertainties,\nincluding but not limited to those described below, which could harm our business, reputation,\nfinancial condition, and operating results.\nRisks Specific to our Company\nWe generate a significant portion of our revenues from advertising, and reduced",
+        "Quarterly Report on Form 10-Q, which is incorporated herein by reference.\nITEM 1A.\nRISK FACTORS    \nOur operations and financial results are subject to various risks and uncertainties,\nincluding but not limited to those described below, which could harm our business, reputation,\nfinancial condition, and operating results.\nRisks Specific to our Company\nWe generate a significant portion of our revenues from advertising, and reduced",
+        "ferences to our websites are intended to be inactive\ntextual references only.\nITEM 1A.\nRISK FACTORS\nOur operations and financial results are subject to various risks and uncertainties, including but not limited to\nthose described below, which could harm our business, reputation, financial condition, and operating results, and affect\nthe trading price of our Class A and Class C stock.\nRisks Specific to our Company\nWe generate a significant portion of our revenues from advertising."
+      ],
+      "execution_time": 3.207965850830078,
+      "category": "risks",
+      "query_id": 27,
+      "difficulty": "easy"
+    },
+    {
+      "question": "What regulatory risks does the company face in its operations?",
+      "answer": "The company faces several regulatory risks related to increasing scrutiny from regulatory agencies and changes in public policies. These risks include:\n\n1. **Increased Regulatory Scrutiny**: The company is subject to heightened examination from regulatory bodies, which may involve investigations or compliance checks that could impact operations.\n\n2. **Changes in Public Policies**: Modifications in laws and regulations governing various aspects of the business could adversely affect the company’s practices and viability.\n\n3. **Competition Regulations**: As part of the technology industry, the company may encounter regulations aimed at maintaining competition, which could impose restrictions on business operations or strategic decisions.\n\nOverall, these regulatory risks could negatively impact the company's financial condition, operating results, and overall business prospects.",
+      "relevant_chunks": 3,
+      "sources": [
+        "goog-20200630.pdf_chunk_478",
+        "goog-20200930.pdf_chunk_482",
+        "goog-20200331.pdf_chunk_491"
+      ],
+      "scores": [
+        0.6478053331375122,
+        0.6478053331375122,
+        0.6622766852378845
+      ],
+      "contexts": [
+        "our\nability to remain a technology leader and continue to provide high-quality, innovative products\nand services that are truly useful and play a valuable role in a range of settings.\nWe face a number of manufacturing and supply chain risks that, if not properly\nmanaged, could harm our financial condition, operating results, and prospects.\nWe face a number of risks related to manufacturing and supply chain management,",
+        "our\nability to remain a technology leader and continue to provide high-quality, innovative products\nand services that are truly useful and play a valuable role in a range of settings.\nWe face a number of manufacturing and supply chain risks that, if not properly\nmanaged, could harm our financial condition, operating results, and prospects.\nWe face a number of risks related to manufacturing and supply chain management,",
+        "ers, customers and\nadvertisers, thereby harming our business.\nRisks Related to Laws and Regulations\nWe are subject to increasing regulatory scrutiny as well as changes in public\npolicies governing a wide range of topics that may negatively affect our business.\nWe and other companies in the technology industry are experiencing increased\nregulatory scrutiny. For instance, various regulatory agencies, including competition,"
+      ],
+      "execution_time": 3.394670248031616,
+      "category": "risks",
+      "query_id": 28,
+      "difficulty": "medium"
+    },
+    {
+      "question": "How does the company describe competitive risks and market competition?",
+      "answer": "The company describes competitive risks and market competition as intense and challenging. It emphasizes that competitors' ability to provide compelling products and services, as well as their success in attracting and retaining users, advertisers, publishers, customers, and content providers, could negatively impact the company's financial condition and operating results. The company acknowledges that ongoing investments in new businesses, products, services, and technologies are inherently risky and that failure to innovate and offer useful products and services may hinder its competitiveness in the market. Additionally, external factors, such as the impact of COVID-19, have affected advertising demand and spending, further complicating the competitive landscape.",
+      "relevant_chunks": 3,
+      "sources": [
+        "goog-20231231.pdf_chunk_144",
+        "goog-20221231.pdf_chunk_121",
+        "goog-20200630.pdf_chunk_444"
+      ],
+      "scores": [
+        0.8186725974082947,
+        0.8352279663085938,
+        0.8402432799339294
+      ],
+      "contexts": [
+        "force us to compete in different ways and expend significant resources to develop and operate equal\nor better products and services. Competitors’ success in providing compelling products and services or in attracting and\nretaining users, advertisers, publishers, customers, and content providers could harm our financial condition and\noperating results.\nOur ongoing investment in new businesses, products, services, and technologies is inherently risky, and",
+        "ways and expend significant resources to develop and operate equal\nor better products and services. Competitors’ success in providing compelling products and services or in attracting and\nretaining users, advertisers, publishers, customers, and content providers could harm our financial condition and\noperating results.\nOur ongoing investment in new businesses, products, services, and technologies is inherently risky, and",
+        "ur COVID-\n19 risk factor under ‘General Risks’ below), have impacted the demand for advertising and\ncaused our advertisers to reduce the amounts they spent on advertising, and could continue\nto have an adverse impact on such demand and spend, which could harm our financial\ncondition and operating results.\nWe face intense competition. If we do not continue to innovate and provide\nproducts and services that are useful to users, we may not remain competitive, which"
+      ],
+      "execution_time": 2.8008430004119873,
+      "category": "risks",
+      "query_id": 29,
+      "difficulty": "medium"
+    },
+    {
+      "question": "What cybersecurity risks and data privacy concerns are mentioned in the report?",
+      "answer": "The report mentions several cybersecurity risks and data privacy concerns, including:\n\n1. Data privacy and security concerns related to technology and practices that could harm the company's reputation.\n2. The potential for incurring significant liability due to data privacy issues.\n3. The possibility of deterring current and potential users or customers from using the company's products and services.\n4. Risks associated with computer viruses, software bugs or defects, and security breaches.\n5. Attacks on the company's systems that could lead to improper handling of user data.\n\nThese concerns highlight the importance of managing data privacy and security risks effectively to maintain user trust and protect the company's financial condition and operating results.",
+      "relevant_chunks": 3,
+      "sources": [
+        "goog-20221231.pdf_chunk_187",
+        "goog-20200331.pdf_chunk_465",
+        "ALPHABET INC. DEF 14A.pdf_chunk_913"
+      ],
+      "scores": [
+        0.4907970726490021,
+        0.5253399014472961,
+        0.5552108883857727
+      ],
+      "contexts": [
+        "s, financial condition, and operating results and ability to\ncapture future business opportunities.\nData privacy and security concerns relating to our technology and our practices could harm our\nreputation, cause us to incur significant liability, and deter current and potential users or customers from\nusing our products and services. Computer viruses, software bugs or defects, security breaches, and attacks",
+        "s, financial condition, and operating results and ability to capture future business\nopportunities.\nData privacy and security concerns relating to our technology and our practices\ncould damage our reputation, cause us to incur significant liability, and deter current\nand potential users or customers from using our products and services. Software bugs\nor defects, security breaches, and attacks on our systems could result in the improper",
+        "cipated impacts of new, existing, and contemplated interpretations of laws and regulations that far\nexceed the proponent’s request.\n \nOur existing disclosures demonstrate our commitment to publicly providing insight into our management of data privacy and security risks. For example,\nour Annual Report on Form 10-K includes robust disclosures on the most significant risks we face, including risks related to user data collection, privacy,\nand security."
+      ],
+      "execution_time": 3.2502729892730713,
+      "category": "risks",
+      "query_id": 30,
+      "difficulty": "hard"
+    },
+    {
+      "question": "What are the company's foreign currency and international risks?",
+      "answer": "The company's foreign currency and international risks include:\n\n1. **Foreign Currency Exchange Risk**: The company is exposed to fluctuations in foreign currency exchange rates against the U.S. dollar, which can impact both international revenues and costs/expenses denominated in foreign currencies. Key currencies affected include the Australian dollar, British pound, Canadian dollar, Euro, and Japanese yen.\n\n2. **International Revenue Dependency**: A significant portion of the company's revenues (approximately 54% in 2021) comes from international operations, which increases exposure to various international risks.\n\n3. **Restrictions on Foreign Ownership and Investments**: There may be legal and regulatory constraints that limit foreign ownership and investments in certain countries.\n\n4. **Stringent Foreign Exchange Controls**: Certain jurisdictions may impose strict foreign exchange controls that could hinder the company's ability to convert or transfer funds across borders, impacting financial operations.\n\nThese risks can affect the company's overall financial performance and international growth plans.",
+      "relevant_chunks": 3,
+      "sources": [
+        "goog-20211231.pdf_chunk_499",
+        "goog-20201231.pdf_chunk_547",
+        "goog-20211231.pdf_chunk_169"
+      ],
+      "scores": [
+        0.5527678728103638,
+        0.5567123889923096,
+        0.5617377758026123
+      ],
+      "contexts": [
+        "including changes in foreign currency exchange rates, interest rates,\nand equity investment risks.\nForeign Currency Exchange Risk\nWe transact business globally in multiple currencies. International revenues, as well as costs and expenses\ndenominated in foreign currencies, expose us to the risk of fluctuations in foreign currency exchange rates against the\nU.S. dollar. Principal currencies hedged included the Australian dollar,  British pound, Canadian dollar,  Euro, and\nJapanese yen.",
+        "ed to financial market risks, including changes in foreign currency exchange rates, interest rates,\nand equity investment risks.\nForeign Currency Exchange Risk\nWe transact business globally in multiple currencies. Our international revenues, as well as costs and expenses\ndenominated in foreign currencies, expose us to the risk of fluctuations in foreign currency exchange rates against the\nU.S. dollar.",
+        "ons are significant to our revenues and net income, and we plan to continue to grow\ninternationally. International revenues accounted for approximately 54% of our consolidated revenues in 2021. In\naddition to risks described elsewhere in this section, our international operations expose us to other risks, including the\nfollowing:\n•\nrestrictions on foreign ownership and investments, and stringent foreign exchange controls that might prevent"
+      ],
+      "execution_time": 4.8863279819488525,
+      "category": "risks",
+      "query_id": 31,
+      "difficulty": "hard"
+    },
+    {
+      "question": "How does the company address supply chain and operational disruption risks?",
+      "answer": "The provided context does not specify how the company addresses supply chain and operational disruption risks. It primarily highlights the existence of these risks and their potential impact on the company's financial condition, operating results, and ability to provide innovative products and services. To accurately determine how the company addresses these risks, additional information or context would be needed.",
+      "relevant_chunks": 3,
+      "sources": [
+        "goog-20200630.pdf_chunk_478",
+        "goog-20200930.pdf_chunk_482",
+        "goog-20211231.pdf_chunk_149"
+      ],
+      "scores": [
+        0.5276239514350891,
+        0.5276239514350891,
+        0.5944738388061523
+      ],
+      "contexts": [
+        "our\nability to remain a technology leader and continue to provide high-quality, innovative products\nand services that are truly useful and play a valuable role in a range of settings.\nWe face a number of manufacturing and supply chain risks that, if not properly\nmanaged, could harm our financial condition, operating results, and prospects.\nWe face a number of risks related to manufacturing and supply chain management,",
+        "our\nability to remain a technology leader and continue to provide high-quality, innovative products\nand services that are truly useful and play a valuable role in a range of settings.\nWe face a number of manufacturing and supply chain risks that, if not properly\nmanaged, could harm our financial condition, operating results, and prospects.\nWe face a number of risks related to manufacturing and supply chain management,",
+        "g and supply chain risks that could harm our financial condition,\noperating results, and prospects.\nWe face a number of risks related to manufacturing and supply chain management, which could affect our ability\nto supply both our products and our internet-based services.\nWe rely on other companies to manufacture many of our finished products; to design certain of our components\nand parts; to participate in the distribution of our products and services; and to design, manufacture, or assemble"
+      ],
+      "execution_time": 2.3165149688720703,
+      "category": "risks",
+      "query_id": 32,
+      "difficulty": "medium"
+    },
+    {
+      "question": "What are the company's liquidity and capital resources risks?",
+      "answer": "The company's liquidity and capital resources risks include the following:\n\n1. **Material Transactions**: The company is engaged in strategic transactions that could materially impact its financial condition and operating results. Such transactions might require significant capital, which could strain liquidity.\n\n2. **Management Diversion**: The need to manage and focus on acquisitions and other strategic transactions may divert management's attention from core business operations, potentially affecting overall performance and cash flow.\n\n3. **Investment Risks in Early-Phase Technologies**: The company invests in private companies and technologies that are typically in early developmental phases. These investments carry a high risk of not materializing or succeeding, which could lead to a decline in their financial condition and result in substantial losses for the company.\n\n4. **Unforeseen Operating Difficulties**: Entering into discussions or agreements for strategic transactions could lead to unforeseen operational challenges and expenditures that may further strain liquidity.\n\n5. **Dependency on Value Appreciation**: The success of investments in private companies is highly dependent on the ability to realize appreciation in their value, which is uncertain and could lead to financial losses, impacting available capital resources. \n\nOverall, these risks indicate that the company faces potential challenges in maintaining liquidity and managing capital effectively in the face of strategic investments and transactions.",
+      "relevant_chunks": 3,
+      "sources": [
+        "goog-20200331.pdf_chunk_571",
+        "goog-20211231.pdf_chunk_521",
+        "goog-20201231.pdf_chunk_289"
+      ],
+      "scores": [
+        0.7312209606170654,
+        0.7710117697715759,
+        0.7752442955970764
+      ],
+      "contexts": [
+        "capital, and these transactions could be material to our\nfinancial condition and operating results. We expect to continue to evaluate and enter into\ndiscussions regarding a wide array of potential strategic transactions, which could create\nunforeseen operating difficulties and expenditures. Some of the areas where we face risks\ninclude:\n•\nDiversion of management time and focus from operating our business to challenges\nrelated to acquisitions and other strategic transactions.\n•",
+        "re inherently risky because the technologies or products these companies have under development are\ntypically in the early phases and may never materialize, and they may experience a decline in financial condition, which\ncould result in a loss of a substantial part of our investment in these companies. The success of our investment in any\nprivate company is also typically dependent on the likelihood of our ability to realize appreciation in the value of",
+        "int ventures, investments and divestitures are important elements of our overall corporate strategy\nand use of capital, and these transactions could be material to our financial condition and operating results. We expect\nto continue to evaluate and enter into discussions regarding a wide array of such potential strategic transactions, which\ncould create unforeseen operating difficulties and expenditures. Some of the areas where we face risks include:\n•"
+      ],
+      "execution_time": 6.228290796279907,
+      "category": "risks",
+      "query_id": 33,
+      "difficulty": "medium"
+    },
+    {
+      "question": "How does the company manage interest rate and credit risks?",
+      "answer": "The company manages interest rate risk by investing in both fixed rate and floating rate interest-earning securities, understanding that fixed rate securities may lose value if interest rates rise, while floating rate securities may yield less income if interest rates fall. Additionally, the company limits credit exposure to any one issuer as a policy to manage credit risk, thereby reducing the potential impact of any single issuer's default on their overall investment portfolio.",
+      "relevant_chunks": 3,
+      "sources": [
+        "goog-20211231.pdf_chunk_510",
+        "Document.pdf_chunk_485",
+        "goog-20201231.pdf_chunk_559"
+      ],
+      "scores": [
+        0.8217417597770691,
+        0.8337059020996094,
+        0.8750932812690735
+      ],
+      "contexts": [
+        "y. We invest primarily in debt securities, including those of the U.S. government and its agencies,\ncorporate debt securities, mortgage-backed securities, money market and other funds, municipal securities, time\ndeposits, asset backed securities, and debt instruments issued by foreign governments. By policy, we limit the amount\nof credit exposure to any one issuer. Our investments in both fixed rate and floating rate interest earning securities\ncarry a degree of interest rate risk.",
+        "ty. We invest primarily in debt securities including those of the U.S. government and its agencies,\ncorporate debt securities, mortgage-backed securities, money market and other funds, municipal securities, time\ndeposits, asset backed securities, and debt instruments issued by foreign governments. By policy, we limit the amount\nof credit exposure to any one issuer. Our investments in both fixed rate and floating rate interest earning securities\ncarry a degree of interest rate risk.",
+        "issued by foreign governments. By policy, we limit the amount\nof credit exposure to any one issuer. Our investments in both fixed rate and floating rate interest earning securities\ncarry a degree of interest rate risk. Fixed rate securities may have their fair market value adversely affected due to a\nrise in interest rates, while floating rate securities may produce less income than predicted if interest rates fall."
+      ],
+      "execution_time": 2.5987489223480225,
+      "category": "risks",
+      "query_id": 34,
+      "difficulty": "hard"
+    },
+    {
+      "question": "What are the company's environmental, social, and governance (ESG) risks?",
+      "answer": "The company's environmental, social, and governance (ESG) risks include potential liabilities, increased costs, and reputational harm associated with expectations relating to ESG considerations. Additionally, the company is subject to various laws, regulations, and measures that govern a wide range of ESG-related topics, which can expose it to legal and regulatory risks. These factors can impact the company's long-term performance and shareholder value if not managed properly.",
+      "relevant_chunks": 3,
+      "sources": [
+        "ALPHABET INC. DEF 14A.pdf_chunk_1055",
+        "goog-20221231.pdf_chunk_268",
+        "ALPHABET INC. - DEF 14A_3.pdf_chunk_617"
+      ],
+      "scores": [
+        0.5720150470733643,
+        0.5725106596946716,
+        0.6444340348243713
+      ],
+      "contexts": [
+        ", for the reasons set forth below, does not believe that it is in the best interests of our company\nand our stockholders and recommends a vote AGAINST this proposal.\n \nOur Board Already Has Robust Oversight of ESG Risks and Opportunities\n \nBuilding a sustainable company and contributing to a sustainable future has long been core to our corporate DNA. Our Board oversees the risks and",
+        "r business, including our product and service offerings,\nfinancial condition, and operating results.\nExpectations relating to environmental, social, and governance (ESG) considerations could expose us to\npotential liabilities, increased costs, and reputational harm.\nWe are subject to laws, regulations, and other measures that govern a wide range of topics, including those\nrelated to matters beyond our core products and services. For instance, new laws, regulations, policies, and",
+        "es that integrate environmental, social, and governance (ESG) factors into business strategy reduce\nreputational, legal, and regulatory risks and improve long-term performance. Leading companies have integrated sustainability metrics into executive\npay plans, among them Unilever and Walmart. The UN Principles for Responsible Investment (2012) state that considering ESG factors in\ncompensation can help protect long-term shareholder value."
+      ],
+      "execution_time": 2.973642110824585,
+      "category": "risks",
+      "query_id": 35,
+      "difficulty": "medium"
+    },
+    {
+      "question": "How does the company address climate change and environmental risks?",
+      "answer": "The company addresses climate change and environmental risks by publishing a regular periodic assessment of its resilience to physical climate risks. This includes detailing short-, medium-, and long-term measures being taken to mitigate these risks, particularly threats to its headquarters and key assets from issues such as sea level rise and flooding. The company aims to go beyond merely identifying these risks by also reporting on the strategies implemented to protect its business from them. The reporting is designed to be completed at a reasonable cost and excludes proprietary information, ensuring transparency. Additionally, the context indicates a recognition of the significant financial risks posed by climate change, emphasizing the importance of a robust response to such challenges.",
+      "relevant_chunks": 3,
+      "sources": [
+        "ALPHABET INC. DEF 14A.pdf_chunk_702",
+        "ALPHABET INC. DEF 14A.pdf_chunk_696",
+        "ALPHABET INC. DEF 14A.pdf_chunk_1046"
+      ],
+      "scores": [
+        0.4964175820350647,
+        0.5214886665344238,
+        0.5320788621902466
+      ],
+      "contexts": [
+        "ools,” as guidance to help shape reporting on mitigation strategies for physical climate risks. The\nimplementation guide illustrates how a company should go beyond identifying physical risks, to also report on measures being taken to protect the\ncompany’s business from those risks.\n \nA recent scientific article in Nature Climate Change noted that the financial value at risk from climate change averaged $2.5 trillion, but tail risk could\nexceed $24 trillion.",
+        "“the Company”) publish a regular periodic assessment of resilience to the physical risks of climate\nchange, including description of short-, medium-, and long-term measures that the Company is taking to mitigate physical risks, including threats to its\nheadquarters and other key assets from sea level rise and flooding. The report should be completed at reasonable cost and omit proprietary information.\n \nSupporting Statement:",
+        "and issues around climate change are\nconsiderable and could substantially affect our bottom line.\n \nIn a recent report put out by consulting firm Deloitte titled “Addressing Climate Change”1 the firm asked 353 committee members of large corporations,\n“How prepared are we to deal with climate risk”? Globally 42% of respondents indicated that their company’s “climate response is not as swift and robust"
+      ],
+      "execution_time": 3.687487840652466,
+      "category": "risks",
+      "query_id": 36,
+      "difficulty": "medium"
+    },
+    {
+      "question": "What are the company's intellectual property and patent risks?",
+      "answer": "The company's intellectual property and patent risks include:\n\n1. **Litigation and Settlement Costs**: Intellectual property claims can be time-consuming and expensive to litigate or settle, regardless of their merits. This can strain the company's resources and affect its financial condition.\n\n2. **Potential Harm from Successful Claims**: If intellectual property claims are successful against the company, they may negatively impact its business operations, product and service offerings, financial condition, and overall operating results.\n\n3. **Validity and Enforceability of Patents**: There is a risk that issued patents may be deemed invalid or unenforceable, which could undermine the company's protection and competitive advantage.\n\n4. **Compromise of Trade Secrets**: The company maintains certain intellectual property as trade secrets, and if the secrecy of these trade secrets is compromised, it could lead to a loss of competitive advantage.\n\n5. **Trademarks Risks**: There are risks associated with trademarks, such as the possibility of losing rights or facing challenges related to the use of the company's trademarks (e.g., the word “Google”).\n\nOverall, these risks can have significant implications for the company's ability to protect its intellectual property and maintain its competitive position in the market.",
+      "relevant_chunks": 3,
+      "sources": [
+        "goog-20211231.pdf_chunk_279",
+        "goog-20200331.pdf_chunk_427",
+        "goog-20200930.pdf_chunk_581"
+      ],
+      "scores": [
+        0.6686342358589172,
+        0.6750805377960205,
+        0.7115662097930908
+      ],
+      "contexts": [
+        "ion for certain potential liabilities, including those associated with intellectual property\nclaims. Regardless of their merits, intellectual property claims are often time consuming and expensive to litigate or\nsettle. To the extent such claims are successful, they may harm our business, including our product and service\nofferings, financial condition, or operating results.\nRisks Related to Ownership of our Stock",
+        "ection gained will\nbe insufficient or that an issued patent may be deemed invalid or unenforceable.\nWe also seek to maintain certain intellectual property as trade secrets. The secrecy of\nsuch trade secrets and other sensitive information could be compromised, which could cause\nus to lose the competitive advantage resulting from these trade secrets. We also face risks\nassociated with our trademarks. For example, there is a risk that the word “Google” could",
+        "nd\nmay in the future agree, to provide indemnification for certain potential liabilities, including\nthose associated with intellectual property claims.\nRegardless of their merits, intellectual property claims are often time consuming and\nexpensive to litigate or settle. To the extent such claims are successful, they may harm our\nbusiness, including our product and service offerings, financial condition, or operating results.\nRisks Related to Ownership of our Stock"
+      ],
+      "execution_time": 5.154836893081665,
+      "category": "risks",
+      "query_id": 37,
+      "difficulty": "hard"
+    },
+    {
+      "question": "What are the company's data privacy and regulatory compliance risks?",
+      "answer": "The company's data privacy and regulatory compliance risks include:\n\n1. **Reputation Damage**: Concerns regarding data privacy and security practices could harm the company's reputation, leading to a loss of trust among current and potential users or customers.\n\n2. **Liability Risks**: The company may incur significant liabilities as a result of data privacy breaches or non-compliance with regulations, which could include monetary penalties.\n\n3. **Operational Disruption**: Addressing software bugs, defects, security breaches, or attacks on systems could require substantial time and resources from management, diverting attention from core business activities.\n\n4. **Regulatory Compliance Complexity**: The rapidly evolving nature of privacy and data protection regulations poses a risk of non-compliance, which could lead to adverse legal interpretations and penalties.\n\n5. **Impact on Business Opportunities**: Data privacy and security concerns could deter users from utilizing the company's products and services, potentially limiting future business opportunities.\n\n6. **Monetary Liabilities and Penalties**: Non-compliance with data privacy regulations could result in financial penalties that negatively affect the company's financial condition.\n\nOverall, these risks could significantly impact the company's operational results and ability to capture future business opportunities.",
+      "relevant_chunks": 3,
+      "sources": [
+        "goog-20200331.pdf_chunk_465",
+        "goog-20200331.pdf_chunk_516",
+        "goog-20221231.pdf_chunk_187"
+      ],
+      "scores": [
+        0.48124319314956665,
+        0.4836271107196808,
+        0.4910149574279785
+      ],
+      "contexts": [
+        "s, financial condition, and operating results and ability to capture future business\nopportunities.\nData privacy and security concerns relating to our technology and our practices\ncould damage our reputation, cause us to incur significant liability, and deter current\nand potential users or customers from using our products and services. Software bugs\nor defects, security breaches, and attacks on our systems could result in the improper",
+        "f any\nsuch actions could be costly and involve significant time and attention of our management and\nother resources, may result in monetary liabilities or penalties, and may require us to change\nour business in an adverse manner.\nPrivacy and data protection regulations are complex and rapidly evolving areas.\nAdverse interpretations of these laws could harm our business, reputation, financial\ncondition, and operating results.",
+        "s, financial condition, and operating results and ability to\ncapture future business opportunities.\nData privacy and security concerns relating to our technology and our practices could harm our\nreputation, cause us to incur significant liability, and deter current and potential users or customers from\nusing our products and services. Computer viruses, software bugs or defects, security breaches, and attacks"
+      ],
+      "execution_time": 5.819205045700073,
+      "category": "risks",
+      "query_id": 38,
+      "difficulty": "medium"
+    },
+    {
+      "question": "What are the company's key person risks and dependency on key personnel?",
+      "answer": "The company's key person risks and dependency on key personnel include the following:\n\n1. **At-Will Employment**: All executive officers and key employees are at-will employees, meaning they can leave the company at any time without notice. This creates a risk of sudden loss of critical personnel.\n\n2. **Lack of Key-Person Life Insurance**: The company does not maintain any key-person life insurance policies. This means that in the event of the death or incapacity of a key employee, the company would not have financial protection or resources to support the transition or replacement of that individual.\n\n3. **Impact on Business Operations**: The loss of key personnel could significantly harm the business, as these individuals are vital for the development of technology, maintaining corporate culture, and setting strategic direction. Their absence could disrupt operations and hinder growth.\n\n4. **Reliance on Highly Skilled Personnel**: The company heavily relies on highly skilled personnel for its success. If it is unable to retain or motivate these individuals, or to hire qualified personnel, it may struggle to grow effectively.\n\n5. **Corporate Culture**: Maintaining the corporate culture is linked to the presence of key personnel. If these individuals leave, it may lead to challenges in preserving the company's values and work environment, which can",
+      "relevant_chunks": 3,
+      "sources": [
+        "goog-20201231.pdf_chunk_299",
+        "goog-20200331.pdf_chunk_580",
+        "goog-20200930.pdf_chunk_630"
+      ],
+      "scores": [
+        0.5750741958618164,
+        0.6305766105651855,
+        0.6305766105651855
+      ],
+      "contexts": [
+        "development of our technology, maintaining our culture and setting our strategic direction. All of\nour executive officers and key employees are at-will employees, and we do not maintain any key-person life insurance\npolicies. The loss of key personnel could seriously harm our business.\nWe rely on highly skilled personnel and, if we are unable to retain or motivate key personnel, hire qualified\npersonnel, or maintain our corporate culture, we may not be able to grow effectively.",
+        "technology. He also plays a\nkey role in maintaining our culture and setting our strategic direction. All of our executive\nofficers and key employees are at-will employees, and we do not maintain any key-person life\ninsurance policies. The loss of key personnel could seriously harm our business.\nWe rely on highly skilled personnel and, if we are unable to retain or motivate key\npersonnel, hire qualified personnel, or maintain our corporate culture, we may not be\nable to grow effectively.",
+        "technology. He also plays a key role in maintaining our culture and setting our strategic\ndirection. All of our executive officers and key employees are at-will employees, and we do not\nmaintain any key-person life insurance policies. The loss of key personnel could seriously\nharm our business.\nWe rely on highly skilled personnel and, if we are unable to retain or motivate key\npersonnel, hire qualified personnel, or maintain our corporate culture, we may not be\nable to grow effectively."
+      ],
+      "execution_time": 7.693825960159302,
+      "category": "risks",
+      "query_id": 39,
+      "difficulty": "medium"
+    },
+    {
+      "question": "Who are the members of the company's board of directors?",
+      "answer": "The context provided does not specify the names or identities of the members of the company's board of directors. It only mentions that the board consists of \"Outside Directors\" and emphasizes the importance of their diverse backgrounds and experiences in providing oversight and strategic decision-making for the company. For specific names, one would typically refer to the company's official documents or website for a list of board members.",
+      "relevant_chunks": 3,
+      "sources": [
+        "ALPHABET INC. - DEF 14A_2.pdf_chunk_365",
+        "ALPHABET INC. DEF 14A.pdf_chunk_1448",
+        "lgoog2020_def14a.pdf_chunk_84"
+      ],
+      "scores": [
+        0.6154821515083313,
+        0.6193346977233887,
+        0.6360803842544556
+      ],
+      "contexts": [
+        "other companies affiliated with our directors, executive officers, and significant stockholders or\ntheir immediate family members. We believe that all such arrangements have been entered into in the ordinary course of business and have been\nconducted on an arm’s-length basis and do not represent a material interest to such parties.\n \nALPHABET ● 2023 PROXY STATEMENT        43\n \nBack to contents\n \n  DIRECTOR COMPENSATION\n \n—  BOARD COMPENSATION ARRANGEMENTS FOR NON-EMPLOYEE\nDIRECTORS",
+        "(ii) the Corporation’s compensation committee and the governance and nominating committee (or such\ncommittees serving similar functions as the Board of Directors of the Corporation shall constitute from time to time) shall consist of at least two\n(2) members of the Board of Directors and shall be composed entirely of Outside Directors. In the event the number of Outside Directors",
+        "nced directors who have led, advised, and established leading global organizations and institutions. Our Board of Directors has taken a thoughtful approach to board composition to ensure that our directors have backgrounds that collectively add significant value to the strategic decisions made by the Company and that enable them to provide oversight of management to ensure accountability to our stockholders."
+      ],
+      "execution_time": 2.359971046447754,
+      "category": "governance",
+      "query_id": 40,
+      "difficulty": "easy"
+    },
+    {
+      "question": "What is the executive compensation structure for the CEO and other named executive officers?",
+      "answer": "The executive compensation structure for the CEO and other named executive officers at Alphabet includes several components that are influenced by financial, operational, and capital decisions. The Leadership Development and Compensation Committee engages in discussions with management to gain insights into future company performance expectations, which helps shape their compensation decisions.\n\nFor the CEO, the total annual compensation includes a significant salary along with equity awards, bonuses, and possibly other incentives. The 2024 annual total compensation for the CEO was reported to be $10,725,043, resulting in a pay ratio of 32 to 1 compared to the median compensated employee, whose total compensation was $331,894. In 2023, the CEO's total compensation was $8,802,824, with a 28 to 1 pay ratio relative to the median employee compensation of $315,531.\n\nOverall, the compensation structure is designed to align with company performance and is reflective of discussions around future expectations, while also considering the broader context of employee compensation within the organization.",
+      "relevant_chunks": 3,
+      "sources": [
+        "ALPHABET INC. - DEF 14A_3.pdf_chunk_366",
+        "ALPHABET INC. - DEF14A.pdf_chunk_519",
+        "ALPHABET INC. - DEF 14A.pdf_chunk_525"
+      ],
+      "scores": [
+        0.44540509581565857,
+        0.5123201608657837,
+        0.5344545841217041
+      ],
+      "contexts": [
+        "he financial, operational, and\ncapital decisions that serve as inputs to our compensation programs.\n• Through discussions with management, the Leadership Development and Compensation Committee gains insight into a reasonable range of\nfuture company performance expectations. This information is incorporated into decisions regarding compensation of our named executive\nofficers.\n \nALPHABET • 2021 PROXY STATEMENT\n41\n \nBack to Contents\n1\nCorporate\nGovernance\n2\nDirector and\nExecutive\nCompensation\n3",
+        "&\nHighlights\nCorporate\nGovernance\nDirector and\nExecutive\nCompensation\nAudit Matters\nProposals\nQ&A\n \nAlphabet CEO Pay Ratio\n \nThe 2024 annual total compensation of our median compensated employee was $331,894, and the 2024 annual total compensation of our CEO was\n$10,725,043. The resulting ratio of Chief Executive Officer to Median Employee total compensation is 32 to 1.",
+        "compensated employee was $315,531, and the 2023 annual total compensation of our CEO was\n$8,802,824. The resulting ratio of Chief Executive Officer to Median Employee total compensation is 28 to 1. (In 2023, to accommodate our transition\nonto a new compensation timeline, we applied a one-time adjustment to annual equity awards for employees, which resulted in higher grant values than\nnormal."
+      ],
+      "execution_time": 5.092450141906738,
+      "category": "governance",
+      "query_id": 41,
+      "difficulty": "hard"
+    },
+    {
+      "question": "What are the company's corporate governance policies and practices?",
+      "answer": "The company's corporate governance policies and practices include the following:\n\n1. **Evaluation of Board and Committee Composition**: The Governance Committee is responsible for assessing the composition of the Board and its Committees, focusing on factors such as diversity, size, tenure, and overall organization.\n\n2. **Director Nominee Policy**: The Governance Committee establishes a policy for considering director nominees. It evaluates and recommends candidates for election to the Board, ensuring that these recommendations align with the Board-approved evaluations of Board and management performance.\n\n3. **Development and Update of Corporate Governance Principles**: The Governance Committee is tasked with developing and periodically updating the company's corporate governance principles to enhance governance practices.\n\nThese practices aim to ensure that the Board of Directors operates effectively and in the best interests of the company, its stockholders, and other stakeholders.",
+      "relevant_chunks": 3,
+      "sources": [
+        "ALPHABET INC. - DEF 14A.pdf_chunk_242",
+        "ALPHABET INC. - DEF14A.pdf_chunk_213",
+        "ALPHABET INC. - DEF 14A_3.pdf_chunk_753"
+      ],
+      "scores": [
+        0.7267351150512695,
+        0.7274603247642517,
+        0.7385693788528442
+      ],
+      "contexts": [
+        "aluation of the Board and management, and to\ndevelop and update our corporate governance principles. The Governance Committee’s responsibilities include but are not limited to:\n \n \n• Evaluating Board and Committee composition, including diversity, size, tenure, organization, and governance and determining future\nrequirements.\n \n• Establishing a policy for considering director nominees; evaluating and recommending candidates for election consistent with Board-approved",
+        "aluation of the Board and management, and to\ndevelop and update our corporate governance principles. The Governance Committee’s responsibilities include but are not limited to:\n \n \n• Evaluating Board and Committee composition, including size, tenure, organization, and governance and determining future requirements.\n \n• Establishing a policy for considering director nominees; evaluating and recommending candidates for election consistent with Board-approved",
+        "ontents\n1\nCorporate\nGovernance\n2\nDirector and\nExecutive\nCompensation\n3\nAudit\nMatters  \n4\nManagement\nand Stockholder\nProposals\n5\nQuestions and\nAnswers\n \nAlphabet Opposing Statement\n \nOur Board of Directors believes that the corporate structure set out in our Amended and Restated Certificate of Incorporation is in the best interests\nof the company and our stockholders and our other stakeholders."
+      ],
+      "execution_time": 3.7366552352905273,
+      "category": "governance",
+      "query_id": 42,
+      "difficulty": "medium"
+    },
+    {
+      "question": "How does the company handle related party transactions and conflicts of interest?",
+      "answer": "The company handles related party transactions and conflicts of interest through a formal Related Party Transactions Policy. According to this policy, any transaction with a related party can only be entered into or ratified if the Board of Directors, specifically the Audit and Compliance Committee, determines that it is in the best interests of Alphabet and its stockholders. \n\nWhen evaluating a related party transaction, the committee considers several factors, including: \n\n- The benefits of the transaction to the company.\n- The nature of the related party's interest in the transaction.\n- Whether the transaction might impair the judgment of a director or executive officer in acting in the best interests of the company and its stockholders.\n- The potential impact on a director’s independence.\n- Whether the terms of the transaction are no less favorable than those available to an unaffiliated third party in similar circumstances.\n\nThis thorough evaluation process helps ensure that any potential conflicts of interest are addressed and that the transactions are conducted in a manner that is fair and beneficial to the company and its stakeholders.",
+      "relevant_chunks": 3,
+      "sources": [
+        "ALPHABET INC. - DEF 14A_3.pdf_chunk_287",
+        "lgoog2020_def14a.pdf_chunk_291",
+        "ALPHABET INC. - DEF 14A_3.pdf_chunk_296"
+      ],
+      "scores": [
+        0.635211706161499,
+        0.6885213255882263,
+        0.6895047426223755
+      ],
+      "contexts": [
+        "ERTAIN RELATIONSHIPS AND RELATED\nTRANSACTIONS\n \n—\nRELATED PARTY TRANSACTIONS POLICY AND PROCEDURE\n \nOur written Related Party Transactions Policy provides that we will only enter into or ratify a transaction with a related party when our Board of\nDirectors, acting through the Audit and Compliance Committee, determines that the transaction is in the best interests of Alphabet and our\nstockholders.\n \nFor the purposes of this policy, a related party means:",
+        "related party’s interest in the transaction; •whether the transaction would impair the judgment of a director or executive officer to act in the best interests of Alphabet and our stockholders; •the potential impact of the transaction on a director’s independence; and •whether the transaction is on terms no less favorable than terms generally available to an\nunaffiliated third party under the same or similar circumstances.",
+        "transaction with a related party, the Audit and Compliance Committee will take into account all of\nthe relevant facts and circumstances available to it, including, among any other factors it deems appropriate:\n \n• the benefits to us of the transaction;\n• the nature of the related party’s interest in the transaction;\n• whether the transaction would impair the judgment of a director or executive officer to act in the best interests of Alphabet and our stockholders;"
+      ],
+      "execution_time": 4.892135858535767,
+      "category": "governance",
+      "query_id": 43,
+      "difficulty": "hard"
+    },
+    {
+      "question": "What is the company's policy on stock ownership by directors and executives?",
+      "answer": "The company's policy on stock ownership by directors and executives includes robust stock ownership guidelines that have been in place for many years. These guidelines are designed to align the interests of senior management with those of stockholders and are reviewed and updated periodically by the Compensation Committee. The specific details of these stock ownership guidelines are publicly available in Alphabet's Corporate Governance Guidelines, which can be found on their Investor Relations website.",
+      "relevant_chunks": 3,
+      "sources": [
+        "ALPHABET INC. - DEF 14A_2.pdf_chunk_1098",
+        "ALPHABET INC. - DEF14A.pdf_chunk_266",
+        "ALPHABET INC. - DEF 14A.pdf_chunk_296"
+      ],
+      "scores": [
+        0.5936041474342346,
+        0.6785839796066284,
+        0.6790871024131775
+      ],
+      "contexts": [
+        "Stock Ownership Guidelines and Policies Effectively Align Senior Management With Our\nStockholders\n \nWe have had robust existing stock ownership guidelines for our senior executives for many years that are reviewed, and updated, from time to time by\nthe Compensation Committee. Our stock ownership guidelines are publicly set forth in Alphabet’s Corporate Governance Guidelines, and can be found\non our Investor Relations website.\n \nThese stock ownership guidelines:",
+        "&\nHighlights\nCorporate\nGovernance\nDirector and\nExecutive\nCompensation\nAudit Matters\nProposals\nQ&A\n \nCommon Stock Ownership of Certain Beneficial Owners and\nManagement\n \nThe following table sets forth information, as of April 8, 2025, concerning, except as indicated by the footnotes:\n \n• Each person whom we know beneficially owns more than five percent of our Class A common stock or Class B common stock.\n• Each of our directors and nominees for our Board.",
+        "&\nHighlights\nCorporate\nGovernance\nDirector and\nExecutive\nCompensation\nAudit Matters\nProposals\nQ&A\n \nCommon Stock Ownership of Certain Beneficial Owners and\nManagement\n \nThe following table sets forth information, as of April 9, 2024, concerning, except as indicated by the footnotes:\n \n• Each person whom we know beneficially owns more than five percent of our Class A common stock or Class B common stock.\n• Each of our directors and nominees for our Board."
+      ],
+      "execution_time": 1.9595520496368408,
+      "category": "governance",
+      "query_id": 44,
+      "difficulty": "medium"
+    },
+    {
+      "question": "What is the composition and structure of the board committees?",
+      "answer": "The Board is composed of either eleven or ten directors, depending on the context provided. It has four standing committees:\n\n1. **Audit and Compliance Committee (the Audit Committee)**\n2. **Leadership Development, Inclusion and Compensation Committee (the Compensation Committee)**\n3. **Nominating and Corporate Governance Committee (the Governance Committee)**\n4. **Executive Committee**\n\nAdditionally, the Board may establish ad hoc committees to address particular matters as needed. The Governance Committee is specifically responsible for evaluating Board and Committee composition, including aspects such as diversity, size, tenure, and governance, as well as developing policies for considering director nominees and recommending candidates for election.",
+      "relevant_chunks": 3,
+      "sources": [
+        "ALPHABET INC. - DEF 14A_2.pdf_chunk_217",
+        "ALPHABET INC. - DEF 14A.pdf_chunk_219",
+        "ALPHABET INC. - DEF 14A.pdf_chunk_242"
+      ],
+      "scores": [
+        0.5531166791915894,
+        0.5593361854553223,
+        0.5593805313110352
+      ],
+      "contexts": [
+        "is currently composed of eleven directors. Our Board has the following four standing committees:\n \n1.\nan Audit and Compliance Committee (the Audit Committee),\n2.\na Leadership Development, Inclusion and Compensation Committee (the Compensation Committee),\n3.\na Nominating and Corporate Governance Committee (the Governance Committee), and\n4.\nan Executive Committee.\n \nFrom time to time, our Board may also establish ad hoc committees to address particular matters.",
+        "is currently composed of ten directors. Our Board has the following four standing committees:\n \n1.\nan Audit and Compliance Committee (the Audit Committee),\n2.\na Leadership Development, Inclusion and Compensation Committee (the Compensation Committee),\n3.\na Nominating and Corporate Governance Committee (the Governance Committee), and\n4.\nan Executive Committee.\n \nFrom time to time, our Board may also establish ad hoc committees to address particular matters.",
+        "aluation of the Board and management, and to\ndevelop and update our corporate governance principles. The Governance Committee’s responsibilities include but are not limited to:\n \n \n• Evaluating Board and Committee composition, including diversity, size, tenure, organization, and governance and determining future\nrequirements.\n \n• Establishing a policy for considering director nominees; evaluating and recommending candidates for election consistent with Board-approved"
+      ],
+      "execution_time": 3.80193829536438,
+      "category": "governance",
+      "query_id": 45,
+      "difficulty": "medium"
+    },
+    {
+      "question": "What are the company's policies on shareholder rights and proxy voting?",
+      "answer": "The company's policies on shareholder rights and proxy voting, as outlined in the provided context, include the following points:\n\n1. **Voting Methods**: Shareholders who hold shares beneficially in street name can vote by proxy over the Internet by following the instructions in the Notice. For those who requested printed proxy materials, voting can also be done by telephone or mail.\n\n2. **Proxy Holders**: The designated proxy holders are Sundar Pichai, Ruth M. Porat, Kent Walker, Halimah DeLaine Prado, and Kathryn W. Hall. They have the discretion to vote on any additional matters properly presented at the Annual Meeting.\n\n3. **Discretionary Voting**: If any of the nominated candidates for director is unavailable, the proxy holders will vote for other candidates nominated by the Board of Directors. They also have the discretion to vote \"AGAINST\" any proposal if it is presented at the Annual Meeting.\n\n4. **Awareness of Business Matters**: The company states that other than the aforementioned matters, they are not aware of any other business to be acted upon at the Annual Meeting.\n\nOverall, the policies emphasize the ability of shareholders to vote through various means and the discretionary powers of proxy holders regarding how shares are voted in certain situations.",
+      "relevant_chunks": 3,
+      "sources": [
+        "ALPHABET INC. - DEF 14A_3.pdf_chunk_804",
+        "lgoog2020_def14a.pdf_chunk_854",
+        "ALPHABET INC. - DEF 14A_2.pdf_chunk_1186"
+      ],
+      "scores": [
+        0.678200364112854,
+        0.6854173541069031,
+        0.6886569261550903
+      ],
+      "contexts": [
+        "ons provided on the\nproxy card.\n \nALPHABET • 2021 PROXY STATEMENT\n80\n \nBack to Contents\n1\nCorporate\nGovernance\n2\nDirector and\nExecutive\nCompensation\n3\nAudit\nMatters  \n4\nManagement\nand Stockholder\nProposals\n5\nQuestions and\nAnswers\n \nIf you hold shares beneficially in street name, you may also vote by proxy over the Internet by following the instructions provided in the\nNotice, or, if you requested to receive printed proxy materials, you can also vote by telephone or mail by following the voting",
+        "proxy, the persons named as proxy holders, Sundar Pichai, Ruth M. Porat, Kent Walker, and Kathryn W. Hall, or any of them, will have the discretion to vote your shares on any additional matters properly presented for a vote at the Annual Meeting. If, for any reason, any of the nominees is not available as a candidate for director, the persons named as proxy holders will vote your proxy for such other candidate or candidates as may be nominated by the Board of Directors. 22.",
+        "d to exercise\nsuch discretion to vote “AGAINST” such proposal if presented at the Annual Meeting.\n \nOther than the above, we are not aware of any other business to be acted upon at the Annual Meeting. If you grant a proxy, the persons named as proxy\nholders, Sundar Pichai, Ruth M. Porat, Kent Walker, Halimah DeLaine Prado, and Kathryn W. Hall, or any of them, will have the discretion to vote your\nshares on any additional matters properly presented for a vote at the Annual Meeting."
+      ],
+      "execution_time": 5.510893106460571,
+      "category": "governance",
+      "query_id": 46,
+      "difficulty": "hard"
+    },
+    {
+      "question": "What is the company's code of conduct and ethics policies?",
+      "answer": "The company's code of conduct and ethics policies are encapsulated in the Alphabet Code of Conduct, which is applicable to directors, officers (including the principal executive officer, principal financial officer, and principal accounting officer), and employees. This Conduct Policy emphasizes that all employees are expected to adhere to the highest standards of ethics and conduct, prohibiting behaviors that fail to maintain basic standards of civility and do not treat others with dignity. Additionally, the company has Community Guidelines that support responsible and thoughtful discussion as part of its culture.",
+      "relevant_chunks": 3,
+      "sources": [
+        "ALPHABET INC. - DEF 14A_2.pdf_chunk_208",
+        "ALPHABET INC. - DEF 14A.pdf_chunk_665",
+        "ALPHABET INC. - DEF14A.pdf_chunk_181"
+      ],
+      "scores": [
+        0.713589072227478,
+        0.7375887632369995,
+        0.753006100654602
+      ],
+      "contexts": [
+        "ontents\n \n1\nCorporate\nGovernance\n2\nDirector and\nExecutive\nCompensation\n3\nAudit\nMatters\n4\nManagement\nand Stockholder\nProposals\n5\nQuestions and\nAnswers\n6\nAppendices\n \n—  CORPORATE GOVERNANCE AND BOARD MATTERS\n \nWe have adopted a code of business conduct and ethics for directors, officers (including our principal executive officer, principal financial officer, and\nprincipal accounting officer), and employees, known as the Alphabet Code of Conduct.",
+        "and Workplace Concerns (the Conduct Policy). The Conduct Policy states that all employees are held\nto the highest standards of ethics and conduct and prohibits failing to maintain basic standards of civility and not treating each other with dignity.\n \nOur Community Guidelines further help support the responsible and thoughtful discussion that has always been part of our culture. For example, the",
+        "tor and\nExecutive\nCompensation\nAudit Matters\nProposals\nQ&A\n \nCorporate Governance and Board Matters\n \nWe have adopted a code of business conduct and ethics for directors, officers (including our principal executive officer, principal financial officer, and\nprincipal accounting officer), and employees, known as the Alphabet Code of Conduct. We have also adopted Corporate Governance Guidelines, which,"
+      ],
+      "execution_time": 2.1926519870758057,
+      "category": "governance",
+      "query_id": 47,
+      "difficulty": "medium"
+    },
+    {
+      "question": "How does the company ensure diversity and inclusion in its leadership?",
+      "answer": "The company ensures diversity and inclusion in its leadership through a multifaceted and holistic director nomination and evaluation process. This approach aims to identify and appoint highly qualified leaders with diverse backgrounds, experiences, and skill sets. Over the past five years, the company has added three new directors who are gender and/or ethnically diverse, reflecting its commitment to diverse board composition. Additionally, the Board conducts annual self-assessments of its effectiveness and that of its committees, which allows for evaluation of the composition of skills and experiences among its members. This systems-level approach to building diversity, equity, and inclusion mobilizes every aspect of the company, highlighting the importance of these values for business sustainability and success.",
+      "relevant_chunks": 3,
+      "sources": [
+        "ALPHABET INC. DEF 14A.pdf_chunk_1038",
+        "ALPHABET INC. DEF 14A.pdf_chunk_1037",
+        "lgoog2020_def14a.pdf_chunk_674"
+      ],
+      "scores": [
+        0.6543283462524414,
+        0.6940964460372925,
+        0.7444958686828613
+      ],
+      "contexts": [
+        "to building diversity, equity, and inclusion, which entails “mobilizing\nevery aspect of the company.” Our Board has adopted a multifaceted and holistic director nomination and evaluation process to ensure that our Board\nmembers are highly qualified leaders with diverse backgrounds, experiences, and skill sets. Under this approach, we have added three new directors in\nthe past five years, all of them gender and/or ethnically diverse.",
+        "ups. Our Board also conducts an annual self-assessment of its own effectiveness and that of each of\nits committees, providing an opportunity to evaluate whether it has the right composition of skills and experiences.\n \nOur Existing Director Nomination Practices Foster Diverse Board Composition\n \nAs explained in our 2021 Diversity Annual Report, we take a “systems-level approach” to building diversity, equity, and inclusion, which entails “mobilizing\nevery aspect of the company.",
+        "value. Diversity, inclusion, and equity are key components of business sustainability and success: . McKinsey research shows that companies in the top quartiles for gender and racial/ethnic diversity were more likely to have above- average financial returns (“Diversity Matters,” McKinsey & Company, 2015). . In a 2013 Catalyst report, diversity was positively associated with more customers, increased sales revenue, and greater relative profits."
+      ],
+      "execution_time": 5.658128261566162,
+      "category": "governance",
+      "query_id": 48,
+      "difficulty": "medium"
+    },
+    {
+      "question": "What is the company's approach to executive succession planning?",
+      "answer": "The company's approach to executive succession planning involves collaboration between the directors and the Chief Executive Officer (CEO). The entire Board is engaged in the critical aspects of the process, which includes establishing selection criteria aligned with business strategies, identifying and developing internal candidates to maintain the organization's culture, and making important decisions regarding management succession. This collaborative and inclusive approach ensures that the company is prepared for leadership transitions while preserving its core values and strategic direction.",
+      "relevant_chunks": 3,
+      "sources": [
+        "ALPHABET INC. - DEF 14A_2.pdf_chunk_275",
+        "lgoog2020_def14a.pdf_chunk_235",
+        "ALPHABET INC. DEF 14A.pdf_chunk_272"
+      ],
+      "scores": [
+        0.5386782288551331,
+        0.5858801603317261,
+        0.5944501757621765
+      ],
+      "contexts": [
+        "esponsible for overseeing the risks and exposures\nassociated with management succession planning.\n \nOur Board believes that the directors and the Chief Executive Officer should collaborate on succession planning and that the entire Board should be\ninvolved in the critical aspects of the management succession planning process, including establishing selection criteria that reflect our business",
+        "ectors believes that the directors and the Chief Executive Officer should collaborate on succession\nplanning and that the entire Board should be involved in the critical aspects of the management succession planning process, including establishing selection criteria that reflect our business strategies, identifying and developing internal candidates to ensure the continuity of our culture, and making key management succession decisions.",
+        "ief Executive Officer should collaborate on succession planning and that the entire Board should be\ninvolved in the critical aspects of the management succession planning process, including establishing selection criteria that reflect our business\nstrategies, identifying and developing internal candidates to ensure the continuity of our culture, and making key management succession decisions.\n \nALPHABET  •  2022 PROXY STATEMENT     34\n \nBack to Contents\n1\nCorporate\nGovernance  \n2\nDirector and"
+      ],
+      "execution_time": 4.23948073387146,
+      "category": "governance",
+      "query_id": 49,
+      "difficulty": "hard"
+    },
+    {
+      "question": "What is the company's approach to risk management and internal controls?",
+      "answer": "The company's approach to risk management involves a comprehensive framework governed by its Board, which is responsible for overseeing strategic, financial, and execution risks that could impact the business strategy, production innovation, and regulatory compliance. This oversight is facilitated by management reporting processes, including an annual company-wide risk assessment that provides the Board and its committees with visibility into the identification, assessment, and management of significant risks, along with management's strategies for mitigating those risks.\n\nRegarding internal controls over financial reporting, the company has established a process aimed at providing reasonable assurance about the reliability of financial reporting. This includes assessing the design and effectiveness of internal controls based on identified risks, conducting audits, and performing necessary procedures. The overall goal of these measures is to ensure that risks are effectively managed and that the company maintains its financial performance, operational integrity, and reputation.",
+      "relevant_chunks": 3,
+      "sources": [
+        "ALPHABET INC. - DEF 14A.pdf_chunk_898",
+        "Document.pdf_chunk_522",
+        "ALPHABET INC. DEF 14A.pdf_chunk_275"
+      ],
+      "scores": [
+        0.7142124176025391,
+        0.7410107851028442,
+        0.7805288434028625
+      ],
+      "contexts": [
+        "of our risk management framework. As set forth in our Corporate Governance Guidelines, our Board is\nultimately responsible for covering strategic, financial, and execution risks and exposures associated with our business strategy, production innovation,\nand policy and significant regulatory matters that may present material risk to our financial performance, operations, plans, prospects, or reputation. Our",
+        "sts, testing and evaluating the design and operating effectiveness of internal control based on the\nassessed risk, and performing such other procedures as we considered necessary in the circumstances. We believe\nthat our audit provides a reasonable basis for our opinion.\nDefinition and Limitations of Internal Control over Financial Reporting\nA company’s internal control over financial reporting is a process designed to provide reasonable assurance",
+        "responsibility for oversight of risk management. The oversight responsibility of our Board and its\ncommittees is enabled by management reporting processes, including an annual company-wide risk assessment, that are designed to provide visibility to\nour Board and its committees about the identification, assessment, and management of critical risks and management’s risk mitigation strategies. While"
+      ],
+      "execution_time": 3.3671159744262695,
+      "category": "governance",
+      "query_id": 50,
+      "difficulty": "hard"
+    }
+  ],
+  "metrics": {
+    "average_execution_time": 3.612772750854492,
+    "average_top_score": 0.7121004348993302,
+    "total_queries": 50
+  }
+}

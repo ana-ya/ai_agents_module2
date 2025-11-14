@@ -1,1266 +1,1266 @@
 {
   "system_name": "Hybrid RAG",
-  "total_documents": 50,
-  "total_chunks": 9022,
+  "total_documents": 30,
+  "total_chunks": 20378,
   "chunk_size": 500,
   "chunk_overlap": 100,
   "alpha": 0.5,
-  "llm_model": "ollama (llama3.2:3b)",
+  "llm_model": "openai (gpt-4o-mini)",
   "queries": [
     {
-      "question": "What is Retrieval-Augmented Generation (RAG)?",
-      "answer": "Retrieval-Augmented Generation (RAG) is an emerging hybrid architecture that addresses the limitations of pure generative models. It integrates two key components:\n\n1. A retrieval mechanism\n2. An answer generation process, which follows certain rules and a threshold.\n\nThis framework aims to improve upon traditional generative models by leveraging user queries with a collection of relevant documents.",
+      "question": "What are the main business segments of the company according to the latest annual report?",
+      "answer": "According to the latest annual report, the main business segments of the company are:\n\n1. Google – This includes main products such as ads, Android, Chrome, hardware, Google Cloud, Google Maps, Google Play, Search, and YouTube.\n2. Other Bets – This encompasses all other operating segments that do not meet the quantitative thresholds to qualify as reportable segments.",
       "method": "convex",
       "alpha": 0.5,
       "relevant_chunks": 5,
       "sources": [
-        "2410.12837.pdf",
-        "2403.14403.pdf",
-        "2410.05779.pdf",
-        "2311.09476.pdf",
-        "2410.05779.pdf"
+        "goog-20200630.pdf",
+        "goog-20200930.pdf",
+        "goog-20200331.pdf",
+        "Document.pdf",
+        "ALPHABET INC. - DEF 14A.pdf"
       ],
       "scores": [
-        0.6061447094604719,
-        0.5925520838215216,
-        0.5704822191811136,
-        0.5399094948947378,
-        0.5390168479903122
+        0.6227029517191841,
+        0.6227029517191841,
+        0.5923235544655534,
+        0.5867682032817967,
+        0.5490634386186312
       ],
-      "execution_time": 4.8945677280426025,
-      "category": "definition",
+      "execution_time": 5.531679153442383,
+      "category": "company_overview",
       "query_id": 1,
       "difficulty": "easy"
     },
     {
-      "question": "What are the main components of a RAG system?",
-      "answer": "The context doesn't explicitly mention what the \"main components\" of an RAG (Retrieval-Answer Generation) system are, but based on the provided information, we can infer some key aspects that might be part of such a system.\n\nFrom the text, it is clear that a RAG system involves:\n\n1. Retrieval: This likely refers to the process of retrieving relevant documents or information from a database or repository.\n2. Generation (or Answering): This component involves generating answers or summaries based on the retrieved information.\n\nAdditionally, other components might include:\n\n3. Chunking: Breaking down documents into smaller units or chunks, which can affect the retrieval and generation processes.\n4. Embeddings: Representing entities or concepts as numerical vectors, which can be used for efficient similarity searches or comparisons.\n\nHowever, without explicit information on what constitutes a RAG system, it is difficult to provide an exhaustive list of its main components.",
+      "question": "What is the company's primary business and how does it generate revenue?",
+      "answer": "The company's primary business revolves around providing online services, specifically through platforms like Google Search and YouTube. It generates revenue primarily through advertising. Google Search offers businesses the opportunity to advertise their products and services, while YouTube provides a platform for video content that also includes advertising revenue, as well as potential monetization options for content creators. The company emphasizes transparency in how its algorithms and policies operate, ensuring users have control over their experiences on these platforms.",
       "method": "convex",
       "alpha": 0.5,
       "relevant_chunks": 5,
       "sources": [
-        "2401.05856.pdf",
-        "2401.05856.pdf",
-        "2401.05856.pdf",
-        "2401.05856.pdf",
-        "2401.05856.pdf"
+        "ALPHABET INC. - DEF 14A_2.pdf",
+        "ALPHABET INC. - DEF 14A_2.pdf",
+        "ALPHABET INC. - DEF 14A.pdf",
+        "ALPHABET INC. - DEF14A.pdf",
+        "ALPHABET INC. - DEF 14A_2.pdf"
       ],
       "scores": [
-        0.6213386474072335,
-        0.6137281407937962,
-        0.6078527929104275,
-        0.5997989904124167,
-        0.5799164573488699
+        0.62740352777427,
+        0.5991251854755644,
+        0.5486721525631331,
+        0.5437444033761273,
+        0.5411522715070974
       ],
-      "execution_time": 6.958236932754517,
-      "category": "definition",
+      "execution_time": 4.533725023269653,
+      "category": "company_overview",
       "query_id": 2,
       "difficulty": "easy"
     },
     {
-      "question": "How does RAG differ from traditional LLMs?",
-      "answer": "The provided context does not directly answer the question \"How does RAG differ from traditional LLMs?\" However, based on the context of Answer 2 and the introduction to RAG models in Chapter 4.1, it can be inferred that RAG differs from traditional LLMs in its ability to incorporate dual-level retrieval and graph-based indexing, which enhance the generation quality of LightRAG.\n\nIn other words, while traditional LLMs may rely on standard metrics such as RMSE and MSE for evaluation, RAG models like LightRAG provide a more comprehensive framework that includes nuanced explanations of how different metrics interrelate and differ from one another. Additionally, RAG's ability to address research questions related to its performance and costs suggests a more advanced and adaptable approach compared to traditional LLMs.\n\nTherefore, the answer to the question can be paraphrased as: \"RAG differs from traditional LLMs in its use of dual-level retrieval and graph-based indexing, which provide enhanced generation quality and adaptability.\"",
+      "question": "Summarize the company's core products and services described in the annual report.",
+      "answer": "The context provided does not include specific details about the company's core products and services. It primarily discusses the reliance on information systems and technology, the complexity of products and services, and the implementation of a new ERP system. To summarize the company's core products and services accurately, additional information from the annual report itself would be required.",
       "method": "convex",
       "alpha": 0.5,
       "relevant_chunks": 5,
       "sources": [
-        "2410.05779.pdf",
-        "2410.05779.pdf",
-        "Self_RAG_2023.pdf",
-        "2312.10997.pdf",
-        "RAG_Survey_2023.pdf"
+        "Document.pdf",
+        "goog-20200331.pdf",
+        "ALPHABET INC. - DEF 14A_2.pdf",
+        "ALPHABET INC. DEF 14A.pdf",
+        "ALPHABET INC. - DEF 14A_3.pdf"
       ],
       "scores": [
-        0.56195894803092,
-        0.5430036129772795,
-        0.539352441504474,
-        0.539352441504474,
-        0.539352441504474
+        0.5977248285560451,
+        0.5949901726986329,
+        0.5595514292077255,
+        0.5595465499915571,
+        0.559529463101362
       ],
-      "execution_time": 7.830322980880737,
-      "category": "definition",
+      "execution_time": 3.7875189781188965,
+      "category": "company_overview",
       "query_id": 3,
       "difficulty": "medium"
     },
     {
-      "question": "What is the purpose of the retrieval component in RAG?",
-      "answer": "The Retrieval Component's purpose is to fetch relevant documents or information from an external knowledge database, identifying and retrieving the most pertinent data based on the input query.",
+      "question": "How does the company describe its overall business model and value proposition?",
+      "answer": "The company emphasizes the importance of identifying, addressing, and preventing adverse human rights impacts as a key component of its overall business model. This approach not only establishes accountability for human rights across the industry but also assures shareholders that the business is well-positioned to adapt to increasing regulation. By focusing on human rights, the company aims to strengthen its value proposition and enhance its credibility and sustainability in the market.",
       "method": "convex",
       "alpha": 0.5,
       "relevant_chunks": 5,
       "sources": [
-        "Corrective_RAG_2024.pdf",
-        "2410.05779.pdf",
-        "arxiv_1707.07792_2017.pdf",
-        "Self_RAG_2023.pdf",
-        "2312.10997.pdf"
+        "ALPHABET INC. - DEF 14A.pdf",
+        "ALPHABET INC. - DEF 14A.pdf",
+        "ALPHABET INC. - DEF 14A_2.pdf",
+        "ALPHABET INC. - DEF14A.pdf",
+        "ALPHABET INC. - DEF 14A_2.pdf"
       ],
       "scores": [
-        0.6117925266353748,
-        0.5268299368314955,
-        0.5254057985935492,
-        0.511004491489324,
-        0.511004491489324
+        0.5681681023824354,
+        0.5431770417731049,
+        0.5236100171724171,
+        0.5224650035966775,
+        0.520978597007452
       ],
-      "execution_time": 3.6535937786102295,
-      "category": "definition",
+      "execution_time": 5.1842360496521,
+      "category": "company_overview",
       "query_id": 4,
-      "difficulty": "easy"
+      "difficulty": "hard"
     },
     {
-      "question": "Explain the concept of grounding in RAG systems",
-      "answer": "In RAG systems, \"grounding\" refers to the process of retrieving relevant information from external knowledge sources and incorporating it into the generative process to improve the factual accuracy and relevance of generated responses. This is achieved by embedding queries in a vector space and finding the nearest context vectors, which are then used to generate responses that are grounded in factual, domain-specific knowledge.",
+      "question": "What are the company's main geographic markets and regions of operation?",
+      "answer": "The provided context does not contain any information regarding the company's main geographic markets and regions of operation. It focuses solely on the internal control over financial reporting and the associated opinions from audits for specific years. To determine the geographic markets and regions of operation, additional information outside of this context would be needed.",
       "method": "convex",
       "alpha": 0.5,
       "relevant_chunks": 5,
       "sources": [
-        "2410.12837.pdf",
-        "2410.12837.pdf",
-        "2410.05779.pdf",
-        "2401.05856.pdf",
-        "2311.09476.pdf"
+        "goog-20231231.pdf",
+        "goog-20201231.pdf",
+        "goog-20241231.pdf",
+        "goog-20201231.pdf",
+        "goog-20201231.pdf"
       ],
       "scores": [
-        0.6250529435130296,
-        0.5605584252355669,
-        0.5445591981059236,
-        0.471839617442959,
-        0.47041889435648365
+        0.573011800648488,
+        0.5725171737627724,
+        0.5719441477342657,
+        0.5528953972104702,
+        0.5170736540648591
       ],
-      "execution_time": 4.755908966064453,
-      "category": "definition",
+      "execution_time": 3.2484700679779053,
+      "category": "company_overview",
       "query_id": 5,
       "difficulty": "medium"
     },
     {
-      "question": "How does the retrieval mechanism work in RAG systems?",
-      "answer": "The text doesn't explicitly describe how the retrieval mechanism works in RAG (Retrieval-Augmented Generation) systems. However, based on the context of the passage and general knowledge about RAG systems, I can provide a possible answer.\n\nIn RAG systems, the retrieval mechanism typically involves using a retriever model to search for relevant documents or information that are related to the input query or question. The retriever model uses natural language processing (NLP) techniques such as masked language modeling, next sentence prediction, or other similar approaches to identify relevant passages from a large dataset.\n\nOnce relevant passages are retrieved, these passages are passed through a generator model, which generates text based on the retrieved information. The generator model can be an LLM (Large Language Model), such as GPT-4o-mini in this case, which uses self-attention mechanisms and transformer architecture to generate coherent and context-specific responses.\n\nThe retrieval mechanism is often implemented using graph-based indexing or dual-level retrieval, which allows for efficient searching of relevant documents and enables the RAG system to effectively leverage pre-existing knowledge and relationships between different pieces of information.",
+      "question": "What is the company's mission statement and corporate values?",
+      "answer": "The provided context does not include the company's mission statement or corporate values. It focuses on information related to the proxy statement for the Annual Meeting, compensation details, corporate costs, and internal control over financial reporting. To find the company's mission statement and corporate values, you would need to refer to other company documents or resources that specifically address those topics.",
       "method": "convex",
       "alpha": 0.5,
       "relevant_chunks": 5,
       "sources": [
-        "2410.05779.pdf",
-        "2401.05856.pdf",
-        "2410.05779.pdf",
-        "Corrective_RAG_2024.pdf",
-        "2410.12837.pdf"
+        "ALPHABET INC. - DEF 14A.pdf",
+        "goog-20221231.pdf",
+        "goog-20231231.pdf",
+        "ALPHABET INC. DEF 14A.pdf",
+        "goog-20201231.pdf"
       ],
       "scores": [
-        0.5977097550354497,
-        0.5462242380059569,
-        0.4823509729143663,
-        0.4779368919558462,
-        0.4735923599477392
+        0.5891255455839024,
+        0.5707919499768866,
+        0.5426612168809251,
+        0.5421995187500939,
+        0.5420808570314769
       ],
-      "execution_time": 8.166623830795288,
-      "category": "technical",
+      "execution_time": 3.2962911128997803,
+      "category": "company_overview",
       "query_id": 6,
-      "difficulty": "medium"
+      "difficulty": "easy"
     },
     {
-      "question": "What is the role of embeddings in RAG?",
-      "answer": "Unfortunately, the provided context does not mention the specific role of embeddings in RAG (Recurrent Autoencoder for Graphs). The text only discusses various research papers on natural language processing and computational linguistics. \n\nIf you could provide more context or clarify which paper is being referred to, I'd be happy to try and help further.",
+      "question": "How many employees does the company have and how has headcount changed?",
+      "answer": "The context provided does not include specific information about the number of employees the company has or how headcount has changed. It primarily focuses on the company's commitment to updating workplace policies and practices, as well as providing transparency regarding employee concerns and investigations. To obtain information about employee headcount, you would need to refer to other sources or reports that specifically address that data.",
       "method": "convex",
       "alpha": 0.5,
       "relevant_chunks": 5,
       "sources": [
-        "2402.14558.pdf",
-        "2305.14283.pdf",
-        "2403.05530.pdf",
-        "2402.14558.pdf",
-        "arxiv_1805.08159_2018.pdf"
+        "ALPHABET INC. - DEF 14A_3.pdf",
+        "ALPHABET INC. - DEF 14A_3.pdf",
+        "lgoog2020_def14a.pdf",
+        "ALPHABET INC. - DEF14A.pdf",
+        "ALPHABET INC. - DEF 14A_2.pdf"
       ],
       "scores": [
-        0.582827771704439,
-        0.5529207429687577,
-        0.5452612635851914,
-        0.4926255220689377,
-        0.48253874100277716
+        0.6679376953604117,
+        0.5556017216342795,
+        0.5493727433649203,
+        0.4751856966829059,
+        0.4377936026292539
       ],
-      "execution_time": 4.658236980438232,
-      "category": "technical",
+      "execution_time": 3.201223134994507,
+      "category": "company_overview",
       "query_id": 7,
       "difficulty": "medium"
     },
     {
-      "question": "Explain how dense retrieval works in RAG",
-      "answer": "Dense retrieval in RAG (Relevance-based Active Generation) models utilizes self-attention mechanisms to capture contextual relationships within text, which enhances both retrieval accuracy and generation fluency. It leverages dense representations to retrieve relevant documents more effectively compared to traditional sparse methods like TF-IDF.\n\nIn essence, dense retrieval uses a dense embedding model, such as BERT (Bidirectional Encoder Representations from Transformers), to represent the input text in a high-dimensional space. This dense representation captures the nuances of the text and allows for more accurate retrieval of relevant documents.",
+      "question": "What are the company's main facilities and locations?",
+      "answer": "The provided context does not contain any information regarding the company's main facilities and locations. It primarily discusses the company's internal control over financial reporting and the opinions expressed in reports for specific years. To find details about the company's facilities and locations, additional information or context would be needed.",
       "method": "convex",
       "alpha": 0.5,
       "relevant_chunks": 5,
       "sources": [
-        "2410.12837.pdf",
-        "2410.12837.pdf",
-        "Atlas_2022.pdf",
-        "Atlas_2022.pdf",
-        "2410.12837.pdf"
+        "goog-20231231.pdf",
+        "goog-20201231.pdf",
+        "goog-20241231.pdf",
+        "goog-20210331.pdf",
+        "goog-20210930.pdf"
       ],
       "scores": [
-        0.6070707022515726,
-        0.5954003539575302,
-        0.5953741696406408,
-        0.5223842704284226,
-        0.5119138089022965
+        0.5976474987927075,
+        0.5970745795673751,
+        0.5964108517397371,
+        0.5185666758140385,
+        0.5179053789166762
       ],
-      "execution_time": 4.602058172225952,
-      "category": "technical",
+      "execution_time": 3.875417947769165,
+      "category": "company_overview",
       "query_id": 8,
-      "difficulty": "hard"
+      "difficulty": "medium"
     },
     {
-      "question": "What is the difference between sparse and dense retrieval?",
-      "answer": "Based on the context provided, the answer to the question \"What is the difference between sparse and dense retrieval?\" can be inferred as follows:\n\nSparse retrieval models focus on capturing sparse relevance features, which likely implies that they identify a limited number of important features or cues for search. In contrast, dense retrieval models capture more comprehensive and detailed relevance features, indicating that they consider a broader range of relevant information.\n\nAdditionally, the context mentions that sparse retrieval models can be used to provide initial search results, suggesting that they may not capture all the necessary information, whereas dense retrieval models are likely capable of producing more accurate and complete results.",
+      "question": "What is the company's history and how has it evolved over time?",
+      "answer": "The provided context does not contain specific information about the company's history or its evolution over time. It primarily discusses the company's approach to algorithmic transparency, the services it offers, and the policies and reports that provide visibility into how its algorithms operate. For information on the company's history and evolution, additional context or resources would be needed.",
       "method": "convex",
       "alpha": 0.5,
       "relevant_chunks": 5,
       "sources": [
-        "Self_RAG_2023.pdf",
-        "2312.10997.pdf",
-        "RAG_Survey_2023.pdf",
-        "Corrective_RAG_2024.pdf",
-        "Self_RAG_2023.pdf"
+        "ALPHABET INC. - DEF 14A_2.pdf",
+        "ALPHABET INC. - DEF 14A_2.pdf",
+        "ALPHABET INC. - DEF 14A_2.pdf",
+        "goog-20231231.pdf",
+        "goog-20201231.pdf"
       ],
       "scores": [
-        0.6274698430466827,
-        0.6274698430466827,
-        0.6274698430466827,
-        0.5564692217886384,
-        0.5564509390291408
+        0.6135189370073224,
+        0.588065655781889,
+        0.5172705736372119,
+        0.4868138975408086,
+        0.4863097706044214
       ],
-      "execution_time": 5.775097131729126,
-      "category": "technical",
+      "execution_time": 3.6525719165802,
+      "category": "company_overview",
       "query_id": 9,
       "difficulty": "medium"
     },
     {
-      "question": "How does chunking strategy affect RAG performance?",
-      "answer": "Based on the context, it appears that a study is investigating the impact of chunking strategies on RAG (Retrieval-Augmentation Generation) systems. The research question suggests that even simple tasks like chunking documents can have significant effects on the retrieval process.\n\nThe answer to the question \"How does chunking strategy affect RAG performance?\" is likely that different chunking strategies can significantly impact the performance of RAG systems, potentially leading to variations in generation quality and retrieval effectiveness. The study may explore various chunking strategies, their strengths and weaknesses, and how they compare to one another in terms of RAG performance.\n\nThe fact that experts with formal training and experience in specific domains produced complex questions suggests that the impact of chunking on RAG performance may be nuanced and dependent on factors such as domain expertise, question complexity, and retrieval strategy. The study may examine how different chunking strategies handle these complexities and their effects on overall RAG performance.",
+      "question": "What are the company's main brands, products, or service lines?",
+      "answer": "The company's main brands, products, or service lines include:\n\n- Ads\n- Android\n- Chrome\n- Hardware\n- Google Cloud\n- Google Maps\n- Google Play\n- Search\n- YouTube\n\nThese offerings primarily generate revenue through advertising, sales of apps, in-app purchases, digital content products, hardware, and licensing and service fees.",
       "method": "convex",
       "alpha": 0.5,
       "relevant_chunks": 5,
       "sources": [
-        "2410.05779.pdf",
-        "2401.05856.pdf",
-        "2403.05530.pdf",
-        "DPR_2020.pdf",
-        "2410.05779.pdf"
+        "goog-20200630.pdf",
+        "goog-20200930.pdf",
+        "goog-20220630.pdf",
+        "goog-20220331.pdf",
+        "goog-20220930.pdf"
       ],
       "scores": [
-        0.6012758896122989,
-        0.4157776547436802,
-        0.4050508806039514,
-        0.36037926200917325,
-        0.35598883883504967
+        0.563869853961815,
+        0.563869853961815,
+        0.5359994726786138,
+        0.5359994726786138,
+        0.5359994726786138
       ],
-      "execution_time": 6.238891839981079,
-      "category": "technical",
+      "execution_time": 3.158173084259033,
+      "category": "company_overview",
       "query_id": 10,
-      "difficulty": "hard"
-    },
-    {
-      "question": "What is the role of the retriever in RAG architecture?",
-      "answer": "The retriever's role in RAG architecture is to fetch relevant documents from an external corpus, ensuring that the model's output is grounded in accurate information.",
-      "method": "convex",
-      "alpha": 0.5,
-      "relevant_chunks": 5,
-      "sources": [
-        "2305.14283.pdf",
-        "2410.12837.pdf",
-        "2311.09476.pdf",
-        "2401.05856.pdf",
-        "2410.12837.pdf"
-      ],
-      "scores": [
-        0.6008521749047843,
-        0.5386735448239058,
-        0.5008572487962253,
-        0.4995857075308021,
-        0.4356534440826616
-      ],
-      "execution_time": 3.710117816925049,
-      "category": "technical",
-      "query_id": 41,
       "difficulty": "easy"
     },
     {
-      "question": "Explain the concept of semantic search in RAG",
-      "answer": "Based on the context, the concept of semantic search in RAG (Relational Aggregator Graph) refers to a method of routing that leverages the semantic information of a query to narrow down the search scope.\n\nIn this approach, keywords (entities) are extracted from the query and then filtered based on their relevance to metadata within chunks. This filtering process helps to reduce the search space and provide more accurate results.\n\nThe Semantic Router is a specific method for routing that utilizes semantic information to guide the search process. It appears to be a hybrid approach, combining elements of keyword-based filtering with semantic analysis.\n\nIn essence, semantic search in RAG aims to use the meaning and context of the query to identify relevant chunks and retrieve more accurate results, rather than simply relying on keywords or metadata alone.",
+      "question": "What is the company's approach to talent acquisition and retention?",
+      "answer": "The company's approach to talent acquisition and retention focuses on a systemic and holistic strategy aimed at improving workforce representation and fostering an inclusive culture. They emphasize measurable goals and talent development as key components of their strategy, believing that these elements will lead to meaningful and sustainable change. Additionally, the company reports attrition data externally and utilizes this data to inform and enhance their diversity and inclusion efforts, thereby supporting both acquisition and retention of diverse talent.",
       "method": "convex",
       "alpha": 0.5,
       "relevant_chunks": 5,
       "sources": [
-        "arxiv_1906.02329_2019.pdf",
-        "arxiv_1610.09769_2016.pdf",
-        "Self_RAG_2023.pdf",
-        "2312.10997.pdf",
-        "RAG_Survey_2023.pdf"
+        "lgoog2020_def14a.pdf",
+        "ALPHABET INC. - DEF 14A_2.pdf",
+        "ALPHABET INC. - DEF 14A_3.pdf",
+        "ALPHABET INC. - DEF 14A_3.pdf",
+        "goog-20231231.pdf"
       ],
       "scores": [
-        0.5935296856679,
-        0.590867606934031,
-        0.5827732873664888,
-        0.5827732873664888,
-        0.5827732873664888
+        0.6127388054600584,
+        0.5768999431447566,
+        0.541187268501683,
+        0.5049541974275067,
+        0.48970514013060296
       ],
-      "execution_time": 5.54397988319397,
-      "category": "technical",
-      "query_id": 42,
-      "difficulty": "medium"
-    },
-    {
-      "question": "How do attention mechanisms work in RAG systems?",
-      "answer": "According to the provided context, in RAG systems, attention mechanisms, such as Infini-attention, are used to enable natural extension of existing LLMs to infinitely long contexts via continual pre-training and fine-tuning. These mechanisms allow for both masked local attention and long-term linear attention within a single Transformer block, addressing challenges with creating robust RAG systems.\n\nSpecifically, the context mentions:\n\n1. The development of Infini-attention, which builds on the standard attention mechanism to enable the reuse of key, value, and query states in a single Transformer block.\n2. The employment of temporal attention mechanisms for video representation learning, demonstrating their effectiveness in modeling temporal dynamics of video contents.\n3. The utilization of high-level semantic attributes for visual understanding tasks.\n\nWhile it doesn't provide explicit information on how general attention mechanisms work within RAG systems beyond the specific implementation mentioned (Infini-attention), it does highlight the importance and application of such mechanisms in enhancing LLM capabilities and robustness.",
-      "method": "convex",
-      "alpha": 0.5,
-      "relevant_chunks": 5,
-      "sources": [
-        "2404.07143.pdf",
-        "arxiv_1707.06355_2017.pdf",
-        "2401.05856.pdf",
-        "2410.12837.pdf",
-        "2410.12837.pdf"
-      ],
-      "scores": [
-        0.6104217496715012,
-        0.6080342815083875,
-        0.5815867717762029,
-        0.5766626877673927,
-        0.5601509657384376
-      ],
-      "execution_time": 6.537417888641357,
-      "category": "technical",
-      "query_id": 43,
-      "difficulty": "hard"
-    },
-    {
-      "question": "What is the purpose of document encoding in RAG?",
-      "answer": "The purpose of document encoding in RAG (Recurrent Attention Graph) is to create a document aware query encoding matrix that can be used as input to the distributed sub-network, allowing it to learn embeddings of both the query and document text before matching. This document encoding is achieved through an n-graph based representation of each term in the query and document, which helps in capturing complex relationships between terms at different positions in the documents.",
-      "method": "convex",
-      "alpha": 0.5,
-      "relevant_chunks": 5,
-      "sources": [
-        "arxiv_1911.00964_2019.pdf",
-        "arxiv_1610.08136_2016.pdf",
-        "arxiv_1806.03529_2018.pdf",
-        "arxiv_1812.02971_2018.pdf",
-        "arxiv_1911.00964_2019.pdf"
-      ],
-      "scores": [
-        0.636344684974295,
-        0.5392726590625713,
-        0.5017423933665607,
-        0.4905833505577679,
-        0.477030950874734
-      ],
-      "execution_time": 4.9518961906433105,
-      "category": "technical",
-      "query_id": 44,
-      "difficulty": "medium"
-    },
-    {
-      "question": "How does RAG handle out-of-domain queries?",
-      "answer": "Unfortunately, the provided context does not explicitly mention how RAG handles out-of-domain queries. However, based on the general understanding of Retrieval-Augmented Language Models (RAG) and their architecture, it is possible to make an educated inference.\n\nRAG combines retrieval mechanisms with generative language models to enhance the accuracy of outputs. This suggests that when faced with an out-of-domain query, RAG may rely on its retrieval mechanism to search for relevant information in a database or index, rather than relying solely on its generative capabilities. The retrieved information can then be used to generate a response that is more informed and accurate.\n\nHowever, without further information or specific details from the study, it's difficult to provide a definitive answer on how RAG handles out-of-domain queries.",
-      "method": "convex",
-      "alpha": 0.5,
-      "relevant_chunks": 5,
-      "sources": [
-        "2410.05779.pdf",
-        "2410.12837.pdf",
-        "2401.05856.pdf",
-        "arxiv_1911.00964_2019.pdf",
-        "arxiv_1809.05190_2018.pdf"
-      ],
-      "scores": [
-        0.5678502669261422,
-        0.5562986886877839,
-        0.5174149461551172,
-        0.5084070436686097,
-        0.5054622290110432
-      ],
-      "execution_time": 5.531076192855835,
-      "category": "technical",
-      "query_id": 45,
-      "difficulty": "hard"
-    },
-    {
-      "question": "What is Self-RAG and how does it differ from standard RAG?",
-      "answer": "Self-RAG stands for \"Self-RAG\" which refers to a model that uses a web as an additional component to enhance its performance in terms of accuracy and retrieval. In comparison to standard RAG ( Retrieval of Answerable Queries), Self-RAG incorporates the use of a web, indicating it utilizes external information sources beyond the query itself to improve retrieval performance.",
-      "method": "convex",
-      "alpha": 0.5,
-      "relevant_chunks": 5,
-      "sources": [
-        "Corrective_RAG_2024.pdf",
-        "2410.05779.pdf",
-        "arxiv_1901.08079_2019.pdf",
-        "2403.05530.pdf",
-        "arxiv_1901.08079_2019.pdf"
-      ],
-      "scores": [
-        0.5991808628547985,
-        0.5824340769734272,
-        0.5674691158755409,
-        0.5538249994858915,
-        0.5467565078618746
-      ],
-      "execution_time": 4.013997793197632,
-      "category": "approaches",
+      "execution_time": 3.326605796813965,
+      "category": "company_overview",
       "query_id": 11,
-      "difficulty": "hard"
+      "difficulty": "medium"
     },
     {
-      "question": "Explain the concept of Corrective RAG (CRAG)",
-      "answer": "Corrective Retrieval-Augmented Generation (CRAG) is a proposed method that aims to self-correct the results of retriever and improve the utilization of documents for augmenting generation. It is designed to address issues with retrieval, particularly when the retriever returns inaccurate results. CRAG uses a lightweight retrieval evaluator to assess the quality of retrieved documents and trigger different knowledge retrieval actions based on confidence levels. This approach enhances the robustness of generation by correcting errors in retrieval and providing more accurate information for informative generation.",
+      "question": "What is the company's approach to corporate social responsibility and community engagement?",
+      "answer": "The provided context does not contain any specific information regarding the company's approach to corporate social responsibility (CSR) or community engagement. It focuses solely on the company's internal control over financial reporting and related audit opinions. To answer your question, additional information about the company’s CSR initiatives and community engagement strategies would be needed.",
       "method": "convex",
       "alpha": 0.5,
       "relevant_chunks": 5,
       "sources": [
-        "Corrective_RAG_2024.pdf",
-        "Corrective_RAG_2024.pdf",
-        "Self_RAG_2023.pdf",
-        "2312.10997.pdf",
-        "RAG_Survey_2023.pdf"
+        "goog-20231231.pdf",
+        "goog-20201231.pdf",
+        "goog-20241231.pdf",
+        "goog-20241231.pdf",
+        "goog-20231231.pdf"
       ],
       "scores": [
-        0.6180361341329129,
-        0.5795101770706782,
-        0.3868796776479475,
-        0.3868796776479475,
-        0.3868796776479475
+        0.6462700164691789,
+        0.6454983505480054,
+        0.6446043743592578,
+        0.5630632235582868,
+        0.5630632235582868
       ],
-      "execution_time": 5.160250186920166,
-      "category": "approaches",
+      "execution_time": 4.282662868499756,
+      "category": "company_overview",
       "query_id": 12,
-      "difficulty": "hard"
+      "difficulty": "medium"
     },
     {
-      "question": "How does Hybrid RAG combine different retrieval methods?",
-      "answer": "Hybrid RAG combines various retrieval strategies, such as dense and sparse retrieval, to achieve optimal performance for diverse tasks.",
+      "question": "What was the company's total revenue in the most recent fiscal year, and how did it change compared to the previous year?",
+      "answer": "The company's total revenue for the year ended December 31, 2018, was $136,819 million. It experienced a total revenue percentage change of 18% compared to the previous year.",
       "method": "convex",
       "alpha": 0.5,
       "relevant_chunks": 5,
       "sources": [
-        "2410.12837.pdf",
-        "2410.12837.pdf",
-        "2410.12837.pdf",
-        "2410.05779.pdf",
-        "arxiv_1805.08159_2018.pdf"
+        "ALPHABET INC. - DEF 14A_2.pdf",
+        "goog-20201231.pdf",
+        "ALPHABET INC. - DEF 14A_2.pdf",
+        "ALPHABET INC. - DEF 14A_2.pdf",
+        "ALPHABET INC. DEF 14A.pdf"
       ],
       "scores": [
-        0.6259063119496714,
-        0.4127726428698482,
-        0.3739274387276699,
-        0.3706383092943453,
-        0.36971424259653757
+        0.5391811776100197,
+        0.5294044846309531,
+        0.5233922140721868,
+        0.5214714630106028,
+        0.5214714630106028
       ],
-      "execution_time": 3.459594964981079,
-      "category": "approaches",
+      "execution_time": 11.259530782699585,
+      "category": "financials",
       "query_id": 13,
-      "difficulty": "medium"
+      "difficulty": "easy"
     },
     {
-      "question": "What is the advantage of query rewriting in RAG?",
-      "answer": "According to the context, one of the advantages of query rewriting in Retrieval-Augmented Generative (RAG) models is that it improves scores on multiple-choice QA settings, especially when compared to ChatGPT. Specifically, with Vicuna as a reader, the proposed pipeline achieves more gains in four categories compared to ChatGPT.",
+      "question": "What was the company's net income for the most recent quarter?",
+      "answer": "The provided context does not contain any information regarding the company's net income for the most recent quarter. Therefore, I am unable to answer your question based on the given details.",
       "method": "convex",
       "alpha": 0.5,
       "relevant_chunks": 5,
       "sources": [
-        "2305.14283.pdf",
-        "2305.14283.pdf",
-        "2402.14558.pdf",
-        "Self_RAG_2023.pdf",
-        "2312.10997.pdf"
+        "ALPHABET INC. - DEF 14A.pdf",
+        "goog-20231231.pdf",
+        "goog-20201231.pdf",
+        "goog-20241231.pdf",
+        "goog-20200630.pdf"
       ],
       "scores": [
-        0.6198888120961316,
-        0.598527209215082,
-        0.5949465845331381,
-        0.5775324855961488,
-        0.5775324855961488
+        0.6068814477620063,
+        0.4893692514979568,
+        0.48881068842786046,
+        0.48816359222874295,
+        0.47680303907853344
       ],
-      "execution_time": 4.630125045776367,
-      "category": "approaches",
+      "execution_time": 3.109862804412842,
+      "category": "financials",
       "query_id": 14,
-      "difficulty": "medium"
+      "difficulty": "easy"
     },
     {
-      "question": "Explain the re-ranking stage in Advanced RAG",
-      "answer": "Unfortunately, the provided context does not explicitly explain the re-ranking stage in Advanced RAG. However, based on general knowledge of Retrieval-Augmented Generation (RAG) and its variants, I can provide an inference.\n\nIn RAG, the re-ranking stage is a critical component that refines the retrieval results to select the most relevant information for generation. In Advanced RAG, it's likely that the re-ranking stage involves some form of post-retrieval processing, such as:\n\n1. **Ranking and selection**: The retrieved documents are ranked based on their relevance to the query, and the top-ranked documents are selected for further processing.\n2. **Post-processing**: The selected documents may undergo additional processing steps, such as tokenization, entity recognition, or named entity recognition, to extract specific information that can be used for generation.\n3. **Weighted scoring**: A weighted scoring system may be employed to assign scores to the retrieved documents based on their relevance, and these scores are used to inform the generation process.\n\nThe re-ranking stage in Advanced RAG likely aims to improve the quality of the generated output by selecting the most relevant information from the retrieval results. However, without more specific information or context, it's difficult to provide a more detailed explanation.",
+      "question": "How did the company's operating expenses change compared to the previous period?",
+      "answer": "The company's operating expenses increased, primarily due to an increase in stock-based compensation (SBC) expense. However, there was also a reduction in costs driven by a change in the estimated useful lives of servers and certain network equipment, which contributed positively to operating income. Overall, while operating expenses increased, the adjustments in costs helped mitigate some of that impact.",
       "method": "convex",
       "alpha": 0.5,
       "relevant_chunks": 5,
       "sources": [
-        "Self_RAG_2023.pdf",
-        "2312.10997.pdf",
-        "RAG_Survey_2023.pdf",
-        "Self_RAG_2023.pdf",
-        "2312.10997.pdf"
+        "goog-20231231.pdf",
+        "ALPHABET INC. - DEF 14A.pdf",
+        "goog-20230930.pdf",
+        "ALPHABET INC. - DEF14A.pdf",
+        "goog-20230630.pdf"
       ],
       "scores": [
-        0.5943804608214353,
-        0.5943804608214353,
-        0.5943804608214353,
-        0.5174467332033457,
-        0.5174467332033457
+        0.5715594567940424,
+        0.561242720985101,
+        0.5519268186261732,
+        0.5210417785752487,
+        0.45619121679244834
       ],
-      "execution_time": 8.888553142547607,
-      "category": "approaches",
+      "execution_time": 3.9543418884277344,
+      "category": "financials",
       "query_id": 15,
       "difficulty": "medium"
     },
     {
-      "question": "What is iterative RAG and when is it beneficial?",
-      "answer": "Iterative Retrieval is a process in RAG (Relevance-Accuracy Gap) systems where the knowledge base is repeatedly searched based on the initial query and the text generated so far, providing a more comprehensive knowledge. \n\nIt is beneficial as it helps to refine the search and generate more accurate responses by incorporating new information.",
+      "question": "What is the company's cash and cash equivalents balance?",
+      "answer": "The company's cash and cash equivalents balance at the end of the period is $26,622 for one instance and $20,886 for another instance, as indicated in the context provided. Additionally, there is a balance of $19,148 and $19,644 in another instance.",
       "method": "convex",
       "alpha": 0.5,
       "relevant_chunks": 5,
       "sources": [
-        "2403.05530.pdf",
-        "2401.05856.pdf",
-        "Self_RAG_2023.pdf",
-        "2312.10997.pdf",
-        "RAG_Survey_2023.pdf"
+        "goog-20220331.pdf",
+        "goog-20200331.pdf",
+        "goog-20200630.pdf",
+        "goog-20240930.pdf",
+        "goog-20230331.pdf"
       ],
       "scores": [
-        0.5935335418649047,
-        0.5912207502830389,
-        0.5776476272188682,
-        0.5776476272188682,
-        0.5776476272188682
+        0.7328845827070134,
+        0.7231153294067103,
+        0.7184148639267481,
+        0.7134723931644698,
+        0.7127964486990753
       ],
-      "execution_time": 4.340054750442505,
-      "category": "approaches",
-      "query_id": 46,
-      "difficulty": "hard"
-    },
-    {
-      "question": "Explain the concept of fusion in hybrid RAG systems",
-      "answer": "In hybrid RAG systems, \"fusion\" refers to the process of combining the outputs of different models or components to generate more accurate and coherent text. In the context of RAG, fusion involves integrating the knowledge base from external retrieval mechanisms with the generated text produced by the natural language generation (NLG) model.\n\nIn other words, fusion in RAG systems allows the hybrid model to leverage the strengths of both approaches - the retrieval mechanism's ability to provide factual information and the NLG model's creativity and fluency. By combining these two components, the RAG system can generate more accurate and informative text while still maintaining the coherence and naturalness of human language.",
-      "method": "convex",
-      "alpha": 0.5,
-      "relevant_chunks": 5,
-      "sources": [
-        "2401.05856.pdf",
-        "2410.12837.pdf",
-        "2410.12837.pdf",
-        "2401.05856.pdf",
-        "2311.09476.pdf"
-      ],
-      "scores": [
-        0.5782431090240548,
-        0.5676714966838676,
-        0.5217964139217203,
-        0.4817466251500471,
-        0.4798224969844245
-      ],
-      "execution_time": 6.255414724349976,
-      "category": "approaches",
-      "query_id": 47,
-      "difficulty": "medium"
-    },
-    {
-      "question": "What is adaptive retrieval in Self-RAG?",
-      "answer": "In the context of the provided text, \"Adaptive Retrieval\" refers to an adaptive document retrieval strategy used in the Self-RAG (Self-Reinforcing Adaptive Gateway) system. It is a flexible approach that can adapt to different corpus sizes and achieves better performance compared to fixed document count strategies, particularly in terms of regret.",
-      "method": "convex",
-      "alpha": 0.5,
-      "relevant_chunks": 5,
-      "sources": [
-        "arxiv_1808.06528_2018.pdf",
-        "arxiv_1808.06528_2018.pdf",
-        "2403.14403.pdf",
-        "arxiv_1808.06528_2018.pdf",
-        "2403.14403.pdf"
-      ],
-      "scores": [
-        0.6400472653253659,
-        0.6002695221106102,
-        0.5669177890361013,
-        0.5519903140440603,
-        0.5482038721775897
-      ],
-      "execution_time": 4.354259014129639,
-      "category": "approaches",
-      "query_id": 48,
-      "difficulty": "hard"
-    },
-    {
-      "question": "How does context enrichment improve RAG performance?",
-      "answer": "Unfortunately, the provided text does not mention \"context enrichment\" specifically. However, based on the context of the research questions (RQ1-RQ4) related to the LightRAG framework in systems biology, I can make an educated guess.\n\nSince the question is not directly answered in the provided text, I'll provide a general answer that might be relevant to RAG (Retrieval-Augmentation-Generation) performance:\n\nContext enrichment can potentially improve RAG performance by providing additional information about the context or background of the input data. This can help the model better understand the relationships between entities and generate more accurate and relevant outputs.\n\nIn the context of LightRAG, context enrichment might refer to using external knowledge graphs, ontologies, or other sources to augment the retrieval and augmentation steps, thereby improving the overall performance of the system. However, without further information, it's difficult to provide a specific answer about how context enrichment improves RAG performance in this particular framework.",
-      "method": "convex",
-      "alpha": 0.5,
-      "relevant_chunks": 5,
-      "sources": [
-        "2410.05779.pdf",
-        "0912.2822.pdf",
-        "arxiv_1805.08159_2018.pdf",
-        "2410.05779.pdf",
-        "0912.2822.pdf"
-      ],
-      "scores": [
-        0.6069354619184442,
-        0.37575513386549314,
-        0.3626200854616503,
-        0.31498475358868666,
-        0.31004592297695627
-      ],
-      "execution_time": 7.523274898529053,
-      "category": "approaches",
-      "query_id": 49,
-      "difficulty": "medium"
-    },
-    {
-      "question": "What is the role of web search in Corrective RAG?",
-      "answer": "According to the context, Nicholas Ray and Elia Kazan have in common that they are both American authors (with Nicholas Ray being an author and director), and their original names were Raymond Nicholas Kienzle.\n\nThe role of web search in Corrective RAG is to introduce a new source of knowledge for correction when the retrieved knowledge from other sources is judged as inaccurate.",
-      "method": "convex",
-      "alpha": 0.5,
-      "relevant_chunks": 5,
-      "sources": [
-        "Corrective_RAG_2024.pdf",
-        "2305.14283.pdf",
-        "2403.05530.pdf",
-        "arxiv_1610.09769_2016.pdf",
-        "Corrective_RAG_2024.pdf"
-      ],
-      "scores": [
-        0.5858845007193723,
-        0.5780855697372506,
-        0.44011156402782947,
-        0.419512220653049,
-        0.4129301550091815
-      ],
-      "execution_time": 4.935941934585571,
-      "category": "approaches",
-      "query_id": 50,
-      "difficulty": "medium"
-    },
-    {
-      "question": "What metrics should be used to evaluate RAG systems?",
-      "answer": "U and ROUGE metrics are commonly used to evaluate answer quality and are also applicable to evaluate Retrieval Quality in RAG systems.",
-      "method": "convex",
-      "alpha": 0.5,
-      "relevant_chunks": 5,
-      "sources": [
-        "Self_RAG_2023.pdf",
-        "2312.10997.pdf",
-        "RAG_Survey_2023.pdf",
-        "arxiv_1304.7157_2013.pdf",
-        "arxiv_1304.7157_2013.pdf"
-      ],
-      "scores": [
-        0.6133958730896363,
-        0.6133958730896363,
-        0.6133958730896363,
-        0.5499828476869283,
-        0.5260222935092486
-      ],
-      "execution_time": 3.8707849979400635,
-      "category": "evaluation",
+      "execution_time": 3.7481601238250732,
+      "category": "financials",
       "query_id": 16,
-      "difficulty": "medium"
+      "difficulty": "easy"
     },
     {
-      "question": "How do you measure faithfulness in RAG outputs?",
-      "answer": "No",
+      "question": "How much did the company spend on research and development (R&D) in the most recent period?",
+      "answer": "The provided context does not specify the amount the company spent on research and development (R&D) in the most recent period. To obtain this information, you would need to refer to the company's financial statements or reports for that specific period.",
       "method": "convex",
       "alpha": 0.5,
       "relevant_chunks": 5,
       "sources": [
-        "2311.09476.pdf",
-        "2403.05530.pdf",
-        "2311.09476.pdf",
-        "2402.14558.pdf",
-        "arxiv_1901.08079_2019.pdf"
+        "ALPHABET INC. - DEF14A.pdf",
+        "Document.pdf",
+        "goog-20220930.pdf",
+        "goog-20240630.pdf",
+        "goog-20231231.pdf"
       ],
       "scores": [
-        0.5947909826179865,
-        0.5485156710779162,
-        0.4710702140687375,
-        0.45645661796878145,
-        0.4443575041208997
+        0.5806159468878246,
+        0.5291098787719831,
+        0.528880017544014,
+        0.520657812645817,
+        0.5132245666567148
       ],
-      "execution_time": 3.555873155593872,
-      "category": "evaluation",
+      "execution_time": 4.506001710891724,
+      "category": "financials",
       "query_id": 17,
-      "difficulty": "hard"
-    },
-    {
-      "question": "What is RAGAS and how is it used for RAG evaluation?",
-      "answer": "RAGAS stands for an automated evaluation framework, but the specific details of what it entails are not provided in the context. However, based on the information given, it appears that RAGAS is a system used to evaluate RAG (Question Answer Generation) systems. \n\nIt seems like the RAGAS framework was replaced or surpassed by ARES, which is a more accurate and powerful framework for evaluating RAG systems.",
-      "method": "convex",
-      "alpha": 0.5,
-      "relevant_chunks": 5,
-      "sources": [
-        "2311.09476.pdf",
-        "2311.09476.pdf",
-        "arxiv_1901.08079_2019.pdf",
-        "arxiv_1901.08079_2019.pdf",
-        "2311.09476.pdf"
-      ],
-      "scores": [
-        0.5944672740087237,
-        0.5702461294973329,
-        0.5503930231703223,
-        0.5455113176709536,
-        0.5323158034366747
-      ],
-      "execution_time": 5.285604953765869,
-      "category": "evaluation",
-      "query_id": 18,
-      "difficulty": "hard"
-    },
-    {
-      "question": "Explain the difference between retrieval and generation metrics",
-      "answer": "Based on the context provided, the main difference between retrieval and generation metrics appears to be that retrieval metrics focus on evaluating the effectiveness of a system in providing relevant information or context (i.e., \"context sourced by the retriever component\"), whereas generation metrics evaluate the quality of generated output.\n\nIn other words, retrieval metrics assess how well a system retrieves relevant information or context, such as Hit Rate, MRR, and NDCG. These metrics are typically used to measure the performance of the retriever component.\n\nOn the other hand, generation metrics (such as Generation Quality) focus on evaluating the quality of the generated output itself, rather than just retrieving context. This suggests that generation metrics are concerned with how well the system can produce coherent and relevant text or responses.\n\nIt's worth noting that the two objectives (\"Retrieval Quality\" and \"Generation Quality\") seem to be combined in this passage, which may indicate that the evaluation framework is trying to assess both aspects of the RAG retrieval module.",
-      "method": "convex",
-      "alpha": 0.5,
-      "relevant_chunks": 5,
-      "sources": [
-        "arxiv_1304.7157_2013.pdf",
-        "Self_RAG_2023.pdf",
-        "2312.10997.pdf",
-        "RAG_Survey_2023.pdf",
-        "Corrective_RAG_2024.pdf"
-      ],
-      "scores": [
-        0.6096623203731609,
-        0.5612806578245262,
-        0.5612806578245262,
-        0.5612806578245262,
-        0.5286954455917714
-      ],
-      "execution_time": 7.497338056564331,
-      "category": "evaluation",
-      "query_id": 19,
       "difficulty": "medium"
     },
     {
-      "question": "How can we detect hallucinations in RAG systems?",
-      "answer": "The context does not explicitly mention a method for detecting hallucinations in RAG systems. However, based on the general knowledge of AI and language models, it is possible to provide some insights.\n\nDetecting hallucinations in RAG systems is crucial to improve their accuracy and reliability, especially when dealing with critical applications. Here are a few potential strategies that could be explored:\n\n1. **Monitoring retrieval performance**: Analyzing the retrieval process can help identify patterns or anomalies that may indicate hallucination. This could involve evaluating the relevance of retrieved documents, the quality of the generated text, and the consistency of the output.\n2. **Evaluating user feedback**: Collecting feedback from users who interact with RAG systems can provide valuable insights into the accuracy and reliability of the model. By analyzing user responses, developers may be able to identify instances where hallucinations occur.\n3. **Implementing post-processing checks**: Additional processing steps, such as fact-checking or consistency checks, could be applied to generated text to detect potential hallucinations.\n4. **Using external validation sources**: RAG systems can benefit from integrating external validation sources, such as knowledge graphs or databases, to verify the accuracy of generated text.\n\nWhile these strategies may provide some insights into detecting hallucinations in RAG systems, further",
+      "question": "What is the company's total assets and how has it changed over time?",
+      "answer": "The provided context does not contain specific information about the company's total assets or details about how they have changed over time. To answer the question regarding total assets and their changes, additional financial data or reports would be needed.",
       "method": "convex",
       "alpha": 0.5,
       "relevant_chunks": 5,
       "sources": [
-        "2410.12837.pdf",
-        "2410.12837.pdf",
-        "Corrective_RAG_2024.pdf",
-        "2410.12837.pdf",
-        "RAG_Lewis_2020.pdf"
+        "ALPHABET INC. - DEF 14A_2.pdf",
+        "ALPHABET INC. - DEF 14A_2.pdf",
+        "Document.pdf",
+        "ALPHABET INC. - DEF 14A_2.pdf",
+        "Document.pdf"
       ],
       "scores": [
-        0.5808788726242146,
-        0.4926295122393034,
-        0.48457466437059526,
-        0.4639365539081568,
-        0.4616123669631269
+        0.6224926245163809,
+        0.5952134907548751,
+        0.5568870754232388,
+        0.5234220838283931,
+        0.5130497014794075
       ],
-      "execution_time": 8.719059228897095,
-      "category": "evaluation",
+      "execution_time": 3.9507269859313965,
+      "category": "financials",
+      "query_id": 18,
+      "difficulty": "medium"
+    },
+    {
+      "question": "How does the company's operating margin compare to previous periods?",
+      "answer": "The provided context does not include any specific information or data regarding the company's operating margin or its comparison to previous periods. Therefore, I am unable to answer the question about how the company's operating margin compares to previous periods based on the given information.",
+      "method": "convex",
+      "alpha": 0.5,
+      "relevant_chunks": 5,
+      "sources": [
+        "goog-20231231.pdf",
+        "goog-20201231.pdf",
+        "goog-20241231.pdf",
+        "ALPHABET INC. - DEF 14A.pdf",
+        "goog-20250331.pdf"
+      ],
+      "scores": [
+        0.5542257824645689,
+        0.5538029905182459,
+        0.5533131853805096,
+        0.5451775405803767,
+        0.5310398989110496
+      ],
+      "execution_time": 2.839095115661621,
+      "category": "financials",
+      "query_id": 19,
+      "difficulty": "hard"
+    },
+    {
+      "question": "What is the company's free cash flow and how is it calculated?",
+      "answer": "The provided context does not contain any information about the company's free cash flow or its calculation. Free cash flow typically refers to the cash generated by a company's operations after accounting for capital expenditures. It is calculated using the formula:\n\n**Free Cash Flow = Operating Cash Flow - Capital Expenditures**\n\nTo obtain the operating cash flow, one would look at the cash generated from the company's regular business operations, while capital expenditures would include the funds used to acquire or upgrade physical assets like property, plant, and equipment. If you need specific figures or additional details about a company's free cash flow, please provide more context or specify the company in question.",
+      "method": "convex",
+      "alpha": 0.5,
+      "relevant_chunks": 5,
+      "sources": [
+        "ALPHABET INC. - DEF 14A_2.pdf",
+        "ALPHABET INC. - DEF 14A_2.pdf",
+        "ALPHABET INC. - DEF 14A_2.pdf",
+        "ALPHABET INC. DEF 14A.pdf",
+        "goog-20230930.pdf"
+      ],
+      "scores": [
+        0.6397999252956388,
+        0.6005314149067544,
+        0.5334138518330143,
+        0.43543399632380075,
+        0.42626722104480846
+      ],
+      "execution_time": 4.78087592124939,
+      "category": "financials",
       "query_id": 20,
       "difficulty": "hard"
     },
     {
-      "question": "What is the Lost in the Middle problem in RAG?",
-      "answer": "In RAG (RACE-based Answer Generation) models, the \"Lost in the middle\" problem refers to how LLMs (Large Language Models) tend to focus only on the beginning and end of long texts, while forgetting the middle portion.",
+      "question": "What are the company's capital expenditures and investment plans?",
+      "answer": "The company's capital expenditures, as presented in the Consolidated Statements of Cash Flows, show figures of $6,732, $5,406, $17,496, and $16,802 across different periods. The total capital expenditures reported on the cash flow statements are adjusted to account for reconciling items, which are primarily related to timing differences in payments and other miscellaneous differences. \n\nFor the most recent periods, the total capital expenditures are $13,184, $25,139, and $23,548, indicating a substantial investment trend. The company also invests in segments labeled \"Other Bets,\" with capital expenditures of 65, 96, 124, and 200 across different periods, which suggests a focus on innovation or new ventures beyond its core business.\n\nOverall, the capital expenditures reflect a significant commitment to both maintaining existing operations and pursuing new opportunities, as indicated by the varying total expenditures and the investment in \"Other Bets.\"",
       "method": "convex",
       "alpha": 0.5,
       "relevant_chunks": 5,
       "sources": [
-        "RAG_Lewis_2020.pdf",
-        "RAG_Lewis_2020.pdf",
-        "Self_RAG_2023.pdf",
-        "2312.10997.pdf",
-        "RAG_Survey_2023.pdf"
+        "goog-20200930.pdf",
+        "goog-20200630.pdf",
+        "Document.pdf",
+        "goog-20200331.pdf",
+        "goog-20200331.pdf"
       ],
       "scores": [
-        0.6498016297903899,
-        0.4448092615785331,
-        0.41523231294029816,
-        0.41523231294029816,
-        0.41523231294029816
+        0.6412905173039735,
+        0.5967164777308032,
+        0.5871262743008699,
+        0.5486008510349001,
+        0.5433063556439232
       ],
-      "execution_time": 4.242502927780151,
-      "category": "challenges",
+      "execution_time": 6.233029127120972,
+      "category": "financials",
       "query_id": 21,
-      "difficulty": "hard"
-    },
-    {
-      "question": "How does context length affect RAG performance?",
-      "answer": "Unfortunately, the provided text doesn't explicitly mention how context length affects RAG (Retrieval-Augmented Generation) performance. However, based on the information given in the prompt, we can infer that the length penalty factor α may have an impact on the model's performance.\n\nAccording to Table 6, which is mentioned in the prompt, different values of the length penalty factor α affect the model's performance significantly. A small value of α tends to generate long phrases, while a big value tends to generate short ones. This suggests that the context length may be indirectly affected by the length penalty factor, as longer or shorter phrases may require more or less context information to generate accurate responses.\n\nHowever, without further information about how RAG models are specifically designed to handle varying context lengths, it's difficult to provide a definitive answer.",
-      "method": "convex",
-      "alpha": 0.5,
-      "relevant_chunks": 5,
-      "sources": [
-        "2410.05779.pdf",
-        "arxiv_1905.07689_2019.pdf",
-        "2403.05530.pdf",
-        "DPR_2020.pdf",
-        "2410.05779.pdf"
-      ],
-      "scores": [
-        0.6134462080317435,
-        0.4692231544651625,
-        0.4125771506115271,
-        0.36701340809793875,
-        0.3618704234239865
-      ],
-      "execution_time": 6.774917125701904,
-      "category": "challenges",
-      "query_id": 22,
       "difficulty": "medium"
     },
     {
-      "question": "What are the common failure modes of RAG systems?",
-      "answer": "The common failure modes of RAG (Relevance-based Active Learning) systems include:\n\n1. Missing Content: This occurs when asking a question that cannot be answered from the available documents, and the system may provide an incorrect response.\n2. Missed the Top Ranked Documents: This happens when the answer to a question is related to the content but doesn't have answers among the top-ranked documents.\n\nThese are two of the identified failure points in RAG systems, as presented in the case studies.",
+      "question": "What is the company's debt structure and outstanding debt obligations?",
+      "answer": "The company's debt structure consists of both short-term and long-term debt. \n\n1. **Short-Term Debt**: \n   - The company has a debt financing program that allows for the issuance of up to $10.0 billion in commercial paper, which is used for general corporate purposes. \n   - As of December 31, 2023, and June 30, 2024, the company had no commercial paper outstanding. \n   - The short-term debt balance also includes the current portion of certain long-term debt.\n\n2. **Long-Term Debt**:\n   - The total outstanding long-term debt is summarized, although specific figures, coupon rates, and effective interest rates are not provided in the context. \n   - The mention of \"2014-2020 Notes Issuances\" suggests that there are long-term debt instruments that were issued during those years.\n\nOverall, while the company has a significant capacity for short-term debt through commercial paper, it has not utilized this capacity recently. The long-term debt obligations are present but not detailed in the provided context.",
       "method": "convex",
       "alpha": 0.5,
       "relevant_chunks": 5,
       "sources": [
-        "2401.05856.pdf",
-        "2401.05856.pdf",
-        "2401.05856.pdf",
-        "2401.05856.pdf",
-        "2306.05685.pdf"
+        "goog-20240630.pdf",
+        "goog-20220331.pdf",
+        "goog-20220930.pdf",
+        "goog-20211231.pdf",
+        "goog-20230331.pdf"
       ],
       "scores": [
-        0.6466844481226529,
-        0.5067061854751838,
-        0.4699478813761502,
-        0.4419861494512564,
-        0.38195175684308896
+        0.6848815887719291,
+        0.6176578103157236,
+        0.6134389912434488,
+        0.6100797426737145,
+        0.6081506763109926
       ],
-      "execution_time": 5.529944181442261,
-      "category": "challenges",
+      "execution_time": 7.069561958312988,
+      "category": "financials",
+      "query_id": 22,
+      "difficulty": "hard"
+    },
+    {
+      "question": "How does the company manage working capital and cash conversion cycles?",
+      "answer": "The provided context does not include specific information about how the company manages working capital and cash conversion cycles. It primarily discusses the company's contributions to media literacy, its commitment to supporting initiatives like the European Media and Information Fund, and mentions a tool for managing water resources. For information on working capital and cash conversion cycles, further details or additional context would be required.",
+      "method": "convex",
+      "alpha": 0.5,
+      "relevant_chunks": 5,
+      "sources": [
+        "ALPHABET INC. DEF 14A.pdf",
+        "ALPHABET INC. - DEF 14A_3.pdf",
+        "ALPHABET INC. DEF 14A.pdf",
+        "goog-20200630.pdf",
+        "goog-20200930.pdf"
+      ],
+      "scores": [
+        0.5,
+        0.48167179179789626,
+        0.4705228772760052,
+        0.46464651632003523,
+        0.46464651632003523
+      ],
+      "execution_time": 3.419550895690918,
+      "category": "financials",
       "query_id": 23,
       "difficulty": "hard"
     },
     {
-      "question": "How can RAG systems handle multi-hop reasoning?",
-      "answer": "The answer to the question \"How can RAG systems handle multi-hop reasoning?\" is not explicitly stated in the provided context. However, based on the information presented, it can be inferred that RAG systems may benefit from using models that are well-suited for handling complex multi-task learning, such as T5.\n\nT5's ability to handle complex multi-task learning makes it a popular choice for RAG systems that need to tackle a diverse range of knowledge-intensive tasks. While the context does not explicitly discuss how RAG systems can handle multi-hop reasoning, it suggests that using models like T5 or BART could potentially help address this challenge.\n\nAdditionally, the context mentions the use of LLMs (Large Language Models) for generating questions from multiple documents, which could be related to multi-hop reasoning. However, without further information, it is difficult to provide a more specific answer on how RAG systems can handle multi-hop reasoning.",
+      "question": "What are the company's share repurchase programs and dividend policies?",
+      "answer": "The provided context does not include specific information about the company's share repurchase programs or dividend policies. It mainly discusses the company's execution of a 20-for-one stock split and the retroactive adjustments made to share amounts in financial statements. For details regarding share repurchase programs and dividend policies, you would need to refer to other sections or notes within the financial statements or management discussion that are not included in the provided context.",
       "method": "convex",
       "alpha": 0.5,
       "relevant_chunks": 5,
       "sources": [
-        "2410.12837.pdf",
-        "2401.05856.pdf",
-        "2410.12837.pdf",
-        "2410.12837.pdf",
-        "2401.05856.pdf"
+        "goog-20221231.pdf",
+        "goog-20221231.pdf",
+        "goog-20220630.pdf",
+        "goog-20220930.pdf",
+        "goog-20220630.pdf"
       ],
       "scores": [
-        0.5715987428899018,
-        0.4896263185568925,
-        0.47204237956468753,
-        0.4630738902217476,
-        0.4498232798879665
+        0.6284965047873766,
+        0.6057615615641321,
+        0.5828953750110065,
+        0.5689677525180419,
+        0.5632815489082553
       ],
-      "execution_time": 7.058166027069092,
-      "category": "challenges",
+      "execution_time": 3.4976389408111572,
+      "category": "financials",
       "query_id": 24,
+      "difficulty": "medium"
+    },
+    {
+      "question": "What are the company's pension and post-retirement benefit obligations?",
+      "answer": "Based on the provided context, the company does not maintain any executive retirement programs, such as executive pension plans or supplemental executive retirement plans. This indicates that the company does not have any pension or post-retirement benefit obligations specifically for its named executive officers. Additionally, since the company does not differentiate benefits between named executive officers and other employees, it suggests that there are no specific pension or post-retirement benefit obligations for any employees as well.",
+      "method": "convex",
+      "alpha": 0.5,
+      "relevant_chunks": 5,
+      "sources": [
+        "ALPHABET INC. - DEF14A.pdf",
+        "ALPHABET INC. DEF 14A.pdf",
+        "ALPHABET INC. - DEF 14A_2.pdf",
+        "ALPHABET INC. - DEF 14A_3.pdf",
+        "lgoog2020_def14a.pdf"
+      ],
+      "scores": [
+        0.5867060622622362,
+        0.5744934706342889,
+        0.5533132420029869,
+        0.5424107058698594,
+        0.5359296029065483
+      ],
+      "execution_time": 4.458425045013428,
+      "category": "financials",
+      "query_id": 25,
       "difficulty": "hard"
     },
     {
-      "question": "What are the scalability challenges in RAG systems?",
-      "answer": "Scalability is one of the primary challenges for RAG models, which refers to the challenge of making RAG systems operate efficiently with large amounts of data and computational resources.",
+      "question": "What are the company's off-balance sheet arrangements and commitments?",
+      "answer": "As of December 31, 2020, and December 31, 2019, the company did not have any off-balance sheet arrangements, as defined in Item 303(a)(4)(ii) of Regulation S-K. Therefore, there are no off-balance sheet arrangements or commitments that could materially affect the company's financial condition, revenues, expenses, results of operations, liquidity, capital expenditures, or capital resources.",
       "method": "convex",
       "alpha": 0.5,
       "relevant_chunks": 5,
       "sources": [
-        "2410.12837.pdf",
-        "2401.05856.pdf",
-        "2401.05856.pdf",
-        "2410.12837.pdf",
-        "arxiv_1610.09769_2016.pdf"
+        "goog-20201231.pdf",
+        "Document.pdf",
+        "Document.pdf",
+        "goog-20201231.pdf",
+        "goog-20231231.pdf"
       ],
       "scores": [
-        0.6946083439333693,
-        0.47755235091215376,
-        0.4515430866660582,
-        0.4141094169322232,
-        0.3806698423631968
+        0.7252620034781561,
+        0.7251607037448269,
+        0.40112181431913585,
+        0.3836997593010142,
+        0.308922772567402
       ],
-      "execution_time": 3.8069210052490234,
-      "category": "challenges",
-      "query_id": 25,
-      "difficulty": "medium"
-    },
-    {
-      "question": "What is the optimal chunk size for RAG systems?",
-      "answer": "Unfortunately, the provided context does not mention an optimal chunk size for RAG systems. The text mentions \"evaluating the ideal chunk size for a rag system\" but does not provide a specific answer or solution. It appears to be highlighting the need for further research and experimentation on this topic.\n\nHowever, I can suggest that based on the references provided, such as [89] Langchain's documentation, which discusses a method for recursively splitting text by character, it is possible to infer that there is no one-size-fits-all optimal chunk size, but rather a range of suitable sizes depending on the specific use case and application.",
-      "method": "convex",
-      "alpha": 0.5,
-      "relevant_chunks": 5,
-      "sources": [
-        "2401.05856.pdf",
-        "Self_RAG_2023.pdf",
-        "2312.10997.pdf",
-        "RAG_Survey_2023.pdf",
-        "Self_RAG_2023.pdf"
-      ],
-      "scores": [
-        0.6295015309270793,
-        0.5031701819947488,
-        0.5031701819947488,
-        0.5031701819947488,
-        0.43812767223373056
-      ],
-      "execution_time": 6.1254189014434814,
-      "category": "implementation",
+      "execution_time": 4.096061944961548,
+      "category": "financials",
       "query_id": 26,
-      "difficulty": "medium"
+      "difficulty": "hard"
     },
     {
-      "question": "How should chunk overlap be configured in RAG?",
-      "answer": "Unfortunately, the context provided does not mention how to configure chunk overlap in RAG. It only discusses different models and their characteristics, but does not provide any information on chunk overlap configuration.",
+      "question": "What are the principal risk factors identified in the company's risk factors section?",
+      "answer": "The principal risk factors identified in the company's risk factors section relate to significant risks associated with user data collection, privacy, and security. Specifically, six of the risk factors address these risks, with two providing detailed descriptions of the practices regarding the collection, use, governance, disclosure, and security of personal information or other data privacy concerns.",
       "method": "convex",
       "alpha": 0.5,
       "relevant_chunks": 5,
       "sources": [
-        "2401.05856.pdf",
-        "Self_RAG_2023.pdf",
-        "2312.10997.pdf",
-        "RAG_Survey_2023.pdf",
-        "Self_RAG_2023.pdf"
+        "ALPHABET INC. DEF 14A.pdf",
+        "goog-20220630.pdf",
+        "goog-20210630.pdf",
+        "goog-20241231.pdf",
+        "goog-20200930.pdf"
       ],
       "scores": [
-        0.6551619824293213,
-        0.4647332189445374,
-        0.4647332189445374,
-        0.4647332189445374,
-        0.4604161366553021
+        0.6419412982642718,
+        0.5370886043971705,
+        0.5330485938776321,
+        0.5313597872200051,
+        0.5175340596445286
       ],
-      "execution_time": 4.291344165802002,
-      "category": "implementation",
+      "execution_time": 2.968924045562744,
+      "category": "risks",
       "query_id": 27,
-      "difficulty": "medium"
+      "difficulty": "easy"
     },
     {
-      "question": "What embedding models are best for RAG retrieval?",
-      "answer": "The context doesn't explicitly state that there is a specific type of embedding model that is best for RAG retrieval. However, it does mention that \"open source sentence embedding models performed as well as closed source alternatives on small text.\" This suggests that open-source sentence embedding models may be suitable for RAG retrieval, but it's not a definitive answer.",
+      "question": "What regulatory risks does the company face in its operations?",
+      "answer": "The company faces several regulatory risks in its operations, including:\n\n1. **Increased Regulatory Scrutiny**: The company is experiencing heightened scrutiny from regulatory bodies, which can lead to more rigorous oversight and enforcement actions.\n\n2. **Changes in Regulatory Conditions**: Variations in laws and policies that govern the technology industry can create uncertainty and potentially impact business operations negatively.\n\n3. **Competition Law Matters**: There is a specific focus on compliance with competition laws, which could result in legal proceedings or challenges that may affect the company's market position.\n\n4. **Potential Liabilities**: Concerns that the company may not be adequately disclosing material risks associated with regulatory compliance in public filings could lead to increased legal and financial liabilities.\n\nOverall, these risks can damage the company's reputation, increase costs, and adversely affect its business operations.",
       "method": "convex",
       "alpha": 0.5,
       "relevant_chunks": 5,
       "sources": [
-        "2401.05856.pdf",
-        "2401.05856.pdf",
-        "Self_RAG_2023.pdf",
-        "2312.10997.pdf",
-        "RAG_Survey_2023.pdf"
+        "goog-20211231.pdf",
+        "ALPHABET INC. - DEF 14A_3.pdf",
+        "ALPHABET INC. DEF 14A.pdf",
+        "goog-20201231.pdf",
+        "ALPHABET INC. - DEF 14A_2.pdf"
       ],
       "scores": [
-        0.5818825983530187,
-        0.5438668829886296,
-        0.4940224200881886,
-        0.4940224200881886,
-        0.4940224200881886
+        0.6330834421716605,
+        0.5569450766698945,
+        0.5263373568161441,
+        0.5194546001181392,
+        0.5015760902358171
       ],
-      "execution_time": 4.845411062240601,
-      "category": "implementation",
+      "execution_time": 5.472035884857178,
+      "category": "risks",
       "query_id": 28,
       "difficulty": "medium"
     },
     {
-      "question": "How do you choose the number of retrieved documents (top-k)?",
-      "answer": "According to Figure 3 (left), the optimal number of retrieved documents is 10. This means that when choosing the number of retrieved documents for this task, you should aim to retrieve 10 options as answers.",
+      "question": "How does the company describe competitive risks and market competition?",
+      "answer": "The provided context does not explicitly describe competitive risks and market competition. It mainly discusses sections of a Compensation Discussion and Analysis (CD&A) document, focusing on compensation practices, performance criteria, and other compensation-related details. To answer your question accurately, more specific information or context regarding how the company addresses competitive risks and market competition would be needed.",
       "method": "convex",
       "alpha": 0.5,
       "relevant_chunks": 5,
       "sources": [
-        "arxiv_1808.06528_2018.pdf",
-        "RAG_Lewis_2020.pdf",
-        "2403.05530.pdf",
-        "2403.05530.pdf",
-        "2403.05530.pdf"
+        "ALPHABET INC. - DEF 14A.pdf",
+        "ALPHABET INC. - DEF 14A_2.pdf",
+        "ALPHABET INC. - DEF14A.pdf",
+        "ALPHABET INC. - DEF 14A_2.pdf",
+        "ALPHABET INC. DEF 14A.pdf"
       ],
       "scores": [
-        0.6040832602573415,
-        0.6038942623558212,
-        0.5905818915496817,
-        0.5635163798594932,
-        0.5301430405793435
+        0.6052570884658713,
+        0.5834314385709486,
+        0.5821981446204604,
+        0.5805190322426541,
+        0.5511919082182746
       ],
-      "execution_time": 4.263304948806763,
-      "category": "implementation",
+      "execution_time": 3.2754271030426025,
+      "category": "risks",
       "query_id": 29,
       "difficulty": "medium"
     },
     {
-      "question": "What vector databases are commonly used for RAG?",
-      "answer": "Based on the context provided, it is not explicitly mentioned which vector databases are commonly used for RAG (Reasoning About Graphs). However, I can provide some general information that might be relevant to your question.\n\nRAG (Reasoning About Graphs) is a reasoning engine that can work with various graph formats, including RDF triples. Vector databases like Annoy [not mentioned in the provided context], Faiss [not mentioned] and others are not specifically associated with RAG.\n\nHowever, there is another graph database system called Mulgara [147] which is mentioned as an example of a triple store, but it's not clear if it has vector databases or not.",
+      "question": "What cybersecurity risks and data privacy concerns are mentioned in the report?",
+      "answer": "The report mentions several cybersecurity risks and data privacy concerns, including:\n\n1. **Tracking and Logging of Incidents**: Incident management teams track and log privacy and security incidents across the organization, vendors, and third-party service providers, indicating a focus on monitoring and addressing potential breaches.\n\n2. **Significant Incident Review**: There is a process for reviewing significant incidents by a cross-functional working group to determine if further escalation is necessary, suggesting that certain incidents may pose greater risks or require more immediate attention.\n\n3. **Cybersecurity Auditing**: The presence of a dedicated cybersecurity auditing team that independently tests cybersecurity controls highlights a proactive approach to identifying vulnerabilities and ensuring compliance with security standards.\n\n4. **Potential Future Risks**: While the report states that the business strategy, operations, and financial condition have not been materially affected by past cybersecurity threats, it acknowledges the uncertainty regarding future risks and the possibility of material impacts from such incidents.\n\nOverall, the report reflects a comprehensive approach to managing cybersecurity risks while also recognizing the ongoing potential for data privacy concerns.",
       "method": "convex",
       "alpha": 0.5,
       "relevant_chunks": 5,
       "sources": [
-        "0912.2822.pdf",
-        "2410.12837.pdf",
-        "arxiv_1901.08079_2019.pdf",
-        "0912.2307.pdf",
-        "2401.05856.pdf"
+        "goog-20231231.pdf",
+        "goog-20241231.pdf",
+        "goog-20231231.pdf",
+        "goog-20241231.pdf",
+        "ALPHABET INC. - DEF 14A.pdf"
       ],
       "scores": [
-        0.5688168886161186,
-        0.557857619123319,
-        0.553602274997374,
-        0.47906550332567654,
-        0.47254340189409955
+        0.6645425130849836,
+        0.614164421818953,
+        0.5910414322783466,
+        0.5480102733409151,
+        0.5356997476154467
       ],
-      "execution_time": 6.203983783721924,
-      "category": "implementation",
+      "execution_time": 6.870963096618652,
+      "category": "risks",
       "query_id": 30,
-      "difficulty": "easy"
+      "difficulty": "hard"
     },
     {
-      "question": "Compare BM25 and dense vector retrieval methods",
-      "answer": "BM25 is more suitable for simpler, keyword-based queries, while Dense Passage Retrieval (DPR) tends to outperform it in semantically complex tasks.",
+      "question": "What are the company's foreign currency and international risks?",
+      "answer": "The company's foreign currency and international risks include:\n\n1. **Fluctuations in Foreign Currency Exchange Rates**: The company is exposed to risks associated with changes in foreign currency exchange rates against the U.S. dollar. Since it transacts business globally and earns revenues in multiple currencies, any fluctuations in these exchange rates can significantly impact its financial performance.\n\n2. **International Revenues**: A significant portion of the company's revenues comes from international transactions, which are denominated in various foreign currencies. This makes the company vulnerable to the volatility of currency exchange rates, affecting both revenue and expenses.\n\n3. **Costs and Expenses in Foreign Currencies**: The company's costs and expenses are also denominated in foreign currencies, which adds another layer of risk. Changes in exchange rates can lead to increased costs when converted to U.S. dollars.\n\n4. **Impact on Financial Comparisons**: The effects of currency exchange rates are crucial for understanding period-to-period financial comparisons. The company uses non-GAAP constant currency revenues to provide a clearer picture of its financial performance, excluding the effects of currency fluctuations. \n\nOverall, these risks highlight the company's exposure to international market dynamics and the importance of managing currency exchange rate movements to safeguard its financial health.",
       "method": "convex",
       "alpha": 0.5,
       "relevant_chunks": 5,
       "sources": [
-        "2410.12837.pdf",
-        "2410.12837.pdf",
-        "RAG_Lewis_2020.pdf",
-        "2410.12837.pdf",
-        "DPR_2020.pdf"
+        "goog-20221231.pdf",
+        "goog-20201231.pdf",
+        "goog-20230930.pdf",
+        "goog-20250930.pdf",
+        "goog-20250331.pdf"
       ],
       "scores": [
-        0.6625206025551377,
-        0.6509929351662436,
-        0.6473261650101961,
-        0.4736695926719581,
-        0.45186717696664486
+        0.6248277616638125,
+        0.6143235448551998,
+        0.613500373313004,
+        0.6106895035389719,
+        0.6106895035389719
       ],
-      "execution_time": 3.9357528686523438,
-      "category": "comparison",
+      "execution_time": 6.6689300537109375,
+      "category": "risks",
       "query_id": 31,
-      "difficulty": "medium"
+      "difficulty": "hard"
     },
     {
-      "question": "When should you use Naive RAG vs Advanced RAG?",
-      "answer": "Unfortunately, the provided context does not explicitly state when to use Naive RAG versus Advanced RAG. However, based on the information given, it can be inferred that:\n\n* Naive RAG is an early methodology that gained prominence shortly after something (likely the introduction of RAG method).\n* Advanced RAG was developed as a response to the specific shortcomings in Naive RAG.\n* Modular RAG seems to be the latest stage, which suggests that Advanced RAG might have been developed before it.\n\nWithout more context or information on the specific requirements and constraints of a project, it's difficult to provide a definitive answer on when to use Naive RAG versus Advanced RAG.",
+      "question": "How does the company address supply chain and operational disruption risks?",
+      "answer": "The provided context does not specify how the company addresses supply chain and operational disruption risks. It primarily outlines the challenges and risks related to supply chain constraints, manufacturing, and the reliance on external companies for production and distribution. To answer the question accurately, additional information on the company's strategies or measures for mitigating these risks would be needed.",
       "method": "convex",
       "alpha": 0.5,
       "relevant_chunks": 5,
       "sources": [
-        "Self_RAG_2023.pdf",
-        "2312.10997.pdf",
-        "RAG_Survey_2023.pdf",
-        "Self_RAG_2023.pdf",
-        "2312.10997.pdf"
+        "goog-20200930.pdf",
+        "Document.pdf",
+        "goog-20211231.pdf",
+        "goog-20241231.pdf",
+        "goog-20200331.pdf"
       ],
       "scores": [
-        0.6779273620919287,
-        0.6779273620919287,
-        0.6779273620919287,
-        0.5157110805072804,
-        0.5157110805072804
+        0.6203887402317756,
+        0.600679570764667,
+        0.5885613559040592,
+        0.5874946560667919,
+        0.5578153959567906
       ],
-      "execution_time": 6.01963472366333,
-      "category": "comparison",
+      "execution_time": 3.4720358848571777,
+      "category": "risks",
       "query_id": 32,
       "difficulty": "medium"
     },
     {
-      "question": "Compare Self-RAG with Corrective RAG approaches",
-      "answer": "According to the table, Self-RAG outperforms Self-CRAG in most cases. The comparison results between CRAG and Self-RAG are as follows:\n\n- CRAG: 29.0 and 24.9\n- Self-RAG: 54.9 and 57.9",
+      "question": "What are the company's liquidity and capital resources risks?",
+      "answer": "The company's liquidity and capital resources risks may include:\n\n1. **Impairment of Non-Marketable Securities**: The company periodically reviews non-marketable equity securities for impairment, which can affect their fair value. A decline in the value of these securities can impact liquidity if the company needs to liquidate them.\n\n2. **Qualitative and Quantitative Factors**: The company's fair value assessments are influenced by various factors, including the financial and liquidity position of the companies in which it has invested. If these companies face financial difficulties, it could adversely affect the company's investments and liquidity.\n\n3. **Access to Capital Resources**: The company's ability to access capital resources can be limited by market conditions, regulatory changes, or the financial health of its investments. This could hinder its ability to raise funds when needed.\n\n4. **Changes in Tax Laws and Regulations**: Shifts in tax laws, regulations, or accounting principles can impact the valuation of deferred tax assets and liabilities, potentially affecting the company’s financial position and liquidity.\n\n5. **Market Conditions**: The overall market environment can impact the value of cash equivalents and marketable securities, affecting the company's liquidity position.\n\n6. **Discretionary Items**: Certain discrete items, which may not be predictable, could impact liquidity and",
       "method": "convex",
       "alpha": 0.5,
       "relevant_chunks": 5,
       "sources": [
-        "Corrective_RAG_2024.pdf",
-        "Corrective_RAG_2024.pdf",
-        "Corrective_RAG_2024.pdf",
-        "2403.14403.pdf",
-        "Corrective_RAG_2024.pdf"
+        "goog-20201231.pdf",
+        "goog-20200331.pdf",
+        "goog-20200630.pdf",
+        "goog-20201231.pdf",
+        "goog-20201231.pdf"
       ],
       "scores": [
-        0.6440793616820191,
-        0.5941076891581929,
-        0.574275565302079,
-        0.5337492945241408,
-        0.5181774820060939
+        0.5894991551449147,
+        0.5690841951716431,
+        0.5690808546627751,
+        0.5371569310450353,
+        0.5246913419615669
       ],
-      "execution_time": 4.581613779067993,
-      "category": "comparison",
+      "execution_time": 6.051035165786743,
+      "category": "risks",
       "query_id": 33,
-      "difficulty": "hard"
-    },
-    {
-      "question": "What are the trade-offs between hybrid and pure dense retrieval?",
-      "answer": "The question is asking about the trade-offs between hybrid and pure dense retrieval in the context of Retrieval-Augmented Generation (RAG). However, the provided text does not explicitly mention \"hybrid\" and \"pure dense retrieval\". \n\nBased on the provided context, it can be inferred that \"dense retrieval\" might refer to a specific type of retrieval mechanism used in RAG. Unfortunately, the exact definition or comparison between hybrid and pure dense retrieval is not clear from the given text.\n\nHowever, considering the context of RAG and its components, it can be assumed that the trade-offs between different types of retrieval mechanisms (e.g., hybrid vs. pure dense) might relate to factors such as precision, recall, and efficiency. A more specific question or additional context would be needed to provide a definitive answer to this question.",
-      "method": "convex",
-      "alpha": 0.5,
-      "relevant_chunks": 5,
-      "sources": [
-        "2410.12837.pdf",
-        "2410.05779.pdf",
-        "2405.04517.pdf",
-        "2405.04517.pdf",
-        "2402.14558.pdf"
-      ],
-      "scores": [
-        0.5711069255599113,
-        0.5039680567618692,
-        0.47260346974052847,
-        0.47072711576579745,
-        0.4189222245647335
-      ],
-      "execution_time": 6.605754137039185,
-      "category": "comparison",
-      "query_id": 34,
       "difficulty": "medium"
     },
     {
-      "question": "Compare single-stage vs multi-stage retrieval in RAG",
-      "answer": "Unfortunately, the provided context does not mention single-stage vs multi-stage retrieval in RAG. The text only discusses augmentation of LLMs, comparison with Fine-tuning (FT) and prompt engineering, and mentions fine-tuning as an example of collaborative fine-tuning. There is no information about RAG's retrieval methods, let alone comparing single-stage to multi-stage retrieval.",
+      "question": "How does the company manage interest rate and credit risks?",
+      "answer": "The company manages interest rate risk by investing in both fixed rate and floating rate interest-earning securities while being aware that fixed rate securities may lose value if interest rates rise and floating rate securities may generate less income if interest rates fall. Additionally, the company limits its credit exposure to any one issuer, which helps mitigate credit risk. This approach allows the company to diversify its investments and reduce the impact of fluctuations in interest rates and credit defaults.",
       "method": "convex",
       "alpha": 0.5,
       "relevant_chunks": 5,
       "sources": [
-        "Self_RAG_2023.pdf",
-        "2312.10997.pdf",
-        "RAG_Survey_2023.pdf",
-        "2306.05685.pdf",
-        "2401.05856.pdf"
+        "goog-20200331.pdf",
+        "goog-20200630.pdf",
+        "goog-20201231.pdf",
+        "goog-20200930.pdf",
+        "goog-20241231.pdf"
       ],
       "scores": [
-        0.5878919145044913,
-        0.5878919145044913,
-        0.5878919145044913,
-        0.5175351757231277,
-        0.5026554657442124
+        0.6585310893899545,
+        0.6585310893899545,
+        0.6480404574675154,
+        0.6372321637798728,
+        0.6325380507837498
       ],
-      "execution_time": 4.580151796340942,
-      "category": "comparison",
-      "query_id": 35,
+      "execution_time": 4.750179052352905,
+      "category": "risks",
+      "query_id": 34,
       "difficulty": "hard"
     },
     {
-      "question": "How can we improve retrieval quality in RAG?",
-      "answer": "According to the context, you can improve retrieval quality in RAG by using a Corrective Retrieval Augmented Generation (CRAG) method. This involves designing a lightweight retrieval evaluator that assesses the overall quality of retrieved documents for a query and returns a confidence degree based on which different knowledge retrieval actions can be triggered.",
+      "question": "What are the company's environmental, social, and governance (ESG) risks?",
+      "answer": "The context provided does not explicitly detail the specific environmental, social, and governance (ESG) risks that the company faces. However, it does suggest that integrating ESG factors into business strategy can help reduce reputational, legal, and regulatory risks. Generally, companies might encounter ESG risks such as:\n\n1. **Environmental Risks**: These could include climate change impacts, resource scarcity, pollution, and regulatory changes related to environmental protection.\n\n2. **Social Risks**: This can involve labor practices, community relations, consumer protection issues, and human rights concerns.\n\n3. **Governance Risks**: These might include issues related to corporate governance practices, executive compensation, board diversity, and compliance with laws and regulations.\n\nThe recommendation against the stockholder proposal on reporting sustainability metrics indicates that the company may not prioritize transparency on these ESG risks at this time.",
       "method": "convex",
       "alpha": 0.5,
       "relevant_chunks": 5,
       "sources": [
-        "Corrective_RAG_2024.pdf",
-        "Corrective_RAG_2024.pdf",
-        "Self_RAG_2023.pdf",
-        "2312.10997.pdf",
-        "RAG_Survey_2023.pdf"
+        "lgoog2020_def14a.pdf",
+        "ALPHABET INC. - DEF 14A_3.pdf",
+        "ALPHABET INC. - DEF 14A.pdf",
+        "goog-20221231.pdf",
+        "ALPHABET INC. - DEF 14A_3.pdf"
       ],
       "scores": [
-        0.6533543019155446,
-        0.5377020201121361,
-        0.4787779044493936,
-        0.4787779044493936,
-        0.4787779044493936
+        0.6605363186050781,
+        0.6384341734090747,
+        0.6201146714786827,
+        0.6168704603290186,
+        0.6142318313805216
       ],
-      "execution_time": 4.5939342975616455,
-      "category": "optimization",
+      "execution_time": 7.7118079662323,
+      "category": "risks",
+      "query_id": 35,
+      "difficulty": "medium"
+    },
+    {
+      "question": "How does the company address climate change and environmental risks?",
+      "answer": "The company addresses climate change and environmental risks through several key strategies:\n\n1. **Robust Reporting**: The company has established a comprehensive environmental and climate change reporting framework. It conducts a thorough climate risk assessment and publishes information on this assessment, along with its climate strategies and performance, in its annual CDP (Carbon Disclosure Project) and Environmental Reports.\n\n2. **Board Oversight**: Oversight of environmental sustainability is managed by the company's Audit and Compliance Committee. This committee reviews and discusses with management the company's risk exposures, including those related to environmental sustainability.\n\n3. **Integration into Operations**: The company strives to integrate sustainability into all aspects of its operations, recognizing that addressing climate change requires a holistic approach.\n\n4. **Acknowledgment of Collective Responsibility**: The company acknowledges that while it can take significant steps to mitigate its own environmental impact, addressing climate change is a broader challenge that requires collective action across the industry and beyond.\n\nOverall, the company emphasizes its commitment to environmental sustainability while highlighting its existing efforts in climate risk assessment and reporting.",
+      "method": "convex",
+      "alpha": 0.5,
+      "relevant_chunks": 5,
+      "sources": [
+        "ALPHABET INC. DEF 14A.pdf",
+        "ALPHABET INC. - DEF 14A_2.pdf",
+        "ALPHABET INC. DEF 14A.pdf",
+        "ALPHABET INC. - DEF 14A_2.pdf",
+        "ALPHABET INC. DEF 14A.pdf"
+      ],
+      "scores": [
+        0.6494120241412124,
+        0.562869071956787,
+        0.5356313436980464,
+        0.5302081797092583,
+        0.5170606328954197
+      ],
+      "execution_time": 6.724207162857056,
+      "category": "risks",
       "query_id": 36,
       "difficulty": "medium"
     },
     {
-      "question": "What techniques reduce hallucinations in RAG systems?",
-      "answer": "The provided context does not specifically mention techniques that directly reduce hallucinations in RAG systems. However, it mentions improving the alignment between retrieved passages and the generation model's output, which can help minimize inconsistencies or factual hallucinations in final responses.\n\nThat being said, based on general knowledge about Retrieval-Augmented Generation (RAG) models, some techniques that may help reduce hallucinations include:\n\n1. Coherence techniques: Improving coherence by incorporating contextual information and relevant passages from the retrieval results.\n2. Passage ranking: Using more effective passage ranking algorithms to select the most relevant and accurate passages for generation.\n3. Model updates: Regularly updating the model with new data and fine-tuning it on specific tasks or domains to reduce hallucinations.\n\nThese techniques are not explicitly mentioned in the context, but they are general strategies that can help improve RAG systems' performance and reduce hallucinations.",
+      "question": "What are the company's intellectual property and patent risks?",
+      "answer": "The company's intellectual property and patent risks include:\n\n1. **Infringement Lawsuits**: The company faces lawsuits alleging that its products, services, and technologies infringe on the patent, copyright, trade secret, and trademark rights of others. This indicates a risk of legal actions that could result in financial liabilities or restrictions on business operations.\n\n2. **Defense Costs**: The company must prepare for potential significant legal expenses associated with defending against these claims, which could impact financial resources.\n\n3. **Regulatory Scrutiny**: The company is subject to ongoing cooperation with federal and state regulators, as well as international regulators. This scrutiny may lead to further investigations or legal challenges that could pose risks to its operations.\n\n4. **Potential for Settlements or Licensing Fees**: If the company is found to be infringing on others' intellectual property, it may be compelled to pay settlements or negotiate licensing agreements, which could affect profitability.\n\n5. **Impact on Innovation**: Ongoing litigation or the threat of lawsuits may hinder the company's ability to innovate or develop new products, as they may be cautious about infringing on existing intellectual property rights.\n\nOverall, the risks involve legal challenges, potential financial liabilities, regulatory impacts, and constraints on innovation.",
       "method": "convex",
       "alpha": 0.5,
       "relevant_chunks": 5,
       "sources": [
-        "2410.12837.pdf",
-        "2410.12837.pdf",
-        "Self_RAG_2023.pdf",
-        "2312.10997.pdf",
-        "RAG_Survey_2023.pdf"
+        "goog-20220630.pdf",
+        "goog-20230630.pdf",
+        "goog-20230331.pdf",
+        "goog-20240930.pdf",
+        "goog-20200331.pdf"
       ],
       "scores": [
-        0.5998235508212169,
-        0.5173754666203176,
-        0.42252549510459886,
-        0.42252549510459886,
-        0.42252549510459886
+        0.6247470322565133,
+        0.6246969024254083,
+        0.6246969024254083,
+        0.6143614685641162,
+        0.6063576172833339
       ],
-      "execution_time": 6.978092193603516,
-      "category": "optimization",
+      "execution_time": 7.269451856613159,
+      "category": "risks",
       "query_id": 37,
       "difficulty": "hard"
     },
     {
-      "question": "How can we optimize RAG for low-latency applications?",
-      "answer": "Unfortunately, the provided context does not mention anything about optimizing RAG for low-latency applications. The text focuses on optimizing the model parameters of research in LLMs community, introducing main downstream tasks and datasets, and evaluating RAG systems.\n\nHowever, I can provide some general guidance on how to optimize RAG models for low-latency applications. Optimizing RAG models for low-latency applications might involve:\n\n1. **Model pruning**: Remove unnecessary weights or connections from the model to reduce computational complexity.\n2. **Quantization**: Represent model weights and activations using fewer bits (e.g., from 32-bit floating-point numbers to 8-bit integers) to reduce memory usage and computation time.\n3. **Knowledge distillation**: Train a smaller, faster model (the \"student\") to mimic the behavior of a larger, more complex model (the \"teacher\").\n4. **Low-precision arithmetic**: Use lower precision arithmetic operations (e.g., 16-bit floating-point numbers) to reduce computational overhead.\n5. **Efficient computing architectures**: Leverage specialized computing hardware, such as tensor processing units (TPUs), graphics processing units (GPUs), or field-programmable gate arrays (FPGAs).\n\nThese optimizations can help reduce the latency and computational requirements of",
+      "question": "What are the company's data privacy and regulatory compliance risks?",
+      "answer": "The company's data privacy and regulatory compliance risks include:\n\n1. **Adverse Regulatory Findings**: Non-compliance with regulations can lead to investigations, penalties, and reputational damage.\n\n2. **Data Privacy Breaches**: Inadequate protection of user data may result in unauthorized access, leading to breaches that compromise user trust and violate privacy laws.\n\n3. **Insufficient Regulatory Readiness**: A lack of preparedness for regulatory changes or audits can create vulnerabilities in the compliance framework.\n\n4. **Inadequate Oversight**: If the Audit and Compliance Committee does not effectively oversee data privacy and security matters, the company may miss critical issues or fail to implement necessary safeguards.\n\n5. **Failure to Communicate Policies**: Lack of transparency in reporting policies and performance may lead to misunderstandings or non-compliance among employees and stakeholders.\n\n6. **Evolving Regulations**: Keeping up with changing laws and regulations in data privacy and compliance can be challenging, leading to potential gaps in compliance.\n\n7. **Risk of Misuse of Platforms**: If users do not adhere to platform guidelines, it may expose the company to legal risks or data security issues.\n\nThese risks highlight the importance of a robust compliance operation and ongoing assessment of regulatory readiness.",
       "method": "convex",
       "alpha": 0.5,
       "relevant_chunks": 5,
       "sources": [
-        "arxiv_1906.02329_2019.pdf",
-        "Self_RAG_2023.pdf",
-        "2312.10997.pdf",
-        "RAG_Survey_2023.pdf",
-        "2405.04517.pdf"
+        "ALPHABET INC. - DEF 14A.pdf",
+        "ALPHABET INC. DEF 14A.pdf",
+        "ALPHABET INC. - DEF 14A.pdf",
+        "goog-20221231.pdf",
+        "ALPHABET INC. - DEF 14A_2.pdf"
       ],
       "scores": [
-        0.5934452304310063,
-        0.5593272113429734,
-        0.5593272113429734,
-        0.5593272113429734,
-        0.5386603603128686
+        0.6321905002889645,
+        0.607253824278884,
+        0.6051581644100945,
+        0.5823770503247432,
+        0.5505210985779728
       ],
-      "execution_time": 8.662442207336426,
-      "category": "optimization",
+      "execution_time": 9.288799047470093,
+      "category": "risks",
       "query_id": 38,
-      "difficulty": "hard"
-    },
-    {
-      "question": "What is context compression in RAG and why is it useful?",
-      "answer": "Based on the provided context, here is an answer to the question \"What is context compression in RAG and why is it useful?\":\n\nContext compression in RAG (Rationalizing Analogies in Graph) refers to the process of reducing the size of contextual information while maintaining its essential meaning. It is particularly relevant for training prompt compression techniques.\n\nThe importance of efficient compression objective for training such techniques has been highlighted by studies, including those involving AutoCompressors and Infini-Transformer models.\n\nIn the context of RAG, context compression can be useful as it enables more efficient processing and retrieval of contextual information. By reducing the size of this information while preserving its critical aspects, context compression can improve the overall performance and efficiency of RAG-based systems.",
-      "method": "convex",
-      "alpha": 0.5,
-      "relevant_chunks": 5,
-      "sources": [
-        "2404.07143.pdf",
-        "arxiv_1901.08079_2019.pdf",
-        "arxiv_1707.07792_2017.pdf",
-        "arxiv_1809.05190_2018.pdf",
-        "arxiv_1812.02971_2018.pdf"
-      ],
-      "scores": [
-        0.5886945282192338,
-        0.5878919185068417,
-        0.5359232783120027,
-        0.513554654720143,
-        0.4864080282241181
-      ],
-      "execution_time": 6.392506122589111,
-      "category": "optimization",
-      "query_id": 39,
-      "difficulty": "hard"
-    },
-    {
-      "question": "How does prompt engineering affect RAG quality?",
-      "answer": "Based on the context, it appears that prompt engineering plays a crucial role in affecting the quality (RAG) of Response Artifact Generation (RAG) systems. The evaluation dimensions mentioned, such as Comprehensiveness, Diversity, and Empowerment, suggest that well-designed prompts can lead to higher-quality responses.\n\nThe fact that the authors conducted an empirical experiment using LLMs specifically for this purpose implies that prompt engineering is a key factor in influencing RAG quality. By analyzing the impact of different prompts on response quality, the authors aim to provide insights and knowledge on how to realise robust systems with LLMs.\n\nIn summary, prompt engineering has a significant effect on RAG quality, and by optimizing prompts, it's possible to improve the comprehensiveness, diversity, and empowerment of model responses.",
-      "method": "convex",
-      "alpha": 0.5,
-      "relevant_chunks": 5,
-      "sources": [
-        "2401.05856.pdf",
-        "2410.05779.pdf",
-        "2403.05530.pdf",
-        "2401.05856.pdf",
-        "2401.05856.pdf"
-      ],
-      "scores": [
-        0.6134778922648634,
-        0.5768156420060494,
-        0.5712426455675396,
-        0.5566773445425355,
-        0.5104447343987492
-      ],
-      "execution_time": 6.5667901039123535,
-      "category": "optimization",
-      "query_id": 40,
       "difficulty": "medium"
+    },
+    {
+      "question": "What are the company's key person risks and dependency on key personnel?",
+      "answer": "The company's key person risks and dependency on key personnel include the following:\n\n1. **Loss of Key Personnel**: The company acknowledges that the loss of key personnel could seriously harm its business. This indicates a high dependency on specific individuals who play crucial roles in the organization.\n\n2. **At-Will Employment**: All executive officers and key employees are at-will employees, meaning they can leave the company at any time without notice. This increases the risk of turnover and the potential disruption to the business if they choose to leave.\n\n3. **No Key-Person Life Insurance Policies**: The company does not maintain key-person life insurance policies, which means that if a key individual were to pass away, the company would not have financial protection to mitigate the impact of their loss.\n\n4. **Reliance on Highly Skilled Personnel**: The company relies heavily on highly skilled personnel for its operations and growth. If it is unable to retain, motivate, or hire qualified individuals, this could hinder its ability to grow effectively.\n\n5. **Impact on Culture and Strategic Direction**: Key personnel play vital roles in maintaining the company's culture and setting its strategic direction. A disruption in this area could affect employee morale and the overall strategic goals of the organization.\n\nIn summary, the company faces significant",
+      "method": "convex",
+      "alpha": 0.5,
+      "relevant_chunks": 5,
+      "sources": [
+        "ALPHABET INC. - DEF 14A.pdf",
+        "Document.pdf",
+        "goog-20200331.pdf",
+        "goog-20200930.pdf",
+        "goog-20200630.pdf"
+      ],
+      "scores": [
+        0.6126638189169613,
+        0.6010831593044483,
+        0.597770591761908,
+        0.597770591761908,
+        0.5960645787060737
+      ],
+      "execution_time": 8.313979148864746,
+      "category": "risks",
+      "query_id": 39,
+      "difficulty": "medium"
+    },
+    {
+      "question": "Who are the members of the company's board of directors?",
+      "answer": "The context provided does not specify the names or identities of the members of the company's board of directors. It only states that individuals who are members of the Board of Directors are eligible to receive Incentive Awards according to the Deferred Compensation Plan. To determine the specific members, you would need to refer to additional company documents or resources that list the current board members.",
+      "method": "convex",
+      "alpha": 0.5,
+      "relevant_chunks": 5,
+      "sources": [
+        "ALPHABET INC. - DEF 14A_2.pdf",
+        "lgoog2020_def14a.pdf",
+        "ALPHABET INC. DEF 14A.pdf",
+        "ALPHABET INC. - DEF 14A_3.pdf",
+        "ALPHABET INC. - DEF 14A_2.pdf"
+      ],
+      "scores": [
+        0.6322653177191127,
+        0.6235566470751086,
+        0.5948783142925426,
+        0.5855149388235762,
+        0.5792981689262089
+      ],
+      "execution_time": 5.27654504776001,
+      "category": "governance",
+      "query_id": 40,
+      "difficulty": "easy"
+    },
+    {
+      "question": "What is the executive compensation structure for the CEO and other named executive officers?",
+      "answer": "The executive compensation structure for the CEO and other named executive officers includes a combination of Global Stock Units (GSUs) and Performance Stock Units (PSUs) as part of an annual equity award structure. This current structure marks a transition from the previous biennial GSU awards, which vested over a four-year period, to annual awards that are divided into GSUs and PSUs, each of which vests over a three-year period. \n\nIn terms of total compensation, the median compensated employee had an annual total compensation of $331,894 for 2024, while the CEO's annual total compensation was $10,725,043, resulting in a pay ratio of 32 to 1 between the CEO and the median employee. Additionally, there is a proposal for an advisory, non-binding stockholder vote regarding the compensation awarded to the named executive officers.",
+      "method": "convex",
+      "alpha": 0.5,
+      "relevant_chunks": 5,
+      "sources": [
+        "ALPHABET INC. - DEF 14A.pdf",
+        "ALPHABET INC. - DEF14A.pdf",
+        "ALPHABET INC. - DEF 14A_2.pdf",
+        "lgoog2020_def14a.pdf",
+        "ALPHABET INC. - DEF 14A_2.pdf"
+      ],
+      "scores": [
+        0.6587069759492193,
+        0.6434244678898642,
+        0.6009267637757643,
+        0.5799667160588649,
+        0.5753375852929701
+      ],
+      "execution_time": 5.826921224594116,
+      "category": "governance",
+      "query_id": 41,
+      "difficulty": "hard"
+    },
+    {
+      "question": "What are the company's corporate governance policies and practices?",
+      "answer": "The company's corporate governance policies and practices focus on reviewing and ensuring the appropriateness of their corporate political activities, including lobbying, trade association involvement, and political engagement. This oversight is conducted by the Nominating and Corporate Governance Committee and senior management, who analyze and consider the implications of these activities to serve the interests of stockholders.\n\nKey components of their corporate governance policies include:\n\n1. **Review of Political Policies**: The Governance Committee reviews corporate political policies and activities to ensure they align with the interests of the company and its stockholders.\n\n2. **Oversight of Expenditures**: The committee oversees expenditures made with corporate funds, including contributions to political action committees (NetPAC) and direct contributions to state and local political campaigns.\n\n3. **Ongoing Analysis**: There is a commitment to ongoing consideration and analysis of corporate political activities, ensuring they are in line with best practices and serve shareholder interests.\n\n4. **Board Oversight**: The Board of Directors oversees these activities to ensure appropriate policies and practices are in place.\n\nOverall, the company's governance practices aim to balance corporate political engagement with transparency and accountability to stockholders.",
+      "method": "convex",
+      "alpha": 0.5,
+      "relevant_chunks": 5,
+      "sources": [
+        "ALPHABET INC. DEF 14A.pdf",
+        "ALPHABET INC. - DEF 14A.pdf",
+        "ALPHABET INC. - DEF 14A.pdf",
+        "ALPHABET INC. - DEF 14A_2.pdf",
+        "ALPHABET INC. - DEF 14A_2.pdf"
+      ],
+      "scores": [
+        0.6344076697065766,
+        0.6180991023273162,
+        0.6015967898529202,
+        0.5972025875626586,
+        0.5819556818225587
+      ],
+      "execution_time": 10.477906227111816,
+      "category": "governance",
+      "query_id": 42,
+      "difficulty": "medium"
+    },
+    {
+      "question": "How does the company handle related party transactions and conflicts of interest?",
+      "answer": "The company handles related party transactions and conflicts of interest through a written Related Party Transactions Policy. This policy stipulates that the company will only enter into or ratify a transaction with a related party if the Board of Directors, acting through the Audit and Compliance Committee, determines that the transaction is in the best interests of Alphabet and its stockholders. This process helps ensure that any potential conflicts of interest are properly evaluated and addressed before proceeding with such transactions.",
+      "method": "convex",
+      "alpha": 0.5,
+      "relevant_chunks": 5,
+      "sources": [
+        "ALPHABET INC. - DEF 14A_3.pdf",
+        "ALPHABET INC. - DEF14A.pdf",
+        "ALPHABET INC. DEF 14A.pdf",
+        "ALPHABET INC. - DEF 14A_2.pdf",
+        "ALPHABET INC. - DEF 14A.pdf"
+      ],
+      "scores": [
+        0.6771927274575822,
+        0.659036245139274,
+        0.6546725537944845,
+        0.6493966563333345,
+        0.6286140840515952
+      ],
+      "execution_time": 5.582643270492554,
+      "category": "governance",
+      "query_id": 43,
+      "difficulty": "hard"
+    },
+    {
+      "question": "What is the company's policy on stock ownership by directors and executives?",
+      "answer": "The company has established robust stock ownership guidelines to align the interests of its senior executives with those of its stockholders. These guidelines are publicly outlined in Alphabet’s Corporate Governance Guidelines and are periodically reviewed and updated by the Compensation Committee. The policy includes minimum stock ownership requirements for named executive officers, which are designed to ensure they have a vested interest in the company’s performance. Additionally, there is a director overboarding policy, and the company maintains channels for stockholder feedback to further align interests.",
+      "method": "convex",
+      "alpha": 0.5,
+      "relevant_chunks": 5,
+      "sources": [
+        "ALPHABET INC. DEF 14A.pdf",
+        "ALPHABET INC. - DEF 14A_2.pdf",
+        "ALPHABET INC. - DEF 14A_3.pdf",
+        "lgoog2020_def14a.pdf",
+        "ALPHABET INC. - DEF14A.pdf"
+      ],
+      "scores": [
+        0.6055982928434184,
+        0.5525307773901302,
+        0.5448865939804212,
+        0.5305976397591994,
+        0.5044378392520765
+      ],
+      "execution_time": 6.2015838623046875,
+      "category": "governance",
+      "query_id": 44,
+      "difficulty": "medium"
+    },
+    {
+      "question": "What is the composition and structure of the board committees?",
+      "answer": "The context provided does not specify the exact composition and structure of the board committees. However, it emphasizes the importance of having a Board of Directors with a mix of directors who possess complementary qualifications, expertise, and experience. It also mentions that the governance structure is designed to ensure independent oversight and accountability of management, indicating that the board committees likely play a role in overseeing specific areas related to governance and management accountability. More detailed information about the specific committees and their compositions would typically be found in a company's corporate governance documents or annual reports.",
+      "method": "convex",
+      "alpha": 0.5,
+      "relevant_chunks": 5,
+      "sources": [
+        "ALPHABET INC. - DEF 14A_3.pdf",
+        "ALPHABET INC. - DEF14A.pdf",
+        "ALPHABET INC. - DEF 14A.pdf",
+        "lgoog2020_def14a.pdf",
+        "lgoog2020_def14a.pdf"
+      ],
+      "scores": [
+        0.6259749320325134,
+        0.5955345959928898,
+        0.5899149658031119,
+        0.586544995601742,
+        0.5766761121567668
+      ],
+      "execution_time": 5.10994291305542,
+      "category": "governance",
+      "query_id": 45,
+      "difficulty": "medium"
+    },
+    {
+      "question": "What are the company's policies on shareholder rights and proxy voting?",
+      "answer": "The provided context does not explicitly detail the company's policies on shareholder rights and proxy voting. However, it mentions a specific stockholder proposal regarding a human rights impact assessment of AI-driven targeted ad policies, which the Alphabet Board recommends voting \"AGAINST.\" This indicates that the company has a governance structure in place that oversees human rights risks and mitigation strategies, suggesting that the board takes its responsibilities seriously regarding stakeholder concerns.\n\nTo obtain a comprehensive understanding of the company's policies on shareholder rights and proxy voting, one would typically need to refer to the complete Proxy Statement or the company's corporate governance documents, as these would detail the rights shareholders have in influencing corporate decisions and the process for proxy voting.",
+      "method": "convex",
+      "alpha": 0.5,
+      "relevant_chunks": 5,
+      "sources": [
+        "ALPHABET INC. - DEF14A.pdf",
+        "ALPHABET INC. DEF 14A.pdf",
+        "goog-20241231.pdf",
+        "lgoog2020_def14a.pdf",
+        "ALPHABET INC. - DEF14A.pdf"
+      ],
+      "scores": [
+        0.5665518240352312,
+        0.5443369514581836,
+        0.5347115390276106,
+        0.5,
+        0.48622716875483873
+      ],
+      "execution_time": 6.401113033294678,
+      "category": "governance",
+      "query_id": 46,
+      "difficulty": "hard"
+    },
+    {
+      "question": "What is the company's code of conduct and ethics policies?",
+      "answer": "The company's code of business conduct and ethics is known as the Alphabet Code of Conduct. It applies to directors, officers (including the principal executive officer, principal financial officer, and principal accounting officer), and employees. Additionally, the company has adopted Corporate Governance Guidelines to further govern its practices.",
+      "method": "convex",
+      "alpha": 0.5,
+      "relevant_chunks": 5,
+      "sources": [
+        "ALPHABET INC. - DEF 14A_3.pdf",
+        "ALPHABET INC. - DEF 14A.pdf",
+        "ALPHABET INC. - DEF14A.pdf",
+        "ALPHABET INC. DEF 14A.pdf",
+        "lgoog2020_def14a.pdf"
+      ],
+      "scores": [
+        0.6505430507794626,
+        0.6475292374192254,
+        0.6442211356083729,
+        0.6415658284996445,
+        0.6412762829762941
+      ],
+      "execution_time": 5.535845041275024,
+      "category": "governance",
+      "query_id": 47,
+      "difficulty": "medium"
+    },
+    {
+      "question": "How does the company ensure diversity and inclusion in its leadership?",
+      "answer": "The company ensures diversity and inclusion in its leadership through a structured approach overseen by its Leadership Development, Inclusion and Compensation Committee. This committee is responsible for human capital management, which includes focusing on diversity and inclusion initiatives and fostering a strong corporate culture. The company emphasizes measurable goals and talent development as part of its holistic approach to diversity, believing that these strategies will lead to meaningful and sustainable change. Additionally, the company uses attrition data to inform its diversity and inclusion efforts, helping to assess and improve representation within leadership roles.",
+      "method": "convex",
+      "alpha": 0.5,
+      "relevant_chunks": 5,
+      "sources": [
+        "lgoog2020_def14a.pdf",
+        "ALPHABET INC. - DEF 14A_2.pdf",
+        "ALPHABET INC. - DEF 14A_3.pdf",
+        "ALPHABET INC. DEF 14A.pdf",
+        "ALPHABET INC. - DEF 14A.pdf"
+      ],
+      "scores": [
+        0.6015009851709711,
+        0.5930697344673721,
+        0.58894655699577,
+        0.5412380133805905,
+        0.5181278312578307
+      ],
+      "execution_time": 6.383281946182251,
+      "category": "governance",
+      "query_id": 48,
+      "difficulty": "medium"
+    },
+    {
+      "question": "What is the company's approach to executive succession planning?",
+      "answer": "The company's approach to executive succession planning involves a regular review by the Board and the Compensation Committee. They focus on the development, retention, and replacement of executive officers, including the Chief Executive Officer. The process includes establishing selection criteria that align with the company's business strategies, identifying and developing internal candidates to ensure continuity of the company's culture, and making key management succession decisions. Additionally, management succession is frequently discussed in meetings and executive sessions of the Board, allowing directors to become familiar with potential successors.",
+      "method": "convex",
+      "alpha": 0.5,
+      "relevant_chunks": 5,
+      "sources": [
+        "ALPHABET INC. - DEF14A.pdf",
+        "ALPHABET INC. - DEF 14A.pdf",
+        "ALPHABET INC. - DEF 14A_2.pdf",
+        "ALPHABET INC. - DEF 14A_3.pdf",
+        "ALPHABET INC. DEF 14A.pdf"
+      ],
+      "scores": [
+        0.6364291592207514,
+        0.6364291592207514,
+        0.6302232354634372,
+        0.6222140972426335,
+        0.6106117952050574
+      ],
+      "execution_time": 5.216776371002197,
+      "category": "governance",
+      "query_id": 49,
+      "difficulty": "hard"
+    },
+    {
+      "question": "What is the company's approach to risk management and internal controls?",
+      "answer": "The company's approach to risk management and internal controls is based on the criteria established in the Internal Control—Integrated Framework issued by the Committee of Sponsoring Organizations of the Treadway Commission (2013 framework). This framework guides the assessment of the effectiveness of the company's internal control over financial reporting. The reports issued on various dates (January 30, 2024, February 2, 2021, and February 4, 2025) indicate that the company has undergone evaluations of its internal controls as of December 31 for the respective years and received unqualified opinions, suggesting that the controls are deemed effective in providing reasonable assurance regarding the reliability of financial reporting. The responsibility for these financial statements lies with the company's management, which implies a structured approach to maintaining and improving internal controls and managing financial risks.",
+      "method": "convex",
+      "alpha": 0.5,
+      "relevant_chunks": 5,
+      "sources": [
+        "goog-20231231.pdf",
+        "goog-20201231.pdf",
+        "goog-20241231.pdf",
+        "goog-20201231.pdf",
+        "Document.pdf"
+      ],
+      "scores": [
+        0.6488352465548339,
+        0.6480500474387928,
+        0.6471403930224116,
+        0.5450187704354841,
+        0.544905822492393
+      ],
+      "execution_time": 8.245619058609009,
+      "category": "governance",
+      "query_id": 50,
+      "difficulty": "hard"
     }
   ],
   "metrics": {
-    "average_execution_time": 5.567134790420532,
-    "average_top_score": 0.6102955877131839,
+    "average_execution_time": 5.261947836875915,
+    "average_top_score": 0.6210004829690526,
     "total_queries": 50
   }
 }
