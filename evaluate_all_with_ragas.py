@@ -262,7 +262,7 @@ def main():
         ("Advanced RAG", "results/advanced_rag_results.json"),
         ("BM25 RAG", "results/bm25_rag_results.json"),
         ("FAISS RAG", "results/faiss_rag_results.json"),
-        ("Hybrid RAG (All)", "results/hybrid_rag_all_results.json"),
+        ("Hybrid RAG (All)", "results/hybrid_rag_results.json"),
         ("Corrective RAG", "results/corrective_rag_results.json"),
         # ("Multimodal RAG", "results/multimodal_rag_results.json"),  # Поки немає
     ]
